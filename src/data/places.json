@@ -1,0 +1,245 @@
+[
+  {
+    "id": "VN-SGN-1911",
+    "slug": "ben-nha-rong-sai-gon-1911",
+    "title": "Bến Nhà Rồng (Sài Gòn)",
+    "country": "Việt Nam",
+    "city": "TP. Hồ Chí Minh",
+    "coords": [106.7066, 10.7683],
+    "dateStart": "1911-06-05",
+    "dateEnd": "1911-06-05",
+    "periodLabel": "Khởi hành (1911)",
+    "levelTexts": {
+      "primary": "Ngày 05/06/1911, Bác rời Tổ quốc từ Bến Nhà Rồng, bắt đầu hành trình tìm đường cứu nước.",
+      "secondary": "Bác lấy tên Văn Ba, làm việc trên tàu để đi ra nước ngoài học hỏi và tìm con đường giải phóng dân tộc.",
+      "high": "Đây là mốc mở đầu hành trình 30 năm bôn ba (1911–1941). Tại đây có thể gắn tư liệu ảnh, trích dẫn và câu hỏi học tập theo cấp."
+    },
+    "media": {
+      "cover": "/media/places/ben-nha-rong.jpg",
+      "gallery": []
+    },
+    "tags": ["khoi-hanh", "viet-nam"],
+    "sources": [
+      "Bảo tàng Hồ Chí Minh: https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
+    ]
+  },
+  {
+    "id": "FR-MRS-1911",
+    "slug": "marseille-1911",
+    "title": "Marseille",
+    "country": "Pháp",
+    "city": "Marseille",
+    "coords": [5.3698, 43.2965],
+    "dateStart": "1911-07-05",
+    "dateEnd": "1911-09-30",
+    "periodLabel": "Những bước đầu ở châu Âu (1911)",
+    "levelTexts": {
+      "primary": "Marseille là một trong những nơi Bác đặt chân tới trong những ngày đầu ra nước ngoài.",
+      "secondary": "Từ các cảng biển châu Âu, Bác quan sát đời sống, lao động và xã hội để rút ra bài học.",
+      "high": "Bạn có thể gắn đường tuyến tàu biển và hình 'con thuyền' để minh họa chặng đường vượt đại dương."
+    },
+    "media": {
+      "cover": "/media/places/marseille.jpg",
+      "gallery": []
+    },
+    "tags": ["phap", "chau-au"],
+    "sources": [
+      "Wikipedia (mốc tàu đến Marseille): https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ]
+  },
+  {
+    "id": "US-NYC-1912",
+    "slug": "new-york-1912-1913",
+    "title": "New York",
+    "country": "Hoa Kỳ",
+    "city": "New York",
+    "coords": [-74.0060, 40.7128],
+    "dateStart": "1912-01-01",
+    "dateEnd": "1913-12-31",
+    "periodLabel": "Trải nghiệm ở Mỹ (1912–1913)",
+    "levelTexts": {
+      "primary": "Bác từng đến Hoa Kỳ trong giai đoạn bôn ba đầu đời.",
+      "secondary": "New York thường được nhắc đến khi nói về trải nghiệm lao động và quan sát xã hội của Bác ở Mỹ.",
+      "high": "Nếu nguồn tư liệu của bạn ghi rõ địa chỉ/khu vực (ví dụ Harlem), có thể tạo 'mini-map' zoom sâu cho học sinh THPT."
+    },
+    "media": {
+      "cover": "/media/places/new-york.jpg",
+      "gallery": []
+    },
+    "tags": ["hoa-ky"],
+    "sources": [
+      "Britannica Kids/Students (tư liệu phổ thông về Boston & New York): https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
+    ]
+  },
+  {
+    "id": "US-BOS-1912",
+    "slug": "boston-1912-1913",
+    "title": "Boston",
+    "country": "Hoa Kỳ",
+    "city": "Boston",
+    "coords": [-71.0589, 42.3601],
+    "dateStart": "1912-01-01",
+    "dateEnd": "1913-12-31",
+    "periodLabel": "Trải nghiệm ở Mỹ (1912–1913)",
+    "levelTexts": {
+      "primary": "Boston là một địa điểm thường được nhắc đến trong giai đoạn Bác ở Mỹ.",
+      "secondary": "Tại đây có thể thiết kế hoạt động học: so sánh bối cảnh công nghiệp – lao động đầu thế kỷ 20.",
+      "high": "THPT: thêm câu hỏi tư duy 'Vì sao quan sát đời sống công nhân quốc tế lại quan trọng với con đường giải phóng dân tộc?'."
+    },
+    "media": {
+      "cover": "/media/places/boston.jpg",
+      "gallery": []
+    },
+    "tags": ["hoa-ky"],
+    "sources": [
+      "Britannica Kids/Students: https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
+    ]
+  },
+  {
+    "id": "GB-LON-1915",
+    "slug": "london-1915-1917",
+    "title": "London",
+    "country": "Vương quốc Anh",
+    "city": "London",
+    "coords": [-0.1278, 51.5074],
+    "dateStart": "1915-01-01",
+    "dateEnd": "1917-12-31",
+    "periodLabel": "Ở Anh (1915–1917)",
+    "levelTexts": {
+      "primary": "Bác sống ở London khoảng 2 năm (1915–1917).",
+      "secondary": "Bạn có thể gắn tuyến đường giữa các điểm theo dòng thời gian để học sinh thấy sự dịch chuyển không gian.",
+      "high": "Dùng hoạt họa (icon vali/đôi giày) để thể hiện 'bôn ba' và gắn bài tập địa lí: xác định khoảng cách – hướng di chuyển."
+    },
+    "media": {
+      "cover": "/media/places/london.jpg",
+      "gallery": []
+    },
+    "tags": ["anh", "chau-au"],
+    "sources": [
+      "Britannica Kids/Students: https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
+    ]
+  },
+  {
+    "id": "FR-PAR-1917",
+    "slug": "paris-1917-1923",
+    "title": "Paris",
+    "country": "Pháp",
+    "city": "Paris",
+    "coords": [2.3522, 48.8566],
+    "dateStart": "1917-01-01",
+    "dateEnd": "1923-12-31",
+    "periodLabel": "Hoạt động ở Pháp (1917–1923)",
+    "levelTexts": {
+      "primary": "Bác hoạt động ở Paris trong giai đoạn 1917–1923.",
+      "secondary": "Có thể thiết kế thẻ nội dung: tổ chức, báo chí, phong trào, nhân vật liên quan.",
+      "high": "THPT: gắn nguồn tư liệu và dòng sự kiện theo năm để học sinh luyện kỹ năng 'timeline – evidence'."
+    },
+    "media": {
+      "cover": "/media/places/paris.jpg",
+      "gallery": []
+    },
+    "tags": ["phap", "chinh-tri"],
+    "sources": [
+      "Britannica: https://www.britannica.com/biography/Ho-Chi-Minh"
+    ]
+  },
+  {
+    "id": "RU-MOW-1923",
+    "slug": "moscow-1923-1924",
+    "title": "Moscow",
+    "country": "Liên Xô (nay là Nga)",
+    "city": "Moscow",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1923-12-01",
+    "dateEnd": "1924-12-31",
+    "periodLabel": "Ở Moscow (1923–1924)",
+    "levelTexts": {
+      "primary": "Cuối 1923, Bác đến Moscow; năm 1924 tham gia hoạt động và học tập.",
+      "secondary": "Bạn có thể gắn 'thẻ kiến thức' giải thích vì sao bối cảnh quốc tế lúc đó ảnh hưởng đến tư tưởng cách mạng.",
+      "high": "Dành cho THPT: thêm mục 'thuật ngữ' và 'bối cảnh quốc tế' (có dẫn nguồn)."
+    },
+    "media": {
+      "cover": "/media/places/moscow.jpg",
+      "gallery": []
+    },
+    "tags": ["lien-xo", "quoc-te"],
+    "sources": [
+      "Britannica (mốc cuối 1923 đến Moscow): https://www.britannica.com/biography/Ho-Chi-Minh"
+    ]
+  },
+  {
+    "id": "CN-GZ-1924",
+    "slug": "guangzhou-1924-1927",
+    "title": "Guangzhou (Canton)",
+    "country": "Trung Quốc",
+    "city": "Guangzhou",
+    "coords": [113.2644, 23.1291],
+    "dateStart": "1924-11-01",
+    "dateEnd": "1927-12-31",
+    "periodLabel": "Hoạt động ở Trung Quốc (1924–1927)",
+    "levelTexts": {
+      "primary": "Guangzhou gắn với hoạt động cách mạng của Bác giai đoạn 1924–1927.",
+      "secondary": "Có thể làm 'bài học theo dự án': tạo báo tường số về một địa điểm lịch sử.",
+      "high": "Bạn có thể gắn ảnh trụ sở/di tích, và liên kết sang mục 'Thư viện tư liệu'."
+    },
+    "media": {
+      "cover": "/media/places/guangzhou.jpg",
+      "gallery": []
+    },
+    "tags": ["trung-quoc", "dao-tao"],
+    "sources": [
+      "Nhân Dân (di tích liên quan 1924–1927): https://en.nhandan.vn/vietnamese-journalists-visit-site-where-president-ho-chi-minh-founds-thanh-nien-newspaper-post149303.html"
+    ]
+  },
+  {
+    "id": "HK-HKG-1931",
+    "slug": "hong-kong-1931",
+    "title": "Hong Kong (Kowloon)",
+    "country": "Trung Quốc (đặc khu Hong Kong)",
+    "city": "Hong Kong",
+    "coords": [114.1910, 22.3280],
+    "dateStart": "1931-06-06",
+    "dateEnd": "1933-01-22",
+    "periodLabel": "Bị bắt ở Hong Kong (1931–1933)",
+    "levelTexts": {
+      "primary": "Năm 1931, Bác bị bắt tại Hong Kong trong vụ án Tống Văn Sơ.",
+      "secondary": "Thiết kế tương tác: bật/tắt lớp 'mốc pháp lý' (arrest – court – release).",
+      "high": "THPT: thêm mục 'mạng lưới thuộc địa' và 'pháp luật – dẫn độ' (kèm nguồn)."
+    },
+    "media": {
+      "cover": "/media/places/hong-kong.jpg",
+      "gallery": []
+    },
+    "tags": ["hong-kong", "phap-ly"],
+    "sources": [
+      "History Today (arrest/extradition context): https://www.historytoday.com/miscellanies/deporting-ho-chi-minh",
+      "HK Memory (Victoria Gaol): https://www.hkmemory.hk/en/collections-victoria_prison-ho_chi_minh_in_victoria_gaol.html"
+    ]
+  },
+  {
+    "id": "VN-PBO-1941",
+    "slug": "pac-bo-cao-bang-1941",
+    "title": "Pác Bó (Cao Bằng)",
+    "country": "Việt Nam",
+    "city": "Cao Bằng",
+    "coords": [106.3170, 22.5490],
+    "dateStart": "1941-01-28",
+    "dateEnd": "1941-12-31",
+    "periodLabel": "Trở về Tổ quốc (1941)",
+    "levelTexts": {
+      "primary": "Ngày 28/01/1941, Bác trở về Việt Nam qua khu vực Pác Bó để trực tiếp lãnh đạo cách mạng.",
+      "secondary": "Gợi ý hoạt động học: xác định vị trí Pác Bó trên bản đồ Việt Nam, liên hệ địa hình – biên giới.",
+      "high": "Có thể gắn lớp dữ liệu địa lí (núi, sông) và giải thích vì sao chọn điểm này làm nơi đứng chân."
+    },
+    "media": {
+      "cover": "/media/places/pac-bo.jpg",
+      "gallery": []
+    },
+    "tags": ["viet-nam", "tro-ve"],
+    "sources": [
+      "Nhân Dân Special (mốc 28/01/1941): https://special.nhandan.vn/pac-bo-where-uncle-ho-led/index.html"
+    ]
+  }
+]
+
+

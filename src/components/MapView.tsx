@@ -170,7 +170,7 @@ export default function MapView({ places }: Props) {
       style: MAP_STYLE_URL,
       center: fallbackCenter,
       zoom: filteredPlaces.length ? 2.5 : 3.5,
-      attributionControl: true,
+      
     });
 
     map.addControl(new maplibregl.NavigationControl(), "top-right");

@@ -229,14 +229,14 @@ export default function MapView({ places }: Props) {
 
     Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
     map.flyTo({ center: entry.place.coords, zoom: 6, essential: true });
-    entry.popup.addTo(map);
+    entry.popup.setLngLat(entry.place.coords).addTo(map);
   };
 
   return (
-    <section className="w-full bg-slate-50 pb-10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4">
-        <div className="grid gap-4 md:grid-cols-[320px,1fr]">
-          <aside className="h-fit rounded-xl border border-slate-200 bg-white shadow-sm md:sticky md:top-4">
+    <section className="h-screen w-screen bg-slate-50">
+      <div className="flex h-full w-full">
+        <div className="flex w-full flex-col gap-4 lg:flex-row lg:items-start">
+          <aside className="h-fit w-full flex-shrink-0 rounded-xl border border-slate-200 bg-white shadow-sm lg:sticky lg:top-4 lg:w-[340px]">
             <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">Hanh trinh</p>
@@ -285,27 +285,6 @@ export default function MapView({ places }: Props) {
                   </select>
                 </label>
               </div>
-
-              {dateRange.min !== undefined && dateRange.max !== undefined ? (
-                <div className="space-y-1">
-                  <div className="flex items-center justify-between text-xs font-semibold text-slate-600">
-                    <span>Timeline</span>
-                    <span>Nam: {effectiveYear}</span>
-                  </div>
-                  <input
-                    type="range"
-                    min={dateRange.min}
-                    max={dateRange.max}
-                    value={effectiveYear}
-                    onChange={(e) => setSelectedYear(Number(e.target.value))}
-                    className="w-full"
-                  />
-                  <div className="flex justify-between text-[11px] text-slate-500">
-                    <span>{dateRange.min}</span>
-                    <span>{dateRange.max}</span>
-                  </div>
-                </div>
-              ) : null}
             </div>
 
             <div className="max-h-[70vh] overflow-y-auto divide-y divide-slate-100">
@@ -369,8 +348,33 @@ export default function MapView({ places }: Props) {
             </div>
           </aside>
 
-          <div className="min-h-[60vh] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-            <div ref={mapContainerRef} className="h-[60vh] w-full md:h-[70vh]" />
+          <div className="flex flex-1 flex-col gap-3">
+            <div className="min-h-[80vh] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+              <div ref={mapContainerRef} className="h-[80vh] w-full md:h-[85vh]" />
+            </div>
+
+            {dateRange.min !== undefined && dateRange.max !== undefined ? (
+              <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div className="flex items-center justify-between text-sm font-semibold text-slate-700">
+                  <span>Timeline</span>
+                  <span>Nam: {effectiveYear}</span>
+                </div>
+                <div className="mt-2">
+                  <input
+                    type="range"
+                    min={dateRange.min}
+                    max={dateRange.max}
+                    value={effectiveYear}
+                    onChange={(e) => setSelectedYear(Number(e.target.value))}
+                    className="w-full"
+                  />
+                  <div className="mt-1 flex justify-between text-[11px] text-slate-500">
+                    <span>{dateRange.min}</span>
+                    <span>{dateRange.max}</span>
+                  </div>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

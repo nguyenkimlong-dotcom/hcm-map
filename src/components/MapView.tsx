@@ -522,11 +522,11 @@ export default function MapView({ places }: Props) {
         window.clearTimeout(zoomInTimeoutRef.current);
         zoomInTimeoutRef.current = null;
       }
-      if (moveEndHandlerRef.current) {
+      const activeMap = mapRef.current;
+      if (activeMap && moveEndHandlerRef.current) {
         activeMap.off("moveend", moveEndHandlerRef.current);
         moveEndHandlerRef.current = null;
       }
-      const activeMap = mapRef.current;
       if (activeMap) {
         ["routes-anim-line", "routes-progress-line", "routes-base", "vn-islands-labels"].forEach((layerId) => {
           if (activeMap.getLayer(layerId)) activeMap.removeLayer(layerId);

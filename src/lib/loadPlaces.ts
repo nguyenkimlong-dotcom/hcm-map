@@ -7,7 +7,8 @@ export async function loadPlaces(): Promise<Place[]> {
   try {
     const filePath = path.join(process.cwd(), "src", "data", "places.json");
     const content = await fs.readFile(filePath, "utf-8");
-    const parsed = JSON.parse(content);
+    const normalized = content.startsWith("\ufeff") ? content.slice(1) : content;
+    const parsed = JSON.parse(normalized);
     if (Array.isArray(parsed)) {
       return parsed as Place[];
     }

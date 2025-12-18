@@ -1,245 +1,1037 @@
 [
   {
-    "id": "VN-SGN-1911",
-    "slug": "ben-nha-rong-sai-gon-1911",
-    "title": "Bến Nhà Rồng (Sài Gòn)",
+    "id": "hcm-001",
+    "slug": "19110605-sai-gon-ben-nha-rong-roi-ben",
+    "title": "Sài Gòn (Bến Nhà Rồng) - Rời bến",
     "country": "Việt Nam",
-    "city": "TP. Hồ Chí Minh",
+    "city": "Sài Gòn (Bến Nhà Rồng)",
     "coords": [106.7066, 10.7683],
     "dateStart": "1911-06-05",
     "dateEnd": "1911-06-05",
-    "periodLabel": "Khởi hành (1911)",
+    "periodLabel": "05/06/1911",
     "levelTexts": {
-      "primary": "Ngày 05/06/1911, Bác rời Tổ quốc từ Bến Nhà Rồng, bắt đầu hành trình tìm đường cứu nước.",
-      "secondary": "Bác lấy tên Văn Ba, làm việc trên tàu để đi ra nước ngoài học hỏi và tìm con đường giải phóng dân tộc.",
-      "high": "Đây là mốc mở đầu hành trình 30 năm bôn ba (1911–1941). Tại đây có thể gắn tư liệu ảnh, trích dẫn và câu hỏi học tập theo cấp."
+      "primary": "Rời bến cảng Nhà Rồng trên tàu Amiral Latouche Tréville, bắt đầu hành trình tìm đường cứu nước."
     },
-    "media": {
-      "cover": "/media/places/ben-nha-rong.jpg",
-      "gallery": []
-    },
-    "tags": ["khoi-hanh", "viet-nam"],
-    "sources": [
-      "Bảo tàng Hồ Chí Minh: https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "FR-MRS-1911",
-    "slug": "marseille-1911",
-    "title": "Marseille",
+    "id": "hcm-002",
+    "slug": "19110608-singapore-tau-cap-cang",
+    "title": "Singapore - Tàu cập cảng",
+    "country": "Singapore",
+    "city": "Singapore",
+    "coords": [103.8519, 1.2903],
+    "dateStart": "1911-06-08",
+    "dateEnd": "1911-06-08",
+    "periodLabel": "08/06/1911",
+    "levelTexts": {
+      "primary": "Tàu cập cảng Singapore."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-003",
+    "slug": "19110614-colombo-tau-ghe",
+    "title": "Colombo (Sri Lanka) - Tàu ghé",
+    "country": "Sri Lanka",
+    "city": "Colombo",
+    "coords": [79.8612, 6.9271],
+    "dateStart": "1911-06-14",
+    "dateEnd": "1911-06-14",
+    "periodLabel": "14/06/1911",
+    "levelTexts": {
+      "primary": "Tàu ghé Colombo (Sri Lanka)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-004",
+    "slug": "19110630-port-said-tau-ghe-cang",
+    "title": "Port Said (Ai Cập) - Tàu ghé cảng",
+    "country": "Ai Cập",
+    "city": "Port Said",
+    "coords": [32.2903, 31.2565],
+    "dateStart": "1911-06-30",
+    "dateEnd": "1911-06-30",
+    "periodLabel": "30/06/1911",
+    "levelTexts": {
+      "primary": "Tàu ghé cảng Port Said (Ai Cập)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-005",
+    "slug": "19110706-marseille-tau-cap-cang",
+    "title": "Marseille (Pháp) - Tàu cập cảng",
     "country": "Pháp",
     "city": "Marseille",
     "coords": [5.3698, 43.2965],
-    "dateStart": "1911-07-05",
-    "dateEnd": "1911-09-30",
-    "periodLabel": "Những bước đầu ở châu Âu (1911)",
+    "dateStart": "1911-07-06",
+    "dateEnd": "1911-07-06",
+    "periodLabel": "06/07/1911",
     "levelTexts": {
-      "primary": "Marseille là một trong những nơi Bác đặt chân tới trong những ngày đầu ra nước ngoài.",
-      "secondary": "Từ các cảng biển châu Âu, Bác quan sát đời sống, lao động và xã hội để rút ra bài học.",
-      "high": "Bạn có thể gắn đường tuyến tàu biển và hình 'con thuyền' để minh họa chặng đường vượt đại dương."
+      "primary": "Tàu cập cảng Marseille (Pháp)."
     },
-    "media": {
-      "cover": "/media/places/marseille.jpg",
-      "gallery": []
-    },
-    "tags": ["phap", "chau-au"],
-    "sources": [
-      "Wikipedia (mốc tàu đến Marseille): https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "US-NYC-1912",
-    "slug": "new-york-1912-1913",
-    "title": "New York",
-    "country": "Hoa Kỳ",
-    "city": "New York",
-    "coords": [-74.0060, 40.7128],
-    "dateStart": "1912-01-01",
-    "dateEnd": "1913-12-31",
-    "periodLabel": "Trải nghiệm ở Mỹ (1912–1913)",
+    "id": "hcm-006",
+    "slug": "19110715-le-havre-den-ben-cuoi",
+    "title": "Le Havre (Pháp) - Đến bến cuối",
+    "country": "Pháp",
+    "city": "Le Havre",
+    "coords": [0.1079, 49.4944],
+    "dateStart": "1911-07-15",
+    "dateEnd": "1911-07-15",
+    "periodLabel": "15/07/1911",
     "levelTexts": {
-      "primary": "Bác từng đến Hoa Kỳ trong giai đoạn bôn ba đầu đời.",
-      "secondary": "New York thường được nhắc đến khi nói về trải nghiệm lao động và quan sát xã hội của Bác ở Mỹ.",
-      "high": "Nếu nguồn tư liệu của bạn ghi rõ địa chỉ/khu vực (ví dụ Harlem), có thể tạo 'mini-map' zoom sâu cho học sinh THPT."
+      "primary": "Tàu đến bến cuối Le Havre. Người làm vườn tại Sainte-Adresse."
     },
-    "media": {
-      "cover": "/media/places/new-york.jpg",
-      "gallery": []
-    },
-    "tags": ["hoa-ky"],
-    "sources": [
-      "Britannica Kids/Students (tư liệu phổ thông về Boston & New York): https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "US-BOS-1912",
-    "slug": "boston-1912-1913",
-    "title": "Boston",
-    "country": "Hoa Kỳ",
+    "id": "hcm-048",
+    "slug": "19120201-casablanca-morocco",
+    "title": "Casablanca (Morocco) - Cập cảng",
+    "country": "Morocco",
+    "city": "Casablanca",
+    "coords": [-7.5898, 33.5731],
+    "dateStart": "1912-02-01",
+    "dateEnd": "1912-02-01",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Tàu ghé Casablanca, điểm dừng trên hành trình vượt Đại Tây Dương."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048a",
+    "slug": "19120210-algiers-algeria",
+    "title": "Algiers (Algeria) - Cập cảng",
+    "country": "Algeria",
+    "city": "Algiers",
+    "coords": [3.0588, 36.7538],
+    "dateStart": "1912-02-10",
+    "dateEnd": "1912-02-10",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Dừng chân tại Algiers trên hành trình dọc bờ Địa Trung Hải."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048b",
+    "slug": "19120215-tunis-tunisia",
+    "title": "Tunis (Tunisie) - Ghé cảng",
+    "country": "Tunisie",
+    "city": "Tunis",
+    "coords": [10.1658, 36.8065],
+    "dateStart": "1912-02-15",
+    "dateEnd": "1912-02-15",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Ghé Tunis, nối tiếp chặng Bắc Phi trước khi xuống Đông Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048b2",
+    "slug": "19120218-tunisia-2-sfax",
+    "title": "Tunisia 2 (Sfax) - Cảng phía nam",
+    "country": "Tunisie",
+    "city": "Sfax",
+    "coords": [10.759, 34.7406],
+    "dateStart": "1912-02-18",
+    "dateEnd": "1912-02-18",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Ghé cảng phía nam Tunisia (Sfax) trên hành trình dọc Bắc Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048c",
+    "slug": "19120222-mogadishu-somalia",
+    "title": "Mogadishu (Somalia) - Tạm dừng",
+    "country": "Somalia",
+    "city": "Mogadishu",
+    "coords": [45.3182, 2.0469],
+    "dateStart": "1912-02-22",
+    "dateEnd": "1912-02-22",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Tạm dừng tại Mogadishu trên đường vòng quanh Đông Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048c2",
+    "slug": "19120223-kismayo-somalia-nam",
+    "title": "Somalia (Kismayo) - Cảng phía nam",
+    "country": "Somalia",
+    "city": "Kismayo",
+    "coords": [42.545, -0.358],
+    "dateStart": "1912-02-23",
+    "dateEnd": "1912-02-23",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Ghé cảng phía nam Somalia tại Kismayo trên hải trình Đông Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-048d",
+    "slug": "19120226-nairobi-kenya",
+    "title": "Nairobi (Kenya) - Đi qua Đông Phi",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "coords": [36.8219, -1.2921],
+    "dateStart": "1912-02-26",
+    "dateEnd": "1912-02-26",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Đi qua Kenya, dừng tại Nairobi trước khi tiếp tục xuống phía nam."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-049",
+    "slug": "19120301-dar-es-salaam-tanzania",
+    "title": "Dar es Salaam (Tanzania) - Tạm dừng chân",
+    "country": "Tanzania",
+    "city": "Dar es Salaam",
+    "coords": [39.2083, -6.7924],
+    "dateStart": "1912-03-01",
+    "dateEnd": "1912-03-01",
+    "periodLabel": "03/1912",
+    "levelTexts": {
+      "primary": "Tàu ghé Dar es Salaam trên hải trình dọc bờ Đông Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-050",
+    "slug": "19120401-antananarivo-madagascar",
+    "title": "Antananarivo (Madagascar) - Dừng chân",
+    "country": "Madagascar",
+    "city": "Antananarivo",
+    "coords": [47.5079, -18.8792],
+    "dateStart": "1912-04-01",
+    "dateEnd": "1912-04-01",
+    "periodLabel": "04/1912",
+    "levelTexts": {
+      "primary": "Ghé Madagascar trong hành trình hướng về châu Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-051",
+    "slug": "19120501-saint-denis-reunion",
+    "title": "Saint-Denis (Réunion) - Ghé đảo",
+    "country": "Réunion",
+    "city": "Saint-Denis",
+    "coords": [55.4543, -20.8821],
+    "dateStart": "1912-05-01",
+    "dateEnd": "1912-05-01",
+    "periodLabel": "05/1912",
+    "levelTexts": {
+      "primary": "Tàu ghé đảo Réunion tại Ấn Độ Dương."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-052",
+    "slug": "19120601-cape-town-nam-phi",
+    "title": "Cape Town (Nam Phi) - Qua mũi Hảo Vọng",
+    "country": "Nam Phi",
+    "city": "Cape Town",
+    "coords": [18.4241, -33.9249],
+    "dateStart": "1912-06-01",
+    "dateEnd": "1912-06-01",
+    "periodLabel": "06/1912",
+    "levelTexts": {
+      "primary": "Đi qua mũi Hảo Vọng, cập cảng Cape Town."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-053",
+    "slug": "19120701-luanda-angola",
+    "title": "Luanda (Angola) - Dừng chân",
+    "country": "Angola",
+    "city": "Luanda",
+    "coords": [13.2344, -8.839],
+    "dateStart": "1912-07-01",
+    "dateEnd": "1912-07-01",
+    "periodLabel": "07/1912",
+    "levelTexts": {
+      "primary": "Tạm dừng tại cảng Luanda trên bờ Tây Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-054",
+    "slug": "19120801-kinshasa-congo",
+    "title": "Kinshasa (Congo) - Đi qua Congo",
+    "country": "Congo",
+    "city": "Kinshasa",
+    "coords": [15.2663, -4.4419],
+    "dateStart": "1912-08-01",
+    "dateEnd": "1912-08-01",
+    "periodLabel": "08/1912",
+    "levelTexts": {
+      "primary": "Hải trình ghé vùng Congo, cập bến Kinshasa."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-055",
+    "slug": "19120901-lagos-nigeria",
+    "title": "Lagos (Nigeria) - Cập cảng",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "coords": [3.3792, 6.5244],
+    "dateStart": "1912-09-01",
+    "dateEnd": "1912-09-01",
+    "periodLabel": "09/1912",
+    "levelTexts": {
+      "primary": "Cập cảng Lagos trên tuyến Tây Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-056",
+    "slug": "19121001-accra-ghana",
+    "title": "Accra (Ghana) - Đi qua Gold Coast",
+    "country": "Ghana",
+    "city": "Accra",
+    "coords": [-0.1869, 5.6037],
+    "dateStart": "1912-10-01",
+    "dateEnd": "1912-10-01",
+    "periodLabel": "10/1912",
+    "levelTexts": {
+      "primary": "Ghé Accra (Gold Coast) trên đường về châu Âu."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-057",
+    "slug": "19121101-abidjan-cote-divoire",
+    "title": "Abidjan (Côte d’Ivoire) - Cập cảng",
+    "country": "Côte d’Ivoire",
+    "city": "Abidjan",
+    "coords": [-4.0083, 5.35995],
+    "dateStart": "1912-11-01",
+    "dateEnd": "1912-11-01",
+    "periodLabel": "11/1912",
+    "levelTexts": {
+      "primary": "Cập cảng Abidjan, tiếp tục hành trình theo bờ Tây Phi."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-058",
+    "slug": "19130101-dakar-senegal",
+    "title": "Dakar (Senegal) - Điểm dừng Tây Phi",
+    "country": "Senegal",
+    "city": "Dakar",
+    "coords": [-17.4677, 14.7167],
+    "dateStart": "1913-01-01",
+    "dateEnd": "1913-01-01",
+    "periodLabel": "01/1913",
+    "levelTexts": {
+      "primary": "Dừng chân tại Dakar trước khi vượt Đại Tây Dương."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-058a",
+    "slug": "19130205-fort-de-france-martinique",
+    "title": "Martinique (Fort-de-France) - Cập cảng",
+    "country": "Martinique",
+    "city": "Fort-de-France",
+    "coords": [-61.0588, 14.6161],
+    "dateStart": "1913-02-05",
+    "dateEnd": "1913-02-05",
+    "periodLabel": "05/02/1913",
+    "levelTexts": {
+      "primary": "Dừng tại cảng Fort-de-France (Martinique) trên hải trình Đại Tây Dương."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-058b",
+    "slug": "19130305-montevideo-uruguay",
+    "title": "Montevideo (Uruguay) - Cập cảng",
+    "country": "Uruguay",
+    "city": "Montevideo",
+    "coords": [-56.1645, -34.9011],
+    "dateStart": "1913-03-05",
+    "dateEnd": "1913-03-05",
+    "periodLabel": "05/03/1913",
+    "levelTexts": {
+      "primary": "Cập cảng Montevideo, điểm dừng Nam Mỹ trên hành trình."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-058c",
+    "slug": "19130405-buenos-aires-argentina",
+    "title": "Buenos Aires (Argentina) - Dừng chân",
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "coords": [-58.3816, -34.6037],
+    "dateStart": "1913-04-05",
+    "dateEnd": "1913-04-05",
+    "periodLabel": "05/04/1913",
+    "levelTexts": {
+      "primary": "Dừng chân tại Buenos Aires trước khi tiếp tục qua Bắc Mỹ."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-007",
+    "slug": "19121225-new-york-brooklyn-den",
+    "title": "New York (Brooklyn, Mỹ) - Đến New York",
+    "country": "Mỹ",
+    "city": "New York (Brooklyn)",
+    "coords": [-73.9442, 40.6782],
+    "dateStart": "1912-12-25",
+    "dateEnd": "1912-12-25",
+    "periodLabel": "25/12/1912",
+    "levelTexts": {
+      "primary": "Tới New York (Mỹ). Sống tại khu Brooklyn."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-007b",
+    "slug": "19130215-boston-my-sau-new-york",
+    "title": "Boston (Mỹ) - Tiếp tục làm việc sau New York",
+    "country": "Mỹ",
     "city": "Boston",
     "coords": [-71.0589, 42.3601],
-    "dateStart": "1912-01-01",
+    "dateStart": "1913-02-15",
     "dateEnd": "1913-12-31",
-    "periodLabel": "Trải nghiệm ở Mỹ (1912–1913)",
+    "periodLabel": "1913",
     "levelTexts": {
-      "primary": "Boston là một địa điểm thường được nhắc đến trong giai đoạn Bác ở Mỹ.",
-      "secondary": "Tại đây có thể thiết kế hoạt động học: so sánh bối cảnh công nghiệp – lao động đầu thế kỷ 20.",
-      "high": "THPT: thêm câu hỏi tư duy 'Vì sao quan sát đời sống công nhân quốc tế lại quan trọng với con đường giải phóng dân tộc?'."
+      "primary": "Trở lại Boston sau chặng New York, tiếp tục làm phụ bếp và lao động."
     },
-    "media": {
-      "cover": "/media/places/boston.jpg",
-      "gallery": []
-    },
-    "tags": ["hoa-ky"],
-    "sources": [
-      "Britannica Kids/Students: https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "GB-LON-1915",
-    "slug": "london-1915-1917",
-    "title": "London",
-    "country": "Vương quốc Anh",
-    "city": "London",
+    "id": "hcm-008",
+    "slug": "19130101-boston-lam-phu-bep",
+    "title": "Boston (Mỹ) - Làm phụ bếp Omni Parker House",
+    "country": "Mỹ",
+    "city": "Boston",
+    "coords": [-71.0589, 42.3601],
+    "dateStart": "1913-01-01",
+    "dateEnd": "1913-12-31",
+    "periodLabel": "1913",
+    "levelTexts": {
+      "primary": "Làm phụ bếp tại khách sạn Omni Parker House (Boston, Mỹ)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-009",
+    "slug": "19140101-luan-don-lao-dong-tu-hoc",
+    "title": "Luân Đôn (London, Anh) - Lao động và tự học",
+    "country": "Anh",
+    "city": "Luân Đôn (London)",
     "coords": [-0.1278, 51.5074],
-    "dateStart": "1915-01-01",
+    "dateStart": "1914-01-01",
     "dateEnd": "1917-12-31",
-    "periodLabel": "Ở Anh (1915–1917)",
+    "periodLabel": "1914 - 1917",
     "levelTexts": {
-      "primary": "Bác sống ở London khoảng 2 năm (1915–1917).",
-      "secondary": "Bạn có thể gắn tuyến đường giữa các điểm theo dòng thời gian để học sinh thấy sự dịch chuyển không gian.",
-      "high": "Dùng hoạt họa (icon vali/đôi giày) để thể hiện 'bôn ba' và gắn bài tập địa lí: xác định khoảng cách – hướng di chuyển."
+      "primary": "Làm rửa bát, phụ bếp... tới Thư viện Bảo tàng Anh tự học."
     },
-    "media": {
-      "cover": "/media/places/london.jpg",
-      "gallery": []
-    },
-    "tags": ["anh", "chau-au"],
-    "sources": [
-      "Britannica Kids/Students: https://kids.britannica.com/students/article/Ho-Chi-Minh/274964"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "FR-PAR-1917",
-    "slug": "paris-1917-1923",
-    "title": "Paris",
+    "id": "hcm-010",
+    "slug": "19200701-paris-doc-so-thao-lenin",
+    "title": "Paris (Pháp) - Đọc Sơ thảo của Lênin",
     "country": "Pháp",
     "city": "Paris",
     "coords": [2.3522, 48.8566],
-    "dateStart": "1917-01-01",
-    "dateEnd": "1923-12-31",
-    "periodLabel": "Hoạt động ở Pháp (1917–1923)",
+    "dateStart": "1920-07-01",
+    "dateEnd": "1920-07-01",
+    "periodLabel": "07/1920",
     "levelTexts": {
-      "primary": "Bác hoạt động ở Paris trong giai đoạn 1917–1923.",
-      "secondary": "Có thể thiết kế thẻ nội dung: tổ chức, báo chí, phong trào, nhân vật liên quan.",
-      "high": "THPT: gắn nguồn tư liệu và dòng sự kiện theo năm để học sinh luyện kỹ năng 'timeline – evidence'."
+      "primary": "Đọc “Sơ thảo...” của Lênin. Tìm thấy con đường cứu nước."
     },
-    "media": {
-      "cover": "/media/places/paris.jpg",
-      "gallery": []
-    },
-    "tags": ["phap", "chinh-tri"],
-    "sources": [
-      "Britannica: https://www.britannica.com/biography/Ho-Chi-Minh"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "RU-MOW-1923",
-    "slug": "moscow-1923-1924",
-    "title": "Moscow",
-    "country": "Liên Xô (nay là Nga)",
-    "city": "Moscow",
+    "id": "hcm-011",
+    "slug": "19201201-tours-du-dai-hoi",
+    "title": "Tours (Pháp) - Dự Đại hội Tours",
+    "country": "Pháp",
+    "city": "Tours",
+    "coords": [0.6848, 47.3941],
+    "dateStart": "1920-12-01",
+    "dateEnd": "1920-12-01",
+    "periodLabel": "12/1920",
+    "levelTexts": {
+      "primary": "Dự Đại hội Tours, tham gia sáng lập Đảng Cộng sản Pháp."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-012",
+    "slug": "19220401-paris-sang-lap-le-paria",
+    "title": "Paris (Pháp) - Sáng lập báo Le Paria",
+    "country": "Pháp",
+    "city": "Paris",
+    "coords": [2.3522, 48.8566],
+    "dateStart": "1922-04-01",
+    "dateEnd": "1922-04-01",
+    "periodLabel": "04/1922",
+    "levelTexts": {
+      "primary": "Sáng lập báo Le Paria."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-013",
+    "slug": "19230613-hamburg-roi-phap",
+    "title": "Hamburg (Đức) - Rời Pháp",
+    "country": "Đức",
+    "city": "Hamburg",
+    "coords": [9.9937, 53.5511],
+    "dateStart": "1923-06-13",
+    "dateEnd": "1923-06-13",
+    "periodLabel": "13/06/1923",
+    "levelTexts": {
+      "primary": "Bí mật rời Pháp sang Đức, ghé cảng Hamburg."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-013a",
+    "slug": "19230620-amsterdam-ha-lan",
+    "title": "Amsterdam (Hà Lan) - Ghé cảng",
+    "country": "Hà Lan",
+    "city": "Amsterdam",
+    "coords": [4.9041, 52.3676],
+    "dateStart": "1923-06-20",
+    "dateEnd": "1923-06-20",
+    "periodLabel": "20/06/1923",
+    "levelTexts": {
+      "primary": "Ghé Amsterdam trên hành trình rời Hamburg tiến về Nga."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-014",
+    "slug": "19230630-petrograd-tau-cap-ben",
+    "title": "Petrograd (Saint Petersburg, Nga) - Tàu cập bến",
+    "country": "Nga",
+    "city": "Petrograd (Saint Petersburg)",
+    "coords": [30.3351, 59.9343],
+    "dateStart": "1923-06-30",
+    "dateEnd": "1923-06-30",
+    "periodLabel": "30/06/1923",
+    "levelTexts": {
+      "primary": "Tàu thủy cập bến Petrograd (nay là Saint Petersburg)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-015",
+    "slug": "19231001-moskva-hoi-nghi-nong-dan",
+    "title": "Moskva (Nga) - Dự Hội nghị Quốc tế Nông dân",
+    "country": "Nga",
+    "city": "Moskva",
     "coords": [37.6173, 55.7558],
-    "dateStart": "1923-12-01",
+    "dateStart": "1923-10-01",
+    "dateEnd": "1923-10-01",
+    "periodLabel": "10/1923",
+    "levelTexts": {
+      "primary": "Dự Hội nghị lần thứ nhất Quốc tế Nông dân."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-016",
+    "slug": "19240101-moskva-vinh-biet-lenin",
+    "title": "Moskva (Nga) - Vĩnh biệt Lênin",
+    "country": "Nga",
+    "city": "Moskva",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1924-01-01",
+    "dateEnd": "1924-01-01",
+    "periodLabel": "01/1924",
+    "levelTexts": {
+      "primary": "Nghe tin Lênin từ trần, đăng bài vĩnh biệt Lênin."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-017",
+    "slug": "19230101-moskva-hoc-tap-va-viet-ban-an",
+    "title": "Moskva (Nga) - Học tập và viết Bản án chế độ thực dân Pháp",
+    "country": "Nga",
+    "city": "Moskva",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1923-01-01",
     "dateEnd": "1924-12-31",
-    "periodLabel": "Ở Moscow (1923–1924)",
+    "periodLabel": "1923 - 1924",
     "levelTexts": {
-      "primary": "Cuối 1923, Bác đến Moscow; năm 1924 tham gia hoạt động và học tập.",
-      "secondary": "Bạn có thể gắn 'thẻ kiến thức' giải thích vì sao bối cảnh quốc tế lúc đó ảnh hưởng đến tư tưởng cách mạng.",
-      "high": "Dành cho THPT: thêm mục 'thuật ngữ' và 'bối cảnh quốc tế' (có dẫn nguồn)."
+      "primary": "Học ngắn hạn, hoàn thành “Bản án chế độ thực dân Pháp”."
     },
-    "media": {
-      "cover": "/media/places/moscow.jpg",
-      "gallery": []
-    },
-    "tags": ["lien-xo", "quoc-te"],
-    "sources": [
-      "Britannica (mốc cuối 1923 đến Moscow): https://www.britannica.com/biography/Ho-Chi-Minh"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "CN-GZ-1924",
-    "slug": "guangzhou-1924-1927",
-    "title": "Guangzhou (Canton)",
+    "id": "hcm-018",
+    "slug": "19240601-moskva-dai-hoi-quoc-te-cong-san",
+    "title": "Moskva (Nga) - Dự Đại hội V Quốc tế Cộng sản",
+    "country": "Nga",
+    "city": "Moskva",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1924-06-01",
+    "dateEnd": "1924-06-01",
+    "periodLabel": "06/1924",
+    "levelTexts": {
+      "primary": "Dự Đại hội V Quốc tế Cộng sản."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-019",
+    "slug": "19241111-quang-chau-den",
+    "title": "Quảng Châu (Trung Quốc) - Đến Quảng Châu",
     "country": "Trung Quốc",
-    "city": "Guangzhou",
+    "city": "Quảng Châu (Guangzhou)",
     "coords": [113.2644, 23.1291],
-    "dateStart": "1924-11-01",
+    "dateStart": "1924-11-11",
+    "dateEnd": "1924-11-11",
+    "periodLabel": "11/11/1924",
+    "levelTexts": {
+      "primary": "Đến Quảng Châu (Trung Quốc)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-020",
+    "slug": "19250101-quang-chau-huan-luyen",
+    "title": "Quảng Châu (Trung Quốc) - Mở lớp huấn luyện chính trị",
+    "country": "Trung Quốc",
+    "city": "Quảng Châu (Guangzhou)",
+    "coords": [113.2644, 23.1291],
+    "dateStart": "1925-01-01",
     "dateEnd": "1927-12-31",
-    "periodLabel": "Hoạt động ở Trung Quốc (1924–1927)",
+    "periodLabel": "1925 - 1927",
     "levelTexts": {
-      "primary": "Guangzhou gắn với hoạt động cách mạng của Bác giai đoạn 1924–1927.",
-      "secondary": "Có thể làm 'bài học theo dự án': tạo báo tường số về một địa điểm lịch sử.",
-      "high": "Bạn có thể gắn ảnh trụ sở/di tích, và liên kết sang mục 'Thư viện tư liệu'."
+      "primary": "Mở lớp huấn luyện chính trị."
     },
-    "media": {
-      "cover": "/media/places/guangzhou.jpg",
-      "gallery": []
-    },
-    "tags": ["trung-quoc", "dao-tao"],
-    "sources": [
-      "Nhân Dân (di tích liên quan 1924–1927): https://en.nhandan.vn/vietnamese-journalists-visit-site-where-president-ho-chi-minh-founds-thanh-nien-newspaper-post149303.html"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "HK-HKG-1931",
-    "slug": "hong-kong-1931",
-    "title": "Hong Kong (Kowloon)",
-    "country": "Trung Quốc (đặc khu Hong Kong)",
-    "city": "Hong Kong",
-    "coords": [114.1910, 22.3280],
+    "id": "hcm-021",
+    "slug": "19250601-quang-chau-thanh-lap-hoi",
+    "title": "Quảng Châu (Trung Quốc) - Thành lập Hội Việt Nam Cách mạng Thanh niên",
+    "country": "Trung Quốc",
+    "city": "Quảng Châu (Guangzhou)",
+    "coords": [113.2644, 23.1291],
+    "dateStart": "1925-06-01",
+    "dateEnd": "1925-06-01",
+    "periodLabel": "06/1925",
+    "levelTexts": {
+      "primary": "Thành lập Hội Việt Nam Cách mạng Thanh niên."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-022",
+    "slug": "19250621-quang-chau-bao-thanh-nien",
+    "title": "Quảng Châu (Trung Quốc) - Ra số đầu báo Thanh Niên",
+    "country": "Trung Quốc",
+    "city": "Quảng Châu (Guangzhou)",
+    "coords": [113.2644, 23.1291],
+    "dateStart": "1925-06-21",
+    "dateEnd": "1925-06-21",
+    "periodLabel": "21/06/1925",
+    "levelTexts": {
+      "primary": "Sáng lập và ra số đầu tiên báo Thanh Niên."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-023",
+    "slug": "19270501-hang-chau-roi-quang-chau",
+    "title": "Hàng Châu (Hangzhou, Trung Quốc) - Rời Quảng Châu",
+    "country": "Trung Quốc",
+    "city": "Hàng Châu (Hangzhou)",
+    "coords": [120.1551, 30.2741],
+    "dateStart": "1927-05-01",
+    "dateEnd": "1927-05-01",
+    "periodLabel": "05/1927",
+    "levelTexts": {
+      "primary": "Rời Quảng Châu đi Hàng Châu."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-024",
+    "slug": "19270501-thuong-hai-tranh-truy-quet",
+    "title": "Thượng Hải (Shanghai, Trung Quốc) - Tránh truy quét",
+    "country": "Trung Quốc",
+    "city": "Thượng Hải (Shanghai)",
+    "coords": [121.4737, 31.2304],
+    "dateStart": "1927-05-01",
+    "dateEnd": "1927-05-01",
+    "periodLabel": "05/1927",
+    "levelTexts": {
+      "primary": "Đi Thượng Hải để tránh truy quét."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-025",
+    "slug": "19271201-brussels-du-hop-lien-doan",
+    "title": "Brussels (Bỉ) - Dự họp Liên đoàn chống đế quốc",
+    "country": "Bỉ",
+    "city": "Brussels",
+    "coords": [4.3517, 50.8503],
+    "dateStart": "1927-12-01",
+    "dateEnd": "1927-12-01",
+    "periodLabel": "12/1927",
+    "levelTexts": {
+      "primary": "Dự họp Liên đoàn chống đế quốc tại Brussels."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-026",
+    "slug": "19280601-naples-len-tau-ve-xiem",
+    "title": "Naples (Ý) - Lên tàu về Xiêm",
+    "country": "Ý",
+    "city": "Naples",
+    "coords": [14.2681, 40.8518],
+    "dateStart": "1928-06-01",
+    "dateEnd": "1928-06-01",
+    "periodLabel": "06/1928",
+    "levelTexts": {
+      "primary": "Lên tàu tại cảng Naples về Xiêm (Thái Lan)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-027",
+    "slug": "19280701-bangkok-den",
+    "title": "Bangkok (Thái Lan) - Đến Bangkok",
+    "country": "Thái Lan",
+    "city": "Bangkok",
+    "coords": [100.5018, 13.7563],
+    "dateStart": "1928-07-01",
+    "dateEnd": "1928-07-01",
+    "periodLabel": "07/1928",
+    "levelTexts": {
+      "primary": "Đến Bangkok."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-028",
+    "slug": "19280701-phichit-hoat-dong",
+    "title": "Phichit (Thái Lan) - Hoạt động tại Phichit",
+    "country": "Thái Lan",
+    "city": "Phichit",
+    "coords": [100.3488, 16.439],
+    "dateStart": "1928-07-01",
+    "dateEnd": "1928-07-01",
+    "periodLabel": "07/1928",
+    "levelTexts": {
+      "primary": "Hoạt động tại Phichit."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-029",
+    "slug": "19280701-udon-thani-hoat-dong",
+    "title": "Udon Thani (Thái Lan) - Hoạt động tại U Đon",
+    "country": "Thái Lan",
+    "city": "Udon Thani",
+    "coords": [102.79, 17.4157],
+    "dateStart": "1928-07-01",
+    "dateEnd": "1928-07-01",
+    "periodLabel": "07/1928",
+    "levelTexts": {
+      "primary": "Hoạt động tại U Đon."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-030",
+    "slug": "19280701-sakon-nakhon-hoat-dong",
+    "title": "Sakon Nakhon (Thái Lan) - Hoạt động tại Sakon Nakhon",
+    "country": "Thái Lan",
+    "city": "Sakon Nakhon",
+    "coords": [104.147, 17.1546],
+    "dateStart": "1928-07-01",
+    "dateEnd": "1928-07-01",
+    "periodLabel": "07/1928",
+    "levelTexts": {
+      "primary": "Hoạt động tại Sakon Nakhon."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-031",
+    "slug": "19291201-hong-kong-roi-xiem",
+    "title": "Hồng Kông (Kowloon) - Rời Xiêm",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông (Kowloon)",
+    "coords": [114.1747, 22.3186],
+    "dateStart": "1929-12-01",
+    "dateEnd": "1929-12-31",
+    "periodLabel": "Cuối 1929",
+    "levelTexts": {
+      "primary": "Rời Xiêm đi tàu thủy tới Hồng Kông."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-032",
+    "slug": "19300203-hong-kong-hop-nhat-dcsvn",
+    "title": "Hồng Kông (Kowloon) - Chủ trì Hội nghị hợp nhất",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông (Kowloon)",
+    "coords": [114.1747, 22.3186],
+    "dateStart": "1930-02-03",
+    "dateEnd": "1930-02-03",
+    "periodLabel": "03/02/1930",
+    "levelTexts": {
+      "primary": "Chủ trì Hội nghị hợp nhất, thành lập ĐCSVN."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-033",
+    "slug": "19310606-hong-kong-bi-bat",
+    "title": "Hồng Kông (Kowloon) - Bị bắt tại phố Tam Kung",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông (Kowloon)",
+    "coords": [114.1747, 22.3186],
     "dateStart": "1931-06-06",
-    "dateEnd": "1933-01-22",
-    "periodLabel": "Bị bắt ở Hong Kong (1931–1933)",
+    "dateEnd": "1931-06-06",
+    "periodLabel": "06/06/1931",
     "levelTexts": {
-      "primary": "Năm 1931, Bác bị bắt tại Hong Kong trong vụ án Tống Văn Sơ.",
-      "secondary": "Thiết kế tương tác: bật/tắt lớp 'mốc pháp lý' (arrest – court – release).",
-      "high": "THPT: thêm mục 'mạng lưới thuộc địa' và 'pháp luật – dẫn độ' (kèm nguồn)."
+      "primary": "Bị bắt tại số 186 phố Tam Kung (Cửu Long)."
     },
-    "media": {
-      "cover": "/media/places/hong-kong.jpg",
-      "gallery": []
-    },
-    "tags": ["hong-kong", "phap-ly"],
-    "sources": [
-      "History Today (arrest/extradition context): https://www.historytoday.com/miscellanies/deporting-ho-chi-minh",
-      "HK Memory (Victoria Gaol): https://www.hkmemory.hk/en/collections-victoria_prison-ho_chi_minh_in_victoria_gaol.html"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   },
   {
-    "id": "VN-PBO-1941",
-    "slug": "pac-bo-cao-bang-1941",
-    "title": "Pác Bó (Cao Bằng)",
-    "country": "Việt Nam",
-    "city": "Cao Bằng",
-    "coords": [106.3170, 22.5490],
-    "dateStart": "1941-01-28",
-    "dateEnd": "1941-12-31",
-    "periodLabel": "Trở về Tổ quốc (1941)",
+    "id": "hcm-034",
+    "slug": "19321228-singapore-roi-hong-kong",
+    "title": "Singapore - Rời Hồng Kông",
+    "country": "Singapore",
+    "city": "Singapore",
+    "coords": [103.8519, 1.2903],
+    "dateStart": "1932-12-28",
+    "dateEnd": "1932-12-28",
+    "periodLabel": "28/12/1932",
     "levelTexts": {
-      "primary": "Ngày 28/01/1941, Bác trở về Việt Nam qua khu vực Pác Bó để trực tiếp lãnh đạo cách mạng.",
-      "secondary": "Gợi ý hoạt động học: xác định vị trí Pác Bó trên bản đồ Việt Nam, liên hệ địa hình – biên giới.",
-      "high": "Có thể gắn lớp dữ liệu địa lí (núi, sông) và giải thích vì sao chọn điểm này làm nơi đứng chân."
+      "primary": "Được thả, rời Hồng Kông đi Singapore."
     },
-    "media": {
-      "cover": "/media/places/pac-bo.jpg",
-      "gallery": []
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-035",
+    "slug": "19330106-singapore-bi-bat-giu",
+    "title": "Singapore - Bị bắt giữ và buộc quay lại",
+    "country": "Singapore",
+    "city": "Singapore",
+    "coords": [103.8519, 1.2903],
+    "dateStart": "1933-01-06",
+    "dateEnd": "1933-01-06",
+    "periodLabel": "06/01/1933",
+    "levelTexts": {
+      "primary": "Đến Singapore nhưng bị bắt giữ, buộc quay lại."
     },
-    "tags": ["viet-nam", "tro-ve"],
-    "sources": [
-      "Nhân Dân Special (mốc 28/01/1941): https://special.nhandan.vn/pac-bo-where-uncle-ho-led/index.html"
-    ]
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-036",
+    "slug": "19330119-hong-kong-giam-long-lan-2",
+    "title": "Hồng Kông (Kowloon) - Bị giam lỏng lần 2",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông (Kowloon)",
+    "coords": [114.1747, 22.3186],
+    "dateStart": "1933-01-19",
+    "dateEnd": "1933-01-19",
+    "periodLabel": "19/01/1933",
+    "levelTexts": {
+      "primary": "Bị giam lỏng lần 2."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-037",
+    "slug": "19330122-hong-kong-cai-trang-roi",
+    "title": "Hồng Kông (Kowloon) - Cải trang rời Hồng Kông",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông (Kowloon)",
+    "coords": [114.1747, 22.3186],
+    "dateStart": "1933-01-22",
+    "dateEnd": "1933-01-22",
+    "periodLabel": "22/01/1933",
+    "levelTexts": {
+      "primary": "Cải trang, rời Hồng Kông trên ca nô nhỏ."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-038",
+    "slug": "19330125-ha-mon-den",
+    "title": "Hạ Môn (Xiamen, Trung Quốc) - Đến Hạ Môn",
+    "country": "Trung Quốc",
+    "city": "Hạ Môn (Xiamen)",
+    "coords": [118.0894, 24.4798],
+    "dateStart": "1933-01-25",
+    "dateEnd": "1933-01-25",
+    "periodLabel": "25/01/1933",
+    "levelTexts": {
+      "primary": "Đến Hạ Môn (Trung Quốc)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-039",
+    "slug": "19330701-thuong-hai-lien-lac",
+    "title": "Thượng Hải (Shanghai, Trung Quốc) - Liên lạc tổ chức",
+    "country": "Trung Quốc",
+    "city": "Thượng Hải (Shanghai)",
+    "coords": [121.4737, 31.2304],
+    "dateStart": "1933-07-01",
+    "dateEnd": "1933-07-01",
+    "periodLabel": "07/1933",
+    "levelTexts": {
+      "primary": "Từ Hạ Môn đến Thượng Hải, liên lạc tổ chức Đảng."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-040",
+    "slug": "19340301-moskva-den",
+    "title": "Moskva (Nga) - Đến Moskva",
+    "country": "Nga",
+    "city": "Moskva",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1934-03-01",
+    "dateEnd": "1934-03-31",
+    "periodLabel": "Mùa xuân 1934",
+    "levelTexts": {
+      "primary": "Đến Moskva."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-041",
+    "slug": "19340101-moskva-truong-quoc-te-lenin",
+    "title": "Moskva (Nga) - Học tại Trường Quốc tế Lênin",
+    "country": "Nga",
+    "city": "Moskva",
+    "coords": [37.6173, 55.7558],
+    "dateStart": "1934-01-01",
+    "dateEnd": "1938-12-31",
+    "periodLabel": "1934 - 1938",
+    "levelTexts": {
+      "primary": "Học tại Trường Quốc tế Lênin."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-042",
+    "slug": "19381001-dien-an-den",
+    "title": "Diên An (Yan'an, Trung Quốc) - Rời Moskva đi Diên An",
+    "country": "Trung Quốc",
+    "city": "Diên An (Yan'an)",
+    "coords": [109.4898, 36.5853],
+    "dateStart": "1938-10-01",
+    "dateEnd": "1938-10-01",
+    "periodLabel": "10/1938",
+    "levelTexts": {
+      "primary": "Rời Moskva đi Diên An."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-043",
+    "slug": "19390101-quy-duong-hoat-dong",
+    "title": "Quý Dương (Guiyang, Trung Quốc) - Hoạt động",
+    "country": "Trung Quốc",
+    "city": "Quý Dương (Guiyang)",
+    "coords": [106.6302, 26.647],
+    "dateStart": "1939-01-01",
+    "dateEnd": "1940-12-31",
+    "periodLabel": "1939 - 1940",
+    "levelTexts": {
+      "primary": "Hoạt động tại Quý Dương."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-044",
+    "slug": "19390101-con-minh-hoat-dong",
+    "title": "Côn Minh (Kunming, Trung Quốc) - Hoạt động",
+    "country": "Trung Quốc",
+    "city": "Côn Minh (Kunming)",
+    "coords": [102.7123, 25.0406],
+    "dateStart": "1939-01-01",
+    "dateEnd": "1940-12-31",
+    "periodLabel": "1939 - 1940",
+    "levelTexts": {
+      "primary": "Hoạt động tại Côn Minh."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-045",
+    "slug": "19390101-que-lam-hoat-dong",
+    "title": "Quế Lâm (Guilin, Trung Quốc) - Hoạt động",
+    "country": "Trung Quốc",
+    "city": "Quế Lâm (Guilin)",
+    "coords": [110.2902, 25.2736],
+    "dateStart": "1939-01-01",
+    "dateEnd": "1940-12-31",
+    "periodLabel": "1939 - 1940",
+    "levelTexts": {
+      "primary": "Hoạt động tại Quế Lâm."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-046",
+    "slug": "19401201-tinh-tay-den",
+    "title": "Tĩnh Tây (Quảng Tây, Trung Quốc) - Đến Tĩnh Tây",
+    "country": "Trung Quốc",
+    "city": "Tĩnh Tây (Quảng Tây)",
+    "coords": [106.4167, 23.1333],
+    "dateStart": "1940-12-01",
+    "dateEnd": "1940-12-01",
+    "periodLabel": "12/1940",
+    "levelTexts": {
+      "primary": "Đến Tĩnh Tây (Quảng Tây)."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+  },
+  {
+    "id": "hcm-047",
+    "slug": "19410128-pac-bo-ve-nuoc",
+    "title": "Pác Bó (Cao Bằng, Việt Nam) - Về nước",
+    "country": "Việt Nam",
+    "city": "Pác Bó (Cao Bằng)",
+    "coords": [106.317, 22.549],
+    "dateStart": "1941-01-28",
+    "dateEnd": "1941-01-28",
+    "periodLabel": "28/01/1941",
+    "levelTexts": {
+      "primary": "Vượt cột mốc 108 về nước, chọn Pác Bó làm căn cứ."
+    },
+    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
   }
 ]
-
-

@@ -5,6 +5,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
+import routes from "@/data/routes.json";
+
 export type Place = {
   id?: string;
   slug?: string;
@@ -39,6 +41,13 @@ type Props = {
 };
 
 const MAP_STYLE_URL = "https://demotiles.maplibre.org/style.json";
+
+type RouteFeature = GeoJSON.Feature<
+  GeoJSON.LineString,
+  { fromSlug?: string; toSlug?: string; order?: string | number; mode?: string; label?: string }
+>;
+
+const EMPTY_FC: GeoJSON.FeatureCollection<GeoJSON.Geometry> = { type: "FeatureCollection", features: [] };
 
 function buildPopupContent(place: Place) {
   const wrapper = document.createElement("div");
@@ -96,70 +105,225 @@ function buildPopupContent(place: Place) {
   return wrapper;
 }
 
+function buildLineFeature(coords: [number, number][]) {
+  if (!coords || coords.length < 2) return null;
+  return {
+    type: "Feature",
+    properties: {},
+    geometry: { type: "LineString", coordinates: coords },
+  } as GeoJSON.Feature<GeoJSON.LineString>;
+}
+
+function toNumberOrder(v: string | number | undefined) {
+  if (typeof v === "number") return v;
+  if (typeof v === "string") {
+    const n = Number(v);
+    if (!Number.isNaN(n)) return n;
+  }
+  return undefined;
+}
+
+function buildPointCollection(places: Place[]): GeoJSON.FeatureCollection<GeoJSON.Point> {
+  return {
+    type: "FeatureCollection",
+    features: places
+      .filter((p) => Array.isArray(p.coords) && p.coords.length === 2)
+      .map((p) => ({
+        type: "Feature",
+        properties: { slug: p.slug, title: p.title },
+        geometry: { type: "Point", coordinates: p.coords },
+      })),
+  };
+}
+
 export default function MapView({ places }: Props) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markerMapRef = useRef<Record<string, MarkerEntry>>({});
+  const animationRef = useRef<number | null>(null);
+
+  const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
-  const [selectedPeriod, setSelectedPeriod] = useState<string>("all");
-  const [selectedCountry, setSelectedCountry] = useState<string>("all");
+  const [stepIndex, setStepIndex] = useState<number>(0);
 
-  const dateRange = useMemo(() => {
-    const years = places
-      .map((p) => (p.dateStart ? Number.parseInt(p.dateStart.slice(0, 4), 10) : undefined))
-      .filter((y): y is number => Number.isFinite(y));
-    if (!years.length) return { min: undefined as number | undefined, max: undefined as number | undefined };
-    return { min: Math.min(...years), max: Math.max(...years) };
-  }, [places]);
-
-  const [selectedYear, setSelectedYear] = useState<number>(dateRange.min ?? new Date().getFullYear());
-  const effectiveYear = useMemo(() => {
-    if (dateRange.min !== undefined && selectedYear < dateRange.min) return dateRange.min;
-    return selectedYear;
-  }, [dateRange.min, selectedYear]);
-
-  const periodOptions = useMemo(() => {
-    const labels = new Set<string>();
-    places.forEach((p) => {
-      if (p.periodLabel) labels.add(p.periodLabel);
-    });
-    return Array.from(labels).sort();
-  }, [places]);
-
-  const countryOptions = useMemo(() => {
-    const labels = new Set<string>();
-    places.forEach((p) => {
-      if (p.country) labels.add(p.country);
-    });
-    return Array.from(labels).sort();
-  }, [places]);
-
-  const filteredPlaces = useMemo(() => {
-    const list = places.filter((place) => {
-      if (selectedPeriod !== "all" && place.periodLabel !== selectedPeriod) return false;
-      if (selectedCountry !== "all" && place.country !== selectedCountry) return false;
-
-      if (dateRange.min !== undefined && dateRange.max !== undefined) {
-        const startYear = place.dateStart ? Number.parseInt(place.dateStart.slice(0, 4), 10) : undefined;
-        if (startYear === undefined) return false;
-        if (startYear > effectiveYear) return false;
+  const sortedPlaces = useMemo(() => {
+    const list = [...places];
+    list.sort((a, b) => {
+      const aHas = Boolean(a.dateStart);
+      const bHas = Boolean(b.dateStart);
+      if (aHas && bHas) {
+        const compare = (a.dateStart || "").localeCompare(b.dateStart || "");
+        if (compare !== 0) return compare;
+      } else if (aHas && !bHas) {
+        return -1;
+      } else if (!aHas && bHas) {
+        return 1;
       }
-      return true;
-    });
-
-    return list.sort((a, b) => {
-      const aDate = a.dateStart || "";
-      const bDate = b.dateStart || "";
-      if (aDate && bDate && aDate !== bDate) return aDate.localeCompare(bDate);
-      if (!aDate && bDate) return 1;
-      if (aDate && !bDate) return -1;
       return (a.title || "").localeCompare(b.title || "");
     });
-  }, [dateRange.max, dateRange.min, effectiveYear, places, selectedCountry, selectedPeriod]);
+    return list;
+  }, [places]);
 
+  const routeFeatures: RouteFeature[] = useMemo(() => {
+    const fc = routes as GeoJSON.FeatureCollection;
+    const features = (fc.features || []) as RouteFeature[];
+    const R = 6378137;
+    const toLngLat = (x: number, y: number): [number, number] => {
+      const lon = (x / R) * (180 / Math.PI);
+      const lat = (2 * Math.atan(Math.exp(y / R)) - Math.PI / 2) * (180 / Math.PI);
+      return [lon, lat];
+    };
+
+    const isLikelyMercator = (coords: number[]) => Math.abs(coords[0]) > 180 || Math.abs(coords[1]) > 90;
+
+    return features.map((f) => {
+      if (f.geometry.type !== "LineString") return f;
+      const coords = f.geometry.coordinates as [number, number][];
+      if (coords.length === 0) return f;
+      const needConvert = isLikelyMercator(coords[0]);
+      if (!needConvert) return f;
+      const converted = coords.map(([x, y]) => toLngLat(x, y));
+      return {
+        ...f,
+        geometry: { ...f.geometry, coordinates: converted },
+      } as RouteFeature;
+    });
+  }, []);
+
+  const routeByPairRef = useRef<Map<string, RouteFeature>>(new Map());
+  const maxOrderRef = useRef<number>(0);
+
+  useEffect(() => {
+    const map = new Map<string, RouteFeature>();
+    let maxOrder = 0;
+    routeFeatures.forEach((f) => {
+      const fromSlug = f.properties?.fromSlug;
+      const toSlug = f.properties?.toSlug;
+      const key = fromSlug && toSlug ? `${fromSlug}->${toSlug}` : undefined;
+      if (key) map.set(key, f);
+      const ord = toNumberOrder(f.properties?.order);
+      if (ord !== undefined) maxOrder = Math.max(maxOrder, ord);
+    });
+    routeByPairRef.current = map;
+    maxOrderRef.current = maxOrder;
+  }, [routeFeatures]);
+
+  const currentStep = sortedPlaces.length ? Math.min(stepIndex, sortedPlaces.length - 1) : 0;
+  const currentPlace = sortedPlaces[currentStep];
   const fallbackCenter: [number, number] = useMemo(() => {
-    return filteredPlaces[0]?.coords || places[0]?.coords || [105.8342, 21.0278];
-  }, [filteredPlaces, places]);
+    return sortedPlaces[0]?.coords || [105.8342, 21.0278];
+  }, [sortedPlaces]);
+
+  const setRoutesProgressData = (features: RouteFeature[]) => {
+    const map = mapRef.current;
+    if (!map || !mapLoaded) return;
+    const source = map.getSource("routes-progress") as maplibregl.GeoJSONSource | undefined;
+    if (!source) return;
+    source.setData({
+      type: "FeatureCollection",
+      features: features as GeoJSON.Feature[],
+    });
+  };
+
+  const setRoutesAnimData = (line: GeoJSON.FeatureCollection) => {
+    const map = mapRef.current;
+    if (!map || !mapLoaded) return;
+    const source = map.getSource("routes-anim") as maplibregl.GeoJSONSource | undefined;
+    if (!source) return;
+    source.setData(line);
+  };
+
+  const animateSegment = (feature: RouteFeature | undefined) => {
+    if (!feature || feature.geometry.type !== "LineString") {
+      setRoutesAnimData(EMPTY_FC);
+      return;
+    }
+    const coords = feature.geometry.coordinates as [number, number][];
+    if (coords.length < 2) {
+      setRoutesAnimData(EMPTY_FC);
+      return;
+    }
+
+    if (animationRef.current !== null) {
+      cancelAnimationFrame(animationRef.current);
+    }
+
+    const duration = 1000;
+    let start: number | null = null;
+
+    const tick = (now: number) => {
+      if (start === null) start = now;
+      const t = Math.min(1, (now - start) / duration);
+      const n = coords.length;
+      const idx = Math.max(1, Math.floor(t * (n - 1)));
+      const lineCoords = coords.slice(0, idx + 1);
+      const line = buildLineFeature(lineCoords);
+      setRoutesAnimData(
+        line
+          ? ({ type: "FeatureCollection", features: [line] } as GeoJSON.FeatureCollection<GeoJSON.LineString>)
+          : EMPTY_FC,
+      );
+      if (t < 1) {
+        animationRef.current = requestAnimationFrame(tick);
+      } else {
+        animationRef.current = null;
+      }
+    };
+
+    animationRef.current = requestAnimationFrame(tick);
+  };
+
+  const buildProgressFeatures = (orderLimit?: number) => {
+    if (orderLimit === undefined) return [];
+    return routeFeatures.filter((f) => {
+      const o = toNumberOrder(f.properties?.order);
+      return o !== undefined && o <= orderLimit;
+    });
+  };
+
+  const applyStep = (nextIndex: number, prevIndex?: number) => {
+    if (sortedPlaces.length === 0) return;
+    const clamped = Math.max(0, Math.min(nextIndex, sortedPlaces.length - 1));
+    const place = sortedPlaces[clamped];
+    const key = place.id || place.slug || `place-${clamped}`;
+
+    setActivePlaceId(key);
+
+    const map = mapRef.current;
+    if (map) {
+      Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
+      const entry = markerMapRef.current[key];
+      if (entry) {
+        entry.popup.setLngLat(entry.place.coords).addTo(map);
+      }
+      map.flyTo({ center: place.coords, zoom: 6, essential: true });
+    }
+
+    let segmentOrder: number | undefined;
+    if (prevIndex !== undefined && prevIndex >= 0 && clamped !== prevIndex) {
+      const from = sortedPlaces[prevIndex];
+      const to = place;
+      const segKey = from.slug && to.slug ? `${from.slug}->${to.slug}` : undefined;
+      const segFeature = segKey ? routeByPairRef.current.get(segKey) : undefined;
+      segmentOrder = toNumberOrder(segFeature?.properties?.order);
+      animateSegment(segFeature);
+    } else {
+      animateSegment(undefined);
+    }
+
+    const progressFeatures =
+      segmentOrder !== undefined ? buildProgressFeatures(segmentOrder) : buildProgressFeatures(undefined);
+    setRoutesProgressData(progressFeatures);
+  };
+
+  const setStep = (nextIndex: number) => {
+    const clamped = Math.max(0, Math.min(nextIndex, Math.max(0, sortedPlaces.length - 1)));
+    const prev = stepIndex;
+    if (clamped !== stepIndex) {
+      setStepIndex(clamped);
+    }
+    applyStep(clamped, prev);
+  };
 
   useEffect(() => {
     const container = mapContainerRef.current;
@@ -169,13 +333,123 @@ export default function MapView({ places }: Props) {
       container,
       style: MAP_STYLE_URL,
       center: fallbackCenter,
-      zoom: filteredPlaces.length ? 2.5 : 3.5,
-      
+      zoom: sortedPlaces.length ? 2.5 : 3.5,
     });
 
     map.addControl(new maplibregl.NavigationControl(), "top-right");
+    map.on("load", () => {
+      if (!map.getSource("routes")) {
+        map.addSource("routes", { type: "geojson", data: routes as GeoJSON.FeatureCollection });
+        map.addLayer({
+          id: "routes-base",
+          type: "line",
+          source: "routes",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: { "line-color": "#cbd5e1", "line-width": 2 },
+        });
+      }
+
+      if (!map.getSource("routes-progress")) {
+        map.addSource("routes-progress", { type: "geojson", data: EMPTY_FC });
+        map.addLayer({
+          id: "routes-progress-line",
+          type: "line",
+          source: "routes-progress",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: { "line-color": "#2563eb", "line-width": 3 },
+        });
+      }
+
+      if (!map.getSource("routes-anim")) {
+        map.addSource("routes-anim", { type: "geojson", data: EMPTY_FC });
+        map.addLayer({
+          id: "routes-anim-line",
+          type: "line",
+          source: "routes-anim",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: { "line-color": "#ef4444", "line-width": 4 },
+        });
+      }
+
+      if (!map.getSource("vn-islands")) {
+        const data = {
+          type: "FeatureCollection",
+          features: [
+            {
+              type: "Feature",
+              properties: { title: "Quần đảo Hoàng Sa" },
+              geometry: { type: "Point", coordinates: [112.3, 16.5] },
+            },
+            {
+              type: "Feature",
+              properties: { title: "Quần đảo Trường Sa" },
+              geometry: { type: "Point", coordinates: [113.4, 9.6] },
+            },
+          ],
+        } as const;
+
+        map.addSource("vn-islands", { type: "geojson", data });
+        map.addLayer({
+          id: "vn-islands-labels",
+          type: "symbol",
+          source: "vn-islands",
+          layout: {
+            "text-field": ["get", "title"],
+            "text-size": ["interpolate", ["linear"], ["zoom"], 3, 10, 6, 12, 8, 14],
+            "text-allow-overlap": true,
+          },
+          paint: {
+            "text-color": "#0f172a",
+            "text-halo-color": "#ffffff",
+            "text-halo-width": 1.6,
+          },
+        });
+      }
+
+      if (!map.getSource("route-nodes")) {
+        map.addSource("route-nodes", { type: "geojson", data: buildPointCollection(sortedPlaces) });
+        map.addLayer({
+          id: "route-nodes-circle",
+          type: "circle",
+          source: "route-nodes",
+          paint: {
+            "circle-radius": 5,
+            "circle-color": "#ffffff",
+            "circle-stroke-color": "#0f172a",
+            "circle-stroke-width": 1.5,
+          },
+        });
+      }
+
+      setMapLoaded(true);
+      if (sortedPlaces.length > 0) {
+        const initialIndex = Math.min(stepIndex, sortedPlaces.length - 1);
+        const prev = initialIndex > 0 ? initialIndex - 1 : undefined;
+        applyStep(initialIndex, prev);
+      }
+    });
+
     mapRef.current = map;
-  }, [fallbackCenter, filteredPlaces.length]);
+
+    return () => {
+      if (animationRef.current !== null) {
+        cancelAnimationFrame(animationRef.current);
+      }
+      const activeMap = mapRef.current;
+      if (activeMap) {
+        ["routes-anim-line", "routes-progress-line", "routes-base", "vn-islands-labels"].forEach((layerId) => {
+          if (activeMap.getLayer(layerId)) activeMap.removeLayer(layerId);
+        });
+        ["route-nodes", "routes-anim", "routes-progress", "routes", "vn-islands"].forEach((sourceId) => {
+          if (activeMap.getSource(sourceId)) activeMap.removeSource(sourceId);
+        });
+        activeMap.remove();
+      }
+      mapRef.current = null;
+      setMapLoaded(false);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fallbackCenter, sortedPlaces.length, stepIndex]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -187,9 +461,7 @@ export default function MapView({ places }: Props) {
     });
     markerMapRef.current = {};
 
-    const bounds = new maplibregl.LngLatBounds();
-
-    filteredPlaces.forEach((place, index) => {
+    sortedPlaces.forEach((place, index) => {
       if (!place.coords || place.coords.length !== 2) return;
       const key = place.id || place.slug || `place-${index}`;
 
@@ -203,34 +475,13 @@ export default function MapView({ places }: Props) {
       marker.getElement().addEventListener("click", () => setActivePlaceId(key));
 
       markerMapRef.current[key] = { marker, popup, place };
-      bounds.extend(place.coords);
     });
 
-    if (!bounds.isEmpty()) {
-      map.fitBounds(bounds, { padding: 60, maxZoom: 8 });
-    } else {
-      map.setCenter(fallbackCenter);
+    const nodeSource = map.getSource("route-nodes") as maplibregl.GeoJSONSource | undefined;
+    if (nodeSource) {
+      nodeSource.setData(buildPointCollection(sortedPlaces));
     }
-
-    return () => {
-      Object.values(markerMapRef.current).forEach(({ marker, popup }) => {
-        popup.remove();
-        marker.remove();
-      });
-      markerMapRef.current = {};
-    };
-  }, [fallbackCenter, filteredPlaces]);
-
-  const handleFocusPlace = (placeKey: string) => {
-    setActivePlaceId(placeKey);
-    const map = mapRef.current;
-    const entry = markerMapRef.current[placeKey];
-    if (!map || !entry) return;
-
-    Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
-    map.flyTo({ center: entry.place.coords, zoom: 6, essential: true });
-    entry.popup.setLngLat(entry.place.coords).addTo(map);
-  };
+  }, [sortedPlaces]);
 
   return (
     <section className="h-screen w-screen bg-slate-50">
@@ -243,63 +494,21 @@ export default function MapView({ places }: Props) {
                 <h2 className="text-lg font-semibold text-slate-900">Danh sach dia diem</h2>
               </div>
               <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
-                {filteredPlaces.length} diem
+                {sortedPlaces.length} diem
               </span>
             </div>
 
-            <div className="flex flex-col gap-3 border-b border-slate-200 px-4 py-3">
-              <div className="grid grid-cols-1 gap-3">
-                <label className="text-sm text-slate-700">
-                  <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    Giai doan
-                  </span>
-                  <select
-                    value={selectedPeriod}
-                    onChange={(e) => setSelectedPeriod(e.target.value)}
-                    className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800"
-                  >
-                    <option value="all">Tat ca</option>
-                    {periodOptions.map((label) => (
-                      <option key={label} value={label}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-
-                <label className="text-sm text-slate-700">
-                  <span className="mb-1 block text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    Quoc gia
-                  </span>
-                  <select
-                    value={selectedCountry}
-                    onChange={(e) => setSelectedCountry(e.target.value)}
-                    className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800"
-                  >
-                    <option value="all">Tat ca</option>
-                    {countryOptions.map((label) => (
-                      <option key={label} value={label}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              </div>
-            </div>
-
             <div className="max-h-[70vh] overflow-y-auto divide-y divide-slate-100">
-              {filteredPlaces.length === 0 ? (
-                <p className="p-4 text-sm text-slate-600">
-                  Khong co dia diem phu hop. Thu thay doi bo loc hoac timeline.
-                </p>
+              {sortedPlaces.length === 0 ? (
+                <p className="p-4 text-sm text-slate-600">Chua co du lieu. Hay them JSON vao src/data/places.json.</p>
               ) : (
-                filteredPlaces.map((place, index) => {
+                sortedPlaces.map((place, index) => {
                   const key = place.id || place.slug || `place-${index}`;
                   const active = activePlaceId === key;
                   return (
                     <div
                       key={key}
-                      onClick={() => handleFocusPlace(key)}
+                      onClick={() => setStep(index)}
                       className={`block w-full cursor-pointer text-left transition hover:bg-blue-50/80 ${
                         active ? "bg-blue-50" : "bg-white"
                       }`}
@@ -349,32 +558,43 @@ export default function MapView({ places }: Props) {
           </aside>
 
           <div className="flex flex-1 flex-col gap-3">
-            <div className="min-h-[80vh] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-              <div ref={mapContainerRef} className="h-[80vh] w-full md:h-[85vh]" />
+            <div className="h-full overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+              <div ref={mapContainerRef} className="h-screen w-full md:h-[85vh]" />
             </div>
 
-            {dateRange.min !== undefined && dateRange.max !== undefined ? (
-              <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                <div className="flex items-center justify-between text-sm font-semibold text-slate-700">
-                  <span>Timeline</span>
-                  <span>Nam: {effectiveYear}</span>
-                </div>
-                <div className="mt-2">
+            <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => setStep(currentStep - 1)}
+                  disabled={currentStep <= 0}
+                  className="rounded-md border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 disabled:opacity-50"
+                >
+                  Prev
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setStep(currentStep + 1)}
+                  disabled={currentStep >= sortedPlaces.length - 1}
+                  className="rounded-md border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 disabled:opacity-50"
+                >
+                  Next
+                </button>
+                <div className="flex min-w-[220px] flex-1 items-center gap-3">
                   <input
                     type="range"
-                    min={dateRange.min}
-                    max={dateRange.max}
-                    value={effectiveYear}
-                    onChange={(e) => setSelectedYear(Number(e.target.value))}
+                    min={0}
+                    max={Math.max(sortedPlaces.length - 1, 0)}
+                    value={currentStep}
+                    onChange={(e) => setStep(Number(e.target.value))}
                     className="w-full"
                   />
-                  <div className="mt-1 flex justify-between text-[11px] text-slate-500">
-                    <span>{dateRange.min}</span>
-                    <span>{dateRange.max}</span>
-                  </div>
                 </div>
               </div>
-            ) : null}
+              <div className="mt-2 text-sm font-semibold text-slate-700">
+                {currentPlace ? `${currentPlace.periodLabel || ""} — ${currentPlace.title}` : "Chua co du lieu"}
+              </div>
+            </div>
           </div>
         </div>
       </div>

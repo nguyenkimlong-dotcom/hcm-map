@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -141,6 +141,8 @@ export default function MapView({ places }: Props) {
   const mapRef = useRef<maplibregl.Map | null>(null);
   const markerMapRef = useRef<Record<string, MarkerEntry>>({});
   const animationRef = useRef<number | null>(null);
+  const moveTimeoutRef = useRef<number | null>(null);
+  const zoomInTimeoutRef = useRef<number | null>(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
@@ -192,6 +194,7 @@ export default function MapView({ places }: Props) {
 
   const routeByPairRef = useRef<Map<string, RouteFeature>>(new Map());
   const maxOrderRef = useRef<number>(0);
+  const initialCenterRef = useRef<[number, number] | null>(null);
 
   useEffect(() => {
     const map = new Map<string, RouteFeature>();
@@ -296,7 +299,48 @@ export default function MapView({ places }: Props) {
       if (entry) {
         entry.popup.setLngLat(entry.place.coords).addTo(map);
       }
-      map.flyTo({ center: place.coords, zoom: 6, essential: true });
+
+      if (moveTimeoutRef.current !== null) {
+        window.clearTimeout(moveTimeoutRef.current);
+        moveTimeoutRef.current = null;
+      }
+      if (zoomInTimeoutRef.current !== null) {
+        window.clearTimeout(zoomInTimeoutRef.current);
+        zoomInTimeoutRef.current = null;
+      }
+
+      const targetCenter = place.coords;
+      const fromCenter =
+        prevIndex !== undefined && prevIndex >= 0 && sortedPlaces[prevIndex]?.coords
+          ? sortedPlaces[prevIndex].coords
+          : (map.getCenter().toArray() as [number, number]);
+      const midCenter: [number, number] = [
+        (fromCenter[0] + targetCenter[0]) / 2,
+        (fromCenter[1] + targetCenter[1]) / 2,
+      ];
+      const baseZoom = map.getZoom();
+      const zoomOut = Math.max(2.2, Math.min(baseZoom - 2.5, 5.2));
+      const moveZoom = zoomOut;
+      const finalZoom = 6;
+      const zoomOutDuration = 1200;
+      const moveDuration = 1400;
+      const zoomInDuration = 950;
+
+      map.stop();
+      // Step 1: zoom out ngay tại điểm cũ để người dùng thấy thu nhỏ
+      map.easeTo({ center: fromCenter, zoom: zoomOut, duration: zoomOutDuration, essential: true });
+
+      // Step 2: di chuyển ở mức zoomOut qua midpoint tới điểm mới
+      moveTimeoutRef.current = window.setTimeout(() => {
+        map.easeTo({ center: midCenter, zoom: moveZoom, duration: moveDuration, essential: true });
+        moveTimeoutRef.current = null;
+
+        // Step 3: zoom in vào điểm mới
+        zoomInTimeoutRef.current = window.setTimeout(() => {
+          map.easeTo({ center: targetCenter, zoom: finalZoom, duration: zoomInDuration, essential: true });
+          zoomInTimeoutRef.current = null;
+        }, moveDuration + 80);
+      }, zoomOutDuration + 60);
     }
 
     let segmentOrder: number | undefined;
@@ -329,10 +373,15 @@ export default function MapView({ places }: Props) {
     const container = mapContainerRef.current;
     if (!container || mapRef.current) return;
 
+    const initialCenter = initialCenterRef.current || fallbackCenter;
+    if (!initialCenterRef.current) {
+      initialCenterRef.current = initialCenter;
+    }
+
     const map = new maplibregl.Map({
       container,
       style: MAP_STYLE_URL,
-      center: fallbackCenter,
+      center: initialCenter,
       zoom: sortedPlaces.length ? 2.5 : 3.5,
     });
 
@@ -377,12 +426,12 @@ export default function MapView({ places }: Props) {
           features: [
             {
               type: "Feature",
-              properties: { title: "Quần đảo Hoàng Sa" },
+              properties: { title: "Quan dao Hoang Sa" },
               geometry: { type: "Point", coordinates: [112.3, 16.5] },
             },
             {
               type: "Feature",
-              properties: { title: "Quần đảo Trường Sa" },
+              properties: { title: "Quan dao Truong Sa" },
               geometry: { type: "Point", coordinates: [113.4, 9.6] },
             },
           ],
@@ -435,6 +484,14 @@ export default function MapView({ places }: Props) {
       if (animationRef.current !== null) {
         cancelAnimationFrame(animationRef.current);
       }
+      if (moveTimeoutRef.current !== null) {
+        window.clearTimeout(moveTimeoutRef.current);
+        moveTimeoutRef.current = null;
+      }
+      if (zoomInTimeoutRef.current !== null) {
+        window.clearTimeout(zoomInTimeoutRef.current);
+        zoomInTimeoutRef.current = null;
+      }
       const activeMap = mapRef.current;
       if (activeMap) {
         ["routes-anim-line", "routes-progress-line", "routes-base", "vn-islands-labels"].forEach((layerId) => {
@@ -448,8 +505,7 @@ export default function MapView({ places }: Props) {
       mapRef.current = null;
       setMapLoaded(false);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [fallbackCenter, sortedPlaces.length, stepIndex]);
+  }, []);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -601,3 +657,4 @@ export default function MapView({ places }: Props) {
     </section>
   );
 }
+

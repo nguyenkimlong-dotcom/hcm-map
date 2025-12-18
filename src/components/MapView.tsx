@@ -143,6 +143,7 @@ export default function MapView({ places }: Props) {
   const animationRef = useRef<number | null>(null);
   const moveTimeoutRef = useRef<number | null>(null);
   const zoomInTimeoutRef = useRef<number | null>(null);
+  const moveEndHandlerRef = useRef<((e: maplibregl.MapLibreEvent) => void) | null>(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
@@ -251,7 +252,7 @@ export default function MapView({ places }: Props) {
       cancelAnimationFrame(animationRef.current);
     }
 
-    const duration = 1000;
+    const duration = 1800;
     let start: number | null = null;
 
     const tick = (now: number) => {
@@ -284,7 +285,8 @@ export default function MapView({ places }: Props) {
     });
   };
 
-  const applyStep = (nextIndex: number, prevIndex?: number) => {
+  const applyStep = (nextIndex: number, prevIndex?: number, options?: { animate?: boolean }) => {
+    const animate = options?.animate !== false;
     if (sortedPlaces.length === 0) return;
     const clamped = Math.max(0, Math.min(nextIndex, sortedPlaces.length - 1));
     const place = sortedPlaces[clamped];
@@ -293,12 +295,19 @@ export default function MapView({ places }: Props) {
     setActivePlaceId(key);
 
     const map = mapRef.current;
-    if (map) {
-      Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
+    const showPopup = () => {
+      if (!mapRef.current) return;
       const entry = markerMapRef.current[key];
       if (entry) {
-        entry.popup.setLngLat(entry.place.coords).addTo(map);
+        entry.popup.setLngLat(entry.place.coords).addTo(mapRef.current);
+      } else {
+        const popup = new maplibregl.Popup({ offset: 12, closeButton: true }).setDOMContent(buildPopupContent(place));
+        popup.setLngLat(place.coords).addTo(mapRef.current);
       }
+    };
+
+    if (map) {
+      Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
 
       if (moveTimeoutRef.current !== null) {
         window.clearTimeout(moveTimeoutRef.current);
@@ -309,38 +318,58 @@ export default function MapView({ places }: Props) {
         zoomInTimeoutRef.current = null;
       }
 
-      const targetCenter = place.coords;
-      const fromCenter =
-        prevIndex !== undefined && prevIndex >= 0 && sortedPlaces[prevIndex]?.coords
-          ? sortedPlaces[prevIndex].coords
-          : (map.getCenter().toArray() as [number, number]);
-      const midCenter: [number, number] = [
-        (fromCenter[0] + targetCenter[0]) / 2,
-        (fromCenter[1] + targetCenter[1]) / 2,
-      ];
-      const baseZoom = map.getZoom();
-      const zoomOut = Math.max(2.2, Math.min(baseZoom - 2.5, 5.2));
-      const moveZoom = zoomOut;
-      const finalZoom = 6;
-      const zoomOutDuration = 1200;
-      const moveDuration = 1400;
-      const zoomInDuration = 950;
+      if (moveEndHandlerRef.current) {
+        map.off("moveend", moveEndHandlerRef.current);
+        moveEndHandlerRef.current = null;
+      }
 
-      map.stop();
-      // Step 1: zoom out ngay tại điểm cũ để người dùng thấy thu nhỏ
-      map.easeTo({ center: fromCenter, zoom: zoomOut, duration: zoomOutDuration, essential: true });
+      if (animate) {
+        const targetCenter = place.coords;
+        const fromCenter =
+          prevIndex !== undefined && prevIndex >= 0 && sortedPlaces[prevIndex]?.coords
+            ? sortedPlaces[prevIndex].coords
+            : (map.getCenter().toArray() as [number, number]);
+        const midCenter: [number, number] = [
+          (fromCenter[0] + targetCenter[0]) / 2,
+          (fromCenter[1] + targetCenter[1]) / 2,
+        ];
+        const baseZoom = map.getZoom();
+        const zoomOut = Math.max(2.2, Math.min(baseZoom - 2.5, 5.2));
+        const moveZoom = zoomOut;
+        const finalZoom = 6;
+        const zoomOutDuration = 1200;
+        const moveDuration = 1400;
+        const zoomInDuration = 950;
 
-      // Step 2: di chuyển ở mức zoomOut qua midpoint tới điểm mới
-      moveTimeoutRef.current = window.setTimeout(() => {
-        map.easeTo({ center: midCenter, zoom: moveZoom, duration: moveDuration, essential: true });
-        moveTimeoutRef.current = null;
+        map.stop();
+        // Step 1: zoom out ngay tại điểm cũ để người dùng thấy thu nhỏ
+        map.easeTo({ center: fromCenter, zoom: zoomOut, duration: zoomOutDuration, essential: true });
 
-        // Step 3: zoom in vào điểm mới
-        zoomInTimeoutRef.current = window.setTimeout(() => {
-          map.easeTo({ center: targetCenter, zoom: finalZoom, duration: zoomInDuration, essential: true });
-          zoomInTimeoutRef.current = null;
-        }, moveDuration + 80);
-      }, zoomOutDuration + 60);
+        // Step 2: di chuyển ở mức zoomOut qua midpoint tới điểm mới
+        moveTimeoutRef.current = window.setTimeout(() => {
+          map.easeTo({ center: midCenter, zoom: moveZoom, duration: moveDuration, essential: true });
+          moveTimeoutRef.current = null;
+
+          // Step 3: zoom in vào điểm mới rồi mở popup
+          zoomInTimeoutRef.current = window.setTimeout(() => {
+            const handler = () => {
+              showPopup();
+              if (moveEndHandlerRef.current) {
+                map.off("moveend", moveEndHandlerRef.current);
+                moveEndHandlerRef.current = null;
+              }
+            };
+            moveEndHandlerRef.current = handler;
+            map.once("moveend", handler);
+            map.easeTo({ center: targetCenter, zoom: finalZoom, duration: zoomInDuration, essential: true });
+            zoomInTimeoutRef.current = null;
+          }, moveDuration + 80);
+        }, zoomOutDuration + 60);
+      } else {
+        // Không animate: không tự zoom/popup khi mới tải trang
+        animateSegment(undefined);
+        return;
+      }
     }
 
     let segmentOrder: number | undefined;
@@ -350,8 +379,10 @@ export default function MapView({ places }: Props) {
       const segKey = from.slug && to.slug ? `${from.slug}->${to.slug}` : undefined;
       const segFeature = segKey ? routeByPairRef.current.get(segKey) : undefined;
       segmentOrder = toNumberOrder(segFeature?.properties?.order);
-      animateSegment(segFeature);
-    } else {
+      if (animate) {
+        animateSegment(segFeature);
+      }
+    } else if (animate) {
       animateSegment(undefined);
     }
 
@@ -473,8 +504,7 @@ export default function MapView({ places }: Props) {
       setMapLoaded(true);
       if (sortedPlaces.length > 0) {
         const initialIndex = Math.min(stepIndex, sortedPlaces.length - 1);
-        const prev = initialIndex > 0 ? initialIndex - 1 : undefined;
-        applyStep(initialIndex, prev);
+        applyStep(initialIndex, undefined, { animate: false });
       }
     });
 
@@ -491,6 +521,10 @@ export default function MapView({ places }: Props) {
       if (zoomInTimeoutRef.current !== null) {
         window.clearTimeout(zoomInTimeoutRef.current);
         zoomInTimeoutRef.current = null;
+      }
+      if (moveEndHandlerRef.current) {
+        activeMap.off("moveend", moveEndHandlerRef.current);
+        moveEndHandlerRef.current = null;
       }
       const activeMap = mapRef.current;
       if (activeMap) {
@@ -657,4 +691,3 @@ export default function MapView({ places }: Props) {
     </section>
   );
 }
-

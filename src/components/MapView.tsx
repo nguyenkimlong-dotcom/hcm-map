@@ -372,7 +372,7 @@ export default function MapView({ places }: Props) {
       }
 
       if (!map.getSource("vn-islands")) {
-        const data = {
+        const data: GeoJSON.FeatureCollection<GeoJSON.Point> = {
           type: "FeatureCollection",
           features: [
             {
@@ -386,7 +386,7 @@ export default function MapView({ places }: Props) {
               geometry: { type: "Point", coordinates: [113.4, 9.6] },
             },
           ],
-        } as const;
+        };
 
         map.addSource("vn-islands", { type: "geojson", data });
         map.addLayer({

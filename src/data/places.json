@@ -65,12 +65,6 @@
           "label": "Tàu Amiral Latouche Tréville",
           "url": "images-0026aba474bde6a73b769c72916e22eb376d18533a88ae81a4addebf12017eff0075a262712da536dbddc5ea18f4e25c-_image001-2670-6789.jpg"
         }
-      ],
-      "videos": [
-        {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh"
-        }
       ]
     },
     "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
@@ -100,14 +94,8 @@
     "media": {
       "images": [
         {
-          "label": "Tìm ảnh",
+          "label": " ",
           "url": "baohaiphong.vn-files-ecm-source_files-2024-08-07-_329a5018-d86b-4f0b-b2e5-d1c8c762eca5-anh-e-magazine-cang-hai-phong-3-.jpg"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Colombo%20Ho%20Chi%20Minh"
         }
       ]
     },
@@ -134,18 +122,12 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé cảng Port Said (Ai Cập).\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Port%20Said&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Port%20Said%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Vào ngày 30 tháng 6 năm 1911, tàu Amiral Latouche Tréville đã cập cảng Port Said, Ai Cập.",
     "media": {
       "images": [
         {
-          "label": "Tìm ảnh",
-          "url": "https://commons.wikimedia.org/w/index.php?search=Port%20Said&title=Special:MediaSearch&type=image"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Port%20Said%20Ho%20Chi%20Minh"
+          "label": "Cảng Port Said, Ai Cập",
+          "url": "s-l1200.jpg"
         }
       ]
     },
@@ -172,18 +154,18 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu cập cảng Marseille (Pháp).\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Marseille&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Marseille%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Vào ngày 6 tháng 7 năm 1911, khi tàu Amiral Latouche Tréville cập cảng Marseille (Pháp), người thanh niên yêu nước Nguyễn Tất Thành (lúc đó lấy tên là Văn Ba) chính thức đặt chân lên đất Pháp, đánh dấu một cột mốc quan trọng trong hành trình tìm đường cứu nước.",
     "media": {
       "images": [
         {
-          "label": "Tìm ảnh",
-          "url": "https://commons.wikimedia.org/w/index.php?search=Marseille&title=Special:MediaSearch&type=image"
+          "label": " ",
+          "url": "thumb_18052020090004.jpg"
         }
       ],
       "videos": [
         {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Marseille%20Ho%20Chi%20Minh"
+          "label": "Marseille, điểm đến đầu tiên trong hành trình tới nước Pháp của Nguyễn Tất Thành",
+          "url": "https://youtu.be/i77dnre_osw?t=73"
         }
       ]
     },
@@ -192,7 +174,7 @@
   {
     "id": "hcm-006",
     "slug": "19110715-le-havre-den-ben-cuoi",
-    "title": "Le Havre (Pháp) - Đến bến cuối",
+    "title": "Le Havre (Pháp)",
     "country": "Pháp",
     "city": "Le Havre",
     "coords": [
@@ -210,18 +192,12 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu đến bến cuối Le Havre. Người làm vườn tại Sainte-Adresse.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Le%20Havre&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Le%20Havre%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Vào ngày 15 tháng 7 năm 1911, tàu buôn Amiral Latouche Tréville đã cập cảng Le Havre, Pháp. Đây là điểm đến cuối cùng của hành trình vượt biển kéo dài khoảng 40 ngày, khởi hành từ Sài Gòn vào ngày 5 tháng 6 năm 1911.\nSau đó, Người làm vườn tại Sainte-Adresse, ngoại ô Le Havre.",
     "media": {
       "images": [
         {
-          "label": "Tìm ảnh",
-          "url": "https://commons.wikimedia.org/w/index.php?search=Le%20Havre&title=Special:MediaSearch&type=image"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Le%20Havre%20Ho%20Chi%20Minh"
+          "label": "Sainte-Adresse, ngoại ô Le Havre",
+          "url": "Ngoi_nha.jpg"
         }
       ]
     },
@@ -248,18 +224,12 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé Casablanca, điểm dừng trên hành trình vượt Đại Tây Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Casablanca&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Casablanca%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
-          "label": "Tìm ảnh",
-          "url": "https://commons.wikimedia.org/w/index.php?search=Casablanca&title=Special:MediaSearch&type=image"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Tìm video",
-          "url": "https://www.youtube.com/results?search_query=Casablanca%20Ho%20Chi%20Minh"
+          "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
+          "url": "2022_T6_VHDL_1.jpg"
         }
       ]
     },
@@ -286,7 +256,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng chân tại Algiers trên hành trình dọc bờ Địa Trung Hải.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Algiers&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Algiers%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -324,7 +294,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Tunis, nối tiếp chặng Bắc Phi trước khi xuống Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Tunis&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Tunis%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -362,7 +332,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé cảng phía nam Tunisia (Sfax) trên hành trình dọc Bắc Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Sfax&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Sfax%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -400,7 +370,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tạm dừng tại Mogadishu trên đường vòng quanh Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Mogadishu&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Mogadishu%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -438,7 +408,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé cảng phía nam Somalia tại Kismayo trên hải trình Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Kismayo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Kismayo%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -476,7 +446,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Đi qua Kenya, dừng tại Nairobi trước khi tiếp tục xuống phía nam.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Nairobi&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Nairobi%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -514,7 +484,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé Dar es Salaam trên hải trình dọc bờ Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Dar%20es%20Salaam&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Dar%20es%20Salaam%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -552,7 +522,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Madagascar trong hành trình hướng về châu Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Antananarivo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Antananarivo%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -590,7 +560,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé đảo Réunion tại Ấn Độ Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Saint-Denis&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Saint-Denis%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -628,7 +598,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Đi qua mũi Hảo Vọng, cập cảng Cape Town.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Cape%20Town&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Cape%20Town%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -666,7 +636,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tạm dừng tại cảng Luanda trên bờ Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Luanda&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Luanda%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -704,7 +674,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Hải trình ghé vùng Congo, cập bến Kinshasa.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Kinshasa&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Kinshasa%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -742,7 +712,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Cập cảng Lagos trên tuyến Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Lagos&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Lagos%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -780,7 +750,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Accra (Gold Coast) trên đường về châu Âu.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Accra&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Accra%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -818,7 +788,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Cập cảng Abidjan, tiếp tục hành trình theo bờ Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Abidjan&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Abidjan%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
@@ -856,7 +826,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng chân tại Dakar trước khi vượt Đại Tây Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Dakar&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Dakar%20Ho%20Chi%20Minh\n",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {

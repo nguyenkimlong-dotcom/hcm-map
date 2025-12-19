@@ -1,5 +1,6 @@
-import MapView, { Place } from "@/components/MapView";
+import MapView from "@/components/MapView";
 import { loadPlaces } from "@/lib/loadPlaces";
+import { Place } from "@/types/place";
 
 export const dynamic = "force-dynamic";
 

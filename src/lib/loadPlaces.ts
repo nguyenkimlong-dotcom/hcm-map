@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { Place } from "@/components/MapView";
+import { Place } from "@/types/place";
 
 export async function loadPlaces(): Promise<Place[]> {
   try {

@@ -1,0 +1,28 @@
+         >
+                            {s}
+                          </a>
+                        ) : (
+                          <span className="break-words">{s}</span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+
+              }
+                        {img.url && !isImageUrl(img.url) ? (
+ {(detailPlace as any).media?.images?.length ? (
+                <div className="space-y-2 text-sm text-slate-700">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Hình ảnh</p>
+                  <div className="space-y-2">
+                    {(detailPlace as any).media.images.slice(0, 3).map((img: any, idx: number) => (
+                      <div key={`img-${idx}`} className="rounded-md border border-slate-100 p-2">
+                        {img.url && isImageUrl(img.url) ? (
+                          <img src={img.url} alt={img.label || "Anh"} className="h-32 w-full rounded-md object-cover" />
+                        ) : null
+
+                         <a
+                            href={img.url}
+                            target="_blank"
+    

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Geotag Pin</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M32 2.1a18 18 0 0 0-4.9 35.3L32 52.1l4.9-14.7A18 18 0 0 0 32 2.1zm0 26a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
+  fill="#202020"></path>
+  <path data-name="layer1" d="M38.2 46.1l-2.4 7.3a4 4 0 0 1-7.6 0l-2.4-7.3c-12.5.8-21.8 4-21.8 7.8s12.5 8 28 8 28-3.6 28-8-9.3-7-21.8-7.8z"
+  fill="#202020"></path>
+</svg>

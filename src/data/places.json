@@ -5,14 +5,37 @@
     "title": "Sài Gòn (Bến Nhà Rồng) - Rời bến",
     "country": "Việt Nam",
     "city": "Sài Gòn (Bến Nhà Rồng)",
-    "coords": [106.7066, 10.7683],
+    "coords": [
+      106.7066,
+      10.7683
+    ],
     "dateStart": "1911-06-05",
     "dateEnd": "1911-06-05",
     "periodLabel": "05/06/1911",
     "levelTexts": {
       "primary": "Rời bến cảng Nhà Rồng trên tàu Amiral Latouche Tréville, bắt đầu hành trình tìm đường cứu nước."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "Ngày 05/06/1911, người thanh niên yêu nước Nguyễn Tất Thành (lúc đó 21 tuổi) đã lấy tên là Văn Ba, lên tàu Amiral Latouche-Tréville tại Bến Nhà Rồng, bắt đầu hành trình 30 năm (1911-1941) tìm đường cứu nước, với mong muốn tự do cho đồng bào tôi, độc lập cho tổ quốc tôi. Chuyến đi này, với công việc phụ bếp, đã đưa Người đến nhiều nơi trên thế giới để nghiên cứu các học thuyết, tìm ra con đường giải phóng dân tộc cho Việt Nam. \nThời gian: 05/06/1911.\nĐịa điểm: Bến Nhà Rồng, Sài Gòn (nay là TP. Hồ Chí Minh).\nTàu: Amiral Latouche-Tréville (Đô đốc Latouche-Tréville).\nTên gọi: Văn Ba (tên thật là Nguyễn Tất Thành).\nCông việc: Phụ bếp.\nMục đích: Tìm đường cứu nước, giải phóng dân tộc khỏi ách thực dân Pháp.",
+    "media": {
+      "images": [
+        {
+          "label": "Bến Nhà Rồng / Bảo tàng HCM TP.HCM",
+          "url": "tim-duong-cuu-nuoc-cuu-dan-ban-linh-nha-ai-quoc-vi-dai-ho-chi-minh.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tư liệu: Bác Hồ ra đi tìm đường cứu nước (từ khóa)",
+          "url": "https://www.youtube.com/results?search_query=B%E1%BA%BFn%20Nh%C3%A0%20R%E1%BB%93ng%205/6/1911%20H%E1%BB%93%20Ch%C3%AD%20Minh%20t%C6%B0%20li%E1%BB%87u"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-002",
@@ -20,14 +43,37 @@
     "title": "Singapore - Tàu cập cảng",
     "country": "Singapore",
     "city": "Singapore",
-    "coords": [103.8519, 1.2903],
+    "coords": [
+      103.8519,
+      1.2903
+    ],
     "dateStart": "1911-06-08",
     "dateEnd": "1911-06-08",
     "periodLabel": "08/06/1911",
     "levelTexts": {
       "primary": "Tàu cập cảng Singapore."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu cập cảng Singapore.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-003",
@@ -35,14 +81,37 @@
     "title": "Colombo (Sri Lanka) - Tàu ghé",
     "country": "Sri Lanka",
     "city": "Colombo",
-    "coords": [79.8612, 6.9271],
+    "coords": [
+      79.8612,
+      6.9271
+    ],
     "dateStart": "1911-06-14",
     "dateEnd": "1911-06-14",
     "periodLabel": "14/06/1911",
     "levelTexts": {
       "primary": "Tàu ghé Colombo (Sri Lanka)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé Colombo (Sri Lanka).\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Colombo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Colombo%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Colombo&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Colombo%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-004",
@@ -50,14 +119,37 @@
     "title": "Port Said (Ai Cập) - Tàu ghé cảng",
     "country": "Ai Cập",
     "city": "Port Said",
-    "coords": [32.2903, 31.2565],
+    "coords": [
+      32.2903,
+      31.2565
+    ],
     "dateStart": "1911-06-30",
     "dateEnd": "1911-06-30",
     "periodLabel": "30/06/1911",
     "levelTexts": {
       "primary": "Tàu ghé cảng Port Said (Ai Cập)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé cảng Port Said (Ai Cập).\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Port%20Said&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Port%20Said%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Port%20Said&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Port%20Said%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-005",
@@ -65,14 +157,37 @@
     "title": "Marseille (Pháp) - Tàu cập cảng",
     "country": "Pháp",
     "city": "Marseille",
-    "coords": [5.3698, 43.2965],
+    "coords": [
+      5.3698,
+      43.2965
+    ],
     "dateStart": "1911-07-06",
     "dateEnd": "1911-07-06",
     "periodLabel": "06/07/1911",
     "levelTexts": {
       "primary": "Tàu cập cảng Marseille (Pháp)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu cập cảng Marseille (Pháp).\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Marseille&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Marseille%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Marseille&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Marseille%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-006",
@@ -80,14 +195,37 @@
     "title": "Le Havre (Pháp) - Đến bến cuối",
     "country": "Pháp",
     "city": "Le Havre",
-    "coords": [0.1079, 49.4944],
+    "coords": [
+      0.1079,
+      49.4944
+    ],
     "dateStart": "1911-07-15",
     "dateEnd": "1911-07-15",
     "periodLabel": "15/07/1911",
     "levelTexts": {
       "primary": "Tàu đến bến cuối Le Havre. Người làm vườn tại Sainte-Adresse."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu đến bến cuối Le Havre. Người làm vườn tại Sainte-Adresse.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Le%20Havre&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Le%20Havre%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Le%20Havre&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Le%20Havre%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048",
@@ -95,14 +233,37 @@
     "title": "Casablanca (Morocco) - Cập cảng",
     "country": "Morocco",
     "city": "Casablanca",
-    "coords": [-7.5898, 33.5731],
+    "coords": [
+      -7.5898,
+      33.5731
+    ],
     "dateStart": "1912-02-01",
     "dateEnd": "1912-02-01",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Tàu ghé Casablanca, điểm dừng trên hành trình vượt Đại Tây Dương."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé Casablanca, điểm dừng trên hành trình vượt Đại Tây Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Casablanca&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Casablanca%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Casablanca&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Casablanca%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048a",
@@ -110,14 +271,37 @@
     "title": "Algiers (Algeria) - Cập cảng",
     "country": "Algeria",
     "city": "Algiers",
-    "coords": [3.0588, 36.7538],
+    "coords": [
+      3.0588,
+      36.7538
+    ],
     "dateStart": "1912-02-10",
     "dateEnd": "1912-02-10",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Dừng chân tại Algiers trên hành trình dọc bờ Địa Trung Hải."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng chân tại Algiers trên hành trình dọc bờ Địa Trung Hải.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Algiers&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Algiers%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Algiers&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Algiers%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048b",
@@ -125,14 +309,37 @@
     "title": "Tunis (Tunisie) - Ghé cảng",
     "country": "Tunisie",
     "city": "Tunis",
-    "coords": [10.1658, 36.8065],
+    "coords": [
+      10.1658,
+      36.8065
+    ],
     "dateStart": "1912-02-15",
     "dateEnd": "1912-02-15",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Ghé Tunis, nối tiếp chặng Bắc Phi trước khi xuống Đông Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Tunis, nối tiếp chặng Bắc Phi trước khi xuống Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Tunis&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Tunis%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Tunis&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Tunis%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048b2",
@@ -140,14 +347,37 @@
     "title": "Tunisia 2 (Sfax) - Cảng phía nam",
     "country": "Tunisie",
     "city": "Sfax",
-    "coords": [11.223127811738578, 33.1439502163624],
+    "coords": [
+      11.223127811738578,
+      33.1439502163624
+    ],
     "dateStart": "1912-02-18",
     "dateEnd": "1912-02-18",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Ghé cảng phía nam Tunisia (Sfax) trên hành trình dọc Bắc Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé cảng phía nam Tunisia (Sfax) trên hành trình dọc Bắc Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Sfax&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Sfax%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Sfax&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Sfax%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048c",
@@ -155,14 +385,37 @@
     "title": "Mogadishu (Somalia) - Tạm dừng",
     "country": "Somalia",
     "city": "Mogadishu",
-    "coords": [50.758820552741696, 11.967905018844448],
+    "coords": [
+      50.758820552741696,
+      11.967905018844448
+    ],
     "dateStart": "1912-02-22",
     "dateEnd": "1912-02-22",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Tạm dừng tại Mogadishu trên đường vòng quanh Đông Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tạm dừng tại Mogadishu trên đường vòng quanh Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Mogadishu&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Mogadishu%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Mogadishu&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Mogadishu%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048c2",
@@ -170,14 +423,37 @@
     "title": "Somalia (Kismayo) - Cảng phía nam",
     "country": "Somalia",
     "city": "Kismayo",
-    "coords": [45.3182, 2.0469],
+    "coords": [
+      45.3182,
+      2.0469
+    ],
     "dateStart": "1912-02-23",
     "dateEnd": "1912-02-23",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Ghé cảng phía nam Somalia tại Kismayo trên hải trình Đông Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé cảng phía nam Somalia tại Kismayo trên hải trình Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Kismayo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Kismayo%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Kismayo&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Kismayo%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-048d",
@@ -185,14 +461,37 @@
     "title": "Nairobi (Kenya) - Đi qua Đông Phi",
     "country": "Kenya",
     "city": "Nairobi",
-    "coords": [39.67845213421285, -4.052150260875635],
+    "coords": [
+      39.67845213421285,
+      -4.052150260875635
+    ],
     "dateStart": "1912-02-26",
     "dateEnd": "1912-02-26",
     "periodLabel": "02/1912",
     "levelTexts": {
       "primary": "Đi qua Kenya, dừng tại Nairobi trước khi tiếp tục xuống phía nam."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Đi qua Kenya, dừng tại Nairobi trước khi tiếp tục xuống phía nam.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Nairobi&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Nairobi%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Nairobi&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Nairobi%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-049",
@@ -200,14 +499,37 @@
     "title": "Dar es Salaam (Tanzania) - Tạm dừng chân",
     "country": "Tanzania",
     "city": "Dar es Salaam",
-    "coords": [39.2083, -6.7924],
+    "coords": [
+      39.2083,
+      -6.7924
+    ],
     "dateStart": "1912-03-01",
     "dateEnd": "1912-03-01",
     "periodLabel": "03/1912",
     "levelTexts": {
       "primary": "Tàu ghé Dar es Salaam trên hải trình dọc bờ Đông Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé Dar es Salaam trên hải trình dọc bờ Đông Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Dar%20es%20Salaam&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Dar%20es%20Salaam%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Dar%20es%20Salaam&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Dar%20es%20Salaam%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-050",
@@ -215,14 +537,37 @@
     "title": "Antananarivo (Madagascar) - Dừng chân",
     "country": "Madagascar",
     "city": "Antananarivo",
-    "coords": [49.29192695599576, -12.288482165690468],
+    "coords": [
+      49.29192695599576,
+      -12.288482165690468
+    ],
     "dateStart": "1912-04-01",
     "dateEnd": "1912-04-01",
     "periodLabel": "04/1912",
     "levelTexts": {
       "primary": "Ghé Madagascar trong hành trình hướng về châu Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Madagascar trong hành trình hướng về châu Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Antananarivo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Antananarivo%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Antananarivo&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Antananarivo%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-051",
@@ -230,14 +575,37 @@
     "title": "Saint-Denis (Réunion) - Ghé đảo",
     "country": "Réunion",
     "city": "Saint-Denis",
-    "coords": [55.4543, -20.8821],
+    "coords": [
+      55.4543,
+      -20.8821
+    ],
     "dateStart": "1912-05-01",
     "dateEnd": "1912-05-01",
     "periodLabel": "05/1912",
     "levelTexts": {
       "primary": "Tàu ghé đảo Réunion tại Ấn Độ Dương."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tàu ghé đảo Réunion tại Ấn Độ Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Saint-Denis&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Saint-Denis%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Saint-Denis&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Saint-Denis%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-052",
@@ -245,14 +613,37 @@
     "title": "Cape Town (Nam Phi) - Qua mũi Hảo Vọng",
     "country": "Nam Phi",
     "city": "Cape Town",
-    "coords": [18.4241, -33.9249],
+    "coords": [
+      18.4241,
+      -33.9249
+    ],
     "dateStart": "1912-06-01",
     "dateEnd": "1912-06-01",
     "periodLabel": "06/1912",
     "levelTexts": {
       "primary": "Đi qua mũi Hảo Vọng, cập cảng Cape Town."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Đi qua mũi Hảo Vọng, cập cảng Cape Town.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Cape%20Town&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Cape%20Town%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Cape%20Town&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Cape%20Town%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-053",
@@ -260,14 +651,37 @@
     "title": "Luanda (Angola) - Dừng chân",
     "country": "Angola",
     "city": "Luanda",
-    "coords": [13.2344, -8.839],
+    "coords": [
+      13.2344,
+      -8.839
+    ],
     "dateStart": "1912-07-01",
     "dateEnd": "1912-07-01",
     "periodLabel": "07/1912",
     "levelTexts": {
       "primary": "Tạm dừng tại cảng Luanda trên bờ Tây Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Tạm dừng tại cảng Luanda trên bờ Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Luanda&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Luanda%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Luanda&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Luanda%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-054",
@@ -275,14 +689,37 @@
     "title": "Kinshasa (Congo) - Đi qua Congo",
     "country": "Congo",
     "city": "Kinshasa",
-    "coords": [11.845571813651446, -4.796603138767182],
+    "coords": [
+      11.845571813651446,
+      -4.796603138767182
+    ],
     "dateStart": "1912-08-01",
     "dateEnd": "1912-08-01",
     "periodLabel": "08/1912",
     "levelTexts": {
       "primary": "Hải trình ghé vùng Congo, cập bến Kinshasa."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Hải trình ghé vùng Congo, cập bến Kinshasa.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Kinshasa&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Kinshasa%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Kinshasa&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Kinshasa%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-055",
@@ -290,14 +727,37 @@
     "title": "Lagos (Nigeria) - Cập cảng",
     "country": "Nigeria",
     "city": "Lagos",
-    "coords": [3.3792, 6.5244],
+    "coords": [
+      3.3792,
+      6.5244
+    ],
     "dateStart": "1912-09-01",
     "dateEnd": "1912-09-01",
     "periodLabel": "09/1912",
     "levelTexts": {
       "primary": "Cập cảng Lagos trên tuyến Tây Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Cập cảng Lagos trên tuyến Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Lagos&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Lagos%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Lagos&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Lagos%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-056",
@@ -305,14 +765,37 @@
     "title": "Accra (Ghana) - Đi qua Gold Coast",
     "country": "Ghana",
     "city": "Accra",
-    "coords": [-0.1869, 5.6037],
+    "coords": [
+      -0.1869,
+      5.6037
+    ],
     "dateStart": "1912-10-01",
     "dateEnd": "1912-10-01",
     "periodLabel": "10/1912",
     "levelTexts": {
       "primary": "Ghé Accra (Gold Coast) trên đường về châu Âu."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Ghé Accra (Gold Coast) trên đường về châu Âu.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Accra&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Accra%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Accra&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Accra%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-057",
@@ -320,14 +803,37 @@
     "title": "Abidjan (Côte d’Ivoire) - Cập cảng",
     "country": "Côte d’Ivoire",
     "city": "Abidjan",
-    "coords": [-4.0083, 5.35995],
+    "coords": [
+      -4.0083,
+      5.35995
+    ],
     "dateStart": "1912-11-01",
     "dateEnd": "1912-11-01",
     "periodLabel": "11/1912",
     "levelTexts": {
       "primary": "Cập cảng Abidjan, tiếp tục hành trình theo bờ Tây Phi."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Cập cảng Abidjan, tiếp tục hành trình theo bờ Tây Phi.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Abidjan&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Abidjan%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Abidjan&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Abidjan%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-058",
@@ -335,14 +841,37 @@
     "title": "Dakar (Senegal) - Điểm dừng Tây Phi",
     "country": "Senegal",
     "city": "Dakar",
-    "coords": [-17.4677, 14.7167],
+    "coords": [
+      -17.4677,
+      14.7167
+    ],
     "dateStart": "1913-01-01",
     "dateEnd": "1913-01-01",
     "periodLabel": "01/1913",
     "levelTexts": {
       "primary": "Dừng chân tại Dakar trước khi vượt Đại Tây Dương."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng chân tại Dakar trước khi vượt Đại Tây Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Dakar&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Dakar%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Dakar&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Dakar%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-058a",
@@ -350,14 +879,37 @@
     "title": "Martinique (Fort-de-France) - Cập cảng",
     "country": "Martinique",
     "city": "Fort-de-France",
-    "coords": [-61.0588, 14.6161],
+    "coords": [
+      -61.0588,
+      14.6161
+    ],
     "dateStart": "1913-02-05",
     "dateEnd": "1913-02-05",
     "periodLabel": "05/02/1913",
     "levelTexts": {
       "primary": "Dừng tại cảng Fort-de-France (Martinique) trên hải trình Đại Tây Dương."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng tại cảng Fort-de-France (Martinique) trên hải trình Đại Tây Dương.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Fort-de-France&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Fort-de-France%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Fort-de-France&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Fort-de-France%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-058b",
@@ -365,14 +917,37 @@
     "title": "Montevideo (Uruguay) - Cập cảng",
     "country": "Uruguay",
     "city": "Montevideo",
-    "coords": [-56.1645, -34.9011],
+    "coords": [
+      -56.1645,
+      -34.9011
+    ],
     "dateStart": "1913-03-05",
     "dateEnd": "1913-03-05",
     "periodLabel": "05/03/1913",
     "levelTexts": {
       "primary": "Cập cảng Montevideo, điểm dừng Nam Mỹ trên hành trình."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Cập cảng Montevideo, điểm dừng Nam Mỹ trên hành trình.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Montevideo&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Montevideo%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Montevideo&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Montevideo%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-058c",
@@ -380,14 +955,37 @@
     "title": "Buenos Aires (Argentina) - Dừng chân",
     "country": "Argentina",
     "city": "Buenos Aires",
-    "coords": [-58.3816, -34.6037],
+    "coords": [
+      -58.3816,
+      -34.6037
+    ],
     "dateStart": "1913-04-05",
     "dateEnd": "1913-04-05",
     "periodLabel": "05/04/1913",
     "levelTexts": {
       "primary": "Dừng chân tại Buenos Aires trước khi tiếp tục qua Bắc Mỹ."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐiểm dừng/chặng quá cảnh trong hành trình đi biển giai đoạn 1911–1913 khi Nguyễn Tất Thành làm việc trên tàu biển để vừa lao động kiếm sống vừa quan sát thế giới.\n\n### Nội dung nên hiển thị\n- Dừng chân tại Buenos Aires trước khi tiếp tục qua Bắc Mỹ.\n- Gợi ý diễn giải: “cảng ghé qua” (không khẳng định Người chắc chắn lưu trú dài ngày nếu chưa có tư liệu).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Buenos%20Aires&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Buenos%20Aires%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Buenos%20Aires&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Buenos%20Aires%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-007",
@@ -395,14 +993,36 @@
     "title": "New York (Brooklyn, Mỹ) - Đến New York",
     "country": "Mỹ",
     "city": "New York (Brooklyn)",
-    "coords": [-73.9442, 40.6782],
+    "coords": [
+      -73.9442,
+      40.6782
+    ],
     "dateStart": "1912-12-25",
     "dateEnd": "1912-12-25",
     "periodLabel": "25/12/1912",
     "levelTexts": {
       "primary": "Tới New York (Mỹ). Sống tại khu Brooklyn."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
+    ],
+    "detailMarkdown": "### Tóm tắt\nGiai đoạn 1912–1913, Nguyễn Tất Thành có thể đã ở Hoa Kỳ (New York, Boston). Một số nguồn ghi Người từng làm việc tại **Parker House** (Boston). Tuy nhiên, bằng chứng trực tiếp được ghi nhận là **một số thư/thiếp** có dấu bưu điện.\n\n### Điều chắc chắn nên nêu\n- Nhiều tài liệu tổng thuật (ví dụ bách khoa, nghiên cứu) coi việc Người “có mặt ở Mỹ” là **khả năng cao**, nhưng cũng thừa nhận bằng chứng còn hạn chế.  \n- Bài viết JSTOR Daily tổng hợp tư liệu về **bức thư năm 1912** và các dấu vết liên quan.\n\n### Cách trình bày khuyến nghị\nĐặt nhãn “**có thể / được cho là**” cho New York; với Boston và Parker House nên gắn “**theo hồi ức/nguồn tổng thuật**”, tránh khẳng định tuyệt đối nếu không trích được tài liệu gốc.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913\n",
+    "media": {
+      "images": [
+        {
+          "label": "Omni Parker House (Boston) – tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Ho Chi Minh in the United States (1912–1913)",
+          "url": "https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-007b",
@@ -410,14 +1030,36 @@
     "title": "Boston (Mỹ) - Tiếp tục làm việc sau New York",
     "country": "Mỹ",
     "city": "Boston",
-    "coords": [-71.0589, 42.3601],
+    "coords": [
+      -71.0589,
+      42.3601
+    ],
     "dateStart": "1913-02-15",
     "dateEnd": "1913-12-31",
     "periodLabel": "1913",
     "levelTexts": {
       "primary": "Trở lại Boston sau chặng New York, tiếp tục làm phụ bếp và lao động."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
+    ],
+    "detailMarkdown": "### Tóm tắt\nGiai đoạn 1912–1913, Nguyễn Tất Thành có thể đã ở Hoa Kỳ (New York, Boston). Một số nguồn ghi Người từng làm việc tại **Parker House** (Boston). Tuy nhiên, bằng chứng trực tiếp được ghi nhận là **một số thư/thiếp** có dấu bưu điện.\n\n### Điều chắc chắn nên nêu\n- Nhiều tài liệu tổng thuật (ví dụ bách khoa, nghiên cứu) coi việc Người “có mặt ở Mỹ” là **khả năng cao**, nhưng cũng thừa nhận bằng chứng còn hạn chế.  \n- Bài viết JSTOR Daily tổng hợp tư liệu về **bức thư năm 1912** và các dấu vết liên quan.\n\n### Cách trình bày khuyến nghị\nĐặt nhãn “**có thể / được cho là**” cho New York; với Boston và Parker House nên gắn “**theo hồi ức/nguồn tổng thuật**”, tránh khẳng định tuyệt đối nếu không trích được tài liệu gốc.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913\n",
+    "media": {
+      "images": [
+        {
+          "label": "Omni Parker House (Boston) – tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Ho Chi Minh in the United States (1912–1913)",
+          "url": "https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-008",
@@ -425,14 +1067,36 @@
     "title": "Boston (Mỹ) - Làm phụ bếp Omni Parker House",
     "country": "Mỹ",
     "city": "Boston",
-    "coords": [-71.0589, 42.3601],
+    "coords": [
+      -71.0589,
+      42.3601
+    ],
     "dateStart": "1913-01-01",
     "dateEnd": "1913-12-31",
     "periodLabel": "1913",
     "levelTexts": {
       "primary": "Làm phụ bếp tại khách sạn Omni Parker House (Boston, Mỹ)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
+    ],
+    "detailMarkdown": "### Tóm tắt\nGiai đoạn 1912–1913, Nguyễn Tất Thành có thể đã ở Hoa Kỳ (New York, Boston). Một số nguồn ghi Người từng làm việc tại **Parker House** (Boston). Tuy nhiên, bằng chứng trực tiếp được ghi nhận là **một số thư/thiếp** có dấu bưu điện.\n\n### Điều chắc chắn nên nêu\n- Nhiều tài liệu tổng thuật (ví dụ bách khoa, nghiên cứu) coi việc Người “có mặt ở Mỹ” là **khả năng cao**, nhưng cũng thừa nhận bằng chứng còn hạn chế.  \n- Bài viết JSTOR Daily tổng hợp tư liệu về **bức thư năm 1912** và các dấu vết liên quan.\n\n### Cách trình bày khuyến nghị\nĐặt nhãn “**có thể / được cho là**” cho New York; với Boston và Parker House nên gắn “**theo hồi ức/nguồn tổng thuật**”, tránh khẳng định tuyệt đối nếu không trích được tài liệu gốc.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913\n",
+    "media": {
+      "images": [
+        {
+          "label": "Omni Parker House (Boston) – tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Omni%20Parker%20House%20Boston&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Ho Chi Minh in the United States (1912–1913)",
+          "url": "https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20the%20United%20States%201912%201913"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-009",
@@ -440,14 +1104,36 @@
     "title": "Luân Đôn (London, Anh) - Lao động và tự học",
     "country": "Anh",
     "city": "Luân Đôn (London)",
-    "coords": [-0.1278, 51.5074],
+    "coords": [
+      -0.1278,
+      51.5074
+    ],
     "dateStart": "1914-01-01",
     "dateEnd": "1917-12-31",
     "periodLabel": "1914 - 1917",
     "levelTexts": {
       "primary": "Làm rửa bát, phụ bếp... tới Thư viện Bảo tàng Anh tự học."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://openplaques.org/plaques/1968"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTrong giai đoạn ở Anh (khoảng 1913–1917), Nguyễn Tất Thành làm nhiều công việc lao động để tự nuôi sống và quan sát xã hội công nghiệp châu Âu; một dấu tích thường được nhắc tới là **khách sạn Carlton** (nơi nay đã thay đổi).\n\n### Điểm nhấn đáng dùng trên bản đồ\n- Trải nghiệm đời sống công nhân – lao động nhập cư ở London; mở rộng hiểu biết về phong trào xã hội và báo chí.  \n- “Dấu tích ký ức” ngày nay: **bia xanh (blue plaque)** ghi nhận Người từng làm việc tại Carlton Hotel (theo hệ thống Open Plaques).\n\n### Lưu ý độ chắc chắn\nTư liệu về từng công việc và thời gian cụ thể có thể khác nhau giữa các nguồn; nên trình bày thận trọng (mốc thời gian **xấp xỉ**).\n\n### Gợi ý media\n- Ảnh: https://openplaques.org/plaques/1968\n- Video: https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20London%201913%201917%20documentary\n",
+    "media": {
+      "images": [
+        {
+          "label": "Bia xanh Ho Chi Minh – Carlton Hotel site",
+          "url": "https://openplaques.org/plaques/1968"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tư liệu: Ho Chi Minh in London 1913–1917",
+          "url": "https://www.youtube.com/results?search_query=Ho%20Chi%20Minh%20in%20London%201913%201917%20documentary"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-010",
@@ -455,14 +1141,36 @@
     "title": "Paris (Pháp) - Đọc Sơ thảo của Lênin",
     "country": "Pháp",
     "city": "Paris",
-    "coords": [2.3522, 48.8566],
+    "coords": [
+      2.3522,
+      48.8566
+    ],
     "dateStart": "1920-07-01",
     "dateEnd": "1920-07-01",
     "periodLabel": "07/1920",
     "levelTexts": {
       "primary": "Đọc “Sơ thảo...” của Lênin. Tìm thấy con đường cứu nước."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐọc “Sơ thảo...” của Lênin. Tìm thấy con đường cứu nước.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Paris&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Paris%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Paris&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Paris%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-011",
@@ -470,14 +1178,36 @@
     "title": "Tours (Pháp) - Dự Đại hội Tours",
     "country": "Pháp",
     "city": "Tours",
-    "coords": [0.6848, 47.3941],
+    "coords": [
+      0.6848,
+      47.3941
+    ],
     "dateStart": "1920-12-01",
     "dateEnd": "1920-12-01",
     "periodLabel": "12/1920",
     "levelTexts": {
       "primary": "Dự Đại hội Tours, tham gia sáng lập Đảng Cộng sản Pháp."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/nguyen-ai-quoc-tham-du-dai-hoi-dang-xa-hoi-phap-tai-thanh-pho-tours.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTháng 12/1920, Nguyễn Ái Quốc tham dự **Đại hội Tours** của Đảng Xã hội Pháp; bỏ phiếu tán thành gia nhập Quốc tế III, tham gia thành lập **Đảng Cộng sản Pháp** – mốc Người trở thành một trong những người cộng sản Việt Nam đầu tiên.\n\n### Điểm nhấn\n- Đại hội đánh dấu sự phân hóa trong phong trào xã hội chủ nghĩa Pháp và sự ra đời của Đảng Cộng sản Pháp.  \n- Với Nguyễn Ái Quốc: gắn kết sự nghiệp giải phóng dân tộc thuộc địa với tổ chức cộng sản quốc tế.\n\n### Gợi ý media\n- Ảnh: địa điểm/nhà lưu niệm Đại hội Tours; ảnh Nguyễn Ái Quốc những năm 1920  \n- Video: tư liệu “Tours Congress 1920” + “Nguyễn Ái Quốc tại Pháp”\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: Tours Congress 1920",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Congress%20of%20Tours%201920&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tours Congress 1920 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=Tours%20Congress%201920%20Nguyen%20Ai%20Quoc"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-012",
@@ -485,14 +1215,35 @@
     "title": "Paris (Pháp) - Sáng lập báo Le Paria",
     "country": "Pháp",
     "city": "Paris",
-    "coords": [2.3522, 48.8566],
+    "coords": [
+      2.3522,
+      48.8566
+    ],
     "dateStart": "1922-04-01",
     "dateEnd": "1922-04-01",
     "periodLabel": "04/1922",
     "levelTexts": {
       "primary": "Sáng lập báo Le Paria."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/nguyen-ai-quoc-cho-ra-so-dau-tien-to-bao-le-paria-nguoi-cung-kho.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nNăm 1922, Nguyễn Ái Quốc tham gia cho ra đời tờ **Le Paria (Người cùng khổ)** – diễn đàn tố cáo chủ nghĩa thực dân, cổ vũ phong trào giải phóng của các dân tộc thuộc địa.\n\n### Nội dung nên khai thác\n- Vai trò: viết bài, tổ chức tòa soạn, kết nối các nhà hoạt động thuộc địa tại Pháp.  \n- Giá trị tư liệu: Le Paria là nguồn tư liệu báo chí quan trọng để trưng bày trên bản đồ (trích số báo, bìa báo).\n\n### Gợi ý media\n- Ảnh: bìa báo Le Paria, ảnh tư liệu Nguyễn Ái Quốc 1922  \n- Video: tư liệu về Le Paria và phong trào thuộc địa tại Pháp\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: Le Paria newspaper",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Le%20Paria%20newspaper&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Le Paria Nguyễn Ái Quốc 1922",
+          "url": "https://www.youtube.com/results?search_query=Le%20Paria%20Nguyen%20Ai%20Quoc%201922"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-013",
@@ -500,14 +1251,36 @@
     "title": "Hamburg (Đức) - Rời Pháp",
     "country": "Đức",
     "city": "Hamburg",
-    "coords": [9.9937, 53.5511],
+    "coords": [
+      9.9937,
+      53.5511
+    ],
     "dateStart": "1923-06-13",
     "dateEnd": "1923-06-13",
     "periodLabel": "13/06/1923",
     "levelTexts": {
       "primary": "Bí mật rời Pháp sang Đức, ghé cảng Hamburg."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/nguyen-ai-quoc-roi-pari-di-mat-sang-duc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ],
+    "detailMarkdown": "### Tóm tắt\nNgày 13/6/1923, Nguyễn Ái Quốc rời Paris đi bí mật sang Đức; Hamburg là một điểm then chốt trên hành trình sang Liên Xô.\n\n### Điểm nhấn\n- Chặng “rời Pháp – sang Đức – tới Petrograd” thể hiện bước chuyển từ hoạt động ở Pháp sang làm việc trong không gian Quốc tế Cộng sản.\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: Port of Hamburg 1920s",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Port%20of%20Hamburg%201920s&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Nguyễn Ái Quốc 1923 rời Pháp sang Liên Xô",
+          "url": "https://www.youtube.com/results?search_query=Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%201923%20Hamburg%20Petrograd"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-013a",
@@ -515,14 +1288,36 @@
     "title": "Amsterdam (Hà Lan) - Ghé cảng",
     "country": "Hà Lan",
     "city": "Amsterdam",
-    "coords": [4.9041, 52.3676],
+    "coords": [
+      4.9041,
+      52.3676
+    ],
     "dateStart": "1923-06-20",
     "dateEnd": "1923-06-20",
     "periodLabel": "20/06/1923",
     "levelTexts": {
       "primary": "Ghé Amsterdam trên hành trình rời Hamburg tiến về Nga."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nGhé Amsterdam trên hành trình rời Hamburg tiến về Nga.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Amsterdam&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Amsterdam%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Amsterdam&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Amsterdam%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-014",
@@ -530,14 +1325,36 @@
     "title": "Petrograd (Saint Petersburg, Nga) - Tàu cập bến",
     "country": "Nga",
     "city": "Petrograd (Saint Petersburg)",
-    "coords": [30.3351, 59.9343],
+    "coords": [
+      30.3351,
+      59.9343
+    ],
     "dateStart": "1923-06-30",
     "dateEnd": "1923-06-30",
     "periodLabel": "30/06/1923",
     "levelTexts": {
       "primary": "Tàu thủy cập bến Petrograd (nay là Saint Petersburg)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/nguyen-ai-quoc-den-thanh-pho-xanhpeterbua.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ],
+    "detailMarkdown": "### Tóm tắt\nNgày 30/6/1923, Nguyễn Ái Quốc đến Petrograd (nay là Saint Petersburg), bắt đầu giai đoạn hoạt động và học tập trong phong trào cộng sản quốc tế tại Liên Xô.\n\n### Điểm nhấn\n- Là cửa ngõ quan trọng để vào Liên Xô thời kỳ đó.  \n- Từ đây, Người tiếp tục tới Moscow, tham gia nhiều hoạt động của Quốc tế Cộng sản.\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: Petrograd 1920s",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Petrograd%201920s&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Nguyễn Ái Quốc tại Liên Xô 1923",
+          "url": "https://www.youtube.com/results?search_query=Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20Petrograd%201923"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-015",
@@ -545,14 +1362,36 @@
     "title": "Moskva (Nga) - Dự Hội nghị Quốc tế Nông dân",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1923-10-01",
     "dateEnd": "1923-10-01",
     "periodLabel": "10/1923",
     "levelTexts": {
       "primary": "Dự Hội nghị lần thứ nhất Quốc tế Nông dân."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nDự Hội nghị lần thứ nhất Quốc tế Nông dân.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-016",
@@ -560,14 +1399,36 @@
     "title": "Moskva (Nga) - Vĩnh biệt Lênin",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1924-01-01",
     "dateEnd": "1924-01-01",
     "periodLabel": "01/1924",
     "levelTexts": {
       "primary": "Nghe tin Lênin từ trần, đăng bài vĩnh biệt Lênin."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nNghe tin Lênin từ trần, đăng bài vĩnh biệt Lênin.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-017",
@@ -575,14 +1436,36 @@
     "title": "Moskva (Nga) - Học tập và viết Bản án chế độ thực dân Pháp",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1923-01-01",
     "dateEnd": "1924-12-31",
     "periodLabel": "1923 - 1924",
     "levelTexts": {
       "primary": "Học ngắn hạn, hoàn thành “Bản án chế độ thực dân Pháp”."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHọc ngắn hạn, hoàn thành “Bản án chế độ thực dân Pháp”.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-018",
@@ -590,14 +1473,36 @@
     "title": "Moskva (Nga) - Dự Đại hội V Quốc tế Cộng sản",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1924-06-01",
     "dateEnd": "1924-06-01",
     "periodLabel": "06/1924",
     "levelTexts": {
       "primary": "Dự Đại hội V Quốc tế Cộng sản."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nDự Đại hội V Quốc tế Cộng sản.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-019",
@@ -605,14 +1510,36 @@
     "title": "Quảng Châu (Trung Quốc) - Đến Quảng Châu",
     "country": "Trung Quốc",
     "city": "Quảng Châu (Guangzhou)",
-    "coords": [113.2644, 23.1291],
+    "coords": [
+      113.2644,
+      23.1291
+    ],
     "dateStart": "1924-11-11",
     "dateEnd": "1924-11-11",
     "periodLabel": "11/11/1924",
     "levelTexts": {
       "primary": "Đến Quảng Châu (Trung Quốc)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Quảng Châu (Trung Quốc).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-020",
@@ -620,14 +1547,36 @@
     "title": "Quảng Châu (Trung Quốc) - Mở lớp huấn luyện chính trị",
     "country": "Trung Quốc",
     "city": "Quảng Châu (Guangzhou)",
-    "coords": [113.2644, 23.1291],
+    "coords": [
+      113.2644,
+      23.1291
+    ],
     "dateStart": "1925-01-01",
     "dateEnd": "1927-12-31",
     "periodLabel": "1925 - 1927",
     "levelTexts": {
       "primary": "Mở lớp huấn luyện chính trị."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nMở lớp huấn luyện chính trị.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-021",
@@ -635,14 +1584,36 @@
     "title": "Quảng Châu (Trung Quốc) - Thành lập Hội Việt Nam Cách mạng Thanh niên",
     "country": "Trung Quốc",
     "city": "Quảng Châu (Guangzhou)",
-    "coords": [113.2644, 23.1291],
+    "coords": [
+      113.2644,
+      23.1291
+    ],
     "dateStart": "1925-06-01",
     "dateEnd": "1925-06-01",
     "periodLabel": "06/1925",
     "levelTexts": {
       "primary": "Thành lập Hội Việt Nam Cách mạng Thanh niên."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nThành lập Hội Việt Nam Cách mạng Thanh niên.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-022",
@@ -650,14 +1621,36 @@
     "title": "Quảng Châu (Trung Quốc) - Ra số đầu báo Thanh Niên",
     "country": "Trung Quốc",
     "city": "Quảng Châu (Guangzhou)",
-    "coords": [113.2644, 23.1291],
+    "coords": [
+      113.2644,
+      23.1291
+    ],
     "dateStart": "1925-06-21",
     "dateEnd": "1925-06-21",
     "periodLabel": "21/06/1925",
     "levelTexts": {
       "primary": "Sáng lập và ra số đầu tiên báo Thanh Niên."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nSáng lập và ra số đầu tiên báo Thanh Niên.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%E1%BA%A3ng%20Ch%C3%A2u%20%28Guangzhou%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-023",
@@ -665,14 +1658,36 @@
     "title": "Hàng Châu (Hangzhou, Trung Quốc) - Rời Quảng Châu",
     "country": "Trung Quốc",
     "city": "Hàng Châu (Hangzhou)",
-    "coords": [120.1551, 30.2741],
+    "coords": [
+      120.1551,
+      30.2741
+    ],
     "dateStart": "1927-05-01",
     "dateEnd": "1927-05-01",
     "periodLabel": "05/1927",
     "levelTexts": {
       "primary": "Rời Quảng Châu đi Hàng Châu."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nRời Quảng Châu đi Hàng Châu.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=H%C3%A0ng%20Ch%C3%A2u%20%28Hangzhou%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=H%C3%A0ng%20Ch%C3%A2u%20%28Hangzhou%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=H%C3%A0ng%20Ch%C3%A2u%20%28Hangzhou%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=H%C3%A0ng%20Ch%C3%A2u%20%28Hangzhou%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-024",
@@ -680,14 +1695,36 @@
     "title": "Thượng Hải (Shanghai, Trung Quốc) - Tránh truy quét",
     "country": "Trung Quốc",
     "city": "Thượng Hải (Shanghai)",
-    "coords": [121.4737, 31.2304],
+    "coords": [
+      121.4737,
+      31.2304
+    ],
     "dateStart": "1927-05-01",
     "dateEnd": "1927-05-01",
     "periodLabel": "05/1927",
     "levelTexts": {
       "primary": "Đi Thượng Hải để tránh truy quét."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐi Thượng Hải để tránh truy quét.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-025",
@@ -695,14 +1732,35 @@
     "title": "Brussels (Bỉ) - Dự họp Liên đoàn chống đế quốc",
     "country": "Bỉ",
     "city": "Brussels",
-    "coords": [4.3517, 50.8503],
+    "coords": [
+      4.3517,
+      50.8503
+    ],
     "dateStart": "1927-12-01",
     "dateEnd": "1927-12-01",
     "periodLabel": "12/1927",
     "levelTexts": {
       "primary": "Dự họp Liên đoàn chống đế quốc tại Brussels."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ],
+    "detailMarkdown": "### Tóm tắt\nCuối năm 1927, Nguyễn Ái Quốc đến Bỉ để dự cuộc họp của **Đại hội đồng Liên đoàn chống đế quốc** (theo các nguồn biên niên/tổng thuật). Đây là một chặng thể hiện hoạt động quốc tế liên tục của Người sau khi rời Quảng Châu.\n\n### Lưu ý\nSự kiện thường được nhắc trong các bài tổng thuật chính thống; khi viết cho popup nên giữ mức khẳng định “**đến dự**” thay vì mô tả quá chi tiết (nếu chưa có biên bản đại hội trích dẫn trực tiếp).\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: League against Imperialism Brussels 1927",
+          "url": "https://commons.wikimedia.org/w/index.php?search=League%20against%20Imperialism%201927%20Brussels&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "League against Imperialism 1927 Brussels",
+          "url": "https://www.youtube.com/results?search_query=League%20against%20Imperialism%201927%20Brussels"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-026",
@@ -710,14 +1768,36 @@
     "title": "Naples (Ý) - Lên tàu về Xiêm",
     "country": "Ý",
     "city": "Naples",
-    "coords": [14.2681, 40.8518],
+    "coords": [
+      14.2681,
+      40.8518
+    ],
     "dateStart": "1928-06-01",
     "dateEnd": "1928-06-01",
     "periodLabel": "06/1928",
     "levelTexts": {
       "primary": "Lên tàu tại cảng Naples về Xiêm (Thái Lan)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://baotanghochiminh.vn/nguyen-ai-quoc-den-thanh-pho-neapoli-nuoc-y.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTháng 7/1928, Nguyễn Ái Quốc đến thành phố Neapoli (Naples), rồi tiếp tục hành trình sang Xiêm (Thái Lan) hoạt động.\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: Port of Naples 1920s",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Port%20of%20Naples%201920s&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Nguyễn Ái Quốc 1928 Naples đi Thái Lan",
+          "url": "https://www.youtube.com/results?search_query=Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%201928%20Naples%20Xi%C3%AAm"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-027",
@@ -725,14 +1805,36 @@
     "title": "Bangkok (Thái Lan) - Đến Bangkok",
     "country": "Thái Lan",
     "city": "Bangkok",
-    "coords": [100.5018, 13.7563],
+    "coords": [
+      100.5018,
+      13.7563
+    ],
     "dateStart": "1928-07-01",
     "dateEnd": "1928-07-01",
     "periodLabel": "07/1928",
     "levelTexts": {
       "primary": "Đến Bangkok."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Bangkok.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Bangkok&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Bangkok%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Bangkok&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Bangkok%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-028",
@@ -740,14 +1842,36 @@
     "title": "Phichit (Thái Lan) - Hoạt động tại Phichit",
     "country": "Thái Lan",
     "city": "Phichit",
-    "coords": [100.3488, 16.439],
+    "coords": [
+      100.3488,
+      16.439
+    ],
     "dateStart": "1928-07-01",
     "dateEnd": "1928-07-01",
     "periodLabel": "07/1928",
     "levelTexts": {
       "primary": "Hoạt động tại Phichit."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại Phichit.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Phichit&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Phichit%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Phichit&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Phichit%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-029",
@@ -755,14 +1879,36 @@
     "title": "Udon Thani (Thái Lan) - Hoạt động tại U Đon",
     "country": "Thái Lan",
     "city": "Udon Thani",
-    "coords": [102.79, 17.4157],
+    "coords": [
+      102.79,
+      17.4157
+    ],
     "dateStart": "1928-07-01",
     "dateEnd": "1928-07-01",
     "periodLabel": "07/1928",
     "levelTexts": {
       "primary": "Hoạt động tại U Đon."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại U Đon.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Udon%20Thani&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Udon%20Thani%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Udon%20Thani&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Udon%20Thani%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-030",
@@ -770,14 +1916,36 @@
     "title": "Sakon Nakhon (Thái Lan) - Hoạt động tại Sakon Nakhon",
     "country": "Thái Lan",
     "city": "Sakon Nakhon",
-    "coords": [104.147, 17.1546],
+    "coords": [
+      104.147,
+      17.1546
+    ],
     "dateStart": "1928-07-01",
     "dateEnd": "1928-07-01",
     "periodLabel": "07/1928",
     "levelTexts": {
       "primary": "Hoạt động tại Sakon Nakhon."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại Sakon Nakhon.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Sakon%20Nakhon&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Sakon%20Nakhon%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Sakon%20Nakhon&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Sakon%20Nakhon%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-031",
@@ -785,14 +1953,36 @@
     "title": "Hồng Kông (Kowloon) - Rời Xiêm",
     "country": "Trung Quốc",
     "city": "Hồng Kông (Kowloon)",
-    "coords": [114.1747, 22.3186],
+    "coords": [
+      114.1747,
+      22.3186
+    ],
     "dateStart": "1929-12-01",
     "dateEnd": "1929-12-31",
     "periodLabel": "Cuối 1929",
     "levelTexts": {
       "primary": "Rời Xiêm đi tàu thủy tới Hồng Kông."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ đầu tháng 1 đến đầu tháng 2/1930 (biên niên thường ghi mốc **6/1–7/2/1930**), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, dẫn tới việc thành lập **Đảng Cộng sản Việt Nam** tại Cửu Long (Hương Cảng).\n\n### Điểm nhấn\n- Hợp nhất các tổ chức, thống nhất đường lối và tổ chức.  \n- Ý nghĩa như “đại hội thành lập”, mở ra giai đoạn mới cho cách mạng Việt Nam.\n\n### Gợi ý media\n- Ảnh: di tích/nơi họp; trích báo cáo gửi Quốc tế Cộng sản (18/12/1930)  \n- Video: tư liệu về Hội nghị hợp nhất 1930\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: nơi thành lập ĐCSVN 1930 Kowloon",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Site%20of%20founding%20of%20Communist%20Party%20of%20Vietnam%201930&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hội nghị hợp nhất 1930 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BB%99i%20ngh%E1%BB%8B%20h%E1%BB%A3p%20nh%E1%BA%A5t%201930%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20C%E1%BB%ADu%20Long"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-032",
@@ -800,14 +1990,36 @@
     "title": "Hồng Kông (Kowloon) - Chủ trì Hội nghị hợp nhất",
     "country": "Trung Quốc",
     "city": "Hồng Kông (Kowloon)",
-    "coords": [114.1747, 22.3186],
+    "coords": [
+      114.1747,
+      22.3186
+    ],
     "dateStart": "1930-02-03",
     "dateEnd": "1930-02-03",
     "periodLabel": "03/02/1930",
     "levelTexts": {
       "primary": "Chủ trì Hội nghị hợp nhất, thành lập ĐCSVN."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ đầu tháng 1 đến đầu tháng 2/1930 (biên niên thường ghi mốc **6/1–7/2/1930**), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, dẫn tới việc thành lập **Đảng Cộng sản Việt Nam** tại Cửu Long (Hương Cảng).\n\n### Điểm nhấn\n- Hợp nhất các tổ chức, thống nhất đường lối và tổ chức.  \n- Ý nghĩa như “đại hội thành lập”, mở ra giai đoạn mới cho cách mạng Việt Nam.\n\n### Gợi ý media\n- Ảnh: di tích/nơi họp; trích báo cáo gửi Quốc tế Cộng sản (18/12/1930)  \n- Video: tư liệu về Hội nghị hợp nhất 1930\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: nơi thành lập ĐCSVN 1930 Kowloon",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Site%20of%20founding%20of%20Communist%20Party%20of%20Vietnam%201930&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hội nghị hợp nhất 1930 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BB%99i%20ngh%E1%BB%8B%20h%E1%BB%A3p%20nh%E1%BA%A5t%201930%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20C%E1%BB%ADu%20Long"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-033",
@@ -815,14 +2027,36 @@
     "title": "Hồng Kông (Kowloon) - Bị bắt tại phố Tam Kung",
     "country": "Trung Quốc",
     "city": "Hồng Kông (Kowloon)",
-    "coords": [114.1747, 22.3186],
+    "coords": [
+      114.1747,
+      22.3186
+    ],
     "dateStart": "1931-06-06",
     "dateEnd": "1931-06-06",
     "periodLabel": "06/06/1931",
     "levelTexts": {
       "primary": "Bị bắt tại số 186 phố Tam Kung (Cửu Long)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ đầu tháng 1 đến đầu tháng 2/1930 (biên niên thường ghi mốc **6/1–7/2/1930**), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, dẫn tới việc thành lập **Đảng Cộng sản Việt Nam** tại Cửu Long (Hương Cảng).\n\n### Điểm nhấn\n- Hợp nhất các tổ chức, thống nhất đường lối và tổ chức.  \n- Ý nghĩa như “đại hội thành lập”, mở ra giai đoạn mới cho cách mạng Việt Nam.\n\n### Gợi ý media\n- Ảnh: di tích/nơi họp; trích báo cáo gửi Quốc tế Cộng sản (18/12/1930)  \n- Video: tư liệu về Hội nghị hợp nhất 1930\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: nơi thành lập ĐCSVN 1930 Kowloon",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Site%20of%20founding%20of%20Communist%20Party%20of%20Vietnam%201930&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hội nghị hợp nhất 1930 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BB%99i%20ngh%E1%BB%8B%20h%E1%BB%A3p%20nh%E1%BA%A5t%201930%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20C%E1%BB%ADu%20Long"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-034",
@@ -830,14 +2064,36 @@
     "title": "Singapore - Rời Hồng Kông",
     "country": "Singapore",
     "city": "Singapore",
-    "coords": [103.8519, 1.2903],
+    "coords": [
+      103.8519,
+      1.2903
+    ],
     "dateStart": "1932-12-28",
     "dateEnd": "1932-12-28",
     "periodLabel": "28/12/1932",
     "levelTexts": {
       "primary": "Được thả, rời Hồng Kông đi Singapore."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐược thả, rời Hồng Kông đi Singapore.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-035",
@@ -845,14 +2101,36 @@
     "title": "Singapore - Bị bắt giữ và buộc quay lại",
     "country": "Singapore",
     "city": "Singapore",
-    "coords": [103.8519, 1.2903],
+    "coords": [
+      103.8519,
+      1.2903
+    ],
     "dateStart": "1933-01-06",
     "dateEnd": "1933-01-06",
     "periodLabel": "06/01/1933",
     "levelTexts": {
       "primary": "Đến Singapore nhưng bị bắt giữ, buộc quay lại."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Singapore nhưng bị bắt giữ, buộc quay lại.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Singapore&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Singapore%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-036",
@@ -860,14 +2138,36 @@
     "title": "Hồng Kông (Kowloon) - Bị giam lỏng lần 2",
     "country": "Trung Quốc",
     "city": "Hồng Kông (Kowloon)",
-    "coords": [114.1747, 22.3186],
+    "coords": [
+      114.1747,
+      22.3186
+    ],
     "dateStart": "1933-01-19",
     "dateEnd": "1933-01-19",
     "periodLabel": "19/01/1933",
     "levelTexts": {
       "primary": "Bị giam lỏng lần 2."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ đầu tháng 1 đến đầu tháng 2/1930 (biên niên thường ghi mốc **6/1–7/2/1930**), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, dẫn tới việc thành lập **Đảng Cộng sản Việt Nam** tại Cửu Long (Hương Cảng).\n\n### Điểm nhấn\n- Hợp nhất các tổ chức, thống nhất đường lối và tổ chức.  \n- Ý nghĩa như “đại hội thành lập”, mở ra giai đoạn mới cho cách mạng Việt Nam.\n\n### Gợi ý media\n- Ảnh: di tích/nơi họp; trích báo cáo gửi Quốc tế Cộng sản (18/12/1930)  \n- Video: tư liệu về Hội nghị hợp nhất 1930\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: nơi thành lập ĐCSVN 1930 Kowloon",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Site%20of%20founding%20of%20Communist%20Party%20of%20Vietnam%201930&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hội nghị hợp nhất 1930 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BB%99i%20ngh%E1%BB%8B%20h%E1%BB%A3p%20nh%E1%BA%A5t%201930%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20C%E1%BB%ADu%20Long"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-037",
@@ -875,14 +2175,36 @@
     "title": "Hồng Kông (Kowloon) - Cải trang rời Hồng Kông",
     "country": "Trung Quốc",
     "city": "Hồng Kông (Kowloon)",
-    "coords": [114.1747, 22.3186],
+    "coords": [
+      114.1747,
+      22.3186
+    ],
     "dateStart": "1933-01-22",
     "dateEnd": "1933-01-22",
     "periodLabel": "22/01/1933",
     "levelTexts": {
       "primary": "Cải trang, rời Hồng Kông trên ca nô nhỏ."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ đầu tháng 1 đến đầu tháng 2/1930 (biên niên thường ghi mốc **6/1–7/2/1930**), Nguyễn Ái Quốc chủ trì Hội nghị hợp nhất các tổ chức cộng sản, dẫn tới việc thành lập **Đảng Cộng sản Việt Nam** tại Cửu Long (Hương Cảng).\n\n### Điểm nhấn\n- Hợp nhất các tổ chức, thống nhất đường lối và tổ chức.  \n- Ý nghĩa như “đại hội thành lập”, mở ra giai đoạn mới cho cách mạng Việt Nam.\n\n### Gợi ý media\n- Ảnh: di tích/nơi họp; trích báo cáo gửi Quốc tế Cộng sản (18/12/1930)  \n- Video: tư liệu về Hội nghị hợp nhất 1930\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh: nơi thành lập ĐCSVN 1930 Kowloon",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Site%20of%20founding%20of%20Communist%20Party%20of%20Vietnam%201930&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hội nghị hợp nhất 1930 Nguyễn Ái Quốc",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BB%99i%20ngh%E1%BB%8B%20h%E1%BB%A3p%20nh%E1%BA%A5t%201930%20Nguy%E1%BB%85n%20%C3%81i%20Qu%E1%BB%91c%20C%E1%BB%ADu%20Long"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-038",
@@ -890,14 +2212,36 @@
     "title": "Hạ Môn (Xiamen, Trung Quốc) - Đến Hạ Môn",
     "country": "Trung Quốc",
     "city": "Hạ Môn (Xiamen)",
-    "coords": [118.0894, 24.4798],
+    "coords": [
+      118.0894,
+      24.4798
+    ],
     "dateStart": "1933-01-25",
     "dateEnd": "1933-01-25",
     "periodLabel": "25/01/1933",
     "levelTexts": {
       "primary": "Đến Hạ Môn (Trung Quốc)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Hạ Môn (Trung Quốc).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=H%E1%BA%A1%20M%C3%B4n%20%28Xiamen%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=H%E1%BA%A1%20M%C3%B4n%20%28Xiamen%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=H%E1%BA%A1%20M%C3%B4n%20%28Xiamen%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=H%E1%BA%A1%20M%C3%B4n%20%28Xiamen%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-039",
@@ -905,14 +2249,36 @@
     "title": "Thượng Hải (Shanghai, Trung Quốc) - Liên lạc tổ chức",
     "country": "Trung Quốc",
     "city": "Thượng Hải (Shanghai)",
-    "coords": [121.4737, 31.2304],
+    "coords": [
+      121.4737,
+      31.2304
+    ],
     "dateStart": "1933-07-01",
     "dateEnd": "1933-07-01",
     "periodLabel": "07/1933",
     "levelTexts": {
       "primary": "Từ Hạ Môn đến Thượng Hải, liên lạc tổ chức Đảng."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nTừ Hạ Môn đến Thượng Hải, liên lạc tổ chức Đảng.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Th%C6%B0%E1%BB%A3ng%20H%E1%BA%A3i%20%28Shanghai%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-040",
@@ -920,14 +2286,36 @@
     "title": "Moskva (Nga) - Đến Moskva",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1934-03-01",
     "dateEnd": "1934-03-31",
     "periodLabel": "Mùa xuân 1934",
     "levelTexts": {
       "primary": "Đến Moskva."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Moskva.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-041",
@@ -935,14 +2323,36 @@
     "title": "Moskva (Nga) - Học tại Trường Quốc tế Lênin",
     "country": "Nga",
     "city": "Moskva",
-    "coords": [37.6173, 55.7558],
+    "coords": [
+      37.6173,
+      55.7558
+    ],
     "dateStart": "1934-01-01",
     "dateEnd": "1938-12-31",
     "periodLabel": "1934 - 1938",
     "levelTexts": {
       "primary": "Học tại Trường Quốc tế Lênin."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHọc tại Trường Quốc tế Lênin.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Moskva&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Moskva%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-042",
@@ -950,14 +2360,36 @@
     "title": "Diên An (Yan'an, Trung Quốc) - Rời Moskva đi Diên An",
     "country": "Trung Quốc",
     "city": "Diên An (Yan'an)",
-    "coords": [109.4898, 36.5853],
+    "coords": [
+      109.4898,
+      36.5853
+    ],
     "dateStart": "1938-10-01",
     "dateEnd": "1938-10-01",
     "periodLabel": "10/1938",
     "levelTexts": {
       "primary": "Rời Moskva đi Diên An."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nRời Moskva đi Diên An.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Di%C3%AAn%20An%20%28Yan%27an%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Di%C3%AAn%20An%20%28Yan%27an%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Di%C3%AAn%20An%20%28Yan%27an%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Di%C3%AAn%20An%20%28Yan%27an%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-043",
@@ -965,14 +2397,36 @@
     "title": "Quý Dương (Guiyang, Trung Quốc) - Hoạt động",
     "country": "Trung Quốc",
     "city": "Quý Dương (Guiyang)",
-    "coords": [106.6302, 26.647],
+    "coords": [
+      106.6302,
+      26.647
+    ],
     "dateStart": "1939-01-01",
     "dateEnd": "1940-12-31",
     "periodLabel": "1939 - 1940",
     "levelTexts": {
       "primary": "Hoạt động tại Quý Dương."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại Quý Dương.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%C3%BD%20D%C6%B0%C6%A1ng%20%28Guiyang%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%C3%BD%20D%C6%B0%C6%A1ng%20%28Guiyang%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%C3%BD%20D%C6%B0%C6%A1ng%20%28Guiyang%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%C3%BD%20D%C6%B0%C6%A1ng%20%28Guiyang%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-044",
@@ -980,14 +2434,36 @@
     "title": "Côn Minh (Kunming, Trung Quốc) - Hoạt động",
     "country": "Trung Quốc",
     "city": "Côn Minh (Kunming)",
-    "coords": [102.7123, 25.0406],
+    "coords": [
+      102.7123,
+      25.0406
+    ],
     "dateStart": "1939-01-01",
     "dateEnd": "1940-12-31",
     "periodLabel": "1939 - 1940",
     "levelTexts": {
       "primary": "Hoạt động tại Côn Minh."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại Côn Minh.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=C%C3%B4n%20Minh%20%28Kunming%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=C%C3%B4n%20Minh%20%28Kunming%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=C%C3%B4n%20Minh%20%28Kunming%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=C%C3%B4n%20Minh%20%28Kunming%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-045",
@@ -995,14 +2471,36 @@
     "title": "Quế Lâm (Guilin, Trung Quốc) - Hoạt động",
     "country": "Trung Quốc",
     "city": "Quế Lâm (Guilin)",
-    "coords": [110.2902, 25.2736],
+    "coords": [
+      110.2902,
+      25.2736
+    ],
     "dateStart": "1939-01-01",
     "dateEnd": "1940-12-31",
     "periodLabel": "1939 - 1940",
     "levelTexts": {
       "primary": "Hoạt động tại Quế Lâm."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nHoạt động tại Quế Lâm.\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%BF%20L%C3%A2m%20%28Guilin%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=Qu%E1%BA%BF%20L%C3%A2m%20%28Guilin%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Qu%E1%BA%BF%20L%C3%A2m%20%28Guilin%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=Qu%E1%BA%BF%20L%C3%A2m%20%28Guilin%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-046",
@@ -1010,14 +2508,36 @@
     "title": "Tĩnh Tây (Quảng Tây, Trung Quốc) - Đến Tĩnh Tây",
     "country": "Trung Quốc",
     "city": "Tĩnh Tây (Quảng Tây)",
-    "coords": [106.4167, 23.1333],
+    "coords": [
+      106.4167,
+      23.1333
+    ],
     "dateStart": "1940-12-01",
     "dateEnd": "1940-12-01",
     "periodLabel": "12/1940",
     "levelTexts": {
       "primary": "Đến Tĩnh Tây (Quảng Tây)."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ],
+    "detailMarkdown": "### Tóm tắt\nĐến Tĩnh Tây (Quảng Tây).\n\n### Gợi ý media\n- Ảnh: https://commons.wikimedia.org/w/index.php?search=T%C4%A9nh%20T%C3%A2y%20%28Qu%E1%BA%A3ng%20T%C3%A2y%29&title=Special:MediaSearch&type=image\n- Video: https://www.youtube.com/results?search_query=T%C4%A9nh%20T%C3%A2y%20%28Qu%E1%BA%A3ng%20T%C3%A2y%29%20Ho%20Chi%20Minh\n",
+    "media": {
+      "images": [
+        {
+          "label": "Tìm ảnh",
+          "url": "https://commons.wikimedia.org/w/index.php?search=T%C4%A9nh%20T%C3%A2y%20%28Qu%E1%BA%A3ng%20T%C3%A2y%29&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Tìm video",
+          "url": "https://www.youtube.com/results?search_query=T%C4%A9nh%20T%C3%A2y%20%28Qu%E1%BA%A3ng%20T%C3%A2y%29%20Ho%20Chi%20Minh"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   },
   {
     "id": "hcm-047",
@@ -1025,13 +2545,35 @@
     "title": "Pác Bó (Cao Bằng, Việt Nam) - Về nước",
     "country": "Việt Nam",
     "city": "Pác Bó (Cao Bằng)",
-    "coords": [106.317, 22.549],
+    "coords": [
+      106.317,
+      22.549
+    ],
     "dateStart": "1941-01-28",
     "dateEnd": "1941-01-28",
     "periodLabel": "28/01/1941",
     "levelTexts": {
       "primary": "Vượt cột mốc 108 về nước, chọn Pác Bó làm căn cứ."
     },
-    "sources": ["hành trình.docx (dữ liệu người dùng cung cấp)"]
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://pacbo.vn/bai-viet/tu-pac-bo-den-tan-trao-va-thang-loi-cua-cach-mang-thang-tam-1024783"
+    ],
+    "detailMarkdown": "### Tóm tắt\nNgày **28/1/1941**, Nguyễn Ái Quốc vượt qua **mốc 108** biên giới Việt – Trung về Pác Bó (Trường Hà, Hà Quảng, Cao Bằng), khép lại chặng 30 năm hoạt động ở nước ngoài và mở ra giai đoạn trực tiếp lãnh đạo cách mạng trong nước.\n\n### Hoạt động gắn với địa điểm\n- Ở và làm việc tại khu vực hang Cốc Bó; hình thành căn cứ cách mạng, chỉ đạo chuẩn bị lực lượng.  \n- Pác Bó gắn với các quyết sách quan trọng trong thời kỳ 1941–1945.\n\n",
+    "media": {
+      "images": [
+        {
+          "label": "Pác Bó – hang Cốc Bó/suối Lênin (tìm ảnh)",
+          "url": "https://commons.wikimedia.org/w/index.php?search=Pac%20Bo%20Cave&title=Special:MediaSearch&type=image"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Pác Bó 1941 Hồ Chí Minh (tư liệu)",
+          "url": "https://www.youtube.com/results?search_query=P%C3%A1c%20B%C3%B3%201941%20H%E1%BB%93%20Ch%C3%AD%20Minh%20t%C6%B0%20li%E1%BB%87u"
+        }
+      ]
+    },
+    "accuracyNote": "Các chặng 1911–1913 chủ yếu dựa trên tuyến tàu và nguồn tổng thuật; một số điểm dừng có thể khác nhau giữa các tài liệu. Với các mốc hoạt động cách mạng (1920–1941) ưu tiên nguồn biên niên/chính thống."
   }
 ]

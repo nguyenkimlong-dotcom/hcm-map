@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -39,14 +38,7 @@ export default async function PlaceDetailPage({ params }: Props) {
 
         {place.media?.cover ? (
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-            <Image
-              src={place.media.cover}
-              alt={place.title}
-              width={1200}
-              height={600}
-              className="h-auto w-full object-cover"
-              priority
-            />
+            <img src={place.media.cover} alt={place.title} className="h-auto w-full object-cover" />
           </div>
         ) : null}
 

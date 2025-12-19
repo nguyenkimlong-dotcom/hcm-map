@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Direction</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M49 30H15a8.005 8.005 0 0 1-7.976-8.059A7.906 7.906 0 0 1 15 14h38l-3.566 3.924 2.844 2.846L61 12l-8.72-9-2.846 2.843L53 10H15a12 12 0 1 0 0 24h34c4.436 0 9 3.563 9 8a7.977 7.977 0 0 1-8 8H11l4-4-2.946-2.768L3 52l1.584 1.525.02.02L12 61l3-3-4-4h39a11.964 11.964 0 0 0 12-12c0-6.656-6.344-12-13-12z"
+  fill="#202020"></path>
+</svg>

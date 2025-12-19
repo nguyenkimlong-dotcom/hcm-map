@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Move</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M62 59V45a3 3 0 0 0-6 0v6.758L36.242 32 56 12.243V19a3 3 0 0 0 6 0V2H45a3 3 0 0 0 0 6h6.758L32 27.758 12.242 8H19a3 3 0 0 0 0-6H2v17a3 3 0 0 0 6 0v-6.757L27.758 32 8 51.758V45a3 3 0 0 0-6 0v17h17a3 3 0 0 0 0-6h-6.758L32 36.243 51.758 56H45a3 3 0 0 0 0 6h17v-3z"
+  fill="#202020"></path>
+</svg>

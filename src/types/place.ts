@@ -16,6 +16,8 @@ export type Place = {
   media?: {
     cover?: string;
     gallery?: string[];
+    images?: { label?: string; url?: string }[];
+    videos?: { label?: string; url?: string }[];
   };
   tags?: string[];
   sources?: string[];

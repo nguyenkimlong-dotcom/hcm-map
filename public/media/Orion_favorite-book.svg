@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Favorite Book</title>
+  <desc>A solid styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M14 8a4 4 0 0 0 4 4h32V4H18a4 4 0 0 0-4 4z" fill="#202020"></path>
+  <path data-name="layer1" d="M18 16a8 8 0 0 1-8-8v44a8 8 0 0 0 8 8h36V16zm21.4 32.3L32 42.8l-7.4 5.4 2.9-8.7L20 34h9.2l2.8-8.6 2.8 8.6H44l-7.4 5.5z"
+  fill="#202020"></path>
+</svg>

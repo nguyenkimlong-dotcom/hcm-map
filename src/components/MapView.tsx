@@ -1066,7 +1066,7 @@ export default function MapView({ places }: Props) {
 
         {/* Detail sidebar */}
         {detailPlace ? (
-          <div className="pointer-events-auto absolute right-3 top-14 z-30 h-[83vh] w-[440px] max-w-full overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
+          <div className="pointer-events-auto absolute right-3 top-14 z-30 flex h-[83vh] w-[440px] max-w-full flex-col overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
             <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
             <div className="relative z-10 flex items-center justify-between border-b border-white/30 bg-white/45 px-4 py-3 backdrop-blur-xl">
               <div>
@@ -1082,7 +1082,7 @@ export default function MapView({ places }: Props) {
                 x
               </button>
             </div>
-            <div className="relative z-10 overflow-y-auto px-4 pb-6 pt-4 space-y-4" style={{ maxHeight: "calc(88vh - 64px)" }}>
+            <div className="relative z-10 min-h-0 flex-1 space-y-4 overflow-y-auto px-4 pb-6 pt-4">
               {detailPlace.periodLabel || detailPlace.dateStart || detailPlace.dateEnd ? (
                 <div className="space-y-1 text-sm text-slate-700">
                   <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Thời gian</p>
@@ -1139,20 +1139,20 @@ export default function MapView({ places }: Props) {
               <div className="space-y-2 text-sm text-slate-700">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Nội dung</p>
                 {(detailPlace as any).detailMarkdown ? (
-                  <div className="rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-800 whitespace-pre-line">
+                  <div className="rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-800 whitespace-pre-line text-justify">
                     {(detailPlace as any).detailMarkdown}
                   </div>
                 ) : null}
                 {detailPlace.levelTexts?.secondary ? (
                   <div className="space-y-1 rounded-md bg-slate-50 px-3 py-2">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Mô tả bổ sung</p>
-                    <p className="text-sm text-slate-700">{detailPlace.levelTexts.secondary}</p>
+                    <p className="text-sm text-slate-700 text-justify">{detailPlace.levelTexts.secondary}</p>
                   </div>
                 ) : null}
                 {detailPlace.levelTexts?.high ? (
                   <div className="space-y-1 rounded-md bg-slate-50 px-3 py-2">
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Chú thích</p>
-                    <p className="text-sm text-slate-700">{detailPlace.levelTexts.high}</p>
+                    <p className="text-sm text-slate-700 text-justify">{detailPlace.levelTexts.high}</p>
                   </div>
                 ) : null}
               </div>

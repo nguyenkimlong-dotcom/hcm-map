@@ -59,6 +59,21 @@ function isVideoUrl(url: string) {
   return /\.(mp4|webm|ogg)$/i.test(url);
 }
 
+function getEmbedVideoSrc(url: string) {
+  const trimmed = url.trim();
+  const ytMatch = trimmed.match(
+    /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtube\.com\/embed\/|youtu\.be\/)([A-Za-z0-9_-]{6,})/i,
+  );
+  if (ytMatch) {
+    return `https://www.youtube.com/embed/${ytMatch[1]}`;
+  }
+  const vimeoMatch = trimmed.match(/^(?:https?:\/\/)?(?:www\.)?vimeo\.com\/(\d+)/i);
+  if (vimeoMatch) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+  }
+  return null;
+}
+
 function buildPopupContent(place: Place, onDetail: () => void) {
   const placeAny = place as any;
   const wrapper = document.createElement("div");
@@ -1051,7 +1066,7 @@ export default function MapView({ places }: Props) {
 
         {/* Detail sidebar */}
         {detailPlace ? (
-          <div className="pointer-events-auto absolute right-3 top-14 z-30 h-[88vh] w-[440px] max-w-full overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
+          <div className="pointer-events-auto absolute right-3 top-14 z-30 h-[83vh] w-[440px] max-w-full overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
             <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
             <div className="relative z-10 flex items-center justify-between border-b border-white/30 bg-white/45 px-4 py-3 backdrop-blur-xl">
               <div>
@@ -1091,7 +1106,7 @@ export default function MapView({ places }: Props) {
                 <img
                   src={detailPlace.media.cover}
                   alt={detailPlace.title || "Ảnh bìa"}
-                  className="h-44 w-full rounded-lg object-cover"
+                  className="h-auto w-full rounded-lg"
                 />
               ) : null}
 
@@ -1101,7 +1116,7 @@ export default function MapView({ places }: Props) {
                     {(detailPlace as any).media.images.slice(0, 3).map((img: any, idx: number) => (
                       <div key={`img-${idx}`} className="rounded-md border border-slate-100 p-2">
                         {img.url && isImageUrl(img.url) ? (
-                          <img src={img.url} alt={img.label || "Ảnh"} className="h-32 w-full rounded-md object-cover" />
+                          <img src={img.url} alt={img.label || "Ảnh"} className="h-auto w-full rounded-md" />
                         ) : null}
                         {img.url && !isImageUrl(img.url) ? (
                           <a
@@ -1142,64 +1157,71 @@ export default function MapView({ places }: Props) {
                 ) : null}
               </div>
 
-              {detailPlace.sources?.length ? (
-                <div className="space-y-2 text-sm text-slate-700">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Nguồn</p>
-                  <ul className="space-y-1">
-                    {detailPlace.sources.map((s, idx) => (
-                      <li key={`${detailPlace.slug || detailPlace.id}-src-${idx}`} className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400" />
-                        {/^https?:\/\//i.test(s) ? (
-                          <a
-                            href={s}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="break-words text-[#991B1B] underline underline-offset-2"
-                          >
-                            {s}
-                          </a>
-                        ) : (
-                          <span className="break-words">{s}</span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-
               {(detailPlace as any).media?.videos?.length ? (
                 <div className="space-y-2 text-sm text-slate-700">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Đoạn video</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Video</p>
                   <div className="space-y-2">
                     {(detailPlace as any).media.videos.slice(0, 3).map((vid: any, idx: number) => (
                       <div key={`vid-${idx}`} className="rounded-md border border-slate-100 p-2">
                         {vid.url && isVideoUrl(vid.url) ? (
                           <video src={vid.url} controls className="w-full rounded-md" />
                         ) : null}
-                        {vid.url && !isVideoUrl(vid.url) ? (
-                          <a
-                            href={vid.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm font-semibold text-[#991B1B] underline underline-offset-2"
-                          >
-                            {vid.label || "Đoạn video"}
-                          </a>
-                        ) : (
-                          <span className="text-sm font-semibold text-slate-800">{vid.label || "Đoạn video"}</span>
-                        )}
+                        {vid.url && !isVideoUrl(vid.url)
+                          ? (() => {
+                              const embed = getEmbedVideoSrc(vid.url);
+                              if (embed) {
+                                return (
+                                  <div className="aspect-video w-full overflow-hidden rounded-md">
+                                    <iframe
+                                      src={embed}
+                                      title={vid.label || "Video"}
+                                      className="h-full w-full"
+                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                      allowFullScreen
+                                    />
+                                  </div>
+                                );
+                              }
+                              return (
+                                <a
+                                  href={vid.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-sm font-semibold text-[#991B1B] underline underline-offset-2"
+                                >
+                                  {vid.label || "Video"}
+                                </a>
+                              );
+                            })()
+                          : null}
+                        {!vid.url ? <span className="text-sm font-semibold text-slate-800">Video</span> : null}
                       </div>
                     ))}
                   </div>
                 </div>
               ) : null}
 
-              {(detailPlace as any).accuracyNote ? (
-                <div className="rounded-md bg-amber-50 p-3 text-xs text-amber-900">
-                  <p className="font-semibold text-amber-800">Lưu ý</p>
-                  <p className="whitespace-pre-line">{(detailPlace as any).accuracyNote}</p>
-                </div>
-              ) : null}
+              <div className="space-y-2 text-sm text-slate-700">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Nguồn</p>
+                <ul className="space-y-1">
+                  {[
+                    "https://baotanghochiminh.vn",
+                    "https://hcmcpv.org.vn",
+                  ].map((s, idx) => (
+                    <li key={`fixed-src-${idx}`} className="flex items-start gap-2">
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-slate-400" />
+                      <a
+                        href={s}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="break-words text-[#991B1B] underline underline-offset-2"
+                      >
+                        {s}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ) : null}

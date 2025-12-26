@@ -178,6 +178,10 @@ function toNumberOrder(v: string | number | undefined) {
   return undefined;
 }
 
+function isSameCoord(a: [number, number], b: [number, number], epsilon = 1e-4) {
+  return Math.abs(a[0] - b[0]) < epsilon && Math.abs(a[1] - b[1]) < epsilon;
+}
+
 function buildPointCollection(places: Place[]): GeoJSON.FeatureCollection<GeoJSON.Point> {
   return {
     type: "FeatureCollection",
@@ -428,6 +432,10 @@ export default function MapView({ places }: Props) {
           prevIndex !== undefined && prevIndex >= 0 && sortedPlaces[prevIndex]?.coords
             ? sortedPlaces[prevIndex].coords
             : (map.getCenter().toArray() as [number, number]);
+        const sameCenter = isSameCoord(fromCenter, targetCenter);
+        if (sameCenter) {
+          showPopup();
+        } else {
         const midCenter: [number, number] = [
           (fromCenter[0] + targetCenter[0]) / 2,
           (fromCenter[1] + targetCenter[1]) / 2,
@@ -464,6 +472,7 @@ export default function MapView({ places }: Props) {
             zoomInTimeoutRef.current = null;
           }, moveDuration + 80);
         }, zoomOutDuration + 60);
+        }
       } else {
         // Không animate: không tự zoom/popup khi mới tới trang
         animateSegment(undefined);

@@ -338,6 +338,28 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
+    "id": "hcm-048b3",
+    "slug": "19120220-port-said-ai-cap-2",
+    "title": "Port Said (Ai Cap) - Tau ghe cang",
+    "country": "Ai Cap",
+    "city": "Port Said",
+    "coords": [
+      32.2903,
+      31.2565
+    ],
+    "dateStart": "1912-02-20",
+    "dateEnd": "1912-02-20",
+    "periodLabel": "02/1912",
+    "levelTexts": {
+      "primary": "Tau ghe cang Port Said (Ai Cap) tren hanh trinh di Dong Phi."
+    },
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ]
+  },
+  {
     "id": "hcm-048c",
     "slug": "19120222-mogadishu-somalia",
     "title": "Mogadishu (Somalia) - Tạm dừng",
@@ -760,6 +782,50 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
+    "id": "hcm-058m",
+    "slug": "19130110-marseille-tau-cap-cang-2",
+    "title": "Marseille (Phap) - Tau cap cang",
+    "country": "Phap",
+    "city": "Marseille",
+    "coords": [
+      5.3698,
+      43.2965
+    ],
+    "dateStart": "1913-01-10",
+    "dateEnd": "1913-01-10",
+    "periodLabel": "01/1913",
+    "levelTexts": {
+      "primary": "Tau cap cang Marseille (Phap) tren hanh trinh tu Senegal ve Phap."
+    },
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ]
+  },
+  {
+    "id": "hcm-058n",
+    "slug": "19130120-le-havre-den-ben-cuoi-2",
+    "title": "Le Havre (Phap)",
+    "country": "Phap",
+    "city": "Le Havre",
+    "coords": [
+      0.1079,
+      49.4944
+    ],
+    "dateStart": "1913-01-20",
+    "dateEnd": "1913-01-20",
+    "periodLabel": "01/1913",
+    "levelTexts": {
+      "primary": "Tau den ben cuoi Le Havre truoc khi vuot Dai Tay Duong."
+    },
+    "sources": [
+      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+    ]
+  },
+  {
     "id": "hcm-058a",
     "slug": "19130205-fort-de-france-martinique",
     "title": "Martinique (Fort-de-France) - Cập cảng",
@@ -893,43 +959,6 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-007b",
-    "slug": "19130215-boston-my-sau-new-york",
-    "title": "Boston (Mỹ) - Tiếp tục làm việc sau New York",
-    "country": "Mỹ",
-    "city": "Boston",
-    "coords": [
-      -71.0589,
-      42.3601
-    ],
-    "dateStart": "1913-02-15",
-    "dateEnd": "1913-12-31",
-    "periodLabel": "1913",
-    "levelTexts": {
-      "primary": "Trở lại Boston sau chặng New York, tiếp tục làm phụ bếp và lao động."
-    },
-    "sources": [
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
-      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
-    ],
-    "detailMarkdown": "Người làm việc tại khách sạn Omni Parker House ở Boston, Mỹ, một dấu mốc quan trọng trong những năm đầu Người bôn ba tìm đường cứu nước, nơi Người đã làm phụ bếp, dọn dẹp và làm quen với đời sống của người lao động tại Mỹ.",
-    "media": {
-      "images": [
-        {
-          "label": "Omni Parker House (Boston)",
-          "url": "Bospar-Omni-Parker-H.jpeg"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Thăm nơi Bác Hồ từng làm thợ bánh ở thành phố Boston, Hoa Kỳ",
-          "url": "https://www.youtube.com/watch?v=j7MZalJ1cdY"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
     "id": "hcm-008",
     "slug": "19130101-boston-lam-phu-bep",
     "title": "Boston (Mỹ) - Làm phụ bếp Omni Parker House",
@@ -1035,79 +1064,6 @@
         {
           "label": "Lưu giữ kỷ niệm Bác Hồ tại Paris",
           "url": "https://www.youtube.com/watch?v=-Ab9nZClk0k"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-011",
-    "slug": "19201201-tours-du-dai-hoi",
-    "title": "Tours (Pháp) - Dự Đại hội Tours",
-    "country": "Pháp",
-    "city": "Tours",
-    "coords": [
-      0.6848,
-      47.3941
-    ],
-    "dateStart": "1920-12-01",
-    "dateEnd": "1920-12-01",
-    "periodLabel": "12/1920",
-    "levelTexts": {
-      "primary": "Dự Đại hội Tours, tham gia sáng lập Đảng Cộng sản Pháp."
-    },
-    "sources": [
-      "https://baotanghochiminh.vn/nguyen-ai-quoc-tham-du-dai-hoi-dang-xa-hoi-phap-tai-thanh-pho-tours.htm",
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
-    ],
-    "detailMarkdown": "Tháng 12 năm 1920, Nguyễn Ái Quốc đã bỏ phiếu tán thành tham gia Quốc tế III Quốc tế Cộng sản, trở thành một trong những người sáng lập Đảng Cộng sản Pháp, và Người cũng trở thành người cộng sản Việt Nam đầu tiên. Đó là một sự kiện chính trị vô cùng quan trọng trong đời hoạt động cách mạng của Nguyễn Ái Quốc và trong lịch sử cách mạng nước ta.",
-    "media": {
-      "images": [
-        {
-          "label": "Toàn cảnh Đại hội Tour Pháp năm 1920",
-          "url": "15.Toan-Canh-Dai-Hoi-Tour-Phap-1920.jpg"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Lãnh tụ Nguyễn Ái Quốc - Hồ Chí Minh với Đại hội Tua năm 1920",
-          "url": "https://youtu.be/YuoJLydq0A0?t=16"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-012",
-    "slug": "19220401-paris-sang-lap-le-paria",
-    "title": "Paris (Pháp) - Sáng lập báo Le Paria",
-    "country": "Pháp",
-    "city": "Paris",
-    "coords": [
-      2.3522,
-      48.8566
-    ],
-    "dateStart": "1922-04-01",
-    "dateEnd": "1922-04-01",
-    "periodLabel": "04/1922",
-    "levelTexts": {
-      "primary": "Sáng lập báo Le Paria."
-    },
-    "sources": [
-      "https://baotanghochiminh.vn/nguyen-ai-quoc-cho-ra-so-dau-tien-to-bao-le-paria-nguoi-cung-kho.htm"
-    ],
-    "detailMarkdown": "Vào tháng 4/1922 tại Paris, Nguyễn Ái Quốc đã cùng các đồng chí sáng lập tờ báo Le Paria (Người cùng khổ), cơ quan ngôn luận của Hội Liên hiệp Thuộc địa, nhằm vạch trần chủ nghĩa thực dân, kêu gọi đoàn kết các dân tộc bị áp bức để đấu tranh giải phóng, với số đầu tiên ra ngày 1/4/1922, trở thành tiếng nói quan trọng cho phong trào giải phóng dân tộc.",
-    "media": {
-      "images": [
-        {
-          "label": "Tờ báo Le Paria",
-          "url": "bac_ho_12.webp"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Nguyễn Ái Quốc đã xoay xở như thế nào để duy trì tờ Le Paria?",
-          "url": "https://www.youtube.com/watch?v=7oo7dYf33A8"
         }
       ]
     },
@@ -1242,68 +1198,6 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-016",
-    "slug": "19240101-moskva-vinh-biet-lenin",
-    "title": "Moskva (Nga) - Vĩnh biệt Lênin",
-    "country": "Nga",
-    "city": "Moskva",
-    "coords": [
-      37.6173,
-      55.7558
-    ],
-    "dateStart": "1924-01-01",
-    "dateEnd": "1924-01-01",
-    "periodLabel": "01/1924",
-    "levelTexts": {
-      "primary": "Nghe tin Lênin từ trần, đăng bài vĩnh biệt Lênin."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Tháng 1 năm 1924 tại Moskva, khi tin Lênin qua đời được loan báo, đã gây xúc động sâu sắc, đặc biệt với những nhà cách mạng như Hồ Chí Minh (lúc đó là Nguyễn Ái Quốc), người đã nhận tin tại quán cơm khách sạn, và báo Pravda đã đăng tải các bài vĩnh biệt vĩ đại về người lãnh tụ, ghi nhận sự mất mát to lớn cho phong trào cách mạng thế giới và niềm tin vào lý tưởng Lênin đã gieo mầm.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "bacs-ho-1020241105102457.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-017",
-    "slug": "19230101-moskva-hoc-tap-va-viet-ban-an",
-    "title": "Moskva (Nga) - Học tập và viết Bản án chế độ thực dân Pháp",
-    "country": "Nga",
-    "city": "Moskva",
-    "coords": [
-      37.6173,
-      55.7558
-    ],
-    "dateStart": "1923-01-01",
-    "dateEnd": "1924-12-31",
-    "periodLabel": "1923 - 1924",
-    "levelTexts": {
-      "primary": "Học ngắn hạn, hoàn thành “Bản án chế độ thực dân Pháp”."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Giai đoạn 1923-1924 tại Moscow, Nguyễn Ái Quốc (Hồ Chí Minh) đã học tập ngắn hạn, viết nhiều bài báo sắc sảo tố cáo thực dân Pháp cho báo chí quốc tế và hoàn thành tác phẩm Bản án chế độ thực dân Pháp (xuất bản 1925), tố cáo tội ác của Pháp ở Đông Dương, khẳng định con đường cách mạng giải phóng tộc.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "images.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
     "id": "hcm-018",
     "slug": "19240601-moskva-dai-hoi-quoc-te-cong-san",
     "title": "Moskva (Nga) - Dự Đại hội V Quốc tế Cộng sản",
@@ -1333,6 +1227,23 @@
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+  },
+  {
+    "id": "hcm-018b",
+    "slug": "19241001-vladivostok-nga",
+    "title": "Vladivostok (Nga) - Diem trung chuyen",
+    "country": "Nga",
+    "city": "Vladivostok",
+    "coords": [
+      131.90812555430824,
+      43.1443021641187
+    ],
+    "dateStart": "1924-10-01",
+    "dateEnd": "1924-10-01",
+    "periodLabel": "10/1924",
+    "levelTexts": {
+      "primary": "Diem trung chuyen tai Vladivostok tren hanh trinh den Quang Chau."
+    }
   },
   {
     "id": "hcm-019",
@@ -1366,159 +1277,38 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-020",
-    "slug": "19250101-quang-chau-huan-luyen",
-    "title": "Quảng Châu (Trung Quốc) - Mở lớp huấn luyện chính trị",
-    "country": "Trung Quốc",
-    "city": "Quảng Châu (Guangzhou)",
+    "id": "hcm-019b",
+    "slug": "19241201-moskva-tro-lai",
+    "title": "Moskva (Nga) - Tro lai",
+    "country": "Nga",
+    "city": "Moskva",
     "coords": [
-      113.2644,
-      23.1291
+      37.6173,
+      55.7558
     ],
-    "dateStart": "1925-01-01",
-    "dateEnd": "1927-12-31",
-    "periodLabel": "1925 - 1927",
+    "dateStart": "1924-12-01",
+    "dateEnd": "1924-12-01",
+    "periodLabel": "12/1924",
     "levelTexts": {
-      "primary": "Mở lớp huấn luyện chính trị."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Trong giai đoạn 1925-1927 tại Quảng Châu, Nguyễn Ái Quốc đã mở các lớp huấn luyện chính trị cho thanh niên yêu nước Việt Nam tại số 13 và 13/1 đường Văn Minh, giảng dạy về cách mạng thế giới và Việt Nam, đồng thời gửi học viên ưu tú sang Trường Quân sự Hoàng Phố (Whampoa) để đào tạo quân sự, nhằm xây dựng lực lượng nòng cốt cho cách mạng Việt Nam, đây là cơ sở hình thành Hội Việt Nam Cách mạng Thanh niên.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "image-20241113134023-1.jpeg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Tro lai Moskva sau hanh trinh tu Quang Chau."
+    }
   },
   {
-    "id": "hcm-021",
-    "slug": "19250601-quang-chau-thanh-lap-hoi",
-    "title": "Quảng Châu (Trung Quốc) - Thành lập Hội Việt Nam Cách mạng Thanh niên",
-    "country": "Trung Quốc",
-    "city": "Quảng Châu (Guangzhou)",
+    "id": "hcm-019c",
+    "slug": "19250115-paris-tro-lai",
+    "title": "Paris (Phap) - Tro lai",
+    "country": "Phap",
+    "city": "Paris",
     "coords": [
-      113.2644,
-      23.1291
+      2.3522,
+      48.8566
     ],
-    "dateStart": "1925-06-01",
-    "dateEnd": "1925-06-01",
-    "periodLabel": "06/1925",
+    "dateStart": "1925-01-15",
+    "dateEnd": "1925-01-15",
+    "periodLabel": "01/1925",
     "levelTexts": {
-      "primary": "Thành lập Hội Việt Nam Cách mạng Thanh niên."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Vào tháng 6 năm 1925 tại Quảng Châu, Trung Quốc, dưới sự lãnh đạo của Lãnh tụ Nguyễn Ái Quốc, tổ chức Hội Việt Nam Cách mạng Thanh niên chính thức được thành lập, đây là sự kiện lịch sử quan trọng, đánh dấu bước chuyển mình của phong trào giải phóng dân tộc Việt Nam và là tiền thân trực tiếp dẫn đến sự ra đời của Đảng Cộng sản Việt Nam sau này.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "tobaodautin.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-022",
-    "slug": "19250621-quang-chau-bao-thanh-nien",
-    "title": "Quảng Châu (Trung Quốc) - Ra số đầu báo Thanh Niên",
-    "country": "Trung Quốc",
-    "city": "Quảng Châu (Guangzhou)",
-    "coords": [
-      113.2644,
-      23.1291
-    ],
-    "dateStart": "1925-06-21",
-    "dateEnd": "1925-06-21",
-    "periodLabel": "21/06/1925",
-    "levelTexts": {
-      "primary": "Sáng lập và ra số đầu tiên báo Thanh Niên."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Ngày 21-6-1925, Báo Thanh Niên, cơ quan ngôn luận của Hội Việt Nam Cách mạng Thanh niên chính thức ra đời, góp phần chuẩn bị về tư tưởng chính trị và tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "bao-thanh-nien-1624187409368.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-023",
-    "slug": "19270501-hang-chau-roi-quang-chau",
-    "title": "Hàng Châu (Hangzhou, Trung Quốc) - Rời Quảng Châu",
-    "country": "Trung Quốc",
-    "city": "Hàng Châu (Hangzhou)",
-    "coords": [
-      120.1551,
-      30.2741
-    ],
-    "dateStart": "1927-05-01",
-    "dateEnd": "1927-05-01",
-    "periodLabel": "05/1927",
-    "levelTexts": {
-      "primary": "Rời Quảng Châu đi Hàng Châu."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Tháng 5/1927, Nguyễn Ái Quốc rời Quảng Châu đi Hàng Châu, Thượng Hải (Trung Quốc) là để né tránh sự đàn áp của Tưởng Giới Thạch, đánh dấu giai đoạn Người phải di chuyển liên tục để tiếp tục hoạt động cách mạng",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "ton-trung-son-la-ai-e22700-1200x675.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-024",
-    "slug": "19270501-thuong-hai-tranh-truy-quet",
-    "title": "Thượng Hải (Shanghai, Trung Quốc) - Tránh truy quét",
-    "country": "Trung Quốc",
-    "city": "Thượng Hải (Shanghai)",
-    "coords": [
-      121.4737,
-      31.2304
-    ],
-    "dateStart": "1927-05-01",
-    "dateEnd": "1927-05-01",
-    "periodLabel": "05/1927",
-    "levelTexts": {
-      "primary": "Đi Thượng Hải để tránh truy quét."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Ngày 21-6-1925, Báo Thanh Niên, cơ quan ngôn luận của Hội Việt Nam Cách mạng Thanh niên chính thức ra đời, góp phần chuẩn bị về tư tưởng chính trị và tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "ton-trung-son-la-ai-e22700-1200x675.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Tro lai Paris sau hanh trinh tu Moskva."
+    }
   },
   {
     "id": "hcm-025",
@@ -1549,6 +1339,43 @@
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+  },
+  {
+    "id": "hcm-025b",
+    "slug": "19271215-berlin-lam-bao",
+    "title": "Berlin (Duc) - Lam bao",
+    "country": "Duc",
+    "city": "Berlin",
+    "coords": [
+      13.405,
+      52.52
+    ],
+    "dateStart": "1927-12-15",
+    "dateEnd": "1927-12-15",
+    "periodLabel": "12/1927",
+    "levelTexts": {
+      "primary": "Den Berlin, lam bao."
+    },
+    "sources": [
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ]
+  },
+  {
+    "id": "hcm-025c",
+    "slug": "19280115-milan-chuyen-tiep",
+    "title": "Milan (Y) - Diem trung chuyen",
+    "country": "Y",
+    "city": "Milan",
+    "coords": [
+      9.188076260761704,
+      45.44625042932225
+    ],
+    "dateStart": "1928-01-15",
+    "dateEnd": "1928-01-15",
+    "periodLabel": "01/1928",
+    "levelTexts": {
+      "primary": "Diem trung chuyen tai Milan."
+    }
   },
   {
     "id": "hcm-026",
@@ -1613,99 +1440,6 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-028",
-    "slug": "19280701-phichit-hoat-dong",
-    "title": "Phichit (Thái Lan) - Hoạt động tại Phichit",
-    "country": "Thái Lan",
-    "city": "Phichit",
-    "coords": [
-      100.3488,
-      16.439
-    ],
-    "dateStart": "1928-07-01",
-    "dateEnd": "1928-07-01",
-    "periodLabel": "07/1928",
-    "levelTexts": {
-      "primary": "Hoạt động tại Phichit."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Vào tháng 7/1928, Nguyễn Ái Quốc đến Thái Lan (Xiêm), hoạt động tại Bangkok rồi di chuyển đến các địa phương như Phichit, Udon Thani và Sakon Nakhon (Na Khon Phanom) để gây dựng phong trào cách mạng, xây dựng cơ sở, tập hợp kiều bào Việt Nam, dạy tiếng Việt và tiếng Thái, chuẩn bị cho sự nghiệp giải phóng dân tộc, để lại dấu ấn sâu đậm với nhiều khu tưởng niệm tại Thái Lan.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "ho-chi-minh.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-029",
-    "slug": "19280701-udon-thani-hoat-dong",
-    "title": "Udon Thani (Thái Lan) - Hoạt động tại U Đon",
-    "country": "Thái Lan",
-    "city": "Udon Thani",
-    "coords": [
-      102.79,
-      17.4157
-    ],
-    "dateStart": "1928-07-01",
-    "dateEnd": "1928-07-01",
-    "periodLabel": "07/1928",
-    "levelTexts": {
-      "primary": "Hoạt động tại U Đon."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Giai đoạn 1928-1929, Nguyễn Ái Quốc (bí danh Thầu Chín) hoạt động mạnh mẽ tại Xiêm (Thái Lan), đặc biệt ở vùng Đông Bắc, vận động Việt kiều đoàn kết, thành lập tổ chức cách mạng, mở lớp dạy chữ (quốc ngữ, tiếng Thái), viết báo (như Thân Ái, dù Le Paria nổi tiếng hơn), dịch tài liệu lý luận, và xây dựng cơ sở cách mạng, củng cố phong trào, chuẩn bị lực lượng cho cách mạng Việt Nam.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "anh-man-hinh-2025-05-19-luc-104045.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-030",
-    "slug": "19280701-sakon-nakhon-hoat-dong",
-    "title": "Sakon Nakhon (Thái Lan) - Hoạt động tại Sakon Nakhon",
-    "country": "Thái Lan",
-    "city": "Sakon Nakhon",
-    "coords": [
-      104.147,
-      17.1546
-    ],
-    "dateStart": "1928-07-01",
-    "dateEnd": "1928-07-01",
-    "periodLabel": "07/1928",
-    "levelTexts": {
-      "primary": "Hoạt động tại Sakon Nakhon."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Giai đoạn 1928-1929, Nguyễn Ái Quốc (bí danh Thầu Chín) hoạt động mạnh mẽ tại Xiêm (Thái Lan), đặc biệt ở vùng Đông Bắc, vận động Việt kiều đoàn kết, thành lập tổ chức cách mạng, mở lớp dạy chữ (quốc ngữ, tiếng Thái), viết báo (như Thân Ái, dù Le Paria nổi tiếng hơn), dịch tài liệu lý luận, và xây dựng cơ sở cách mạng, củng cố phong trào, chuẩn bị lực lượng cho cách mạng Việt Nam.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "anh-man-hinh-2025-05-19-luc-104045.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
     "id": "hcm-031",
     "slug": "19291201-hong-kong-roi-xiem",
     "title": "Hồng Kông (Kowloon) - Rời Xiêm",
@@ -1729,435 +1463,329 @@
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-032",
-    "slug": "19300203-hong-kong-hop-nhat-dcsvn",
-    "title": "Hồng Kông (Kowloon) - Chủ trì Hội nghị hợp nhất",
-    "country": "Trung Quốc",
-    "city": "Hồng Kông (Kowloon)",
+    "id": "hcm-031b",
+    "slug": "19300115-bangkok-tro-lai",
+    "title": "Bangkok (Thai Lan) - Tro lai",
+    "country": "Thai Lan",
+    "city": "Bangkok",
     "coords": [
-      114.1747,
-      22.3186
+      100.5018,
+      13.7563
     ],
-    "dateStart": "1930-02-03",
-    "dateEnd": "1930-02-03",
-    "periodLabel": "03/02/1930",
+    "dateStart": "1930-01-15",
+    "dateEnd": "1930-01-15",
+    "periodLabel": "01/1930",
     "levelTexts": {
-      "primary": "Chủ trì Hội nghị hợp nhất, thành lập ĐCSVN."
+      "primary": "Tro lai Bangkok."
     },
     "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
-    ],
-    "detailMarkdown": "Ngày 3/2/1930, tại Cửu Long (Hồng Kông), dưới sự chủ trì của Nguyễn Ái Quốc (với vai trò phái viên Quốc tế Cộng sản), Hội nghị hợp nhất các tổ chức cộng sản Đông Dương (Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng, Đông Dương Cộng sản Liên đoàn), thành lập Đảng Cộng sản Việt Nam (nay là ngày chính thức kỷ niệm thành lập Đảng). Đây là sự kiện lịch sử trọng đại, chấm dứt khủng hoảng đường lối cứu nước, xác định con đường độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "Image.png"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
+    ]
   },
   {
-    "id": "hcm-033",
-    "slug": "19310606-hong-kong-bi-bat",
-    "title": "Hồng Kông (Kowloon) - Bị bắt tại phố Tam Kung",
-    "country": "Trung Quốc",
-    "city": "Hồng Kông (Kowloon)",
+    "id": "hcm-031c",
+    "slug": "19300201-malaysia-den",
+    "title": "Malaysia - Diem den",
+    "country": "Malaysia",
+    "city": "Malaysia",
     "coords": [
-      114.1747,
-      22.3186
+      103.02957640781946,
+      5.401839722927646
     ],
-    "dateStart": "1931-06-06",
-    "dateEnd": "1931-06-06",
-    "periodLabel": "06/06/1931",
+    "dateStart": "1930-02-01",
+    "dateEnd": "1930-02-01",
+    "periodLabel": "02/1930",
     "levelTexts": {
-      "primary": "Bị bắt tại số 186 phố Tam Kung (Cửu Long)."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
-    ],
-    "detailMarkdown": "Ngày 6/6/1931, Người bị cảnh sát Anh bắt tại số nhà 186 phố Tam Kung (Cửu Long) với tên Tống Văn Sơ.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Diem den tai Malaysia."
+    }
   },
   {
-    "id": "hcm-034",
-    "slug": "19321228-singapore-roi-hong-kong",
-    "title": "Singapore - Rời Hồng Kông",
+    "id": "hcm-031d",
+    "slug": "19300215-singapore-den",
+    "title": "Singapore - Diem den",
     "country": "Singapore",
     "city": "Singapore",
     "coords": [
-      103.8519,
-      1.2903
+      103.87722462973758,
+      1.28346518231817
     ],
-    "dateStart": "1932-12-28",
-    "dateEnd": "1932-12-28",
-    "periodLabel": "28/12/1932",
+    "dateStart": "1930-02-15",
+    "dateEnd": "1930-02-15",
+    "periodLabel": "02/1930",
     "levelTexts": {
-      "primary": "Được thả, rời Hồng Kông đi Singapore."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Người được thả, rời Hồng Kông đi Singapore.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Diem den tai Singapore."
+    }
   },
   {
-    "id": "hcm-035",
-    "slug": "19330106-singapore-bi-bat-giu",
-    "title": "Singapore - Bị bắt giữ và buộc quay lại",
+    "id": "hcm-031e",
+    "slug": "19300301-thuong-hai-den",
+    "title": "Thuong Hai (Trung Quoc) - Diem den",
+    "country": "Trung Quoc",
+    "city": "Thuong Hai",
+    "coords": [
+      121.32598331110871,
+      30.667856898779714
+    ],
+    "dateStart": "1930-03-01",
+    "dateEnd": "1930-03-01",
+    "periodLabel": "03/1930",
+    "levelTexts": {
+      "primary": "Diem den tai Thuong Hai."
+    }
+  },
+  {
+    "id": "hcm-031f",
+    "slug": "19300315-hong-kong-tro-lai",
+    "title": "Hong Kong - Tro lai",
+    "country": "Trung Quoc",
+    "city": "Hong Kong",
+    "coords": [
+      114.19294355685433,
+      22.304890417497052
+    ],
+    "dateStart": "1930-03-15",
+    "dateEnd": "1930-03-15",
+    "periodLabel": "03/1930",
+    "levelTexts": {
+      "primary": "Tro lai Hong Kong."
+    }
+  },
+  {
+    "id": "hcm-031g",
+    "slug": "19300401-singapore-tro-lai",
+    "title": "Singapore - Tro lai",
     "country": "Singapore",
     "city": "Singapore",
     "coords": [
-      103.8519,
-      1.2903
+      103.89321799241532,
+      1.251486283671488
     ],
-    "dateStart": "1933-01-06",
-    "dateEnd": "1933-01-06",
-    "periodLabel": "06/01/1933",
+    "dateStart": "1930-04-01",
+    "dateEnd": "1930-04-01",
+    "periodLabel": "04/1930",
     "levelTexts": {
-      "primary": "Đến Singapore nhưng bị bắt giữ, buộc quay lại Hồng Kông."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Người đến Singapore nhưng bị bắt giữ, buộc quay lại Hồng Kông.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Tro lai Singapore."
+    }
   },
   {
-    "id": "hcm-036",
-    "slug": "19330119-hong-kong-giam-long-lan-2",
-    "title": "Hồng Kông (Kowloon) - Bị giam lỏng lần 2",
-    "country": "Trung Quốc",
-    "city": "Hồng Kông (Kowloon)",
+    "id": "hcm-031h",
+    "slug": "19300415-hong-kong-lan-2",
+    "title": "Hong Kong - Lan 2",
+    "country": "Trung Quoc",
+    "city": "Hong Kong",
     "coords": [
-      114.1747,
-      22.3186
+      114.19294355685437,
+      22.319686330093944
     ],
-    "dateStart": "1933-01-19",
-    "dateEnd": "1933-01-19",
-    "periodLabel": "19/01/1933",
+    "dateStart": "1930-04-15",
+    "dateEnd": "1930-04-15",
+    "periodLabel": "04/1930",
     "levelTexts": {
-      "primary": "Người bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
-    ],
-    "detailMarkdown": "Người bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "tet-canh-ty-3.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Hong Kong lan 2."
+    }
   },
   {
-    "id": "hcm-037",
-    "slug": "19330122-hong-kong-cai-trang-roi",
-    "title": "Hồng Kông (Kowloon) - Cải trang rời Hồng Kông",
-    "country": "Trung Quốc",
-    "city": "Hồng Kông (Kowloon)",
+    "id": "hcm-031i",
+    "slug": "19300501-ha-mon",
+    "title": "Ha Mon (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Ha Mon",
     "coords": [
-      114.1747,
-      22.3186
+      118.01535723682478,
+      24.28783020876169
     ],
-    "dateStart": "1933-01-22",
-    "dateEnd": "1933-01-22",
-    "periodLabel": "22/01/1933",
+    "dateStart": "1930-05-01",
+    "dateEnd": "1930-05-01",
+    "periodLabel": "05/1930",
     "levelTexts": {
-      "primary": "Người cải trang, rời Hồng Kông trên ca nô nhỏ."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
-    ],
-    "detailMarkdown": "Cải trang thành thương nhân giàu có, bí mật rời Hồng Kông trên chiếc ca nô nhỏ.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "0406_hong_kong.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Ha Mon."
+    }
   },
   {
-    "id": "hcm-038",
-    "slug": "19330125-ha-mon-den",
-    "title": "Hạ Môn (Xiamen, Trung Quốc) - Đến Hạ Môn",
-    "country": "Trung Quốc",
-    "city": "Hạ Môn (Xiamen)",
+    "id": "hcm-031j",
+    "slug": "19300515-thuong-hai-tro-lai",
+    "title": "Thuong Hai (Trung Quoc) - Tro lai",
+    "country": "Trung Quoc",
+    "city": "Thuong Hai",
     "coords": [
-      118.0894,
-      24.4798
+      121.34197667378645,
+      30.68161242721209
     ],
-    "dateStart": "1933-01-25",
-    "dateEnd": "1933-01-25",
-    "periodLabel": "25/01/1933",
+    "dateStart": "1930-05-15",
+    "dateEnd": "1930-05-15",
+    "periodLabel": "05/1930",
     "levelTexts": {
-      "primary": "Đến Hạ Môn (Trung Quốc)."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Đến Hạ Môn (Trung Quốc) đúng ngày Mùng 1 Tết Âm lịch.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Tro lai Thuong Hai."
+    }
   },
   {
-    "id": "hcm-039",
-    "slug": "19330701-thuong-hai-lien-lac",
-    "title": "Thượng Hải (Shanghai, Trung Quốc) - Liên lạc tổ chức",
-    "country": "Trung Quốc",
-    "city": "Thượng Hải (Shanghai)",
-    "coords": [
-      121.4737,
-      31.2304
-    ],
-    "dateStart": "1933-07-01",
-    "dateEnd": "1933-07-01",
-    "periodLabel": "07/1933",
-    "levelTexts": {
-      "primary": "Từ Hạ Môn đến Thượng Hải, liên lạc tổ chức Đảng."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Từ Hạ Môn đến Thượng Hải. Liên lạc được với tổ chức Đảng (Paul Vaillant Couturier).",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "images (3).jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-040",
-    "slug": "19340301-moskva-den",
-    "title": "Moskva (Nga) - Đến Moskva",
+    "id": "hcm-031k",
+    "slug": "19300601-moskva-den",
+    "title": "Moskva (Nga) - Diem den",
     "country": "Nga",
     "city": "Moskva",
     "coords": [
-      37.6173,
-      55.7558
+      37.66470314405797,
+      55.747380251285584
     ],
-    "dateStart": "1934-03-01",
-    "dateEnd": "1934-03-31",
-    "periodLabel": "Mùa xuân 1934",
+    "dateStart": "1930-06-01",
+    "dateEnd": "1930-06-01",
+    "periodLabel": "06/1930",
     "levelTexts": {
-      "primary": "Đến Moskva."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Đến Moskva (Liên Xô).",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "p3-bac-ho-ra-di-tim-duong-cuu-nuoc-2_vfkp.jpg.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Moskva."
+    }
   },
   {
-    "id": "hcm-041",
-    "slug": "19340101-moskva-truong-quoc-te-lenin",
-    "title": "Moskva (Nga) - Học tại Trường Quốc tế Lênin",
-    "country": "Nga",
-    "city": "Moskva",
+    "id": "hcm-031l",
+    "slug": "19300615-que-lam",
+    "title": "Que Lam (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Que Lam",
     "coords": [
-      37.6173,
-      55.7558
+      111.17019801076901,
+      25.809130400917144
     ],
-    "dateStart": "1934-01-01",
-    "dateEnd": "1938-12-31",
-    "periodLabel": "1934 - 1938",
+    "dateStart": "1930-06-15",
+    "dateEnd": "1930-06-15",
+    "periodLabel": "06/1930",
     "levelTexts": {
-      "primary": "Học tại Trường Quốc tế Lênin."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Học tại Trường Quốc tế Lênin. Làm nghiên cứu sinh tại Viện Nghiên cứu các vấn đề dân tộc và thuộc địa.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "p3-bac-ho-ra-di-tim-duong-cuu-nuoc-2_vfkp.jpg.webp"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Que Lam."
+    }
   },
   {
-    "id": "hcm-042",
-    "slug": "19381001-dien-an-den",
-    "title": "Diên An (Yan'an, Trung Quốc) - Rời Moskva đi Diên An",
-    "country": "Trung Quốc",
-    "city": "Diên An (Yan'an)",
+    "id": "hcm-031m",
+    "slug": "19300701-hoanh-duong",
+    "title": "Hoanh Duong (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Hoanh Duong",
     "coords": [
-      109.4898,
-      36.5853
+      113.37728206029169,
+      26.812665218275185
     ],
-    "dateStart": "1938-10-01",
-    "dateEnd": "1938-10-01",
-    "periodLabel": "10/1938",
+    "dateStart": "1930-07-01",
+    "dateEnd": "1930-07-01",
+    "periodLabel": "07/1930",
     "levelTexts": {
-      "primary": "Rời Moskva đi Diên An."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Rời Moskva đi Diên An (Trung Quốc). Làm việc tại Bát Lộ Quân với bí danh Hồ Quang.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Hoanh Duong."
+    }
   },
   {
-    "id": "hcm-043",
-    "slug": "19390101-quy-duong-hoat-dong",
-    "title": "Quý Dương (Guiyang, Trung Quốc) - Hoạt động",
-    "country": "Trung Quốc",
-    "city": "Quý Dương (Guiyang)",
+    "id": "hcm-031n",
+    "slug": "19300715-quy-duong",
+    "title": "Quy Duong (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Quy Duong",
     "coords": [
-      106.6302,
-      26.647
+      108.03549892593972,
+      27.012322748695752
     ],
-    "dateStart": "1939-01-01",
-    "dateEnd": "1940-12-31",
-    "periodLabel": "1939 - 1940",
+    "dateStart": "1930-07-15",
+    "dateEnd": "1930-07-15",
+    "periodLabel": "07/1930",
     "levelTexts": {
-      "primary": "Hoạt động tại Quý Dương."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Quy Duong."
+    }
   },
   {
-    "id": "hcm-044",
-    "slug": "19390101-con-minh-hoat-dong",
-    "title": "Côn Minh (Kunming, Trung Quốc) - Hoạt động",
-    "country": "Trung Quốc",
-    "city": "Côn Minh (Kunming)",
+    "id": "hcm-031o",
+    "slug": "19300801-trung-khanh",
+    "title": "Trung Khanh (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Trung Khanh",
     "coords": [
-      102.7123,
-      25.0406
+      108.13145910200592,
+      29.435832429492507
     ],
-    "dateStart": "1939-01-01",
-    "dateEnd": "1940-12-31",
-    "periodLabel": "1939 - 1940",
+    "dateStart": "1930-08-01",
+    "dateEnd": "1930-08-01",
+    "periodLabel": "08/1930",
     "levelTexts": {
-      "primary": "Hoạt động tại Côn Minh."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Trung Khanh."
+    }
   },
   {
-    "id": "hcm-045",
-    "slug": "19390101-que-lam-hoat-dong",
-    "title": "Quế Lâm (Guilin, Trung Quốc) - Hoạt động",
-    "country": "Trung Quốc",
-    "city": "Quế Lâm (Guilin)",
+    "id": "hcm-031p",
+    "slug": "19300815-con-minh",
+    "title": "Con Minh (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Con Minh",
     "coords": [
-      110.2902,
-      25.2736
+      103.49338392547281,
+      25.57853866298516
     ],
-    "dateStart": "1939-01-01",
-    "dateEnd": "1940-12-31",
-    "periodLabel": "1939 - 1940",
+    "dateStart": "1930-08-15",
+    "dateEnd": "1930-08-15",
+    "periodLabel": "08/1930",
     "levelTexts": {
-      "primary": "Hoạt động tại Quế Lâm."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Con Minh."
+    }
   },
   {
-    "id": "hcm-046",
-    "slug": "19401201-tinh-tay-den",
-    "title": "Tĩnh Tây (Quảng Tây, Trung Quốc) - Đến Tĩnh Tây",
-    "country": "Trung Quốc",
-    "city": "Tĩnh Tây (Quảng Tây)",
+    "id": "hcm-031q",
+    "slug": "19300901-ninh-minh",
+    "title": "Ninh Minh (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Ninh Minh",
     "coords": [
-      106.4167,
-      23.1333
+      107.65165822167492,
+      22.127217429092983
     ],
-    "dateStart": "1940-12-01",
-    "dateEnd": "1940-12-01",
-    "periodLabel": "12/1940",
+    "dateStart": "1930-09-01",
+    "dateEnd": "1930-09-01",
+    "periodLabel": "09/1930",
     "levelTexts": {
-      "primary": "Đến Tĩnh Tây (Quảng Tây)."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Đến Tĩnh Tây (Quảng Tây). Tổ chức lớp huấn luyện cán bộ đầu tiên cho đội ngũ cốt cán về nước.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "A1-078.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+      "primary": "Den Ninh Minh."
+    }
   },
   {
-    "id": "hcm-047",
-    "slug": "19410128-pac-bo-ve-nuoc",
-    "title": "Pác Bó (Cao Bằng, Việt Nam) - Về nước",
-    "country": "Việt Nam",
-    "city": "Pác Bó (Cao Bằng)",
+    "id": "hcm-031r",
+    "slug": "19300915-que-lam-tro-lai",
+    "title": "Que Lam (Trung Quoc) - Tro lai",
+    "country": "Trung Quoc",
+    "city": "Que Lam",
     "coords": [
-      106.317,
-      22.549
+      107.0119237145669,
+      23.60083802974046
     ],
-    "dateStart": "1941-01-28",
-    "dateEnd": "1941-01-28",
-    "periodLabel": "28/01/1941",
+    "dateStart": "1930-09-15",
+    "dateEnd": "1930-09-15",
+    "periodLabel": "09/1930",
     "levelTexts": {
-      "primary": "Vượt cột mốc 108 về nước, chọn Pác Bó làm căn cứ."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://pacbo.vn/bai-viet/tu-pac-bo-den-tan-trao-va-thang-loi-cua-cach-mang-thang-tam-1024783"
+      "primary": "Tro lai Que Lam."
+    }
+  },
+  {
+    "id": "hcm-031s",
+    "slug": "19301001-tinh-tay",
+    "title": "Tinh Tay (Trung Quoc)",
+    "country": "Trung Quoc",
+    "city": "Tinh Tay",
+    "coords": [
+      107.09189052795477,
+      23.60083802974062
     ],
-    "detailMarkdown": "Ngày 28-1-1941 (tức mùng 2 Tết Tân Tỵ): Lãnh tụ Nguyễn Ái Quốc vượt qua cột mốc 108 trên biên giới Việt Nam - Trung Quốc, tại làng Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng, trở về Tổ quốc sau 30 năm bôn ba tìm đường cứu nước, cứu dân để trực tiếp lãnh đạo cách mạng Việt Nam. Đây là một sự kiện lịch sử quan trọng, mở ra thời kỳ phát triển mới của cách mạng Việt Nam, từng bước đưa dân tộc Việt Nam đi tới những mùa Xuân thắng lợi.",
-    "media": {
-      "images": [
-        {
-          "label": " ",
-          "url": "bac-ho-ve-nuoc.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+    "dateStart": "1930-10-01",
+    "dateEnd": "1930-10-01",
+    "periodLabel": "10/1930",
+    "levelTexts": {
+      "primary": "Den Tinh Tay."
+    }
+  },
+  {
+    "id": "hcm-031t",
+    "slug": "19301015-cao-bang",
+    "title": "Cao Bang (Viet Nam)",
+    "country": "Viet Nam",
+    "city": "Cao Bang",
+    "coords": [
+      105.81242151373876,
+      22.718580433119143
+    ],
+    "dateStart": "1930-10-15",
+    "dateEnd": "1930-10-15",
+    "periodLabel": "10/1930",
+    "levelTexts": {
+      "primary": "Den Cao Bang."
+    }
   }
 ]

@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "q001",
+    "question": "Theo Hồ Chí Minh: cách mạng giải phóng dân tộc phải?",
+    "options": [
+      "Đi theo con đường của các bậc tiền bối Việt Nam",
+      "Đi theo con đường cách mạng của nước Mỹ",
+      "Đi theo con đường cách mạng của nước Pháp",
+      "Đi theo con đường cách mạng vô sản"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q002",
+    "question": "Nguyễn Tất Thành đã từng dạy học ở ngôi trường nào trước khi ra đi tìm đường cứu nước?",
+    "options": [
+      "Trường tiểu học Pháp – Việt ở Vinh.",
+      "Trường tiểu học Đông Ba ở Huế.",
+      "Trường Quốc học Huế.",
+      "Trường Dục Thanh ở Phan Thiết."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q003",
+    "question": "Chọn đáp án trả lời đúng: Nguyễn Tất Thành lần đầu tiên đặt chân lên đất Pháp tại địa danh nào?",
+    "options": [
+      "Mác xây",
+      "Lơ Havrơ",
+      "Noóc măng đi",
+      "Thủ đô Pari"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q004",
+    "question": "Trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh, thời kỳ nào là thời kỳ tìm tòi con đường cứu nước giải phóng dân tộc?",
+    "options": [
+      "1908 – 1911",
+      "1911 – 1920",
+      "1921 – 1930",
+      "1930 – 1945"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q005",
+    "question": "Chọn cụm từ đúng điền vào dấu…. Tháng 7 năm 1920, Hồ Chí Minh đọc … của V.I. Lênin.",
+    "options": [
+      "Tác phẩm “Nhà nước và cách mạng”.",
+      "Tác phẩm “Những nhiệm vụ trước mắt của chính quyền xô viết”",
+      "Sơ thảo lần thứ nhất Luận cương về các vấn đề dân tộc.",
+      "Sơ thảo lần thứ nhất Luận cương về các vấn đề dân tộc và vấn đề thuộc địa."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q006",
+    "question": "Tìm một đáp án sai trong đoạn sau đây: Trong 10 năm đầu (1911 – 1920) của quá trình bôn ba tìm đường cứu nước, Nguyễn Aí Quốc đã:",
+    "options": [
+      "Vượt qua 3 đại dương, 4 châu lục.",
+      "Đến khoảng gần 30 nước.",
+      "Sống, làm thuê và tự học tại các nước Mỹ, Anh, Pháp.",
+      "Đến Matxcơva dự Hội nghị Quốc tế nông dân."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q007",
+    "question": "Tìm một điểm nhầm lẫn trong đoạn viết dưới đây: Một trong những nguồn gốc của tư tưởng Hồ Chí Minh là tiếp thu văn hóa phương Đông. Cụ thể là:",
+    "options": [
+      "Những mặt tích cực của Nho giáo.",
+      "Tư tưởng vị tha của Phật giáo.",
+      "Kế thừa lòng nhân ái, đức hy sinh của Hồi giáo",
+      "Tư tưởng Tam dân của Tôn Trung Sơn"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q008",
+    "question": "Câu nói “Chủ trương làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản” được trích từ bài viết nào của Hồ Chí Minh?",
+    "options": [
+      "Đường cách mệnh",
+      "Chính cương vắn tắt của Đảng",
+      "Sách lược vắn tắt của Đảng",
+      "Chương trình tóm tắt của Đảng"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q009",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh khẳng định chủ nghĩa dân tộc là một động lực lớn ở các nước đang đấu tranh giành độc lập. Đó là chủ nghĩa dân tộc nào?",
+    "options": [
+      "Chủ nghĩa nhân đạo cộng sản",
+      "Chủ nghĩa dân tộc chân chính.",
+      "Chủ nghĩa sô vanh, nước lớn.",
+      "Chủ nghĩa dân tộc vị kỷ."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q010",
+    "question": "Luận điểm: “Đảng muốn vững thì phải có chủ nghĩa làm cốt, trong Đảng ai cũng phải hiểu, ai cũng phải theo chủ nghiã ấy. Đảng mà không có chủ nghĩa cũng như người không có trí khôn, tàu không có bàn chỉ nam” được trích từ tác phẩm nào của Hồ Chí Minh?",
+    "options": [
+      "Tuyên ngôn Độc lập",
+      "Đường Cách mệnh",
+      "Điều lệ vắn tắt của Đảng",
+      "Thường thức chính trị"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q011",
+    "question": "Năm 1919 Nguyễn Tất Thành gia nhập Đảng Xã hội Pháp vì lí tưởng",
+    "options": [
+      "“Tự do, Bình đẳng, Bác ái”",
+      "“Độc lập, Bình đăng,Bắc ái”",
+      "“ Bình đẳng, tự do, độc lập”",
+      "“Độc lập, nhân quyền, dân quyền”"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q012",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Nguyễn Tất Thành vào Đảng xã hội Pháp năm nào?",
+    "options": [
+      "Đầu năm 1917",
+      "Đầu năm 1918",
+      "Đầu năm 1919",
+      "Đầu năm 1920"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q013",
+    "question": "Theo Hồ Chí Minh, ưu điểm lớn nhất của học thuyết Khổng Tử là gì?",
+    "options": [
+      "Tinh thần hiếu học.",
+      "Quản lý xã hội bằng đạo đức.",
+      "Sự tu dưỡng đạo đức cá nhân.",
+      "Đề cao văn hoá, lễ giáo."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q014",
+    "question": "Sự kiện nào đánh dấu tên gọi Nguyễn Ái Quốc xuất hiện trên trường quốc tế?",
+    "options": [
+      "Nguyễn Ái Quốc gửi bản Yêu sách đến Hội nghị vecxai (18/6/1919)",
+      "Nguyễn Ái Quốc tham gia sáng lập Đảng Cộng sản Pháp (12/1920)",
+      "Nguyễn Ái Quốc viết tác phẩm Đường Cách Mệnh",
+      "Nguyễn Ái Quốc tham gia Đại hội Tua của Đảng xã hội Pháp."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q015",
+    "question": "“ Dù màu da có khác, trên đời này chỉ có hai giống người: giống người bóc lột và giống người bị bóc lột. Mà cũng chỉ có một tình hữu ái mà thôi: tình hữu ái vô sản” chân lý này được tìm ra trong giai đoạn nào?",
+    "options": [
+      "1911-1915",
+      "1911- 1917",
+      "1911- 1919",
+      "1911- 1920"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q016",
+    "question": "“Muốn cứu nước và giải phóng dân tộc không có con đường nào khác con đường cách mạng vô sản” được đúc kết từ:",
+    "options": [
+      "Phong trào công nhân, phong trào yêu nước, Chủ Nghĩa Mác- Lê Nin",
+      "Phong trào yêu nước, tinh thần đoàn kết, Chủ Nghĩa Mác- Lê nin",
+      "Chủ Nghĩa Mác- Lê nin, phong trào vô sản, phong trào yêu nước",
+      "Chủ Nghĩa Mác- Lê nin, phong trào yêu nước, đường lối lãnh đạo"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q017",
+    "question": "Nguyễn Tất Thành cập cảng Mác Xây của nước Pháp vào ngày, tháng, năm nào?",
+    "options": [
+      "2/6/1911",
+      "4/9/1911",
+      "6/7/1911",
+      "6/8/1911"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q018",
+    "question": "”Luận cương của V. I. Lênin làm cho tôi rất cảm động, phấn khởi, sáng tỏ, tin tưởng biết bao. Tôi vui mừng đến phát khóc lên. Ngồi một mình trong buồng mà tôi nói to lên như đang nói trước quần chúng đông đảo: hỡi đồng bào bị đọa đày đau khổ? Đây là cái cần thiết cho chúng ta, đây là con đường giải phóng của chúng ta”. Nguyễn Ái Quốc nói câu ấy khi đang ở đâu?",
+    "options": [
+      "Luân Đôn, Anh",
+      "Quảng Châu, Trung Quốc",
+      "Paris, Pháp",
+      "Máxcơva, Liên Xô"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q019",
+    "question": "Câu nói: “ Giai cấp công nhân và nhân dân các nước đều là bạn, chủ nghĩa đế quốc ở đâu đâu cũng là kẻ thù”. Được Nguyễn Ái Quốc nhận thức rõ trong giai đoạn nào?",
+    "options": [
+      "1911-1915",
+      "1911- 1917",
+      "1911- 1919",
+      "1911- 1920"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q020",
+    "question": "Chọn đáp án trả lời đúng nhất:",
+    "options": [
+      "Chủ nghĩa Mác – Lênin là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta.",
+      "Tư tưởng Hồ Chí Minh là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng ta.",
+      "Cùng với chủ nghĩa Mác – Lênin, tư tưởng Hồ Chí Minh là nền tảng tư tưởng và kim chỉ nam cho hành động cách mạng của Đảng ta.",
+      "Cả ba đáp án còn lại đều đúng."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q021",
+    "question": "Nhà thơ Chế Lan Viên viết: “Phút khóc đầu tiên là phút Bác Hồ cười”. Câu thơ đó nói lên điều gì?",
+    "options": [
+      "Bác Hồ ra đi tìm đường cứu nước.",
+      "Bác Hồ đọc tuyên ngôn độc lập.",
+      "Bác Hồ đọc sơ thảo luận cương của Lênin",
+      "Bác Hồ đưa yêu sách đến Hội nghị Vecxai."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q022",
+    "question": "Văn bản nào được Nguyễn Ái Quốc xem là “cẩm nang thần kì” cho sự nghiệp giải phóng dân tộc",
+    "options": [
+      "Luận cương về dân tộc và thuộc địa của Lênin",
+      "Tuyên ngôn của Đảng cộng sản Karx Mark",
+      "Tư bản luận của Karx Mark",
+      "Luận cương tháng 4 của Lênin"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q023",
+    "question": "Sự kiện nào đánh dấu Nguyễn Ái Quốc bước đầu tìm thấy con đường cứu nước đúng đắn",
+    "options": [
+      "Nguyễn ái Quốc đưa yêu sách đến Hội nghị vecxai (18/6/1919)",
+      "Nguyễn ái Quốc tham gia sáng lập Đảng Cộng sản Pháp (12/1920)",
+      "Nguyễn ái Quốc đọc sơ thảo luận cương của Lênin về vấn đề dân tộc và thuộc địa (7/1920)",
+      "Nguyễn ái Quốc thành lập tổ chức Hội Việt Nam cách mạng thanh niên(6/1925)"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q024",
+    "question": "Nguyễn Ái Quốc đã trình bày lập trường, quan điểm của mình về vị trí chiến lược của cách mạng các nước thuộc địa trong :",
+    "options": [
+      "Hội nghị nông dân quốc tế ở Matxcơva.",
+      "Đại hội quốc tế cộng sản lần thứ V (1924)",
+      "Đại hội Tua của Đảng xã hội Pháp.",
+      "Đại hội nông dân quốc tế năm 1923."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q025",
+    "question": "Sự kiện nào được Nguyễn Aí Quốc đánh giá: “như chim én nhỏ báo hiệu mùa xuân”",
+    "options": [
+      "Cách mạng tháng Mười Nga bùng nổ và thắng lợi",
+      "Sự thành lập Đảng Cộng sản Pháp",
+      "Vụ ám sát tên toàn quyền Méclanh của Phạm Hồng Thái",
+      "Sự thành lập Hội Việt Nam Cách mạng Thanh niên"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q026",
+    "question": "Ba tư tưởng sau đây được trình bày trong tác phẩm nào của Nguyễn Ái Quốc + Cách mạng là sự nghiệp của quần chúng + Cách mạng phải do Đảng theo chủ nghĩa Mác-Lenin lãnh đạo + Cách mạng Việt Nam phải gắn bó và đoàn kết với cách mạng thế giới",
+    "options": [
+      "Tạp chí Thư tín Quốc tế",
+      "“Bản án chế độ thực dân Pháp”",
+      "“Đường cách mệnh”",
+      "Tất cả cùng đúng"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q027",
+    "question": "Con đường cách mạng Việt Nam được xác định trong Cương lĩnh chính trị đầu tiên do đồng chí Nguyễn ái Quốc khởi thảo, đó là:",
+    "options": [
+      "Làm cách mạng tư sản dân quyền và cách mạng ruộng đất để tiến lên chủ nghĩa cộng sản.",
+      "Thực hiện cách mạng ruộng đất cho triệt để.",
+      "Tịch thu hết sản nghiệp của bọn đế quốc.",
+      "Đánh đổ địa chủ phong kiến, làm cách mạng thổ địa sau đó làm cách mạng dân tộc."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q028",
+    "question": "Lực lượng cách mạng để đánh đổ đế quốc và phong kiến được nêu trong Cương lĩnh chính trị đầu tiên của Đảng do đồng chí Nguyễn Ái Quốc khởi thảo là lực lượng nào?",
+    "options": [
+      "Công nhân và nông dân",
+      "Công nhân, nông dân và các tầng lớp tiểu tư sản, trí thức, trung nông",
+      "Công nhân, nông dân, tiểu tư sản, tư sản và địa chủ phong kiến",
+      "Công nhân và trí thức"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q029",
+    "question": "”Đảng có vững cách mệnh mới thành công, cũng như người cầm lái có vững thuyền mới chạy”. Câu trên trích từ tác phẩm nào của Hồ Chí Minh?",
+    "options": [
+      "Bản án chế độ thực dân Pháp.",
+      "Chánh cương vắn tắt của Đảng",
+      "Đường cách mệnh.",
+      "Lời kêu gọi nhân dịp thành lập Đảng."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q030",
+    "question": "Công nông là gốc cách mệnh. Học trò, nhà buôn nhỏ, điền chủ nhỏ là bầu bạn cách mệnh của công nông. Quan điểm đó của Nguyễn Ái Quốc viết trong tác phẩm nào?",
+    "options": [
+      "Bản án chế độ thực dân Pháp",
+      "Nông dân Trung Quốc",
+      "V. I. Lênin và Phương Đông",
+      "Đường cách mệnh"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q031",
+    "question": "Hãy cho biết, Nguyễn Ái Quốc không tham gia vào việc sáng lập tổ chức chính trị nào dưới đây?",
+    "options": [
+      "Hội những người Việt Nam yêu nước",
+      "Đảng Xã hội Pháp",
+      "Đảng Cộng sản Pháp",
+      "Hội liên hiệp thuộc địa"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q032",
+    "question": "Vì sao Nguyễn Ái Quốc bỏ phiếu tán thành Quốc tế thứ III?",
+    "options": [
+      "Quốc tế này bênh vực cho quyền lợi các nước thuộc địa",
+      "Quốc tế này giúp nhân dân ta đấu tranh chống Pháp",
+      "Quốc tế này đề ra đường lối cho Cách mạng Việt Nam",
+      "Quốc tế này chủ trương thành lập mặt trận giải phóng dân tộc Việt Nam"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q033",
+    "question": "Ở Liên Xô 1923 – 1924, Nguyễn Ái Quốc đã viết bài cho :",
+    "options": [
+      "Báo nhân dân , báo sự thật .",
+      "Đời sống công nhân.",
+      "Tạp chí thư tín quốc tế , báo Sự thật.",
+      "Đời sống công nhân ,tạp chí thư tín quốc tế."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q034",
+    "question": "Cuốn sách tập hợp những bài giảng của Nguyễn Ái Quốc tại lớp huấn luyện chính trị ở Quảng Châu ( Trung Quốc ) là :",
+    "options": [
+      "Con rồng tre.",
+      "Bản án chế độ thực dân Pháp",
+      "Đường kách mệnh",
+      "Cả 3 quyển trên."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q035",
+    "question": "Vai trò của Nguyễn Ái Quốc trong hội nghị hợp nhất ba tổ chức cộng sản (3-2-1930) thể hiện như thế nào?",
+    "options": [
+      "Thống nhất các tổ chức cộng sản để thành lập một Đảng duy nhất lấy tên là Đảng Cộng sản Việt Nam .",
+      "Soạn thảo Cương lĩnh chính trị đầu tiên để Hội nghị thông qua.",
+      "Truyền bá chủ nghĩa Mác Lênin về Việt Nam.",
+      "Câu a và b đúng."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q036",
+    "question": "Cuối năm 1924, Nguyễn Ái Quốc về Quảng Châu (Trung Quốc) Người đã lựa chọn giác ngộ thanh niên yêu nước Việt Nam đang hoạt động tại đây từ tổ chức nào?",
+    "options": [
+      "Đảng Thanh niên.",
+      "Cộng sản đoàn.",
+      "Tâm Tâm xã.",
+      "Hội phục Việt"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q037",
+    "question": "Tại sao nói Nguyễn Ái Quốc đã trực tiếp chuẩn bị về chính trị, tư tưởng và tổ chức cho sự ra đời chính Đảng vô sản ở Việt Nam.",
+    "options": [
+      "Người đã tìm ra con đường cứu nước đúng đắn cho cách mạng Việt Nam ,con đường cách mạng vô sản.",
+      "Tại Đại hội Quốc tế cộng sản lần thứ V người đã trình bày lập trường, quan điểm về vị trí chiến lược cách mạng thuộc địa.",
+      "Người đã tiếp nhận ánh sáng của chủ nghĩa Mác- Lênin và có công truyền bá vào nước ta.",
+      "Sau những năm bôn ba ở nước ngoài Người đã hiểu rõ bản chất của chủ nghĩa đế quốc thực dân."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q038",
+    "question": "Khi đến Quảng Châu (Trung Quốc năm 1924 ), Nguyễn Ái Quốc đã tham gia sáng lập tổ chức chính trị nào ?",
+    "options": [
+      "Hội liên hiệp thanh niên Việt Nam.",
+      "Hội liên hiệp các dân tộc bị áp bức Á Đông.",
+      "Mặt trận Việt Minh.",
+      "Hội liên hiệp thuộc địa."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q039",
+    "question": "Vạch trần chính sách đàn áp, bóc lột giả man của chủ nghĩa đế quốc, góp phần thức tỉnh các dân tộc bị áp bức đứng lên đấu tranh giải phóng .Đó là nội dung",
+    "options": [
+      "Các bài báo của Nguyễn Ái Quốc đăng trên tờ Tin tức.",
+      "Các bài báo của Nguyễn Ái Quốc đăng trên tờ Người cùng khổ.",
+      "Các bài báo đăng trên tạp chí thư tín quốc tế.",
+      "Các bài báo đăng ở báo sự thật."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q040",
+    "question": "Tháng 6 năm 1925, Nguyễn Aí Quốc thành lập tổ chức cách mạng nào tại Quảng Châu (Trung Quốc)?",
+    "options": [
+      "Đảng Cộng Sản Việt Nam",
+      "Cộng sản đoàn",
+      "Hội Việt Nam Cách mạng Thanh niên",
+      "Hội liên hiệp thuộc địa"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q041",
+    "question": "Ngày 1/5/1930 Nguyễn Ái Quốc hoạt động ở đâu?",
+    "options": [
+      "Hồng Kông",
+      "Xiêm La",
+      "Campuchia",
+      "Trung Quốc"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q042",
+    "question": "Nguyễn Ái Quốc bị bắt ở Hồng Kông vào thời gian nào?",
+    "options": [
+      "6/1931",
+      "7/1931",
+      "8/1931",
+      "9/1931"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q043",
+    "question": "Khi bị bắt ở Hồng Kông vào tháng 6/1931, Nguyễn Ái Quốc mang thể căn cước có tên là gì?",
+    "options": [
+      "Nguyễn Tất Thành",
+      "Nguyễn Sinh Cung",
+      "Tống Văn Sơ",
+      "Hồ Chí Minh"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q044",
+    "question": "Nguyễn Ái Quốc bị thực dân Anh giam ở Hồng Kông vào thời gian nào?",
+    "options": [
+      "7/1931 – 1/1933",
+      "8/1931 – 1/1933",
+      "9/1931 – 1/1933",
+      "6/1931 – 1/1933"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q045",
+    "question": "Nguyễn Aí Quốc đã viết thư gửi một đồng chí ở Quốc tế Cộng Sản yêu cầu được giao công việc sau một số năm không hoạt động (kể từ khi bị thực dân Anh bắt giam ở Hồng Kông) bức thư đó viết vào lúc nào?",
+    "options": [
+      "1/1938",
+      "6/1938",
+      "2/1938",
+      "5/1938"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q046",
+    "question": "Đại hội VII Quốc tế Cộng sản (6/1935) Hồ Chí Minh đã cùng đoàn đại biểu Đảng Cộng Sản Đông Dương tham dự gồm có những ai?",
+    "options": [
+      "Lê Hồng Phong, Nguyễn Thị Minh Khai, Hoàng Văn Nọn",
+      "Lê Hồng Phong, Võ Nguyên Giáp",
+      "Phạm Văn Đồng, Nguyễn Thị Minh Khai",
+      "Võ Nguyên Giáp, Trần Phú"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q047",
+    "question": "Từ 10/1934 – 1935, Hồ Chí Minh học ở trường quốc tế V.I.Lênin. Lúc này Bác lấy tên là gì?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Nguyễn Tất Thành",
+      "Hồ Chí Minh",
+      "Lin"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q048",
+    "question": "Hồ Chí Minh được tuyển chọn vào lớp nghiên cứu sinh do Viện nghiên cứu các vấn đề dân tộc và thuộc địa mở vào thời gian nào?",
+    "options": [
+      "1/1/1937 – 1/6/1937",
+      "1/1/1937 – 1/10/1937",
+      "1/1/1937 – 31/12/1937",
+      "1/1/1937 – 1/9/1937"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q049",
+    "question": "Đề tài do Nguyễn Aí Quốc nghiên cứu ở lớp nghiên cứu sinh do Viện nghiên cứu Các vấn đề dân tộc và thuộc địa mở vào năm 1937 là đề tài gì?",
+    "options": [
+      "Vấn đề dân tộc và thuộc địa",
+      "Chủ nghĩa Mác – Lênin",
+      "Các Mác",
+      "Ăng ghen"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q050",
+    "question": "Nguyễn Ái Quốc tham gia phong trào cách mạng ở Trung Quốc vào thời gian nào?",
+    "options": [
+      "10/1938 – 10/1940",
+      "10/1938 – 1/1940",
+      "10/1938 – 12/1940",
+      "5/1938 – 10/1940"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q051",
+    "question": "Năm 1939, sau hai lần không bắt liên lạc được với Đảng Cộng sản Đông Dương. Ở Trung Quốc, Nguyễn Ái Quốc đã làm gì để hy vọng chấp nối được liên lạc?",
+    "options": [
+      "Viết bài đăng báo",
+      "Gọi điện thoại",
+      "Bán hang",
+      "Làm thợ xây"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q052",
+    "question": "Thời kỳ 1939 – 1940, khi hoạt động ở Trung Quốc, Nguyễn Ái Quốc mang bí danh là?",
+    "options": [
+      "Lin",
+      "Vương",
+      "Già Thu",
+      "Ông Ké"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q053",
+    "question": "Nguyễn Ái Quốc đã tham gia khóa huấn luyện quân sự ở Hàm Dương – Hồ Nam do Quốc Dân Đảng và Đảng Cộng Sản Trung Quốc hợp tác tổ chức vào thời gian nào?",
+    "options": [
+      "2/1940 – 10/1940",
+      "5/1940 – 8/1940",
+      "2/1940 – 8/1940",
+      "3/1940 – 8/1940"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q054",
+    "question": "Đầu tháng 6/1940, Nguyễn Ái Quốc đã cử hai người đi Diên An học trường quân chính và dặn đi dặn lại: “cố gắng học thêm quân sự”, người đó là ai?",
+    "options": [
+      "Trần Phú, Lê Duẩn",
+      "Phạm Văn Đồng, Lê Duẩn",
+      "Võ Nguyên Giáp, Phạm Văn Đồng",
+      "Võ Nguyên Giáp, Trần Phú"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q055",
+    "question": "Hồ Chí Minh về nước trực tiếp lãnh đạo phong trào cách mạng Việt Nam từ?",
+    "options": [
+      "28/1/1941",
+      "28/11/1940",
+      "28/11/1939",
+      "28/11/1938"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q056",
+    "question": "Tại Pắc Pó, Hồ Chí Minh dịch ra Tiếng Việt cuốn sách nào để làm tài liệu huấn luyện cán bộ?",
+    "options": [
+      "Lịch sử Đảng Cộng Sản Pháp",
+      "Lịch sử Đảng Cộng Sản Nga",
+      "Lịch sử Đảng Cộng Sản Cu Ba",
+      "Lịch sử Đảng Cộng Sản Trung Hoa"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q057",
+    "question": "Nguyễn Aí Quốc viết tác phẩm: “Lịch sử nước ta” vào năm nào?",
+    "options": [
+      "1940",
+      "1942",
+      "1938",
+      "1941"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q058",
+    "question": "Về đến Cao Bằng, Nguyễn Ái Quốc đã sử dụng bí danh nào để hoạt động?",
+    "options": [
+      "Ông Ké",
+      "Già Thu",
+      "Lin",
+      "Vương"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q059",
+    "question": "Núi Các Mác, Suối Lênin là những ngọn núi, con suối được Hồ Chí Minh đặt tên, hiện nay thuộc tỉnh nào?",
+    "options": [
+      "Hà Quảng – Cao Bằng",
+      "Hà Giang – Cao Bằng",
+      "Hà Quảng – Tuyên Quang",
+      "Hà Quảng – Lạng Sơn"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q060",
+    "question": "Theo đề nghị của Nguyễn Ái Quốc, mặt trận dân tộc thống nhất Việt Nam được lấy tên là “Việt Nam độc lập đồng minh” gọi tắt là “Việt Minh” vào thời gian nào?",
+    "options": [
+      "19/5/1940",
+      "15/5/1941",
+      "19/5/1941",
+      "15/5/1940"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q061",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Truyền thống quý báu nhất của dân tộc Việt Nam được Hồ Chí Minh kế thừa và phát triển là gì?",
+    "options": [
+      "Lòng nhân ái",
+      "Chủ nghĩa yêu nước",
+      "Tinh thần hiếu học",
+      "Cần cù lao động."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q062",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Thuật ngữ Tư tưởng Hồ Chí Minh được Đảng ta chính thức sử dụng bắt đầu từ bao giờ?",
+    "options": [
+      "Từ năm 1969.",
+      "Từ năm 1990.",
+      "Từ năm 1986.",
+      "Từ năm 1991"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q063",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Tư tưởng Hồ Chí Minh được hình thành từ những nguồn gốc nào?",
+    "options": [
+      "Giá trị truyền thống của dân tộc Việt Nam.",
+      "Tinh hoa văn hóa nhân loại (trong đó có chủ nghĩa Mác – Lênin).",
+      "Những phẩm chất chủ quan của Hồ Chí Minh?",
+      "Cả ba đáp án trên đều đúng."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q064",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh bắt đầu viết bản Di chúc lịch sử vào thời gian nào?",
+    "options": [
+      "Năm 1960",
+      "Năm 1965",
+      "Năm 1968",
+      "Năm 1969"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q065",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: “Đảng lấy chủ nghĩa Mác-Lênin và tư tưởng Hồ Chí Minh làm nền tảng tư tưởng và kim chỉ nam cho mọi hành động cách mạng”. Câu nói trên được Đảng ta khẳng định lần đầu tiên tại Đại hội đại biểu toàn quốc lần thứ mấy?",
+    "options": [
+      "Đại hội lần thứ V",
+      "Đại hội lần thứ VI",
+      "Đại hội lần thứ VII",
+      "Đại hội lần thứ VIII"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q066",
+    "question": "Tư tưởng Hồ Chí Minh được hình thành và phát triển qua mấy thời kỳ?",
+    "options": [
+      "3 thời kỳ",
+      "4 thời kỳ",
+      "5 thời kỳ",
+      "6 thời kỳ"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q067",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: “Dân tộc ta, nhân dân ta, non sông đất nước ta đã sinh ra Hồ Chủ tịch, người anh hùng dân tộc vĩ đại, và chính Người đã làm rạng rỡ dân tộc ta, nhân dân ta và non sông đất nước ta”. Câu nói trên ở trong văn kiện nào?",
+    "options": [
+      "Lời kêu gọi Ban chấp hành Trung ương Đảng lao động Việt Nam ngày 3/9/1969",
+      "Điếu văn của Ban Chấp hành Trung ương Đảng lao động Việt Nam đọc tại lễ truy điệu Chủ tịch Hồ Chí Minh ngày 9/9/1969.",
+      "Diễn văn của Ban Chấp hành Trung ương Đảng LĐVN đọc tại lễ kỷ niệm 80 năm ngày sinh của Hồ Chí Minh.",
+      "Diễn văn của Ban Chấp hành Trung ương Đảng CSVN đọc tại lễ kỷ niệm 100 năm ngày sinh của Hồ Chí Minh."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q068",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Trong quá trình hình thành và phát triển tư tưởng Hồ Chí Minh, thời kỳ nào là Tư tưởng Hồ Chí Minh tiếp tục phát triển, hoàn thiện?",
+    "options": [
+      "1911 – 1920",
+      "1921 – 1930",
+      "1930 – 1945",
+      "1945 – 1969"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q069",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Tư tưởng Hồ Chí Minh là hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam. Những vấn đề đó thuộc phạm vi nào?",
+    "options": [
+      "Trong cách mạng dân tộc dân chủ nhân dân.",
+      "Trong cách mạng xã hội chủ nghĩa.",
+      "Cả trong cách mạng dân tộc dân chủ nhân dân và cách mạng xã hội chủ nghĩa.",
+      "Trong thế kỷ XX"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q070",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Hồ Chí Minh nói câu: “Không có gì quý hơn độc lập, tự do” vào thời gian nào?",
+    "options": [
+      "1945",
+      "1954",
+      "1960",
+      "1966"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q071",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi : Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn giành được thắng lợi cần phải:",
+    "options": [
+      "Đi theo con đường cách mạng vô sản",
+      "Có Đảng cộng sản lãnh đạo.",
+      "Tiến hành bằng bạo lực cách mạng.",
+      "Cả ba đáp án còn lại đều đúng."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q072",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Nội dung giải phóng dân tộc theo con đường cách mạng vô sản bao gồm:",
+    "options": [
+      "Đi từ giải phóng dân tộc tiến tới xã hội cộng sản.",
+      "Lực lượng lãnh đạo là giai cấp công nhân.",
+      "Lực lượng cách mạng là toàn dân tộc.",
+      "Cả ba đáp án trên đều đúng."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q073",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: “Chiến tranh có thể kéo dài 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa…, song nhân dân Việt Nam quyết không sợ? Không có gì quý hơn độc lập tự do. Đến ngày thắng lợi nhân dân ta sẽ xây dựng lại đất nước ta đàng hoàng hơn, to đẹp hơn”. Câu nói đó của Hồ Chí Minh vào thời gian nào?",
+    "options": [
+      "Lời kêu gọi của Hồ Chí Minh ngày 19 – 12 – 1946",
+      "Lời kêu gọi của Hồ Chí Minh ngày 17 – 7 – 1966",
+      "Thư chúc tết đầu Xuân 1969",
+      "Bản Di chúc của Hồ Chí Minh được công bố tại lễ truy điệu Người ngày 9 – 9 – 1969"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q074",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Theo giáo trình Tư tưởng Hồ Chí Minh, nguyên tắc phân phối chủ yếu trong chủ nghĩa xã hội là gì?",
+    "options": [
+      "Làm theo năng lực, hưởng theo nhu cầu.",
+      "Làm theo năng lực, hưởng theo lao động.",
+      "Phân phối bình quân cho tất cả mọi người.",
+      "Theo lao động và cổ phần đóng góp."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q075",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Các yếu tố nào dẫn đến sự ra đời của Đảng cộng sản Việt Nam?",
+    "options": [
+      "Chủ nghĩa Mác – Lênin",
+      "Phong trào công nhân",
+      "Phong trào yêu nước",
+      "Sự kết hợp chủ nghĩa Mác -Lênin với phong trào công nhân và phong trào yêu nước."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q076",
+    "question": "Chọn cụm từ đúng điền vào chỗ trống trong câu viết sau đây của Hồ Chí Minh: “Toàn quốc đồng bào hãy đứng dậy…. mà tự giải phóng cho ta”.",
+    "options": [
+      "dựa vào sự giúp đỡ quốc tế",
+      "dựa vào sự đoàn kết toàn dân",
+      "dưới sự lãnh đạo của Đảng",
+      "đem sức ta"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q077",
+    "question": "Đảng ta có tên gọi là Đảng Lao động Việt Nam từ khi nào?",
+    "options": [
+      "Năm 1930.",
+      "Năm 1945.",
+      "Năm 1951.",
+      "Năm 1960."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q078",
+    "question": "Chọn đáp án trả lời đúng cho câu hỏi: Theo Hồ Chí Minh, Đảng lãnh đạo Nhà nước bằng phương thức nào?",
+    "options": [
+      "Bằng đường lối, quan diểm, chủ trương, định hướng của Đảng",
+      "Hoạt động của các tổ chức đảng và đảng viên trong bộ máy nhà nước.",
+      "Bằng công tác kiểm tra.",
+      "Cả a, b, c."
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q079",
+    "question": "Trong các phẩm chất đạo đức cơ bản của con người Việt Nam trong thời đại mới, phẩm chất đạo đức nào quan trọng nhất, bao trùm nhất?",
+    "options": [
+      "Yêu thương con người",
+      "Cần, kiệm, liêm, chính, chí công vô tư",
+      "Trung với nước, hiếu với dân",
+      "Tinh thần quốc tế trong sáng"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q080",
+    "question": "Hồ Chí Minh đề cập đạo đức trong những quan hệ nào của mỗi người?",
+    "options": [
+      "Đối với mình",
+      "Đối với người",
+      "Đối với việc",
+      "Cả a, b, c"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q081",
+    "question": "Trong các giai đoạn về cuộc đời của Hồ Chí Minh, giai đoạn nào là giai đoạn hình thành tư tưởng yêu nước và chí hướng cách mạng?",
+    "options": [
+      "1890 – 1911",
+      "1911 – 1920",
+      "1921 – 1930",
+      "1930 – 1941"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q082",
+    "question": "Đức tính nào của cha ảnh hưởng đến đức tính tốt đẹp của Bác Hồ?",
+    "options": [
+      "Cần cù, vượt khó",
+      "Yêu quê hương",
+      "Yêu nước, thương dân",
+      "Cả 3 đáp án trên"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q083",
+    "question": "Hồ Chí Minh sinh ra trong gia đình?",
+    "options": [
+      "Nông dân",
+      "Công nhân",
+      "Trí thức, nhà giáo",
+      "Nhà nho yêu nước"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q084",
+    "question": "Thân mẫu Bác Hồ làm nghề gì để nuôi gia đình những năm ở Huế?",
+    "options": [
+      "Nghề nông",
+      "Dạy học",
+      "Nội trợ",
+      "Dệt vải"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q085",
+    "question": "Thân sinh Bác Hồ mất tại đâu?",
+    "options": [
+      "Nghệ An",
+      "Huế",
+      "Hà Nội",
+      "Đồng Tháp"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q086",
+    "question": "Trong thời gian học tại Trường Quốc học Huế, Nguyễn Tất Thành được tiếp thu tư tưởng tiến bộ từ sách báo Pháp và các thầy giáo yêu nước Việt Nam, họ là ai?",
+    "options": [
+      "Thầy Hoàng Thông, thầy Lê Văn Miến.",
+      "Thầy Phạm Văn Nghị, thầy Lê Văn Miến",
+      "Thầy Nguyễn Văn Ôn, thầy Nguyễn Hữu Huân",
+      "Thầy Nguyễn Thông, thầy Hồ Xuân Nghiệp"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q087",
+    "question": "Yếu tố nào có ý nghĩa quyết định việc hình thành tư tưởng Hồ Chí Minh?",
+    "options": [
+      "Gía trị truyền thống dân tộc",
+      "Tư tưởng khai sáng Pháp",
+      "Chủ nghĩa Mác – Lênin",
+      "Phẩm chất cá nhân Hồ Chí Minh"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q088",
+    "question": "Thời kỳ hoạt động nào của Bác Hồ có ý nghĩa quyết định vạch con đường cách mạng Việt Nam?",
+    "options": [
+      "1890 – 1911",
+      "1911 – 1920",
+      "1921 – 1930",
+      "1930 – 1941"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q089",
+    "question": "Vì sao các phong trào cứu nước Việt Nam cuối thế kỷ 19, đầu thế kỷ 20 đều thất bại?",
+    "options": [
+      "Chưa huy động được sức mạnh toàn dân",
+      "Chưa có đường lối đúng đắn",
+      "CNĐQ đã trở thành hệ thống thế giới",
+      "Cả a, b, c đều đúng"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q090",
+    "question": "Khi tham gia phong trào chống thuế ở Huế, Bác đang làm gì?",
+    "options": [
+      "Công nhân",
+      "Dệt cửi",
+      "Học sinh",
+      "Thầy giáo"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q091",
+    "question": "Nguyễn Tất Thành được cha dẫn đi thăm các sĩ phu trong vùng và thăm di tích lịch sử vùng Tây Sơn trong thời gian nào?",
+    "options": [
+      "Khoảng tháng 6-1909, Nguyễn Tất Thành rời Trường Quốc học Huế theo cha vào Bình Định, khi ông được bổ nhiệm chức Tri huyện Bình Khê.",
+      "Khoảng tháng 2 – 1907, Nguyễn Tất Thành cùng cha ra Huế.",
+      "Tháng 7 – 1905, Nguyễn Tất Thành theo cha về thăm tỉnh Thái Bình.",
+      "Năm 1904, Nguyễn Tất Thành theo cha về làng Du Đồng, huyện Đức Thọ, tỉnh Hà Tĩnh."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q092",
+    "question": "Nguyễn Sinh Cung là người con thứ mấy trong gia đình?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q093",
+    "question": "Nguyễn Tất Thành lần đầu tiên được tiếp xúc với khẩu hiệu Tự do – Bình đẳng – Bác ái tại nơi nào?",
+    "options": [
+      "Tại lớp dự bị (préparatoire) trường tiểu học Pháp – bản xứ ở thành phố Vinh.",
+      "Tại lớp cao đẳng (lớp nhất – cours supérieur), tại Trường tiểu học Pháp – Việt Quy Nhơn.",
+      "Tại lớp dự bị (préparatoire)Trường tiểu học Pháp – Việt tỉnh Thừa Thiên Huế.",
+      "Tại lớp trung đẳng (lớp nhì) (cours moyen) tại Trường Quốc học Huế."
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q094",
+    "question": "Huyện Bình Khê, nơi cụ Nguyễn Sinh Sắc, thân phụ Hồ Chí Minh có thời kỳ làm tri huyện thuộc tình nào?",
+    "options": [
+      "Quảng Nam",
+      "Quảng Ngãi",
+      "Bình Định",
+      "Phan Thiết"
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q095",
+    "question": "Thân mẫu Hồ Chí Minh là bà Hoàng Thị Loan, bà mất vào năm nào? ở đâu?",
+    "options": [
+      "1898, Nghệ An",
+      "1901, Huế",
+      "1911, Bình Định",
+      "1921, Hà Tĩnh"
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q096",
+    "question": "Nguyễn Tất Thành đến Huế lần thứ hai vào năm nào?",
+    "options": [
+      "1904",
+      "1905",
+      "1906",
+      "1908"
+    ],
+    "answerIndex": 3
+  },
+  {
+    "id": "q097",
+    "question": "Đây là bài thơ Bác viết về địa danh nào? Vào thời điểm nào?",
+    "options": [
+      "Bài thơ tả về Đèo Ngang, vào thời điểm Bác Hồ cùng gia đình đi ra Huế lần đầu tiên năm 1895",
+      "Bài thơ tả về núi rừng Việt Bắc năm 1954",
+      "Bài thơ tả về núi ở tỉnh Quảng Châu, Trung Quốc năm 1941",
+      "Bài thơ tả về núi Ba Vì ở Sơn Tây năm 1947"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": "q098",
+    "question": "Hồ Chí Minh trả lời phỏng vấn tạp chí Ngọn lửa nhỏ vào năm 1923 của Liên Xô có nói rõ: “Vào trạc 13 tuổi, lần đầu tiên tôi đã được nghe về những từ ngữ tiếng Pháp: ……. – đối với chúng tôi lúc ấy, mọi người da trắng đều được coi là người Pháp – thể là tôi muốn làm quen với văn minh Pháp tìm xem những gì ẩn giấu đằng sau những từ ngữ ấy”. Những từ ngữ ấy là những từ ngữ nào?",
+    "options": [
+      "Độc lập – Tự do – Hạnh phúc",
+      "Độc lập dân tộc, giải phóng dân tộc.",
+      "Tự do – Bình đẳng – Bác ái",
+      "Giải phóng dân tộc, giải phóng giai cấp, giải phóng con người."
+    ],
+    "answerIndex": 2
+  },
+  {
+    "id": "q099",
+    "question": "Đây là hình ảnh địa danh gắn liền với bước ngoặt của Nguyễn Tất Thành trước lúc ra đi tìm đường cứu nước, địa danh này là nơi nào?",
+    "options": [
+      "Cảng Chân Mây tại thành phố Huế",
+      "Cảng Bến Nhà Rồng tại Sài Gòn",
+      "Ao làng tại làng Sen, Nam Đàn, Nghệ An",
+      "Bãi Rạng tại thành phố Phan Thiết gần trường Dục Thanh."
+    ],
+    "answerIndex": 1
+  },
+  {
+    "id": "q100",
+    "question": "Trong giai thoại “ Nam Đàn tứ hổ” kể về những người xuất chúng thủa Nguyễn Tất Thành còn nhỏ. Đây là những vị anh hùng trực tiếp xây dựng nên lòng yêu nước thương dân cho Nguyễn Tất Thành giai đoạn ấu thơ. Họ là ai?",
+    "options": [
+      "Phan Bội Châu, Nguyễn Sinh Sắc, Vương Thúc Qúy, Trần Văn Lương",
+      "Phan Văn San, Nguyễn Sinh Sắc, Vương Thúc Qúy, Lương Thế Vinh",
+      "Phan Bội Châu, Nguyễn Sinh Sắc, Trần Văn Qúy, Lương Thế Vinh",
+      "Nguyễn Văn San, Nguyễn Sinh Sắc, Trần Văn Qúy, Lương Thế Vinh"
+    ],
+    "answerIndex": 0
+  }
+]

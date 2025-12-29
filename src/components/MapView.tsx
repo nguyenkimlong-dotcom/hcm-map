@@ -6,9 +6,10 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import routes from "@/data/routes.json";
+import quizData from "@/data/quiz.json";
 import { Place } from "@/types/place";
 
-const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "";
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || "\u0110\u1ecba \u0111i\u1ec3m";
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 type MarkerEntry = {
@@ -19,6 +20,13 @@ type MarkerEntry = {
 
 type Props = {
   places: Place[];
+};
+
+type QuizQuestion = {
+  id: string;
+  question: string;
+  options: string[];
+  answerIndex: number;
 };
 
 // Positron GL style supports globe projection without API key
@@ -97,7 +105,7 @@ function buildPopupContent(place: Place, onDetail: () => void) {
 
   const title = document.createElement("h3");
   title.className = "text-base font-bold text-slate-900";
-  title.textContent = place.title || "Địa điểm";
+  title.textContent = place.title || "\u0110\u1ecba \u0111i\u1ec3m";
   body.appendChild(title);
 
   if (place.country || place.city) {
@@ -112,7 +120,7 @@ function buildPopupContent(place: Place, onDetail: () => void) {
     pill.className =
       "inline-flex items-center rounded-full bg-[#EAB308]/20 px-3 py-1 text-[13px] font-semibold text-[#991B1B] backdrop-blur";
     const fallbackRange =
-      place.dateStart && place.dateEnd ? `${place.dateStart} -> ${place.dateEnd}` : place.dateStart || place.dateEnd || "";
+      place.dateStart && place.dateEnd ? `${place.dateStart} -> ${place.dateEnd}` : place.dateStart || place.dateEnd || "\u0110\u1ecba \u0111i\u1ec3m";
     pill.textContent = place.periodLabel || fallbackRange;
     body.appendChild(pill);
   }
@@ -137,7 +145,7 @@ function buildPopupContent(place: Place, onDetail: () => void) {
   if (cover) {
     const image = document.createElement("img");
     image.src = cover;
-    image.alt = place.title || "Ảnh địa điểm";
+    image.alt = place.title || "\u0110\u1ecba \u0111i\u1ec3m";
     image.className = "mt-1 h-36 w-full rounded-lg object-cover ring-1 ring-white/30";
     body.appendChild(image);
   }
@@ -195,6 +203,26 @@ function buildPointCollection(places: Place[]): GeoJSON.FeatureCollection<GeoJSO
   };
 }
 
+function pickRandomItems<T>(items: T[], count: number) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, Math.min(count, copy.length));
+}
+
+function shuffleQuizOptions(question: QuizQuestion): QuizQuestion {
+  const entries = question.options.map((option, index) => ({ option, index }));
+  for (let i = entries.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [entries[i], entries[j]] = [entries[j], entries[i]];
+  }
+  const newOptions = entries.map((entry) => entry.option);
+  const newAnswerIndex = entries.findIndex((entry) => entry.index === question.answerIndex);
+  return { ...question, options: newOptions, answerIndex: newAnswerIndex };
+}
+
 export default function MapView({ places }: Props) {
   const hasToken = Boolean(MAPBOX_TOKEN);
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -214,7 +242,12 @@ export default function MapView({ places }: Props) {
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [detailPlace, setDetailPlace] = useState<Place | null>(null);
-  const [activeTab, setActiveTab] = useState<"places" | "journey">("journey");
+  const [activeTab, setActiveTab] = useState<"places" | "journey" | "quiz">("journey");
+  const [hoveredTab, setHoveredTab] = useState<"places" | "journey" | "quiz" | null>(null);
+  const [quizSet, setQuizSet] = useState<QuizQuestion[]>([]);
+  const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
+  const [quizSubmitted, setQuizSubmitted] = useState(false);
+  const [quizScore, setQuizScore] = useState<number | null>(null);
   const placeSectionRef = useRef<HTMLDivElement | null>(null);
   const journeySectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -249,22 +282,70 @@ export default function MapView({ places }: Props) {
       const aHas = Boolean(a.dateStart);
       const bHas = Boolean(b.dateStart);
       if (aHas && bHas) {
-        const compare = (a.dateStart || "").localeCompare(b.dateStart || "");
+        const compare = (a.dateStart || "\u0110\u1ecba \u0111i\u1ec3m").localeCompare(b.dateStart || "\u0110\u1ecba \u0111i\u1ec3m");
         if (compare !== 0) return compare;
       } else if (aHas && !bHas) {
         return -1;
       } else if (!aHas && bHas) {
         return 1;
       }
-      return (a.title || "").localeCompare(b.title || "");
+      return (a.title || "\u0110\u1ecba \u0111i\u1ec3m").localeCompare(b.title || "\u0110\u1ecba \u0111i\u1ec3m");
     });
     return list;
   }, [places, routeOrderMap]);
 
+  const quizBank = useMemo(() => {
+    return (quizData as QuizQuestion[]).filter((q) => q && q.id && Array.isArray(q.options));
+  }, []);
+
+  const generateQuizSet = () => {
+    const nextSet = pickRandomItems(quizBank, 10).map(shuffleQuizOptions);
+    setQuizSet(nextSet);
+    setQuizAnswers({});
+    setQuizSubmitted(false);
+    setQuizScore(null);
+  };
+
+  useEffect(() => {
+    if (activeTab === "quiz") {
+      generateQuizSet();
+    }
+  }, [activeTab, quizBank]);
+
+  const handleQuizAnswer = (id: string, optionIndex: number) => {
+    if (quizSubmitted) return;
+    setQuizAnswers((prev) => ({ ...prev, [id]: optionIndex }));
+  };
+
+  const handleQuizSubmit = () => {
+    if (quizSubmitted) return;
+    const score = quizSet.reduce((sum, question) => {
+      return sum + (quizAnswers[question.id] === question.answerIndex ? 1 : 0);
+    }, 0);
+    setQuizScore(score);
+    setQuizSubmitted(true);
+  };
+
+  const handleQuizNext = () => {
+    generateQuizSet();
+  };
+
   const sidebarSections = [
-    { key: "places", label: "Địa điểm", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
-    { key: "journey", label: "Hành trình", icon: "Orion_direction.svg", ref: journeySectionRef },
+    { key: "places", label: "\u0110\u1ecba \u0111i\u1ec3m", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
+    { key: "journey", label: "H\u00e0nh tr\u00ecnh", icon: "Orion_direction.svg", ref: journeySectionRef },
+    { key: "quiz", label: "Tr\u1eafc nghi\u1ec7m", icon: "Orion_favorite-book.svg" },
   ] as const;
+
+  const visibleTab = hoveredTab ?? activeTab;
+  const activeSection = sidebarSections.find((section) => section.key === visibleTab);
+  const sidebarMeta = visibleTab === "quiz" ? `${quizSet.length} c\u00e2u` : `${sortedPlaces.length} \u0111i\u1ec3m`;
+  const sidebarHint =
+    visibleTab === "quiz"
+      ? "Ch\u1ecdn \u0111\u00e1p \u00e1n r\u1ed3i b\u1ea5m Ch\u1ea5m \u0111i\u1ec3m."
+      : visibleTab === "places"
+        ? "Danh s\u00e1ch \u0111\u1ecba \u0111i\u1ec3m theo h\u00e0nh tr\u00ecnh."
+        : "Theo d\u00f5i h\u00e0nh tr\u00ecnh theo th\u1eddi gian.";
+  const quizAnsweredCount = Object.keys(quizAnswers).length;
 
   const routeFeatures: RouteFeature[] = useMemo(() => {
     const fc = routes as GeoJSON.FeatureCollection;
@@ -678,9 +759,9 @@ export default function MapView({ places }: Props) {
             "text-allow-overlap": true,
           },
           paint: {
-            "text-color": "#0f172a",
+            "text-color": "#000000",
             "text-halo-color": "#ffffff",
-            "text-halo-width": 1.6,
+            "text-halo-width": 1.0,
           },
         });
       }
@@ -878,160 +959,267 @@ export default function MapView({ places }: Props) {
           </div>
 
           <div
-            className={`pointer-events-auto absolute left-3 top-14 z-20 max-h-[88vh] w-[320px] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
+            className={`pointer-events-auto absolute left-3 top-14 z-20 h-[85vh] w-[400px] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
               showMenu ? "translate-x-0" : "-translate-x-[110%]"
             }`}
           >
-            <div className="relative flex h-full flex-col">
+            <div className="relative flex h-full">
               <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
-              <div className="relative z-10 border-b border-white/30 bg-[#991B1B]/90 text-white backdrop-blur">
-                <div className="flex items-center justify-between px-4 py-3">
-                  <div>
-                    <p className="text-base font-semibold">Danh sách hành trình</p>
-                  </div>
-                  <div className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
-                    {sortedPlaces.length} điểm
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 px-3 pb-3">
+              <div className="relative z-10 flex h-full w-full">
+                <div
+                  className="flex w-16 flex-col items-center gap-3 border-r border-white/30 bg-white/35 py-3"
+                  onMouseLeave={() => setHoveredTab(null)}
+                >
                   {sidebarSections.map((section) => {
-                    const isActive = activeTab === section.key;
+                    const isSelected = activeTab === section.key;
+                    const isPreview = visibleTab === section.key;
                     return (
                       <button
                         key={section.key}
                         type="button"
                         onClick={() => setActiveTab(section.key)}
-                        className={`flex flex-1 items-center justify-center gap-2 rounded-lg border px-2 py-2 text-xs font-semibold text-white backdrop-blur transition ${
-                          isActive
-                            ? "border-white/50 bg-white/35"
-                            : "border-white/30 bg-white/20 hover:bg-white/30"
+                        onMouseEnter={() => setHoveredTab(section.key)}
+                        title={section.label}
+                        aria-label={section.label}
+                        aria-current={isSelected ? "page" : undefined}
+                        className={`flex w-12 items-center justify-center rounded-xl border px-2 py-2 text-[11px] font-semibold transition ${
+                          isPreview
+                            ? "border-[#991B1B]/50 bg-white text-[#991B1B] shadow-sm"
+                            : isSelected
+                              ? "border-white/80 bg-white/80 text-slate-700"
+                              : "border-white/50 bg-white/70 text-slate-600 hover:bg-white"
                         }`}
                       >
                         <img
                           src={getIconSrc(section.icon) || `/media/${section.icon}`}
                           alt={section.label}
-                          className="h-4 w-4 object-contain"
+                          className="h-5 w-5 object-contain"
                         />
-                        <span className="hidden sm:inline">{section.label}</span>
                       </button>
                     );
                   })}
                 </div>
-              </div>
-              <div
-                className="relative z-10 flex-1 overflow-y-auto bg-white/50 backdrop-blur-xl"
-                style={{ maxHeight: "calc(88vh - 160px)" }}
-              >
-                {sortedPlaces.length === 0 ? (
-                  <p className="p-4 text-sm text-slate-600">Chưa có dữ liệu. Thêm JSON vào src/data/places.json.</p>
-                ) : activeTab === "places" ? (
-                  <div className="space-y-4 px-2 py-3">
-                    <div ref={placeSectionRef}>
-                      <p className="px-2 text-xs font-semibold uppercase tracking-wide text-[#991B1B]">Địa điểm</p>
-                      <div className="mt-2 divide-y divide-white/30 rounded-xl border border-white/30 bg-white/50 shadow-lg ring-1 ring-white/20 backdrop-blur-xl">
-                        {sortedPlaces.map((place, index) => {
-                          const key = place.id || place.slug || `place-${index}`;
-                          const listIndex = sortedPlaces.indexOf(place);
-                          const stepTarget = listIndex >= 0 ? listIndex : index;
-                          const displayIndex = listIndex >= 0 ? listIndex + 1 : index + 1;
-                          const active = activePlaceId === key;
-                          return (
-                            <div
-                              key={`places-${key}`}
-                              onClick={() => {
-                                setStep(stepTarget);
-                                setDetailPlace(place);
-                              }}
-                              className={`block w-full cursor-pointer text-left transition hover:bg-[#EAB308]/15 ${
-                                active ? "bg-[#EAB308]/15" : "bg-white"
-                              }`}
-                            >
-                              <div className="flex items-start gap-3 px-4 py-3">
-                                <div
-                                  className={`mt-1 h-9 w-9 shrink-0 rounded-full border text-center text-sm font-semibold leading-9 ${
-                                    active
-                                      ? "border-[#991B1B] bg-[#EAB308]/25 text-[#991B1B]"
-                                      : "border-slate-200 bg-slate-50 text-slate-700"
-                                  }`}
-                                >
-                                  {displayIndex}
-                                </div>
-                                <div className="space-y-1">
-                                  <p className="text-sm font-semibold text-slate-900">{place.title}</p>
-                                  <p className="text-xs text-slate-600">
-                                    {[place.city, place.country].filter(Boolean).join(", ") || "Địa điểm"}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          );
-                        })}
+                <div className="flex min-h-0 flex-1 flex-col">
+                  <div className="border-b border-white/30 bg-[#991B1B]/90 text-white backdrop-blur">
+                    <div className="flex items-center justify-between px-4 py-3">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">
+                          {activeSection ? (
+                            <img
+                              src={getIconSrc(activeSection.icon) || `/media/${activeSection.icon}`}
+                              alt=""
+                              className="h-5 w-5 object-contain"
+                            />
+                          ) : null}
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
+                            {"Tab \u0111ang ch\u1ecdn"}
+                          </p>
+                          <p className="text-base font-semibold">{activeSection?.label || "Danh m\u1ee5c"}</p>
+                        </div>
+                      </div>
+                      <div className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
+                        {sidebarMeta}
                       </div>
                     </div>
+                    <p className="px-4 pb-3 text-xs text-white/90">{sidebarHint}</p>
                   </div>
-                ) : (
-                  <div className="space-y-4 px-2 py-3">
-                    <div ref={journeySectionRef}>
-                      <p className="px-2 text-xs font-semibold uppercase tracking-wide text-[#991B1B]">Hành trình</p>
-                      <div className="mt-2 divide-y divide-white/30 rounded-xl border border-white/30 bg-white/50 shadow-lg ring-1 ring-white/20 backdrop-blur-xl">
-                        {sortedPlaces.map((place, index) => {
-                          const key = place.id || place.slug || `place-${index}`;
-                          const listIndex = sortedPlaces.indexOf(place);
-                          const stepTarget = listIndex >= 0 ? listIndex : index;
-                          const displayIndex = listIndex >= 0 ? listIndex + 1 : index + 1;
-                          const active = activePlaceId === key;
-                          return (
-                            <div
-                              key={`journey-${key}`}
-                              onClick={() => {
-                                setStep(stepTarget);
-                                setDetailPlace(place);
-                              }}
-                              className={`block w-full cursor-pointer text-left transition hover:bg-[#EAB308]/15 ${
-                                active ? "bg-[#EAB308]/15" : "bg-white"
-                              }`}
-                            >
-                              <div className="flex items-start gap-3 px-4 py-3">
+                  <div className="relative z-10 min-h-0 flex-1 overflow-y-auto bg-white/50 backdrop-blur-xl">
+                    {visibleTab === "quiz" ? (
+                      <div className="space-y-4 px-3 py-4">
+                        {quizSet.length === 0 ? (
+                          <p className="rounded-xl border border-white/40 bg-white/70 px-3 py-4 text-sm text-slate-600">{"Ch\u01b0a c\u00f3 c\u00e2u h\u1ecfi tr\u1eafc nghi\u1ec7m. H\u00e3y th\u00eam c\u00e2u h\u1ecfi v\u00e0o src/data/quiz.json."}</p>
+                        ) : (
+                          <div className="space-y-3">
+                            {quizSet.map((question, index) => {
+                              const selectedIndex = quizAnswers[question.id];
+                              const isCorrect = selectedIndex === question.answerIndex;
+                              return (
                                 <div
-                                  className={`mt-1 h-9 w-9 shrink-0 rounded-full border text-center text-sm font-semibold leading-9 ${
-                                    active
-                                      ? "border-[#991B1B] bg-[#EAB308]/25 text-[#991B1B]"
-                                      : "border-slate-200 bg-slate-50 text-slate-700"
-                                  }`}
+                                  key={question.id}
+                                  className="rounded-xl border border-white/40 bg-white/70 p-3 shadow-sm"
                                 >
-                                  {displayIndex}
-                                </div>
-                                <div className="space-y-1">
-                                  <p className="text-sm font-semibold text-slate-900">{place.title}</p>
-                                  <p className="text-xs text-slate-600">
-                                    {[place.city, place.country].filter(Boolean).join(", ") || "Địa điểm"}
-                                  </p>
-                                  {place.periodLabel || place.dateStart || place.dateEnd ? (
-                                    <p className="text-xs font-medium text-[#991B1B]">
-                                      {place.periodLabel ||
-                                        (place.dateStart && place.dateEnd
-                                          ? `${place.dateStart} -> ${place.dateEnd}`
-                                          : place.dateStart || place.dateEnd)}
+                                  <p className="text-sm font-semibold text-slate-900">{`${index + 1}. ${question.question}`}</p>
+                                  <div className="mt-2 space-y-2">
+                                    {question.options.map((option, optionIndex) => {
+                                      const isSelected = selectedIndex === optionIndex;
+                                      const showCorrect = quizSubmitted && question.answerIndex === optionIndex;
+                                      const showWrong = quizSubmitted && isSelected && question.answerIndex !== optionIndex;
+                                      return (
+                                        <button
+                                          key={`${question.id}-${optionIndex}`}
+                                          type="button"
+                                          onClick={() => handleQuizAnswer(question.id, optionIndex)}
+                                          className={`flex w-full items-start gap-2 rounded-lg border px-3 py-2 text-left text-sm transition ${
+                                            showCorrect
+                                              ? "border-emerald-400 bg-emerald-50 text-emerald-800"
+                                              : showWrong
+                                                ? "border-rose-400 bg-rose-50 text-rose-700"
+                                                : isSelected
+                                                  ? "border-[#991B1B]/50 bg-[#991B1B]/10 text-[#991B1B]"
+                                                  : "border-white/60 bg-white/70 text-slate-700 hover:bg-white"
+                                          }`}
+                                        >
+                                          <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-current text-[11px] font-semibold">
+                                            {String.fromCharCode(65 + optionIndex)}
+                                          </span>
+                                          <span>{option}</span>
+                                        </button>
+                                      );
+                                    })}
+                                  </div>
+                                  {quizSubmitted ? (
+                                    <p
+                                      className={`mt-2 text-xs font-semibold ${
+                                        isCorrect ? "text-emerald-700" : "text-rose-700"
+                                      }`}
+                                    >
+                                      {selectedIndex === undefined ? "Ch\u01b0a ch\u1ecdn \u0111\u00e1p \u00e1n" : isCorrect ? "\u0110\u00fang" : "Sai"}
                                     </p>
                                   ) : null}
-                                  {place.levelTexts?.primary ? (
-                                    <p className="text-xs text-slate-700">{place.levelTexts.primary}</p>
-                                  ) : null}
-                                  {/* Chi tiết removed in journey tab */}
                                 </div>
-                              </div>
-                            </div>
-                          );
-                        })}
+                              );
+                            })}
+                          </div>
+                        )}
+
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <p className="text-xs font-semibold text-slate-600">{"\u0110\u00e3 ch\u1ecdn "}{quizAnsweredCount}/{quizSet.length}{" c\u00e2u"}</p>
+                          <div className="flex items-center gap-2">
+                            <button
+                              type="button"
+                              onClick={handleQuizSubmit}
+                              className="rounded-md border border-[#991B1B]/30 bg-[#991B1B] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#7F1D1D] disabled:cursor-not-allowed disabled:opacity-50"
+                            >
+                              {"Ch\u1ea5m \u0111i\u1ec3m"}
+                            </button>
+                            <button
+                              type="button"
+                              onClick={handleQuizNext}
+                              className="rounded-md border border-white/60 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50"
+                            >
+                              {"K\u1ebf ti\u1ebfp"}
+                            </button>
+                          </div>
+                        </div>
+
+                        {quizSubmitted ? (
+                          <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">{"K\u1ebft qu\u1ea3: "}{quizScore ?? 0}/{quizSet.length}</div>
+                        ) : null}
                       </div>
-                    </div>
+                    ) : sortedPlaces.length === 0 ? (
+                      <p className="p-4 text-sm text-slate-600">{"Ch\u01b0a c\u00f3 d\u1eef li\u1ec7u. Th\u00eam JSON v\u00e0o src/data/places.json."}</p>
+                    ) : visibleTab === "places" ? (
+                      <div className="space-y-4 px-2 py-3">
+                        <div ref={placeSectionRef}>
+                          <p className="px-2 text-xs font-semibold uppercase tracking-wide text-[#991B1B]">{"\u0110\u1ecba \u0111i\u1ec3m"}</p>
+                          <div className="mt-2 divide-y divide-white/30 rounded-xl border border-white/30 bg-white/50 shadow-lg ring-1 ring-white/20 backdrop-blur-xl">
+                            {sortedPlaces.map((place, index) => {
+                              const key = place.id || place.slug || `place-${index}`;
+                              const listIndex = sortedPlaces.indexOf(place);
+                              const stepTarget = listIndex >= 0 ? listIndex : index;
+                              const displayIndex = listIndex >= 0 ? listIndex + 1 : index + 1;
+                              const active = activePlaceId === key;
+                              return (
+                                <div
+                                  key={`places-${key}`}
+                                  onClick={() => {
+                                    setStep(stepTarget);
+                                    setDetailPlace(place);
+                                  }}
+                                  className={`block w-full cursor-pointer text-left transition hover:bg-[#EAB308]/15 ${
+                                    active ? "bg-[#EAB308]/15" : "bg-white"
+                                  }`}
+                                >
+                                  <div className="flex items-start gap-3 px-4 py-3">
+                                    <div
+                                      className={`mt-1 h-9 w-9 shrink-0 rounded-full border text-center text-sm font-semibold leading-9 ${
+                                        active
+                                          ? "border-[#991B1B] bg-[#EAB308]/25 text-[#991B1B]"
+                                          : "border-slate-200 bg-slate-50 text-slate-700"
+                                      }`}
+                                    >
+                                      {displayIndex}
+                                    </div>
+                                    <div className="space-y-1">
+                                      <p className="text-sm font-semibold text-slate-900">{place.title}</p>
+                                      <p className="text-xs text-slate-600">
+                                        {[place.city, place.country].filter(Boolean).join(", ") || "\u0110\u1ecba \u0111i\u1ec3m"}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="space-y-4 px-2 py-3">
+                        <div ref={journeySectionRef}>
+                          <p className="px-2 text-xs font-semibold uppercase tracking-wide text-[#991B1B]">{"H\u00e0nh tr\u00ecnh"}</p>
+                          <div className="mt-2 divide-y divide-white/30 rounded-xl border border-white/30 bg-white/50 shadow-lg ring-1 ring-white/20 backdrop-blur-xl">
+                            {sortedPlaces.map((place, index) => {
+                              const key = place.id || place.slug || `place-${index}`;
+                              const listIndex = sortedPlaces.indexOf(place);
+                              const stepTarget = listIndex >= 0 ? listIndex : index;
+                              const displayIndex = listIndex >= 0 ? listIndex + 1 : index + 1;
+                              const active = activePlaceId === key;
+                              return (
+                                <div
+                                  key={`journey-${key}`}
+                                  onClick={() => {
+                                    setStep(stepTarget);
+                                    setDetailPlace(place);
+                                  }}
+                                  className={`block w-full cursor-pointer text-left transition hover:bg-[#EAB308]/15 ${
+                                    active ? "bg-[#EAB308]/15" : "bg-white"
+                                  }`}
+                                >
+                                  <div className="flex items-start gap-3 px-4 py-3">
+                                    <div
+                                      className={`mt-1 h-9 w-9 shrink-0 rounded-full border text-center text-sm font-semibold leading-9 ${
+                                        active
+                                          ? "border-[#991B1B] bg-[#EAB308]/25 text-[#991B1B]"
+                                          : "border-slate-200 bg-slate-50 text-slate-700"
+                                      }`}
+                                    >
+                                      {displayIndex}
+                                    </div>
+                                    <div className="space-y-1">
+                                      <p className="text-sm font-semibold text-slate-900">{place.title}</p>
+                                      <p className="text-xs text-slate-600">
+                                        {[place.city, place.country].filter(Boolean).join(", ") || "\u0110\u1ecba \u0111i\u1ec3m"}
+                                      </p>
+                                      {place.periodLabel || place.dateStart || place.dateEnd ? (
+                                        <p className="text-xs font-medium text-[#991B1B]">
+                                          {place.periodLabel ||
+                                            (place.dateStart && place.dateEnd
+                                              ? `${place.dateStart} -> ${place.dateEnd}`
+                                              : place.dateStart || place.dateEnd)}
+                                        </p>
+                                      ) : null}
+                                      {place.levelTexts?.primary ? (
+                                        <p className="text-xs text-slate-700">{place.levelTexts.primary}</p>
+                                      ) : null}
+                                      {/* Chi ti?t removed in journey tab */}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
             </div>
           </div>
 
-          {activeTab === "journey" ? (
+          {visibleTab === "journey" ? (
             <div className="pointer-events-auto absolute inset-x-0 bottom-4 flex justify-center px-4">
               <div className="flex w-full max-w-5xl flex-col gap-2 rounded-2xl border border-white/40 bg-white/70 p-3 shadow-2xl backdrop-blur">
                 <div className="flex flex-wrap items-center gap-3">
@@ -1065,7 +1253,7 @@ export default function MapView({ places }: Props) {
                 <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700">
                   <span className="text-slate-500">Dòng thời gian</span>
                   <span className="text-center text-[13px]">
-                    {currentPlace ? `${currentPlace.periodLabel || ""} - ${currentPlace.title}` : "Chưa có dữ liệu"}
+                    {currentPlace ? `${currentPlace.periodLabel || "\u0110\u1ecba \u0111i\u1ec3m"} - ${currentPlace.title}` : "Chưa có dữ liệu"}
                   </span>
                 </div>
               </div>
@@ -1114,7 +1302,7 @@ export default function MapView({ places }: Props) {
               {detailPlace.media?.cover ? (
                 <img
                   src={detailPlace.media.cover}
-                  alt={detailPlace.title || "Ảnh bìa"}
+                  alt={detailPlace.title || "\u0110\u1ecba \u0111i\u1ec3m"}
                   className="h-auto w-full rounded-lg"
                 />
               ) : null}
@@ -1125,7 +1313,7 @@ export default function MapView({ places }: Props) {
                     {(detailPlace as any).media.images.slice(0, 3).map((img: any, idx: number) => (
                       <div key={`img-${idx}`} className="rounded-md border border-slate-100 p-2">
                         {img.url && isImageUrl(img.url) ? (
-                          <img src={img.url} alt={img.label || "Ảnh"} className="h-auto w-full rounded-md" />
+                          <img src={img.url} alt={img.label || "\u0110\u1ecba \u0111i\u1ec3m"} className="h-auto w-full rounded-md" />
                         ) : null}
                         {img.url && !isImageUrl(img.url) ? (
                           <a
@@ -1134,10 +1322,10 @@ export default function MapView({ places }: Props) {
                             rel="noopener noreferrer"
                             className="text-sm font-semibold text-[#991B1B] underline underline-offset-2"
                           >
-                            {img.label || "Ảnh"}
+                            {img.label || "\u0110\u1ecba \u0111i\u1ec3m"}
                           </a>
                         ) : (
-                          <span className="text-sm font-semibold text-slate-800">{img.label || "Ảnh"}</span>
+                          <span className="text-sm font-semibold text-slate-800">{img.label || "\u0110\u1ecba \u0111i\u1ec3m"}</span>
                         )}
                       </div>
                     ))}
@@ -1183,7 +1371,7 @@ export default function MapView({ places }: Props) {
                                   <div className="aspect-video w-full overflow-hidden rounded-md">
                                     <iframe
                                       src={embed}
-                                      title={vid.label || "Video"}
+                                      title={vid.label || "\u0110\u1ecba \u0111i\u1ec3m"}
                                       className="h-full w-full"
                                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                       allowFullScreen
@@ -1198,7 +1386,7 @@ export default function MapView({ places }: Props) {
                                   rel="noopener noreferrer"
                                   className="text-sm font-semibold text-[#991B1B] underline underline-offset-2"
                                 >
-                                  {vid.label || "Video"}
+                                  {vid.label || "\u0110\u1ecba \u0111i\u1ec3m"}
                                 </a>
                               );
                             })()

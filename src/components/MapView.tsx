@@ -177,6 +177,82 @@ function buildLineFeature(coords: [number, number][]) {
   } as GeoJSON.Feature<GeoJSON.LineString>;
 }
 
+function smoothLine(coords: [number, number][], segments = 6, maxPoints = 1200) {
+  if (coords.length < 3) return coords;
+  const totalSegments = (coords.length - 1) * segments + 1;
+  const safeSegments =
+    totalSegments > maxPoints ? Math.max(1, Math.floor((maxPoints - 1) / (coords.length - 1))) : segments;
+  const out: [number, number][] = [];
+  for (let i = 0; i < coords.length - 1; i += 1) {
+    const p0 = coords[i - 1] || coords[i];
+    const p1 = coords[i];
+    const p2 = coords[i + 1];
+    const p3 = coords[i + 2] || coords[i + 1];
+    for (let j = 0; j < safeSegments; j += 1) {
+      const t = j / safeSegments;
+      const t2 = t * t;
+      const t3 = t2 * t;
+      const x =
+        0.5 *
+        (2 * p1[0] +
+          (-p0[0] + p2[0]) * t +
+          (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * t2 +
+          (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * t3);
+      const y =
+        0.5 *
+        (2 * p1[1] +
+          (-p0[1] + p2[1]) * t +
+          (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * t2 +
+          (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * t3);
+      out.push([x, y]);
+    }
+  }
+  out.push(coords[coords.length - 1]);
+  return out;
+}
+
+function haversineMeters(a: [number, number], b: [number, number]) {
+  const R = 6371000;
+  const toRad = (v: number) => (v * Math.PI) / 180;
+  const dLat = toRad(b[1] - a[1]);
+  const dLng = toRad(b[0] - a[0]);
+  const lat1 = toRad(a[1]);
+  const lat2 = toRad(b[1]);
+  const h =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+function lineDistanceMeters(coords: [number, number][]) {
+  let sum = 0;
+  for (let i = 1; i < coords.length; i += 1) {
+    sum += haversineMeters(coords[i - 1], coords[i]);
+  }
+  return sum;
+}
+
+function buildPartialLineByDistance(coords: [number, number][], distanceMeters: number) {
+  if (coords.length === 0) return coords;
+  if (distanceMeters <= 0) return [coords[0]];
+  const out: [number, number][] = [coords[0]];
+  let travelled = 0;
+  for (let i = 1; i < coords.length; i += 1) {
+    const prev = coords[i - 1];
+    const cur = coords[i];
+    const segDist = haversineMeters(prev, cur);
+    if (travelled + segDist >= distanceMeters) {
+      const remain = distanceMeters - travelled;
+      const t = segDist > 0 ? remain / segDist : 0;
+      out.push([prev[0] + (cur[0] - prev[0]) * t, prev[1] + (cur[1] - prev[1]) * t]);
+      return out;
+    }
+    travelled += segDist;
+    out.push(cur);
+  }
+  return out;
+}
+
 function toNumberOrder(v: string | number | undefined) {
   if (typeof v === "number") return v;
   if (typeof v === "string") {
@@ -234,6 +310,7 @@ export default function MapView({ places }: Props) {
   const zoomInTimeoutRef = useRef<number | null>(null);
   const moveEndHandlerRef = useRef<((e: mapboxgl.MapboxEvent) => void) | null>(null);
   const popupStyleInjectedRef = useRef<boolean>(false);
+  const animHeadMarkerRef = useRef<mapboxgl.Marker | null>(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
@@ -243,11 +320,14 @@ export default function MapView({ places }: Props) {
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [detailPlace, setDetailPlace] = useState<Place | null>(null);
   const [activeTab, setActiveTab] = useState<"places" | "journey" | "quiz">("journey");
+  const [hasStarted, setHasStarted] = useState(false);
+  const [countryQuery, setCountryQuery] = useState("");
   const [hoveredTab, setHoveredTab] = useState<"places" | "journey" | "quiz" | null>(null);
   const [quizSet, setQuizSet] = useState<QuizQuestion[]>([]);
   const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizScore, setQuizScore] = useState<number | null>(null);
+  const [reachedStepIndex, setReachedStepIndex] = useState(0);
   const placeSectionRef = useRef<HTMLDivElement | null>(null);
   const journeySectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -294,8 +374,22 @@ export default function MapView({ places }: Props) {
     return list;
   }, [places, routeOrderMap]);
 
+  const filteredPlaces = useMemo(() => {
+    const query = countryQuery.trim().toLowerCase();
+    if (!query) return sortedPlaces;
+    return sortedPlaces.filter((place) => (place.country || "").toLowerCase().includes(query));
+  }, [sortedPlaces, countryQuery]);
+
   const quizBank = useMemo(() => {
-    return (quizData as QuizQuestion[]).filter((q) => q && q.id && Array.isArray(q.options));
+    return (quizData as QuizQuestion[])
+      .filter((q) => q && q.id && Array.isArray(q.options))
+      .map((q) => {
+        const rawIndex = Number(q.answerIndex);
+        if (!Number.isFinite(rawIndex)) return q;
+        const maxIndex = Math.max(0, q.options.length - 1);
+        const normalized = Math.max(0, Math.min(maxIndex, rawIndex - 1));
+        return { ...q, answerIndex: normalized };
+      });
   }, []);
 
   const generateQuizSet = () => {
@@ -331,8 +425,8 @@ export default function MapView({ places }: Props) {
   };
 
   const sidebarSections = [
-    { key: "places", label: "\u0110\u1ecba \u0111i\u1ec3m", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
     { key: "journey", label: "H\u00e0nh tr\u00ecnh", icon: "Orion_direction.svg", ref: journeySectionRef },
+    { key: "places", label: "\u0110\u1ecba \u0111i\u1ec3m", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
     { key: "quiz", label: "Tr\u1eafc nghi\u1ec7m", icon: "Orion_favorite-book.svg" },
   ] as const;
 
@@ -364,11 +458,11 @@ export default function MapView({ places }: Props) {
       const coords = f.geometry.coordinates as [number, number][];
       if (coords.length === 0) return f;
       const needConvert = isLikelyMercator(coords[0]);
-      if (!needConvert) return f;
-      const converted = coords.map(([x, y]) => toLngLat(x, y));
+      const converted = needConvert ? coords.map(([x, y]) => toLngLat(x, y)) : coords;
+      const smoothed = smoothLine(converted);
       return {
         ...f,
-        geometry: { ...f.geometry, coordinates: converted },
+        geometry: { ...f.geometry, coordinates: smoothed },
       } as RouteFeature;
     });
   }, []);
@@ -376,7 +470,7 @@ export default function MapView({ places }: Props) {
   const routeByPairRef = useRef<Map<string, RouteFeature>>(new Map());
   const maxOrderRef = useRef<number>(0);
   const initialCenterRef = useRef<[number, number] | null>(null);
-  const lastProgressOrderRef = useRef<number>(0);
+  const completedSegmentsRef = useRef<Set<string>>(new Set());
 
   useEffect(() => {
     const map = new Map<string, RouteFeature>();
@@ -395,6 +489,10 @@ export default function MapView({ places }: Props) {
 
   const currentStep = sortedPlaces.length ? Math.min(stepIndex, sortedPlaces.length - 1) : 0;
   const currentPlace = sortedPlaces[currentStep];
+  const visiblePlaces = useMemo(() => {
+    if (!hasStarted) return sortedPlaces;
+    return sortedPlaces.slice(0, Math.min(sortedPlaces.length, reachedStepIndex + 1));
+  }, [sortedPlaces, hasStarted, reachedStepIndex]);
   const fallbackCenter: [number, number] = useMemo(() => {
     return sortedPlaces[0]?.coords || [105.8342, 21.0278];
   }, [sortedPlaces]);
@@ -410,6 +508,17 @@ export default function MapView({ places }: Props) {
     });
   };
 
+  const setRoutesBaseData = (features: RouteFeature[]) => {
+    const map = mapRef.current;
+    if (!map || !mapLoaded) return;
+    const source = map.getSource("routes") as mapboxgl.GeoJSONSource | undefined;
+    if (!source) return;
+    source.setData({
+      type: "FeatureCollection",
+      features: features as GeoJSON.Feature[],
+    });
+  };
+
   const setRoutesAnimData = (line: GeoJSON.FeatureCollection) => {
     const map = mapRef.current;
     if (!map || !mapLoaded) return;
@@ -418,14 +527,56 @@ export default function MapView({ places }: Props) {
     source.setData(line);
   };
 
-  const animateSegment = (feature: RouteFeature | undefined) => {
+  const setAnimHeadData = (coords: [number, number] | null, mode?: string) => {
+    const map = mapRef.current;
+    if (!map || !mapLoaded) return;
+    if (!coords) {
+      if (animHeadMarkerRef.current) {
+        animHeadMarkerRef.current.remove();
+        animHeadMarkerRef.current = null;
+      }
+      return;
+    }
+    if (mode === "land") {
+      if (animHeadMarkerRef.current) {
+        animHeadMarkerRef.current.remove();
+        animHeadMarkerRef.current = null;
+      }
+      return;
+    }
+    const iconSrc = mode === "train" ? "/train.svg" : "/vessels.svg";
+    if (!animHeadMarkerRef.current) {
+      const el = document.createElement("div");
+      el.className = "route-anim-head";
+      const img = document.createElement("img");
+      img.src = iconSrc;
+      img.alt = mode ? `${mode} vehicle` : "vehicle";
+      img.className = "h-12 w-12";
+      el.appendChild(img);
+      animHeadMarkerRef.current = new mapboxgl.Marker({ element: el, anchor: "center" })
+        .setLngLat(coords)
+        .addTo(map);
+      return;
+    }
+    const markerEl = animHeadMarkerRef.current.getElement();
+    const markerImg = markerEl.querySelector("img");
+    if (markerImg && markerImg.getAttribute("src") !== iconSrc) {
+      markerImg.setAttribute("src", iconSrc);
+      markerImg.setAttribute("alt", mode ? `${mode} vehicle` : "vehicle");
+    }
+    animHeadMarkerRef.current.setLngLat(coords);
+  };
+
+  const animateSegment = (feature: RouteFeature | undefined, mode?: string, onComplete?: () => void) => {
     if (!feature || feature.geometry.type !== "LineString") {
       setRoutesAnimData(EMPTY_FC);
+      setAnimHeadData(null);
       return;
     }
     const coords = feature.geometry.coordinates as [number, number][];
     if (coords.length < 2) {
       setRoutesAnimData(EMPTY_FC);
+      setAnimHeadData(null);
       return;
     }
 
@@ -433,41 +584,49 @@ export default function MapView({ places }: Props) {
       cancelAnimationFrame(animationRef.current);
     }
 
-    const duration = 1800;
+    const distance = lineDistanceMeters(coords);
+    const speedMps = 500000;
+    const duration = Math.max(1200, (distance / speedMps) * 1000);
+    const totalDistance = Math.max(0, distance);
     let start: number | null = null;
 
     const tick = (now: number) => {
       if (start === null) start = now;
       const t = Math.min(1, (now - start) / duration);
-      const n = coords.length;
-      const idx = Math.max(1, Math.floor(t * (n - 1)));
-      const lineCoords = coords.slice(0, idx + 1);
+      const targetDistance = totalDistance * t;
+      const lineCoords = buildPartialLineByDistance(coords, targetDistance);
       const line = buildLineFeature(lineCoords);
       setRoutesAnimData(
         line
           ? ({ type: "FeatureCollection", features: [line] } as GeoJSON.FeatureCollection<GeoJSON.LineString>)
           : EMPTY_FC,
       );
+      setAnimHeadData(lineCoords[lineCoords.length - 1] || null, mode);
       if (t < 1) {
         animationRef.current = requestAnimationFrame(tick);
       } else {
         animationRef.current = null;
+        if (onComplete) onComplete();
       }
     };
 
     animationRef.current = requestAnimationFrame(tick);
   };
 
-  const buildProgressFeatures = (orderLimit?: number) => {
-    if (orderLimit === undefined) return [];
-    return routeFeatures.filter((f, idx) => {
-      const o = toNumberOrder(f.properties?.order) ?? idx + 1;
-      return o !== undefined && o <= orderLimit;
-    });
+  const segmentKeyForFeature = (feature: RouteFeature, idx: number) => {
+    const props = feature.properties;
+    if (props?.fromSlug && props?.toSlug) return `${props.fromSlug}->${props.toSlug}`;
+    return `feature-${idx}`;
   };
 
-  const applyStep = (nextIndex: number, prevIndex?: number, options?: { animate?: boolean }) => {
+  const buildProgressFeatures = (keys?: Set<string>) => {
+    if (!keys || keys.size === 0) return [];
+    return routeFeatures.filter((f, idx) => keys.has(segmentKeyForFeature(f, idx)));
+  };
+
+  const applyStep = (nextIndex: number, prevIndex?: number, options?: { animate?: boolean; forceZoom?: boolean }) => {
     const animate = options?.animate !== false;
+    const forceZoom = options?.forceZoom === true;
     if (sortedPlaces.length === 0) return;
     const clamped = Math.max(0, Math.min(nextIndex, sortedPlaces.length - 1));
     const place = sortedPlaces[clamped];
@@ -489,6 +648,8 @@ export default function MapView({ places }: Props) {
         popup.setLngLat(place.coords).addTo(mapRef.current);
       }
     };
+
+    let arrivalCallback: (() => void) | null = null;
 
     if (map) {
       Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
@@ -514,32 +675,10 @@ export default function MapView({ places }: Props) {
             ? sortedPlaces[prevIndex].coords
             : (map.getCenter().toArray() as [number, number]);
         const sameCenter = isSameCoord(fromCenter, targetCenter);
-        if (sameCenter) {
-          showPopup();
-        } else {
-        const midCenter: [number, number] = [
-          (fromCenter[0] + targetCenter[0]) / 2,
-          (fromCenter[1] + targetCenter[1]) / 2,
-        ];
-        const baseZoom = map.getZoom();
-        const zoomOut = Math.max(2.2, Math.min(baseZoom - 2.5, 5.2));
-        const moveZoom = zoomOut;
         const finalZoom = 6;
-        const zoomOutDuration = 1200;
-        const moveDuration = 1400;
         const zoomInDuration = 950;
-
-        map.stop();
-        // Step 1: zoom out ngay tại điểm cũ để người dùng thấy thu nhỏ
-        map.easeTo({ center: fromCenter, zoom: zoomOut, duration: zoomOutDuration, essential: true });
-
-        // Step 2: di chuyển ở mức zoomOut qua midpoint tới điểm mới
-        moveTimeoutRef.current = window.setTimeout(() => {
-          map.easeTo({ center: midCenter, zoom: moveZoom, duration: moveDuration, essential: true });
-          moveTimeoutRef.current = null;
-
-          // Step 3: zoom in vào điểm mới rồi mở popup
-          zoomInTimeoutRef.current = window.setTimeout(() => {
+        if (sameCenter) {
+          if (forceZoom) {
             const handler = () => {
               showPopup();
               if (moveEndHandlerRef.current) {
@@ -550,9 +689,57 @@ export default function MapView({ places }: Props) {
             moveEndHandlerRef.current = handler;
             map.once("moveend", handler);
             map.easeTo({ center: targetCenter, zoom: finalZoom, duration: zoomInDuration, essential: true });
-            zoomInTimeoutRef.current = null;
-          }, moveDuration + 80);
+          } else {
+            showPopup();
+          }
+        } else {
+        const distance = haversineMeters(fromCenter, targetCenter);
+        const midCenter: [number, number] = [
+          (fromCenter[0] + targetCenter[0]) / 2,
+          (fromCenter[1] + targetCenter[1]) / 2,
+        ];
+        const baseZoom = map.getZoom();
+        const distanceKm = distance / 1000;
+        let targetZoomOut = 5.8;
+        if (distanceKm > 50) targetZoomOut = 5.2;
+        if (distanceKm > 200) targetZoomOut = 4.5;
+        if (distanceKm > 800) targetZoomOut = 3.8;
+        if (distanceKm > 2000) targetZoomOut = 3.2;
+        if (distanceKm > 4000) targetZoomOut = 2.6;
+        const zoomOut = Math.max(2.2, Math.min(targetZoomOut, baseZoom - 0.4));
+        const moveZoom = zoomOut;
+        const zoomOutDuration = 1200;
+        const moveDuration = 1400;
+
+        map.stop();
+        // Step 1: zoom out ngay tại điểm cũ để người dùng thấy thu nhỏ
+        map.easeTo({ center: fromCenter, zoom: zoomOut, duration: zoomOutDuration, essential: true });
+
+        // Step 2: di chuyển ở mức zoomOut qua midpoint tới điểm mới
+        moveTimeoutRef.current = window.setTimeout(() => {
+          map.easeTo({ center: midCenter, zoom: moveZoom, duration: moveDuration, essential: true });
+          moveTimeoutRef.current = null;
+
         }, zoomOutDuration + 60);
+
+        arrivalCallback = () => {
+          const handler = () => {
+            showPopup();
+            if (moveEndHandlerRef.current) {
+              map.off("moveend", moveEndHandlerRef.current);
+              moveEndHandlerRef.current = null;
+            }
+          };
+          moveEndHandlerRef.current = handler;
+          map.once("moveend", handler);
+          if (zoomInTimeoutRef.current !== null) {
+            window.clearTimeout(zoomInTimeoutRef.current);
+          }
+          zoomInTimeoutRef.current = window.setTimeout(() => {
+            map.easeTo({ center: targetCenter, zoom: finalZoom, duration: zoomInDuration, essential: true });
+            zoomInTimeoutRef.current = null;
+          }, 80);
+        };
         }
       } else {
         // Không animate: không tự zoom/popup khi mới tới trang
@@ -561,29 +748,45 @@ export default function MapView({ places }: Props) {
       }
     }
 
-    let segmentOrder: number | undefined;
+    const commitProgress = (segmentKey?: string) => {
+      if (segmentKey) {
+        completedSegmentsRef.current.add(segmentKey);
+      }
+      const progressFeatures = buildProgressFeatures(completedSegmentsRef.current);
+      setRoutesProgressData(progressFeatures);
+      const baseFeatures = hasStarted ? progressFeatures : routeFeatures;
+      setRoutesBaseData(baseFeatures);
+      if (hasStarted) {
+        setReachedStepIndex((prev) => Math.max(prev, clamped));
+      }
+    };
+
     if (prevIndex !== undefined && prevIndex >= 0 && clamped !== prevIndex) {
       const from = sortedPlaces[prevIndex];
       const to = place;
       const segKey = from.slug && to.slug ? `${from.slug}->${to.slug}` : undefined;
       const segFeature = segKey ? routeByPairRef.current.get(segKey) : undefined;
-      const fallbackOrder = segFeature ? routeFeatures.indexOf(segFeature) + 1 : undefined;
-      segmentOrder = toNumberOrder(segFeature?.properties?.order) ?? fallbackOrder;
-      if (segmentOrder !== undefined) {
-        lastProgressOrderRef.current = Math.max(lastProgressOrderRef.current, segmentOrder);
-      }
+      const featureIndex = segFeature ? routeFeatures.indexOf(segFeature) : -1;
+      const progressKey = segFeature ? segmentKeyForFeature(segFeature, featureIndex) : undefined;
+      const segMode = segFeature?.properties?.mode;
       if (animate && segFeature) {
-        animateSegment(segFeature);
+        animateSegment(segFeature, segMode, () => {
+          commitProgress(progressKey);
+          if (arrivalCallback) arrivalCallback();
+        });
       } else if (animate) {
         animateSegment(undefined);
+        commitProgress(progressKey);
+        if (arrivalCallback) arrivalCallback();
+      } else {
+        commitProgress(progressKey);
       }
     } else if (animate) {
       animateSegment(undefined);
+      commitProgress();
+    } else {
+      commitProgress();
     }
-
-    const progressLimit = lastProgressOrderRef.current;
-    const progressFeatures = buildProgressFeatures(progressLimit);
-    setRoutesProgressData(progressFeatures);
   };
 
   const applyProjection = (mode: "globe" | "mercator") => {
@@ -616,6 +819,14 @@ export default function MapView({ places }: Props) {
       setStepIndex(clamped);
     }
     applyStep(clamped, prev);
+  };
+
+  const handleStartJourney = () => {
+    setHasStarted(true);
+    if (sortedPlaces.length === 0) return;
+    setStepIndex(0);
+    setReachedStepIndex(0);
+    applyStep(0, undefined, { animate: true, forceZoom: true });
   };
 
   useEffect(() => {
@@ -731,6 +942,8 @@ export default function MapView({ places }: Props) {
         });
       }
 
+
+
       if (!map.getSource("vn-islands")) {
         const data: GeoJSON.FeatureCollection<GeoJSON.Point> = {
           type: "FeatureCollection",
@@ -814,6 +1027,10 @@ export default function MapView({ places }: Props) {
         ["route-nodes", "routes-anim", "routes-progress", "routes", "vn-islands"].forEach((sourceId) => {
           if (activeMap.getSource(sourceId)) activeMap.removeSource(sourceId);
         });
+        if (animHeadMarkerRef.current) {
+          animHeadMarkerRef.current.remove();
+          animHeadMarkerRef.current = null;
+        }
         activeMap.remove();
       }
       mapRef.current = null;
@@ -830,6 +1047,13 @@ export default function MapView({ places }: Props) {
       mapRef.current.resize();
     }
   }, [isFullscreen, showMenu]);
+
+  useEffect(() => {
+    if (!mapLoaded) return;
+    const progressFeatures = buildProgressFeatures(completedSegmentsRef.current);
+    const baseFeatures = hasStarted ? progressFeatures : routeFeatures;
+    setRoutesBaseData(baseFeatures);
+  }, [mapLoaded, hasStarted, routeFeatures]);
 
   // Shift navigation controls when detail sidebar is open
   useEffect(() => {
@@ -875,7 +1099,7 @@ export default function MapView({ places }: Props) {
     });
     markerMapRef.current = {};
 
-    sortedPlaces.forEach((place, index) => {
+    visiblePlaces.forEach((place, index) => {
       if (!place.coords || place.coords.length !== 2) return;
       const key = place.id || place.slug || `place-${index}`;
 
@@ -895,9 +1119,9 @@ export default function MapView({ places }: Props) {
 
     const nodeSource = map.getSource("route-nodes") as mapboxgl.GeoJSONSource | undefined;
     if (nodeSource) {
-      nodeSource.setData(buildPointCollection(sortedPlaces));
+      nodeSource.setData(buildPointCollection(visiblePlaces));
     }
-  }, [sortedPlaces]);
+  }, [visiblePlaces]);
 
   if (!hasToken) {
     return (
@@ -959,7 +1183,7 @@ export default function MapView({ places }: Props) {
           </div>
 
           <div
-            className={`pointer-events-auto absolute left-3 top-14 z-20 h-[85vh] w-[400px] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
+            className={`pointer-events-auto absolute left-3 top-14 z-20 h-[83vh] w-[420px] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
               showMenu ? "translate-x-0" : "-translate-x-[110%]"
             }`}
           >
@@ -1008,15 +1232,14 @@ export default function MapView({ places }: Props) {
                             <img
                               src={getIconSrc(activeSection.icon) || `/media/${activeSection.icon}`}
                               alt=""
-                              className="h-5 w-5 object-contain"
+                              className="h-5 w-5 object-contain opacity-90 filter brightness-0 invert"
                             />
                           ) : null}
                         </div>
                         <div>
-                          <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
-                            {"Tab \u0111ang ch\u1ecdn"}
+                          <p className="text-lg font-semibold uppercase tracking-wide">
+                            {activeSection?.label || "Danh m\u1ee5c"}
                           </p>
-                          <p className="text-base font-semibold">{activeSection?.label || "Danh m\u1ee5c"}</p>
                         </div>
                       </div>
                       <div className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
@@ -1114,8 +1337,22 @@ export default function MapView({ places }: Props) {
                       <div className="space-y-4 px-2 py-3">
                         <div ref={placeSectionRef}>
                           <p className="px-2 text-xs font-semibold uppercase tracking-wide text-[#991B1B]">{"\u0110\u1ecba \u0111i\u1ec3m"}</p>
+                          <div className="mt-2 px-2">
+                            <input
+                              type="text"
+                              value={countryQuery}
+                              onChange={(e) => setCountryQuery(e.target.value)}
+                              placeholder="Ví dụ: Việt Nam"
+                              className="w-full rounded-lg border border-white/60 bg-white/80 px-3 py-2 text-sm text-slate-700 shadow-sm backdrop-blur placeholder:text-slate-500 focus:border-[#991B1B]/50 focus:outline-none"
+                            />
+                          </div>
                           <div className="mt-2 divide-y divide-white/30 rounded-xl border border-white/30 bg-white/50 shadow-lg ring-1 ring-white/20 backdrop-blur-xl">
-                            {sortedPlaces.map((place, index) => {
+                            {filteredPlaces.length === 0 ? (
+                              <div className="px-4 py-4 text-sm text-slate-600">
+                                Không có địa điểm phù hợp.
+                              </div>
+                            ) : (
+                              filteredPlaces.map((place, index) => {
                               const key = place.id || place.slug || `place-${index}`;
                               const listIndex = sortedPlaces.indexOf(place);
                               const stepTarget = listIndex >= 0 ? listIndex : index;
@@ -1151,7 +1388,8 @@ export default function MapView({ places }: Props) {
                                   </div>
                                 </div>
                               );
-                            })}
+                            })
+                            )}
                           </div>
                         </div>
                       </div>
@@ -1219,26 +1457,38 @@ export default function MapView({ places }: Props) {
             </div>
           </div>
 
-          {visibleTab === "journey" ? (
+          {activeTab === "journey" ? (
             <div className="pointer-events-auto absolute inset-x-0 bottom-4 flex justify-center px-4">
               <div className="flex w-full max-w-5xl flex-col gap-2 rounded-2xl border border-white/40 bg-white/70 p-3 shadow-2xl backdrop-blur">
                 <div className="flex flex-wrap items-center gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setStep(currentStep - 1)}
-                    disabled={currentStep <= 0}
-                    className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
-                  >
-                    Trước
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setStep(currentStep + 1)}
-                    disabled={currentStep >= sortedPlaces.length - 1}
-                    className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
-                  >
-                    Sau
-                  </button>
+                  {hasStarted ? (
+                    <>
+                      <button
+                        type="button"
+                        onClick={() => setStep(currentStep - 1)}
+                        disabled={currentStep <= 0}
+                        className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
+                      >
+                        {"Tr\u01b0\u1edbc"}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setStep(currentStep + 1)}
+                        disabled={currentStep >= sortedPlaces.length - 1}
+                        className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
+                      >
+                        Sau
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={handleStartJourney}
+                      className="rounded-md bg-[#991B1B] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#7F1D1D]"
+                    >
+                      {"B\u1eaft \u0111\u1ea7u"}
+                    </button>
+                  )}
                   <div className="flex min-w-[220px] flex-1 items-center gap-3">
                     <input
                       type="range"
@@ -1251,9 +1501,11 @@ export default function MapView({ places }: Props) {
                   </div>
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-700">
-                  <span className="text-slate-500">Dòng thời gian</span>
+                  <span className="text-slate-500">{"D\u00f2ng th\u1eddi gian"}</span>
                   <span className="text-center text-[13px]">
-                    {currentPlace ? `${currentPlace.periodLabel || "\u0110\u1ecba \u0111i\u1ec3m"} - ${currentPlace.title}` : "Chưa có dữ liệu"}
+                    {currentPlace
+                      ? `${currentPlace.periodLabel || "\u0110\u1ecba \u0111i\u1ec3m"} - ${currentPlace.title}`
+                      : "Ch\u01b0a c\u00f3 d\u1eef li\u1ec7u"}
                   </span>
                 </div>
               </div>

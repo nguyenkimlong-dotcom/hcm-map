@@ -40,6 +40,64 @@ type RouteFeature = GeoJSON.Feature<
 const EMPTY_FC: GeoJSON.FeatureCollection<GeoJSON.Geometry> = { type: "FeatureCollection", features: [] };
 const POPUP_STYLE_ID = "mapbox-popup-clean-style";
 
+const COUNTRY_ISO_MAP: Record<string, string> = {
+  "ai cap": "EGY",
+  algeria: "DZA",
+  angola: "AGO",
+  anh: "GBR",
+  argentina: "ARG",
+  bi: "BEL",
+  congo: "COD",
+  "cote d ivoire": "CIV",
+  duc: "DEU",
+  ghana: "GHA",
+  "ha lan": "NLD",
+  kenya: "KEN",
+  madagascar: "MDG",
+  malaysia: "MYS",
+  martinique: "FRA",
+  morocco: "MAR",
+  my: "USA",
+  "nam phi": "ZAF",
+  nga: "RUS",
+  nigeria: "NGA",
+  phap: "FRA",
+  reunion: "FRA",
+  senegal: "SEN",
+  singapore: "SGP",
+  somalia: "SOM",
+  "sri lanka": "LKA",
+  tanzania: "TZA",
+  "thai lan": "THA",
+  "trung quoc": "CHN",
+  tunisie: "TUN",
+  uc: "AUS",
+  uruguay: "URY",
+  "viet nam": "VNM",
+  y: "ITA",
+};
+
+function normalizeCountryName(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function collectCountryCodes(list: Place[]) {
+  const codes = new Set<string>();
+  list.forEach((place) => {
+    if (!place.country) return;
+    const key = normalizeCountryName(place.country);
+    const code = COUNTRY_ISO_MAP[key];
+    if (code) codes.add(code);
+  });
+  return Array.from(codes);
+}
+
 function getIconSrc(icon: string) {
   const trimmed = icon.trim();
   if (!trimmed) return null;
@@ -493,6 +551,7 @@ export default function MapView({ places }: Props) {
     if (!hasStarted) return sortedPlaces;
     return sortedPlaces.slice(0, Math.min(sortedPlaces.length, reachedStepIndex + 1));
   }, [sortedPlaces, hasStarted, reachedStepIndex]);
+  const visibleCountryCodes = useMemo(() => collectCountryCodes(visiblePlaces), [visiblePlaces]);
   const fallbackCenter: [number, number] = useMemo(() => {
     return sortedPlaces[0]?.coords || [105.8342, 21.0278];
   }, [sortedPlaces]);
@@ -585,7 +644,7 @@ export default function MapView({ places }: Props) {
     }
 
     const distance = lineDistanceMeters(coords);
-    const speedMps = 500000;
+    const speedMps = 700000;
     const duration = Math.max(1200, (distance / speedMps) * 1000);
     const totalDistance = Math.max(0, distance);
     let start: number | null = null;
@@ -594,14 +653,21 @@ export default function MapView({ places }: Props) {
       if (start === null) start = now;
       const t = Math.min(1, (now - start) / duration);
       const targetDistance = totalDistance * t;
-      const lineCoords = buildPartialLineByDistance(coords, targetDistance);
+      let lineCoords = buildPartialLineByDistance(coords, targetDistance);
+      if (lineCoords.length < 2 && coords.length >= 2) {
+        const start = coords[0];
+        const next = coords[1];
+        const tinyT = 0.001;
+        lineCoords = [start, [start[0] + (next[0] - start[0]) * tinyT, start[1] + (next[1] - start[1]) * tinyT]];
+      }
       const line = buildLineFeature(lineCoords);
       setRoutesAnimData(
         line
           ? ({ type: "FeatureCollection", features: [line] } as GeoJSON.FeatureCollection<GeoJSON.LineString>)
           : EMPTY_FC,
       );
-      setAnimHeadData(lineCoords[lineCoords.length - 1] || null, mode);
+      const headCoords = targetDistance <= 0 ? coords[0] : lineCoords[lineCoords.length - 1];
+      setAnimHeadData(headCoords || null, mode);
       if (t < 1) {
         animationRef.current = requestAnimationFrame(tick);
       } else {
@@ -909,6 +975,39 @@ export default function MapView({ places }: Props) {
     map.on("load", () => {
       applyProjection(projectionMode);
 
+      if (!map.getSource("country-boundaries")) {
+        const layers = map.getStyle()?.layers || [];
+        const hillshadeLayer = layers.find((layer) => layer.type === "hillshade");
+        const symbolLayer = layers.find((layer) => layer.type === "symbol");
+        const beforeId = hillshadeLayer?.id || symbolLayer?.id;
+        map.addSource("country-boundaries", {
+          type: "vector",
+          url: "mapbox://mapbox.country-boundaries-v1",
+        });
+        map.addLayer({
+          id: "countries-mono",
+          type: "fill",
+          source: "country-boundaries",
+          "source-layer": "country_boundaries",
+          paint: {
+            "fill-color": "#e2e8f0",
+            "fill-opacity": 1,
+            "fill-outline-color": "#cbd5f5",
+          },
+        }, beforeId);
+        map.addLayer({
+          id: "countries-highlight",
+          type: "fill",
+          source: "country-boundaries",
+          "source-layer": "country_boundaries",
+          paint: {
+            "fill-color": "#f59e0b",
+            "fill-opacity": 0.6,
+          },
+          filter: ["in", ["get", "iso_3166_1_alpha_3"], ["literal", visibleCountryCodes]],
+        }, beforeId);
+      }
+
       if (!map.getSource("routes")) {
         map.addSource("routes", { type: "geojson", data: routes as GeoJSON.FeatureCollection });
         map.addLayer({
@@ -938,7 +1037,10 @@ export default function MapView({ places }: Props) {
           type: "line",
           source: "routes-anim",
           layout: { "line-join": "round", "line-cap": "round" },
-          paint: { "line-color": "#ef4444", "line-width": 4 },
+          paint: {
+            "line-width": 4,
+            "line-color": "#a13031",
+          },
         });
       }
 
@@ -1021,12 +1123,21 @@ export default function MapView({ places }: Props) {
         moveEndHandlerRef.current = null;
       }
       if (activeMap) {
-        ["routes-anim-line", "routes-progress-line", "routes-base", "vn-islands-labels"].forEach((layerId) => {
+        [
+          "routes-anim-line",
+          "routes-progress-line",
+          "routes-base",
+          "vn-islands-labels",
+          "countries-highlight",
+          "countries-mono",
+        ].forEach((layerId) => {
           if (activeMap.getLayer(layerId)) activeMap.removeLayer(layerId);
         });
-        ["route-nodes", "routes-anim", "routes-progress", "routes", "vn-islands"].forEach((sourceId) => {
+        ["route-nodes", "routes-anim", "routes-progress", "routes", "vn-islands", "country-boundaries"].forEach(
+          (sourceId) => {
           if (activeMap.getSource(sourceId)) activeMap.removeSource(sourceId);
-        });
+        },
+        );
         if (animHeadMarkerRef.current) {
           animHeadMarkerRef.current.remove();
           animHeadMarkerRef.current = null;
@@ -1047,6 +1158,23 @@ export default function MapView({ places }: Props) {
       mapRef.current.resize();
     }
   }, [isFullscreen, showMenu]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapLoaded) return;
+    if (!map.getLayer("countries-highlight")) return;
+    const visibility = hasStarted ? "visible" : "none";
+    map.setLayoutProperty("countries-highlight", "visibility", visibility);
+    map.setLayoutProperty("countries-mono", "visibility", visibility);
+    if (!hasStarted) {
+      return;
+    }
+    const filter =
+      visibleCountryCodes.length > 0
+        ? (["in", ["get", "iso_3166_1_alpha_3"], ["literal", visibleCountryCodes]] as any)
+        : (["==", ["get", "iso_3166_1_alpha_3"], ""] as any);
+    map.setFilter("countries-highlight", filter);
+  }, [mapLoaded, visibleCountryCodes, hasStarted]);
 
   useEffect(() => {
     if (!mapLoaded) return;

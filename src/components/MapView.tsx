@@ -386,8 +386,17 @@ export default function MapView({ places }: Props) {
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizScore, setQuizScore] = useState<number | null>(null);
   const [reachedStepIndex, setReachedStepIndex] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(false);
+  const [showAutoOptions, setShowAutoOptions] = useState(false);
+  const [autoSpeed, setAutoSpeed] = useState<"auto" | "x2" | "x4" | "custom">("auto");
+  const [customSpeedFactor, setCustomSpeedFactor] = useState(1);
   const placeSectionRef = useRef<HTMLDivElement | null>(null);
   const journeySectionRef = useRef<HTMLDivElement | null>(null);
+  const autoNextTimeoutRef = useRef<number | null>(null);
+  const isAutoPlayRef = useRef(false);
+  const lastAnimDurationRef = useRef(0);
+  const stepIndexRef = useRef(0);
+  const autoPlayTokenRef = useRef(0);
 
   const routeOrderMap = useMemo(() => {
     const m = new Map<string, number>();
@@ -482,6 +491,35 @@ export default function MapView({ places }: Props) {
     generateQuizSet();
   };
 
+  const stopAutoPlay = () => {
+    isAutoPlayRef.current = false;
+    setIsAutoPlay(false);
+    setShowAutoOptions(false);
+    autoPlayTokenRef.current += 1;
+    if (autoNextTimeoutRef.current !== null) {
+      window.clearTimeout(autoNextTimeoutRef.current);
+      autoNextTimeoutRef.current = null;
+    }
+  };
+
+  const handleAutoToggle = () => {
+    if (isAutoPlay) {
+      stopAutoPlay();
+      return;
+    }
+    autoPlayTokenRef.current += 1;
+    isAutoPlayRef.current = true;
+    setIsAutoPlay(true);
+    setShowAutoOptions(true);
+    if (!hasStarted) {
+      handleStartJourney();
+      return;
+    }
+    if (currentStep < sortedPlaces.length - 1) {
+      setStep(currentStep + 1);
+    }
+  };
+
   const sidebarSections = [
     { key: "journey", label: "H\u00e0nh tr\u00ecnh", icon: "Orion_direction.svg", ref: journeySectionRef },
     { key: "places", label: "\u0110\u1ecba \u0111i\u1ec3m", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
@@ -547,6 +585,12 @@ export default function MapView({ places }: Props) {
 
   const currentStep = sortedPlaces.length ? Math.min(stepIndex, sortedPlaces.length - 1) : 0;
   const currentPlace = sortedPlaces[currentStep];
+  const autoSpeedFactor = useMemo(() => {
+    if (autoSpeed === "x2") return 2;
+    if (autoSpeed === "x4") return 4;
+    if (autoSpeed === "custom") return Math.max(0.25, Math.min(6, customSpeedFactor || 1));
+    return 1;
+  }, [autoSpeed, customSpeedFactor]);
   const visiblePlaces = useMemo(() => {
     if (!hasStarted) return sortedPlaces;
     return sortedPlaces.slice(0, Math.min(sortedPlaces.length, reachedStepIndex + 1));
@@ -555,6 +599,14 @@ export default function MapView({ places }: Props) {
   const fallbackCenter: [number, number] = useMemo(() => {
     return sortedPlaces[0]?.coords || [105.8342, 21.0278];
   }, [sortedPlaces]);
+
+  const getAutoDuration = (distanceMeters: number) => {
+    const baseSpeedMps = 700000;
+    const speedFactor = isAutoPlayRef.current ? autoSpeedFactor : 1;
+    const speedMps = baseSpeedMps * speedFactor;
+    const minDuration = 1200 / speedFactor;
+    return Math.max(minDuration, (Math.max(0, distanceMeters) / speedMps) * 1000);
+  };
 
   const setRoutesProgressData = (features: RouteFeature[]) => {
     const map = mapRef.current;
@@ -630,12 +682,14 @@ export default function MapView({ places }: Props) {
     if (!feature || feature.geometry.type !== "LineString") {
       setRoutesAnimData(EMPTY_FC);
       setAnimHeadData(null);
+      lastAnimDurationRef.current = 1200;
       return;
     }
     const coords = feature.geometry.coordinates as [number, number][];
     if (coords.length < 2) {
       setRoutesAnimData(EMPTY_FC);
       setAnimHeadData(null);
+      lastAnimDurationRef.current = 1200;
       return;
     }
 
@@ -644,8 +698,8 @@ export default function MapView({ places }: Props) {
     }
 
     const distance = lineDistanceMeters(coords);
-    const speedMps = 700000;
-    const duration = Math.max(1200, (distance / speedMps) * 1000);
+    const duration = getAutoDuration(distance);
+    lastAnimDurationRef.current = duration;
     const totalDistance = Math.max(0, distance);
     let start: number | null = null;
 
@@ -734,6 +788,11 @@ export default function MapView({ places }: Props) {
         moveEndHandlerRef.current = null;
       }
 
+      if (autoNextTimeoutRef.current !== null) {
+        window.clearTimeout(autoNextTimeoutRef.current);
+        autoNextTimeoutRef.current = null;
+      }
+
       if (animate) {
         const targetCenter = place.coords;
         const fromCenter =
@@ -814,6 +873,30 @@ export default function MapView({ places }: Props) {
       }
     }
 
+    const clearAutoNextTimeout = () => {
+      if (autoNextTimeoutRef.current !== null) {
+        window.clearTimeout(autoNextTimeoutRef.current);
+        autoNextTimeoutRef.current = null;
+      }
+    };
+
+    const scheduleAutoNext = (nextIndex: number) => {
+      if (!isAutoPlayRef.current) return;
+      if (nextIndex > sortedPlaces.length - 1) {
+        setIsAutoPlay(false);
+        setShowAutoOptions(false);
+        return;
+      }
+      if (nextIndex <= stepIndexRef.current) return;
+      clearAutoNextTimeout();
+      const token = autoPlayTokenRef.current;
+      const delayMs = Math.max(800, Math.min(3500, lastAnimDurationRef.current + 250));
+      autoNextTimeoutRef.current = window.setTimeout(() => {
+        if (autoPlayTokenRef.current !== token) return;
+        setStep(nextIndex);
+      }, delayMs);
+    };
+
     const commitProgress = (segmentKey?: string) => {
       if (segmentKey) {
         completedSegmentsRef.current.add(segmentKey);
@@ -839,8 +922,20 @@ export default function MapView({ places }: Props) {
         animateSegment(segFeature, segMode, () => {
           commitProgress(progressKey);
           if (arrivalCallback) arrivalCallback();
+          scheduleAutoNext(clamped + 1);
         });
+      } else if (animate && isAutoPlayRef.current && prevIndex !== undefined) {
+        const fallbackDistance =
+          from.coords && place.coords ? haversineMeters(from.coords as [number, number], place.coords as [number, number]) : 0;
+        lastAnimDurationRef.current = getAutoDuration(fallbackDistance);
+        animateSegment(undefined);
+        commitProgress(progressKey);
+        if (arrivalCallback) arrivalCallback();
+        scheduleAutoNext(clamped + 1);
       } else if (animate) {
+        const fallbackDistance =
+          from.coords && place.coords ? haversineMeters(from.coords as [number, number], place.coords as [number, number]) : 0;
+        lastAnimDurationRef.current = getAutoDuration(fallbackDistance);
         animateSegment(undefined);
         commitProgress(progressKey);
         if (arrivalCallback) arrivalCallback();
@@ -848,6 +943,7 @@ export default function MapView({ places }: Props) {
         commitProgress(progressKey);
       }
     } else if (animate) {
+      lastAnimDurationRef.current = getAutoDuration(0);
       animateSegment(undefined);
       commitProgress();
     } else {
@@ -883,6 +979,9 @@ export default function MapView({ places }: Props) {
     const prev = stepIndex;
     if (clamped !== stepIndex) {
       setStepIndex(clamped);
+    }
+    if (clamped === stepIndex) {
+      return;
     }
     applyStep(clamped, prev);
   };
@@ -1158,6 +1257,31 @@ export default function MapView({ places }: Props) {
       mapRef.current.resize();
     }
   }, [isFullscreen, showMenu]);
+
+  useEffect(() => {
+    stepIndexRef.current = stepIndex;
+  }, [stepIndex]);
+
+  useEffect(() => {
+    isAutoPlayRef.current = isAutoPlay;
+    if (!isAutoPlay && autoNextTimeoutRef.current !== null) {
+      window.clearTimeout(autoNextTimeoutRef.current);
+      autoNextTimeoutRef.current = null;
+    }
+  }, [isAutoPlay]);
+
+  useEffect(() => {
+    return () => {
+      if (autoNextTimeoutRef.current !== null) {
+        window.clearTimeout(autoNextTimeoutRef.current);
+        autoNextTimeoutRef.current = null;
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    autoPlayTokenRef.current += 1;
+  }, [isAutoPlay]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -1593,7 +1717,10 @@ export default function MapView({ places }: Props) {
                     <>
                       <button
                         type="button"
-                        onClick={() => setStep(currentStep - 1)}
+                        onClick={() => {
+                          stopAutoPlay();
+                          setStep(currentStep - 1);
+                        }}
                         disabled={currentStep <= 0}
                         className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
                       >
@@ -1601,7 +1728,10 @@ export default function MapView({ places }: Props) {
                       </button>
                       <button
                         type="button"
-                        onClick={() => setStep(currentStep + 1)}
+                        onClick={() => {
+                          stopAutoPlay();
+                          setStep(currentStep + 1);
+                        }}
                         disabled={currentStep >= sortedPlaces.length - 1}
                         className="rounded-md border border-white/50 bg-white/60 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm backdrop-blur disabled:opacity-50"
                       >

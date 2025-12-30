@@ -1451,7 +1451,7 @@
     ],
     "dateStart": "1929-12-01",
     "dateEnd": "1929-12-31",
-    "periodLabel": "Cuối 1929",
+    "periodLabel": "Cuối thu 1929",
     "levelTexts": {
       "primary": "Rời Xiêm đi tàu thủy tới Hồng Kông."
     },
@@ -1465,8 +1465,8 @@
   {
     "id": "hcm-031b",
     "slug": "19300115-bangkok-tro-lai",
-    "title": "Bangkok (Thai Lan) - Tro lai",
-    "country": "Thai Lan",
+    "title": "Bangkok (Thái Lan) - Trở lại",
+    "country": "Thái Lan",
     "city": "Bangkok",
     "coords": [
       100.5018,
@@ -1474,9 +1474,9 @@
     ],
     "dateStart": "1930-01-15",
     "dateEnd": "1930-01-15",
-    "periodLabel": "01/1930",
+    "periodLabel": "04/1930",
     "levelTexts": {
-      "primary": "Tro lai Bangkok."
+      "primary": "Trở lại Bangkok."
     },
     "sources": [
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
@@ -1485,7 +1485,7 @@
   {
     "id": "hcm-031c",
     "slug": "19300201-malaysia-den",
-    "title": "Malaysia - Diem den",
+    "title": "Malaysia - Điểm đến",
     "country": "Malaysia",
     "city": "Malaysia",
     "coords": [
@@ -1494,15 +1494,15 @@
     ],
     "dateStart": "1930-02-01",
     "dateEnd": "1930-02-01",
-    "periodLabel": "02/1930",
+    "periodLabel": "Cuối tháng 4/1930",
     "levelTexts": {
-      "primary": "Diem den tai Malaysia."
+      "primary": "Điểm đến tại Malaysia."
     }
   },
   {
     "id": "hcm-031d",
     "slug": "19300215-singapore-den",
-    "title": "Singapore - Diem den",
+    "title": "Singapore - Điểm đến",
     "country": "Singapore",
     "city": "Singapore",
     "coords": [
@@ -1511,49 +1511,49 @@
     ],
     "dateStart": "1930-02-15",
     "dateEnd": "1930-02-15",
-    "periodLabel": "02/1930",
+    "periodLabel": "05/1930",
     "levelTexts": {
-      "primary": "Diem den tai Singapore."
+      "primary": "Điểm đến tại Singapore."
     }
   },
   {
     "id": "hcm-031e",
     "slug": "19300301-thuong-hai-den",
-    "title": "Thuong Hai (Trung Quoc) - Diem den",
-    "country": "Trung Quoc",
-    "city": "Thuong Hai",
+    "title": "Thượng Hải (Trung Quốc) - Điểm đến",
+    "country": "Trung Quốc",
+    "city": "Thượng Hải",
     "coords": [
       121.32598331110871,
       30.667856898779714
     ],
     "dateStart": "1930-03-01",
     "dateEnd": "1930-03-01",
-    "periodLabel": "03/1930",
+    "periodLabel": "05/1930",
     "levelTexts": {
-      "primary": "Diem den tai Thuong Hai."
+      "primary": "Điểm đến tại Thượng Hải."
     }
   },
   {
     "id": "hcm-031f",
     "slug": "19300315-hong-kong-tro-lai",
-    "title": "Hong Kong - Tro lai",
-    "country": "Trung Quoc",
-    "city": "Hong Kong",
+    "title": "Hong Kong - Trở lại",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông",
     "coords": [
       114.19294355685433,
       22.304890417497052
     ],
     "dateStart": "1930-03-15",
     "dateEnd": "1930-03-15",
-    "periodLabel": "03/1930",
+    "periodLabel": "09/1930",
     "levelTexts": {
-      "primary": "Tro lai Hong Kong."
+      "primary": "Trở lại Hồng Kông."
     }
   },
   {
     "id": "hcm-031g",
     "slug": "19300401-singapore-tro-lai",
-    "title": "Singapore - Tro lai",
+    "title": "Singapore - Trở lại",
     "country": "Singapore",
     "city": "Singapore",
     "coords": [
@@ -1562,66 +1562,66 @@
     ],
     "dateStart": "1930-04-01",
     "dateEnd": "1930-04-01",
-    "periodLabel": "04/1930",
+    "periodLabel": "06/01/1933",
     "levelTexts": {
-      "primary": "Tro lai Singapore."
+      "primary": "Trở lại Singapore."
     }
   },
   {
     "id": "hcm-031h",
     "slug": "19300415-hong-kong-lan-2",
-    "title": "Hong Kong - Lan 2",
-    "country": "Trung Quoc",
-    "city": "Hong Kong",
+    "title": "Hồng Kông - Lần 2",
+    "country": "Trung Quốc",
+    "city": "Hồng Kông",
     "coords": [
       114.19294355685437,
       22.319686330093944
     ],
     "dateStart": "1930-04-15",
     "dateEnd": "1930-04-15",
-    "periodLabel": "04/1930",
+    "periodLabel": "19/01/1933",
     "levelTexts": {
-      "primary": "Hong Kong lan 2."
+      "primary": "Hồng Kông lần 2."
     }
   },
   {
     "id": "hcm-031i",
     "slug": "19300501-ha-mon",
-    "title": "Ha Mon (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Ha Mon",
+    "title": "Hạ Môn (Trung Quốc)",
+    "country": "Trung Quốc",
+    "city": "Hạ Môn",
     "coords": [
       118.01535723682478,
       24.28783020876169
     ],
     "dateStart": "1930-05-01",
     "dateEnd": "1930-05-01",
-    "periodLabel": "05/1930",
+    "periodLabel": "25/01/1933",
     "levelTexts": {
-      "primary": "Den Ha Mon."
+      "primary": "Đến Hạ Môn."
     }
   },
   {
     "id": "hcm-031j",
     "slug": "19300515-thuong-hai-tro-lai",
-    "title": "Thuong Hai (Trung Quoc) - Tro lai",
-    "country": "Trung Quoc",
-    "city": "Thuong Hai",
+    "title": "Thượng Hải (Trung Quốc) - Trở lại",
+    "country": "Trung Quốc",
+    "city": "Thượng Hải",
     "coords": [
       121.34197667378645,
       30.68161242721209
     ],
     "dateStart": "1930-05-15",
     "dateEnd": "1930-05-15",
-    "periodLabel": "05/1930",
+    "periodLabel": "02/1933",
     "levelTexts": {
-      "primary": "Tro lai Thuong Hai."
+      "primary": "Trở lại Thượng Hải."
     }
   },
   {
     "id": "hcm-031k",
     "slug": "19300601-moskva-den",
-    "title": "Moskva (Nga) - Diem den",
+    "title": "Moskva (Nga) - Điểm đến",
     "country": "Nga",
     "city": "Moskva",
     "coords": [
@@ -1630,101 +1630,101 @@
     ],
     "dateStart": "1930-06-01",
     "dateEnd": "1930-06-01",
-    "periodLabel": "06/1930",
+    "periodLabel": "Đầu 1934",
     "levelTexts": {
-      "primary": "Den Moskva."
+      "primary": "Đến Moskva."
     }
   },
   {
     "id": "hcm-031l",
     "slug": "19300615-que-lam",
-    "title": "Que Lam (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Que Lam",
+    "title": "Quế Lâm (Trung Quốc)",
+    "country": "Trung Quốc",
+    "city": "Quế Lâm",
     "coords": [
       111.17019801076901,
       25.809130400917144
     ],
     "dateStart": "1930-06-15",
     "dateEnd": "1930-06-15",
-    "periodLabel": "06/1930",
+    "periodLabel": "1939",
     "levelTexts": {
-      "primary": "Den Que Lam."
+      "primary": "Đến Quế Lâm."
     }
   },
   {
     "id": "hcm-031m",
     "slug": "19300701-hoanh-duong",
-    "title": "Hoanh Duong (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Hoanh Duong",
+    "title": "Hoành Dương (Trung Quóc)",
+    "country": "Trung Quốc",
+    "city": "Hoành Dương",
     "coords": [
       113.37728206029169,
       26.812665218275185
     ],
     "dateStart": "1930-07-01",
     "dateEnd": "1930-07-01",
-    "periodLabel": "07/1930",
+    "periodLabel": "1939",
     "levelTexts": {
-      "primary": "Den Hoanh Duong."
+      "primary": "Đến Hoành Dương."
     }
   },
   {
     "id": "hcm-031n",
     "slug": "19300715-quy-duong",
-    "title": "Quy Duong (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Quy Duong",
+    "title": "Quý Dương (Trung Quốc)",
+    "country": "Trung Quóc",
+    "city": "Quý Dương",
     "coords": [
       108.03549892593972,
       27.012322748695752
     ],
     "dateStart": "1930-07-15",
     "dateEnd": "1930-07-15",
-    "periodLabel": "07/1930",
+    "periodLabel": "1939",
     "levelTexts": {
-      "primary": "Den Quy Duong."
+      "primary": "Đến Quý Dương."
     }
   },
   {
     "id": "hcm-031o",
     "slug": "19300801-trung-khanh",
-    "title": "Trung Khanh (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Trung Khanh",
+    "title": "Trùng Khánh (Trung Quốc)",
+    "country": "Trung Quốc",
+    "city": "Trùng Khánh",
     "coords": [
       108.13145910200592,
       29.435832429492507
     ],
     "dateStart": "1930-08-01",
     "dateEnd": "1930-08-01",
-    "periodLabel": "08/1930",
+    "periodLabel": "1939",
     "levelTexts": {
-      "primary": "Den Trung Khanh."
+      "primary": "Đến Trùng Khánh."
     }
   },
   {
     "id": "hcm-031p",
     "slug": "19300815-con-minh",
-    "title": "Con Minh (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Con Minh",
+    "title": "Côn Minh (Trung Quốc)",
+    "country": "Trung Quốc",
+    "city": "Côn Minh",
     "coords": [
       103.49338392547281,
       25.57853866298516
     ],
     "dateStart": "1930-08-15",
     "dateEnd": "1930-08-15",
-    "periodLabel": "08/1930",
+    "periodLabel": "1940",
     "levelTexts": {
-      "primary": "Den Con Minh."
+      "primary": "Đến Côn Minh."
     }
   },
   {
     "id": "hcm-031q",
     "slug": "19300901-ninh-minh",
-    "title": "Ninh Minh (Trung Quoc)",
-    "country": "Trung Quoc",
+    "title": "Ninh Minh (Trung Quốc)",
+    "country": "Trung Quốc",
     "city": "Ninh Minh",
     "coords": [
       107.65165822167492,
@@ -1732,60 +1732,60 @@
     ],
     "dateStart": "1930-09-01",
     "dateEnd": "1930-09-01",
-    "periodLabel": "09/1930",
+    "periodLabel": "1940",
     "levelTexts": {
-      "primary": "Den Ninh Minh."
+      "primary": "Đến Ninh Minh."
     }
   },
   {
     "id": "hcm-031r",
     "slug": "19300915-que-lam-tro-lai",
-    "title": "Que Lam (Trung Quoc) - Tro lai",
-    "country": "Trung Quoc",
-    "city": "Que Lam",
+    "title": "Quế Lâm (Trung Quốc) - Trở lại",
+    "country": "Trung Quốc",
+    "city": "Quế Lâm",
     "coords": [
       107.0119237145669,
       23.60083802974046
     ],
     "dateStart": "1930-09-15",
     "dateEnd": "1930-09-15",
-    "periodLabel": "09/1930",
+    "periodLabel": "1940",
     "levelTexts": {
-      "primary": "Tro lai Que Lam."
+      "primary": "Trở lại Quế Lâm."
     }
   },
   {
     "id": "hcm-031s",
     "slug": "19301001-tinh-tay",
-    "title": "Tinh Tay (Trung Quoc)",
-    "country": "Trung Quoc",
-    "city": "Tinh Tay",
+    "title": "Tỉnh Tây (Trung Quốc)",
+    "country": "Trung Quốc",
+    "city": "Tỉnh Tây",
     "coords": [
       107.09189052795477,
       23.60083802974062
     ],
     "dateStart": "1930-10-01",
     "dateEnd": "1930-10-01",
-    "periodLabel": "10/1930",
+    "periodLabel": "1940",
     "levelTexts": {
-      "primary": "Den Tinh Tay."
+      "primary": "Đến Tỉnh Tây."
     }
   },
   {
     "id": "hcm-031t",
     "slug": "19301015-cao-bang",
-    "title": "Cao Bang (Viet Nam)",
-    "country": "Viet Nam",
-    "city": "Cao Bang",
+    "title": "Cao Bằng (Việt Nam)",
+    "country": "Việt Nam,",
+    "city": "Cao Bằng",
     "coords": [
       105.81242151373876,
       22.718580433119143
     ],
     "dateStart": "1930-10-15",
     "dateEnd": "1930-10-15",
-    "periodLabel": "10/1930",
+    "periodLabel": "28/01/1941",
     "levelTexts": {
-      "primary": "Den Cao Bang."
+      "primary": "Đến Cao Bằng."
     }
   }
 ]

@@ -36,6 +36,27 @@ export default async function Home() {
           </div>
         </div>
 
+        <section className="grid gap-4 sm:grid-cols-3">
+          <Link
+            href="/map"
+            className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+          >
+            Map
+          </Link>
+          <Link
+            href="/admin/places"
+            className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+          >
+            Places editor
+          </Link>
+          <Link
+            href="/admin/routes"
+            className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-md"
+          >
+            Routes editor
+          </Link>
+        </section>
+
         <section className="space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-slate-900">Mot vai dia diem</h2>

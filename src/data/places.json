@@ -1,10 +1,77 @@
 [
   {
+    "title": "Đến Singapore nhưng bị cảnh sát bắt giữ, buộc quay trở lại Hồng Kông.",
+    "coords": [
+      0,
+      0
+    ],
+    "periodLabel": "06/01/1933",
+    "detailMarkdown": "",
+    "city": "Hồng Kông",
+    "dateStart": "1933-01-06",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Bị cảnh sát Anh bắt tại số nhà 186 phố Tam Kung ",
+    "coords": [
+      0,
+      0
+    ],
+    "periodLabel": "06/06/1931",
+    "detailMarkdown": "Ngày 6/6/1931, Người bị cảnh sát Anh bắt tại số nhà 186 phố Tam Kung (Cửu Long) với tên Tống Văn Sơ.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/bi_bat.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "dateStart": "1931-06-06"
+  },
+  {
+    "title": "Đến Bangkok. Sau đó đến hoạt động tại Phichit, U Đon, Sakon Nakhon.",
+    "coords": [
+      0,
+      0
+    ],
+    "periodLabel": "07/1928",
+    "detailMarkdown": "Vào tháng 7/1928, Nguyễn Ái Quốc đến Thái Lan (Xiêm), hoạt động tại Bangkok rồi di chuyển đến các địa phương như Phichit, Udon Thani và Sakon Nakhon (Na Khon Phanom) để gây dựng phong trào cách mạng, xây dựng cơ sở, tập hợp kiều bào Việt Nam, dạy tiếng Việt và tiếng Thái, chuẩn bị cho sự nghiệp giải phóng dân tộc, để lại dấu ấn sâu đậm với nhiều khu tưởng niệm tại Thái Lan.\nGiai đoạn 1928-1929, Nguyễn Ái Quốc (bí danh Thầu Chín) hoạt động mạnh mẽ tại Xiêm (Thái Lan), đặc biệt ở vùng Đông Bắc, vận động Việt kiều đoàn kết, thành lập tổ chức cách mạng, mở lớp dạy chữ (quốc ngữ, tiếng Thái), viết báo (như \"Thân Ái\", dù \"Le Paria\" nổi tiếng hơn), dịch tài liệu lý luận, và xây dựng cơ sở cách mạng, củng cố phong trào, chuẩn bị lực lượng cho cách mạng Việt Nam.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/xiem.png"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "dateStart": "1928-07-01"
+  },
+  {
     "id": "hcm-001",
     "slug": "19110605-sai-gon-ben-nha-rong-roi-ben",
-    "title": "Sài Gòn (Bến Nhà Rồng) - Rời bến",
+    "title": "Rời Bến Nhà Rồng (Sài Gòn)",
     "country": "Việt Nam",
-    "city": "Sài Gòn (Bến Nhà Rồng)",
+    "city": "Sài Gòn",
     "coords": [
       106.7066,
       10.7683
@@ -20,7 +87,7 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Ngày 05/06/1911, người thanh niên yêu nước Nguyễn Tất Thành (lúc đó 21 tuổi) đã lấy tên là Văn Ba, lên tàu Amiral Latouche-Tréville tại Bến Nhà Rồng, bắt đầu hành trình 30 năm (1911-1941) tìm đường cứu nước, với mong muốn tự do cho đồng bào tôi, độc lập cho tổ quốc tôi. Chuyến đi này, với công việc phụ bếp, đã đưa Người đến nhiều nơi trên thế giới để nghiên cứu các học thuyết, tìm ra con đường giải phóng dân tộc cho Việt Nam. \nThời gian: 05/06/1911.\nĐịa điểm: Bến Nhà Rồng, Sài Gòn (nay là TP. Hồ Chí Minh).\nTàu: Amiral Latouche-Tréville (Đô đốc Latouche-Tréville).\nTên gọi: Văn Ba (tên thật là Nguyễn Tất Thành).\nCông việc: Phụ bếp.\nMục đích: Tìm đường cứu nước, giải phóng dân tộc khỏi ách thực dân Pháp.",
+    "detailMarkdown": "Ngày 05/06/1911, người thanh niên yêu nước Nguyễn Tất Thành (lúc đó 21 tuổi) đã lấy tên là Văn Ba, lên tàu Amiral Latouche-Tréville tại Bến Nhà Rồng, bắt đầu hành trình 30 năm (1911-1941) tìm đường cứu nước, với mong muốn \"tự do cho đồng bào tôi, độc lập cho tổ quốc tôi\". Chuyến đi này, với công việc phụ bếp, đã đưa Người đến nhiều nơi trên thế giới để nghiên cứu các học thuyết, tìm ra con đường giải phóng dân tộc cho Việt Nam.",
     "media": {
       "images": [
         {
@@ -30,17 +97,28 @@
       ],
       "videos": [
         {
-          "label": "Tư liệu: Bác Hồ ra đi tìm đường cứu nước",
-          "url": "https://www.youtube.com/watch?v=TZR9hiiB9MY&list=RDTZR9hiiB9MY&start_radio=1"
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=qFKdR-VjD84&list=RDqFKdR-VjD84&start_radio=1"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3"
     },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch.",
+    "stories": [
+      {
+        "title": "Từ câu chuyện “Đôi bàn tay” đến khát vọng độc lập, tự do cho Tổ quốc của Nguyễn Tất Thành",
+        "body": "Tháng 2/1911, Nguyễn Tất Thành rời Phan Thiết vào Sài Gòn. Lúc bấy giờ, Sài Gòn là cửa ngõ của xứ Nam Kỳ có những công ty tàu biển lớn chạy đường Pháp - Đông Dương rất thuận lợi cho việc sang Pháp. Đây cũng là nơi tự do hơn các xứ khác ở Việt Nam trong việc đi lại, tìm kiếm công ăn việc làm, dễ kiếm cơ hội xuất ngoại. Sài Gòn, nơi Bác dừng chân trong thời gian ngắn nhất nhưng lại có vai trò quyết định đối với hành trình ra đi tìm đường cứu nước của Người.\n\nỞ Sài Gòn, Nguyễn Tất Thành lưu trú tại các chi nhánh của Công ty Liên Thành, như: Nhà số 3, đường Tổng đốc Phương (nay là số 5 đường Châu Văn Liêm); Nhà số 128 Khánh Hội... Anh cũng đi vào xóm thợ, làm quen bạn bè học nghề ở Trường kỹ nghệ thực hành, Trường đào tạo thợ máy Á Đông ở Sài Gòn để tìm hiểu đời sống công nhân, nhân dân lao động và lịch trình các chuyến tàu ra vào cảng Sài Gòn.\n\nTất Thành còn làm quen với những hiệu giặt là ở gần cảng Nhà Rồng, chuyên nhận giặt quần áo cho các thủy thủ trên tàu của Pháp để xin làm việc trên tàu. Theo Hồi ký của Bác sĩ Lê Văn Chánh, lưu tại Bảo tàng Hồ Chí Minh: Có lần Bác Hồ nói chuyện với Bác sĩ Lê Văn Chánh: “Chú ở 118 Khánh Hội, chú có biết nhà 128 không? Đó là Nhà máy nước mắm Liên Thành cũ. Bác ở đó có ba ngày trước khi xuống tàu ra nước ngoài”.\n\nCũng trong thời gian này, Bác đã gặp được anh Lê và trở thành đôi bạn thân thiết. Một hôm, khi đi dạo khắp thành phố Sài Gòn, Bác đột nhiên hỏi bạn: “Anh Lê, anh có yêu nước không?”. Anh Lê ngạc nhiên và đáp: “Tất nhiên là có chứ!”. Anh Ba hỏi tiếp: “Anh có thể giữ bí mật không?”. Người bạn đáp: “Có.”Anh Ba nói tiếp: “Tôi muốn đi ra nước ngoài, xem nước Pháp và các nước khác. Sau khi xem xét họ làm như thế nào, tôi sẽ trở về giúp đồng bào chúng ta. Nhưng đi một mình, thật ra cũng có nhiều mạo hiểm, ví như đau ốm… Anh muốn đi với tôi không?”. Anh Lê trả lời: “Nhưng bạn ơi! Chúng ta lấy đâu ra tiền mà đi?”\n\n“Đây, tiền đây! – anh Ba vừa nói vừa giơ hai bàn tay. Chúng ta sẽ làm việc, chúng ta sẽ làm bất cứ việc gì mà sống và để đi. Anh cùng đi với tôi chứ?”. Bị lôi cuốn vì lòng hăng hái của Bác, anh Lê đồng ý. Nhưng sau khi suy nghĩ kỹ, anh Lê không đủ can đảm và giữ lời hứa nữa.\n\nNgày 02/6/1911, Nguyễn Tất Thành xin làm việc ở tàu Đô đốc mang tên Amiran Latusơ Tơrêvin của hãng Nǎm sao đang chuẩn bị rời cảng Sài Gòn đi Mác-xây, Pháp. Lúc tàu cập cảng Sài Gòn, anh Thành xuống tàu và gặp thuyền trưởng Lui Edu a Maisen. Thuyền trưởng hỏi rằng: “Anh có thể làm được việc gì?” Tất Thành trả lời: “Tôi có thể làm bất cứ công việc gì!”. Sau đó thuyền trưởng nhận Thành vào làm phụ bếp.\n\nNgày 03/6/1911, Nguyễn Tất Thành bắt đầu làm việc ở tàu Đô đốc Latusơ Tơrêvin, nhận thẻ nhân viên của tàu với tên mới là Văn Ba.\n\nNgày 05/6/1911, tàu Đô đốc Amiran Latusơ Tơrêvin nhổ neo rời bến cảng Nhà Rồng (Sài Gòn) đi Mác-xây (Pháp), mang theo người thanh niên Việt Nam 21 tuổi Nguyễn Tất Thành rời Tổ quốc bắt đầu cuộc hành trình 30 năm đi tìm đường cứu nước để đem lại độc lập, tự do cho dân tộc bằng đôi bàn tay lao động chân chính của mình."
+      }
+    ]
   },
   {
     "id": "hcm-002",
     "slug": "19110608-singapore-tau-cap-cang",
-    "title": "Singapore - Tàu cập cảng",
+    "title": "Tàu cập cảng Singapore",
     "country": "Singapore",
     "city": "Singapore",
     "coords": [
@@ -63,7 +141,14 @@
       "images": [
         {
           "label": "Tàu Amiral Latouche Tréville",
-          "url": "images-0026aba474bde6a73b769c72916e22eb376d18533a88ae81a4addebf12017eff0075a262712da536dbddc5ea18f4e25c-_image001-2670-6789.jpg"
+          "url": "/media/uploads/images/861911.jpg"
+        }
+      ],
+      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3",
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -72,7 +157,7 @@
   {
     "id": "hcm-003",
     "slug": "19110614-colombo-tau-ghe",
-    "title": "Colombo (Sri Lanka) - Tàu ghé",
+    "title": "Tàu ghé Colombo (Sri Lanka)",
     "country": "Sri Lanka",
     "city": "Colombo",
     "coords": [
@@ -90,21 +175,28 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Vào ngày 14 tháng 6 năm 1911, tàu Amiral Latouche Tréville đã cập cảng Colombo ở Sri Lanka. Chuyến ghé cảng này là một phần trong hành trình kéo dài 40 ngày của con tàu từ Sài Gòn (nay là Thành phố Hồ Chí Minh) đến Marseille, Pháp.",
+    "detailMarkdown": "Vào ngày 14 tháng 6 năm 1911, tàu Amiral Latouche Tréville đã cập cảng Colombo ở Sri Lanka. Chuyến ghé cảng này là một phần trong hành trình kéo dài 40 ngày của con tàu từ Sài Gòn đến Marseille, Pháp.",
     "media": {
       "images": [
         {
           "label": " ",
-          "url": "baohaiphong.vn-files-ecm-source_files-2024-08-07-_329a5018-d86b-4f0b-b2e5-d1c8c762eca5-anh-e-magazine-cang-hai-phong-3-.jpg"
+          "url": "/media/uploads/images/srilanca.jpg"
         }
-      ]
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ],
+      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
     "id": "hcm-004",
     "slug": "19110630-port-said-tau-ghe-cang",
-    "title": "Port Said (Ai Cập) - Tàu ghé cảng",
+    "title": "Tàu ghé cảng Port Said (Ai Cập)",
     "country": "Ai Cập",
     "city": "Port Said",
     "coords": [
@@ -127,7 +219,13 @@
       "images": [
         {
           "label": "Cảng Port Said, Ai Cập",
-          "url": "s-l1200.jpg"
+          "url": "/media/uploads/images/T_u_gh__c_ng_Port_Said__Ai_C_p_..jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -136,7 +234,7 @@
   {
     "id": "hcm-005",
     "slug": "19110706-marseille-tau-cap-cang",
-    "title": "Marseille (Pháp) - Tàu cập cảng",
+    "title": "Tàu cập cảng Marseille (Pháp)",
     "country": "Pháp",
     "city": "Marseille",
     "coords": [
@@ -159,13 +257,13 @@
       "images": [
         {
           "label": " ",
-          "url": "thumb_18052020090004.jpg"
+          "url": "/media/uploads/images/T_u_c_p_c_ng_Marseille__Ph_p_..png"
         }
       ],
       "videos": [
         {
-          "label": "Marseille, điểm đến đầu tiên trong hành trình tới nước Pháp của Nguyễn Tất Thành",
-          "url": "https://youtu.be/i77dnre_osw?t=73"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -174,7 +272,7 @@
   {
     "id": "hcm-006",
     "slug": "19110715-le-havre-den-ben-cuoi",
-    "title": "Le Havre (Pháp)",
+    "title": "Tàu đến bến cuối Le Havre (Pháp)",
     "country": "Pháp",
     "city": "Le Havre",
     "coords": [
@@ -197,7 +295,13 @@
       "images": [
         {
           "label": "Sainte-Adresse, ngoại ô Le Havre",
-          "url": "Ngoi_nha.jpg"
+          "url": "/media/uploads/images/T_u___n_b_n_cu_i_Le_Havre.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -206,7 +310,7 @@
   {
     "id": "hcm-048",
     "slug": "19120201-casablanca-morocco",
-    "title": "Casablanca (Morocco) - Cập cảng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Morocco",
     "city": "Casablanca",
     "coords": [
@@ -224,12 +328,18 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -238,7 +348,7 @@
   {
     "id": "hcm-048a",
     "slug": "19120210-algiers-algeria",
-    "title": "Algiers (Algeria) - Cập cảng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Algeria",
     "city": "Algiers",
     "coords": [
@@ -261,13 +371,13 @@
       "images": [
         {
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
-          "url": "2022_T6_VHDL_1.jpg"
+          "url": "/media/uploads/images/H_ng_N_m_Sao.jpg"
         }
       ],
       "videos": [
         {
-          "label": "Khánh thành Bia tưởng niệm Chủ tịch Hồ Chí Minh ở Algeria",
-          "url": "https://www.youtube.com/watch?v=_U6bg5iSmRc"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -276,7 +386,7 @@
   {
     "id": "hcm-048b",
     "slug": "19120215-tunis-tunisia",
-    "title": "Tunis (Tunisie) - Ghé cảng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Tunisie",
     "city": "Tunis",
     "coords": [
@@ -301,6 +411,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -308,7 +424,7 @@
   {
     "id": "hcm-048b2",
     "slug": "19120218-tunisia-2-sfax",
-    "title": "Tunisia 2 (Sfax) - Cảng phía nam",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Tunisie",
     "city": "Sfax",
     "coords": [
@@ -333,6 +449,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -340,7 +462,7 @@
   {
     "id": "hcm-048b3",
     "slug": "19120220-port-said-ai-cap-2",
-    "title": "Port Said (Ai Cap) - Tau ghe cang",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Ai Cap",
     "city": "Port Said",
     "coords": [
@@ -357,12 +479,21 @@
       "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ]
+    ],
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
   },
   {
     "id": "hcm-048c",
     "slug": "19120222-mogadishu-somalia",
-    "title": "Mogadishu (Somalia) - Tạm dừng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Somalia",
     "city": "Mogadishu",
     "coords": [
@@ -387,6 +518,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -394,7 +531,7 @@
   {
     "id": "hcm-048c2",
     "slug": "19120223-kismayo-somalia-nam",
-    "title": "Somalia (Kismayo) - Cảng phía nam",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Somalia",
     "city": "Kismayo",
     "coords": [
@@ -419,6 +556,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -426,7 +569,7 @@
   {
     "id": "hcm-048d",
     "slug": "19120226-nairobi-kenya",
-    "title": "Nairobi (Kenya) - Đi qua Đông Phi",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Kenya",
     "city": "Nairobi",
     "coords": [
@@ -451,6 +594,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -458,7 +607,7 @@
   {
     "id": "hcm-049",
     "slug": "19120301-dar-es-salaam-tanzania",
-    "title": "Dar es Salaam (Tanzania) - Tạm dừng chân",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Tanzania",
     "city": "Dar es Salaam",
     "coords": [
@@ -483,6 +632,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -490,7 +645,7 @@
   {
     "id": "hcm-050",
     "slug": "19120401-antananarivo-madagascar",
-    "title": "Antananarivo (Madagascar) - Dừng chân",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Madagascar",
     "city": "Antananarivo",
     "coords": [
@@ -515,6 +670,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -522,7 +683,7 @@
   {
     "id": "hcm-051",
     "slug": "19120501-saint-denis-reunion",
-    "title": "Saint-Denis (Réunion) - Ghé đảo",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Réunion",
     "city": "Saint-Denis",
     "coords": [
@@ -547,6 +708,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -554,7 +721,7 @@
   {
     "id": "hcm-052",
     "slug": "19120601-cape-town-nam-phi",
-    "title": "Cape Town (Nam Phi) - Qua mũi Hảo Vọng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Nam Phi",
     "city": "Cape Town",
     "coords": [
@@ -579,6 +746,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -586,7 +759,7 @@
   {
     "id": "hcm-053",
     "slug": "19120701-luanda-angola",
-    "title": "Luanda (Angola) - Dừng chân",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Angola",
     "city": "Luanda",
     "coords": [
@@ -614,8 +787,8 @@
       ],
       "videos": [
         {
-          "label": "Bác Hồ trong trái tim người dân Angola và Châu phi",
-          "url": "https://youtu.be/FZhby8L-w2Y?t=121"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -624,7 +797,7 @@
   {
     "id": "hcm-054",
     "slug": "19120801-kinshasa-congo",
-    "title": "Kinshasa (Congo) - Đi qua Congo",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Congo",
     "city": "Kinshasa",
     "coords": [
@@ -649,6 +822,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -656,7 +835,7 @@
   {
     "id": "hcm-055",
     "slug": "19120901-lagos-nigeria",
-    "title": "Lagos (Nigeria) - Cập cảng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Nigeria",
     "city": "Lagos",
     "coords": [
@@ -681,6 +860,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -688,7 +873,7 @@
   {
     "id": "hcm-056",
     "slug": "19121001-accra-ghana",
-    "title": "Accra (Ghana) - Đi qua Gold Coast",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Ghana",
     "city": "Accra",
     "coords": [
@@ -713,6 +898,12 @@
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
@@ -720,7 +911,7 @@
   {
     "id": "hcm-057",
     "slug": "19121101-abidjan-cote-divoire",
-    "title": "Abidjan (Côte d’Ivoire) - Cập cảng",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Côte d’Ivoire",
     "city": "Abidjan",
     "coords": [
@@ -738,44 +929,92 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
     "media": {
       "images": [
         {
           "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
           "url": "2022_T6_VHDL_1.jpg"
         }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-058",
-    "slug": "19130101-dakar-senegal",
-    "title": "Dakar (Senegal) - Điểm dừng Tây Phi",
-    "country": "Senegal",
-    "city": "Dakar",
+    "id": "hcm-007",
+    "slug": "19121225-new-york-brooklyn-den",
+    "title": "Lao động và tìm hiểu đời sống ở Hoa Kỳ",
+    "country": "Mỹ",
+    "city": "New York (Brooklyn)",
     "coords": [
-      -17.4677,
-      14.7167
+      -73.9442,
+      40.6782
     ],
-    "dateStart": "1913-01-01",
-    "dateEnd": "1913-01-01",
-    "periodLabel": "01/1913",
+    "dateStart": "1913-04-07",
+    "dateEnd": "",
+    "periodLabel": "",
     "levelTexts": {
-      "primary": "Dừng chân tại Dakar trước khi vượt Đại Tây Dương."
+      "primary": "Tới New York (Mỹ). Sống tại khu Brooklyn."
     },
     "sources": [
-      "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
     ],
-    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "detailMarkdown": "Người đến New York (Mỹ). Sống tại khu Brooklyn.\nNguyễn Tất Thành làm nhiều việc, đi nhiều nơi (bao gồm Harlem) để quan sát xã hội, tìm hiểu đời sống người lao động và cuộc đấu tranh của người da đen.\nNgười nhận ra sự mâu thuẫn giữa khẩu hiệu cộng hòa dân chủ và thực tế bóc lột tàn bạo, sự phân biệt chủng tộc sâu sắc ở Mỹ, nơi có sự phân chia giai cấp rõ rệt (giàu sang - trung lưu - lao động da trắng - lao động da đen).\nĐây là giai đoạn quan trọng để Người hình thành tư duy và lý tưởng cách mạng, thấy rõ bản chất đế quốc và sự cần thiết của cuộc đấu tranh giải phóng dân tộc",
     "media": {
       "images": [
         {
-          "label": "Tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis ở cảng Le Havre",
-          "url": "2022_T6_VHDL_1.jpg"
+          "label": "Cầu Brooklyn, thành phố New York",
+          "url": "/media/uploads/images/Brooklyn.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+  },
+  {
+    "id": "hcm-008",
+    "slug": "19130101-boston-lam-phu-bep",
+    "title": "Làm phụ bếp tại khách sạn Omni Parker House (Boston, Mỹ)",
+    "country": "Mỹ",
+    "city": "Boston",
+    "coords": [
+      -71.0589,
+      42.3601
+    ],
+    "dateStart": "1913-04-06",
+    "dateEnd": "",
+    "periodLabel": "1913",
+    "levelTexts": {
+      "primary": "Làm phụ bếp tại khách sạn Omni Parker House (Boston, Mỹ)."
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
+      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
+    ],
+    "detailMarkdown": "Người làm việc tại khách sạn Omni Parker House ở Boston, Mỹ, một dấu mốc quan trọng trong những năm đầu Người bôn ba tìm đường cứu nước, nơi Người đã làm phụ bếp, dọn dẹp và làm quen với đời sống của người lao động tại Mỹ.",
+    "media": {
+      "images": [
+        {
+          "label": "Omni Parker House (Boston)",
+          "url": "/media/uploads/images/L_m_ph__b_p_t_i_kh_ch_s_n_Omni_Parker_House__Boston__M__..jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -784,7 +1023,7 @@
   {
     "id": "hcm-058m",
     "slug": "19130110-marseille-tau-cap-cang-2",
-    "title": "Marseille (Phap) - Tau cap cang",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Phap",
     "city": "Marseille",
     "coords": [
@@ -801,12 +1040,21 @@
       "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ]
+    ],
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
   },
   {
     "id": "hcm-058n",
     "slug": "19130120-le-havre-den-ben-cuoi-2",
-    "title": "Le Havre (Phap)",
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
     "country": "Phap",
     "city": "Le Havre",
     "coords": [
@@ -823,12 +1071,21 @@
       "https://baotanghochiminh.vn/hanh-trinh-cua-con-tau-amiral-latouche-treville-dua-nguyen-tat-thanh-ra-di-tim-duong-cuu-nuoc.htm",
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ]
+    ],
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
   },
   {
     "id": "hcm-058a",
     "slug": "19130205-fort-de-france-martinique",
-    "title": "Martinique (Fort-de-France) - Cập cảng",
+    "title": "Hành trình rời Pháp để sang Hoa Kỳ",
     "country": "Martinique",
     "city": "Fort-de-France",
     "coords": [
@@ -851,7 +1108,13 @@
       "images": [
         {
           "label": " ",
-          "url": "pointe-du-bout-840x560-2.webp"
+          "url": "/media/uploads/images/Ng__i____r_i_Ph_p____sang_Hoa_K_.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -860,7 +1123,7 @@
   {
     "id": "hcm-058b",
     "slug": "19130305-montevideo-uruguay",
-    "title": "Montevideo (Uruguay) - Cập cảng",
+    "title": "Hành trình rời Pháp để sang Hoa Kỳ",
     "country": "Uruguay",
     "city": "Montevideo",
     "coords": [
@@ -883,7 +1146,13 @@
       "images": [
         {
           "label": "Cảng Montevideo ",
-          "url": "https://upload-wikimedia-org.translate.goog/wikipedia/commons/5/5b/%28Puerto_de_Montevideo%29_Cuidad_Vieja_y_Puerto_de_Montevideo_131003-0879-jikatu_%2810099992434%29_%28cropped%29.jpg?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=tc"
+          "url": "/media/uploads/images/Montevideo__Uruguay_.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -892,7 +1161,7 @@
   {
     "id": "hcm-058c",
     "slug": "19130405-buenos-aires-argentina",
-    "title": "Buenos Aires (Argentina) - Dừng chân",
+    "title": "Hành trình rời Pháp để sang Hoa Kỳ",
     "country": "Argentina",
     "city": "Buenos Aires",
     "coords": [
@@ -915,81 +1184,13 @@
       "images": [
         {
           "label": "Người Argentina đầu tiên gặp Bác Hồ",
-          "url": "https://cdnmedia.baotintuc.vn/Upload/lQuX6s340fSBU8AUyrDPxg/files/2020/05/anh%20argentina-bac-ho.png"
+          "url": "/media/uploads/images/Buenos_Aires__Argentina.jpg"
         }
       ],
       "videos": [
         {
-          "label": "Di sản của Chủ tịch Hồ Chí Minh luôn hiện hữu, đặc biệt tại Argentina",
-          "url": "https://youtu.be/p18nxbjt9So?t=12"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-007",
-    "slug": "19121225-new-york-brooklyn-den",
-    "title": "New York (Brooklyn, Mỹ) - Đến New York",
-    "country": "Mỹ",
-    "city": "New York (Brooklyn)",
-    "coords": [
-      -73.9442,
-      40.6782
-    ],
-    "dateStart": "1912-12-25",
-    "dateEnd": "1912-12-25",
-    "periodLabel": "25/12/1912",
-    "levelTexts": {
-      "primary": "Tới New York (Mỹ). Sống tại khu Brooklyn."
-    },
-    "sources": [
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
-      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
-    ],
-    "detailMarkdown": "Người đến New York (Mỹ). Sống tại khu Brooklyn.\nNguyễn Tất Thành làm nhiều việc, đi nhiều nơi (bao gồm Harlem) để quan sát xã hội, tìm hiểu đời sống người lao động và cuộc đấu tranh của người da đen.\nNgười nhận ra sự mâu thuẫn giữa khẩu hiệu cộng hòa dân chủ và thực tế bóc lột tàn bạo, sự phân biệt chủng tộc sâu sắc ở Mỹ, nơi có sự phân chia giai cấp rõ rệt (giàu sang - trung lưu - lao động da trắng - lao động da đen).\nĐây là giai đoạn quan trọng để Người hình thành tư duy và lý tưởng cách mạng, thấy rõ bản chất đế quốc và sự cần thiết của cuộc đấu tranh giải phóng dân tộc",
-    "media": {
-      "images": [
-        {
-          "label": "Cầu Brooklyn, thành phố New York",
-          "url": "81X5UHnXQqL.jpg"
-        }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-008",
-    "slug": "19130101-boston-lam-phu-bep",
-    "title": "Boston (Mỹ) - Làm phụ bếp Omni Parker House",
-    "country": "Mỹ",
-    "city": "Boston",
-    "coords": [
-      -71.0589,
-      42.3601
-    ],
-    "dateStart": "1913-01-01",
-    "dateEnd": "1913-12-31",
-    "periodLabel": "1913",
-    "levelTexts": {
-      "primary": "Làm phụ bếp tại khách sạn Omni Parker House (Boston, Mỹ)."
-    },
-    "sources": [
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh",
-      "https://daily.jstor.org/the-letter-from-ho-chi-minh/"
-    ],
-    "detailMarkdown": "Người làm việc tại khách sạn Omni Parker House ở Boston, Mỹ, một dấu mốc quan trọng trong những năm đầu Người bôn ba tìm đường cứu nước, nơi Người đã làm phụ bếp, dọn dẹp và làm quen với đời sống của người lao động tại Mỹ.",
-    "media": {
-      "images": [
-        {
-          "label": "Omni Parker House (Boston)",
-          "url": "Bospar-Omni-Parker-H.jpeg"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Thăm nơi Bác Hồ từng làm thợ bánh ở thành phố Boston, Hoa Kỳ",
-          "url": "https://www.youtube.com/watch?v=j7MZalJ1cdY"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -998,7 +1199,7 @@
   {
     "id": "hcm-009",
     "slug": "19140101-luan-don-lao-dong-tu-hoc",
-    "title": "Luân Đôn (London, Anh) - Lao động và tự học",
+    "title": "Lao động và làm việc tại Anh",
     "country": "Anh",
     "city": "Luân Đôn (London)",
     "coords": [
@@ -1009,7 +1210,7 @@
     "dateEnd": "1917-12-31",
     "periodLabel": "1914 - 1917",
     "levelTexts": {
-      "primary": "Làm rửa bát, phụ bếp... tới Thư viện Bảo tàng Anh tự học."
+      "primary": ""
     },
     "sources": [
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
@@ -1020,13 +1221,17 @@
       "images": [
         {
           "label": "Khách sạn Drayton Court - nơi Bác từng làm phụ bếp",
-          "url": "Drayton_Court.jpg"
+          "url": "/media/uploads/images/kh_ch_s_n_Drayton_Court__Carlton2.jpg"
+        },
+        {
+          "label": "",
+          "url": "/media/uploads/images/kh_ch_s_n_Drayton_Court__Carlton.jpg"
         }
       ],
       "videos": [
         {
-          "label": "Hành Trình Tại Anh Quốc",
-          "url": "https://www.youtube.com/watch?v=2FViHKCiy20"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -1035,44 +1240,195 @@
   {
     "id": "hcm-010",
     "slug": "19200701-paris-doc-so-thao-lenin",
-    "title": "Paris (Pháp) - Đọc Sơ thảo của Lênin",
+    "title": "Rời Anh trở lại Paris (Pháp)",
     "country": "Pháp",
     "city": "Paris",
     "coords": [
       2.3522,
       48.8566
     ],
-    "dateStart": "1920-07-01",
-    "dateEnd": "1920-07-01",
-    "periodLabel": "07/1920",
+    "dateStart": "1917-12",
+    "dateEnd": "1917-12",
+    "periodLabel": "1917-12",
     "levelTexts": {
-      "primary": "Đọc “Sơ thảo...” của Lênin. Tìm thấy con đường cứu nước."
+      "primary": ""
     },
     "sources": [
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Cuối năm 1917, Nguyễn Tất Thành từ Anh trở lại Pháp để có điều kiện trực tiếp hoạt động trong phong trào Việt kiều và phong trào công nhân Pháp, lúc đầu Nguyễn Tất Thành ở phố Charonne trong một thời gian ngắn.\nĐầu năm 1919, Nguyễn Tất Thành gia nhập Đảng Xã hội Pháp - tổ chức duy nhất theo đuổi lý tưởng cao quý của Đại cách mạng Pháp: Tự do, bình đẳng, bác ái. Thay mặt Hội những người yêu nước Việt Nam tại Pháp, Nguyễn Tất Thành cùng Phan Châu Trinh, Phan Văn Trường thảo ra bản Yêu sách của nhân dân An Nam gửi tới Hội nghị Versailles. Dưới bản Yêu sách Nguyễn Tất Thành ký tên Nguyễn Ái Quốc. Bản Yêu sách gồm tám điểm: 1. Tổng ân xá cho tất cả những người bản xứ bị án tù chính trị; 2; 3; 4; 5; 6; 7; 8. Đoàn đại biểu thường trực của người bản xứ, do người bản xứ bầu ra, tại Nghị viện Pháp để giúp cho Nghị viện biết được những nguyện vọng của người bản xứ. \nTháng 7/1920 tại Paris, khi Nguyễn Ái Quốc đọc Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa của Lênin trên báo L'Humanité, là bước ngoặt lịch sử, soi đường cho Người tìm thấy con đường cách mạng vô sản, giúp giải quyết khủng hoảng bế tắc về đường lối cứu nước, từ đó Người nhận ra con đường độc lập dân tộc gắn liền với cách mạng thế giới và trở thành người Cộng sản Việt Nam đầu tiên.",
+    "detailMarkdown": "Cuối năm 1917, Nguyễn Tất Thành từ Anh trở lại Pháp để có điều kiện trực tiếp hoạt động trong phong trào Việt kiều và phong trào công nhân Pháp, lúc đầu Nguyễn Tất Thành ở phố Charonne trong một thời gian ngắn.",
     "media": {
       "images": [
         {
-          "label": "Sơ thảo lần thứ nhất của Lênin trên báo",
-          "url": "06-07-2021-nguyen-ai-quoc-den-voi-luan-cuong-cua-lenin-buoc-ngoat-cua-cac-mang-viet-nam-923BB9E0.jpg"
+          "label": "",
+          "url": "/media/uploads/images/R_i_Anh_tr__l_i_Paris__Ph_p_..jpg"
         }
       ],
       "videos": [
         {
-          "label": "Lưu giữ kỷ niệm Bác Hồ tại Paris",
-          "url": "https://www.youtube.com/watch?v=-Ab9nZClk0k"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
+    "title": "Tham gia Đảng Xã hội Pháp. Lập \"Hội những người Việt Nam yêu nước\". Gửi \"Bản yêu sách của nhân dân An Nam\" tới Hội nghị Versailles (1919)",
+    "coords": [
+      48.8566,
+      2.3522
+    ],
+    "city": "Paris",
+    "country": "France",
+    "periodLabel": "1919-1920",
+    "dateStart": "1919-1",
+    "dateEnd": "",
+    "detailMarkdown": "Đầu năm 1919, Nguyễn Tất Thành gia nhập Đảng Xã hội Pháp - “tổ chức duy nhất theo đuổi lý tưởng cao quý của Đại cách mạng Pháp: “Tự do, bình đẳng, bác ái”. Thay mặt Hội những người yêu nước Việt Nam tại Pháp, Nguyễn Tất Thành cùng Phan Châu Trinh, Phan Văn Trường thảo ra bản Yêu sách của nhân dân An Nam gửi tới Hội nghị Versailles. Dưới bản Yêu sách Nguyễn Tất Thành ký tên Nguyễn Ái Quốc. Bản Yêu sách gồm tám điểm: “1. Tổng ân xá cho tất cả những người bản xứ bị án tù chính trị; 2; 3; 4; 5; 6; 7; 8. Đoàn đại biểu thường trực của người bản xứ, do người bản xứ bầu ra, tại Nghị viện Pháp để giúp cho Nghị viện biết được những nguyện vọng của người bản xứ”",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/paris.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=iw05Yn9yZ0k"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Dự Đại hội Tours. Bỏ phiếu tán thành Quốc tế III. Tham gia sáng lập Đảng Cộng sản Pháp.",
+    "coords": [
+      48.8566,
+      2.3522
+    ],
+    "city": "Paris",
+    "country": "France",
+    "dateStart": "1920-12",
+    "detailMarkdown": "Tháng 12 năm 1920, Nguyễn Ái Quốc đã bỏ phiếu tán thành tham gia Quốc tế III Quốc tế Cộng sản, trở thành một trong những người sáng lập Đảng Cộng sản Pháp, và Người cũng trở thành người cộng sản Việt Nam đầu tiên. Đó là một sự kiện chính trị vô cùng quan trọng trong đời hoạt động cách mạng của Nguyễn Ái Quốc và trong lịch sử cách mạng nước ta.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/tourr.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=S44FeJUMZ3E"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Đọc \"Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin. Tìm thấy con đường cứu nước",
+    "coords": [
+      48.8566,
+      2.3522
+    ],
+    "city": "Paris",
+    "country": "France",
+    "periodLabel": "1920-7",
+    "dateStart": "1920-7",
+    "detailMarkdown": "Tháng 7/1920 tại Paris, khi Nguyễn Ái Quốc đọc \"Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin trên báo L'Humanité, là bước ngoặt lịch sử, soi đường cho Người tìm thấy con đường cách mạng vô sản, giúp giải quyết khủng hoảng bế tắc về đường lối cứu nước, từ đó Người nhận ra con đường độc lập dân tộc gắn liền với cách mạng thế giới và trở thành người Cộng sản Việt Nam đầu tiên.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/so_thao.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sáng lập báo Le Paria (Người cùng khổ)",
+    "coords": [
+      48.8566,
+      2.3522
+    ],
+    "detailMarkdown": "Vào tháng 4/1922 tại Paris, Nguyễn Ái Quốc đã cùng các đồng chí sáng lập tờ báo Le Paria (Người cùng khổ), cơ quan ngôn luận của Hội Liên hiệp Thuộc địa, nhằm vạch trần chủ nghĩa thực dân, kêu gọi đoàn kết các dân tộc bị áp bức để đấu tranh giải phóng, với số đầu tiên ra ngày 1/4/1922, trở thành tiếng nói quan trọng cho phong trào giải phóng dân tộc.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/bao_nguoi_cung_kho.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=S44FeJUMZ3E"
+        }
+      ]
+    },
+    "country": "France",
+    "city": "Paris",
+    "periodLabel": "4/1922",
+    "dateStart": "1922-4-1"
+  },
+  {
+    "title": "Học ngắn hạn tại Đại học Phương Đông. Viết bài cho báo Sự thật (Pravda), Tạp chí Thư tín Quốc tế. Hoàn thành tác phẩm \"Bản án chế độ thực dân Pháp\".",
+    "coords": [
+      48.3335559999,
+      19.5636334
+    ],
+    "dateStart": "1923-1",
+    "dateEnd": "",
+    "detailMarkdown": "Giai đoạn 1923-1924 tại Moscow, Nguyễn Ái Quốc (Hồ Chí Minh) đã học tập ngắn hạn, viết nhiều bài báo sắc sảo tố cáo thực dân Pháp cho báo chí quốc tế và hoàn thành tác phẩm \"Bản án chế độ thực dân Pháp\" (xuất bản 1925), tố cáo tội ác của Pháp ở Đông Dương, khẳng định con đường cách mạng giải phóng dân tộc.",
+    "city": "Moskva",
+    "country": "Liên xô",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/nuoc-nga-xo-viet-1024x563.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
+        }
+      ]
+    },
+    "periodLabel": "1923 - 1924"
+  },
+  {
     "id": "hcm-013",
     "slug": "19230613-hamburg-roi-phap",
-    "title": "Hamburg (Đức) - Rời Pháp",
+    "title": "Bí mật rời Pháp sang Đức, ghé cảng Hamburg",
     "country": "Đức",
     "city": "Hamburg",
     "coords": [
@@ -1094,7 +1450,13 @@
       "images": [
         {
           "label": "Cảng Hamburg",
-          "url": "cang-hamburg-3.webp"
+          "url": "/media/uploads/images/B__m_t_r_i_Ph_p_sang___c__gh__c_ng_Hamburg..jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -1120,13 +1482,27 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Tàu ghé Amsterdam, Hà Lan trên hành trình rời Hamburg tiến về Nga.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+    "detailMarkdown": "Tàu ghé Amsterdam, Hà Lan trên hành trình rời Hamburg tiến về Liên Xô.",
+    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/T_u_gh__Amsterdam.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
   },
   {
     "id": "hcm-014",
     "slug": "19230630-petrograd-tau-cap-ben",
-    "title": "Petrograd (Saint Petersburg, Nga) - Tàu cập bến",
+    "title": "Tàu thủy cập bến Petrograd (nay là Saint Petersburg, Liên Xô)",
     "country": "Nga",
     "city": "Petrograd (Saint Petersburg)",
     "coords": [
@@ -1148,12 +1524,16 @@
       "images": [
         {
           "label": " ",
-          "url": "nguyen-ai-quoc-lan-thu-5.webp"
+          "url": "/media/uploads/images/Petrograd__Saint_Petersburg__Nga_.jpg"
         }
       ],
       "videos": [
         {
-          "label": "Nguyễn Ái Quốc tại Liên Xô",
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
       ]
@@ -1163,7 +1543,7 @@
   {
     "id": "hcm-015",
     "slug": "19231001-moskva-hoi-nghi-nong-dan",
-    "title": "Moskva (Nga) - Dự Hội nghị Quốc tế Nông dân",
+    "title": "Dự Hội nghị lần thứ nhất Quốc tế Nông dân. Được bầu vào Hội đồng Quốc tế Nông dân.",
     "country": "Nga",
     "city": "Moskva",
     "coords": [
@@ -1185,13 +1565,17 @@
       "images": [
         {
           "label": " ",
-          "url": "dh cs phap1.jpg"
+          "url": "/media/uploads/images/T_u_th_y_c_p_b_n_Petrograd__nay_l__Saint_Petersburg__Li_n_X__..jpg"
         }
       ],
       "videos": [
         {
-          "label": "Bác Hồ tại đại hội Quốc tế Nông dân",
-          "url": "https://www.youtube.com/watch?v=ZwD1tBi2hiE"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
       ]
     },
@@ -1200,7 +1584,7 @@
   {
     "id": "hcm-018",
     "slug": "19240601-moskva-dai-hoi-quoc-te-cong-san",
-    "title": "Moskva (Nga) - Dự Đại hội V Quốc tế Cộng sản",
+    "title": "Dự Đại hội V Quốc tế Cộng sản. Trình bày tham luận quan trọng về vấn đề thuộc địa.",
     "country": "Nga",
     "city": "Moskva",
     "coords": [
@@ -1222,7 +1606,17 @@
       "images": [
         {
           "label": " ",
-          "url": "vna_potal_ky_niem_110_nam_ngay_bac_ho_ra_di_tim_duong_cuu_nuoc_561911_–_562021_hoai_bao_giai_phong_dan_toc_khat_vong_gianh_doc_lap_tu_do___stand.jpg"
+          "url": "/media/uploads/images/Th_ng_61924_t_i_Mo.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
       ]
     },
@@ -1231,7 +1625,7 @@
   {
     "id": "hcm-018b",
     "slug": "19241001-vladivostok-nga",
-    "title": "Vladivostok (Nga) - Diem trung chuyen",
+    "title": "Rời Moskva đi tàu hỏa xuyên Xibia đến Vladivostok",
     "country": "Nga",
     "city": "Vladivostok",
     "coords": [
@@ -1243,12 +1637,31 @@
     "periodLabel": "10/1924",
     "levelTexts": {
       "primary": "Diem trung chuyen tai Vladivostok tren hanh trinh den Quang Chau."
+    },
+    "detailMarkdown": "Vào tháng 10 năm 1924, Nguyễn Ái Quốc  đã rời Moscow bằng tàu hỏa, đi một hành trình dài xuyên Siberia đến Vladivostok để chuẩn bị cho chặng tiếp theo của hành trình cách mạng, bắt đầu quá trình đào tạo cán bộ đầu tiên cho Cách mạng Việt Nam.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/V.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
+        }
+      ]
     }
   },
   {
     "id": "hcm-019",
     "slug": "19241111-quang-chau-den",
-    "title": "Quảng Châu (Trung Quốc) - Đến Quảng Châu",
+    "title": "Hoạt động tại Quảng Châu (Trung Quốc)",
     "country": "Trung Quốc",
     "city": "Quảng Châu (Guangzhou)",
     "coords": [
@@ -1265,55 +1678,122 @@
       "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
       "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
     ],
-    "detailMarkdown": "Vào tháng 10 năm 1924, Nguyễn Ái Quốc  đã rời Moscow bằng tàu hỏa, đi một hành trình dài xuyên Siberia đến Vladivostok để chuẩn bị cho chặng tiếp theo của hành trình cách mạng, bắt đầu quá trình đào tạo cán bộ đầu tiên cho Cách mạng Việt Nam.\nNgày 11/11/1924, Nguyễn Ái Quốc đến Quảng Châu, Trung Quốc, mở ra giai đoạn hoạt động cách mạng quan trọng: thành lập Việt Nam Thanh niên Cách mạng Đồng chí Hội, đào tạo cán bộ đầu tiên theo Chủ nghĩa Mác-Lênin và xuất bản báo Thanh Niên, tạo nền tảng vững chắc cho sự ra đời của Đảng Cộng sản Việt Nam.",
+    "detailMarkdown": "Ngày 11/11/1924, Nguyễn Ái Quốc đến Quảng Châu, Trung Quốc, mở ra giai đoạn hoạt động cách mạng quan trọng: thành lập Việt Nam Thanh niên Cách mạng Đồng chí Hội, đào tạo cán bộ đầu tiên theo Chủ nghĩa Mác-Lênin và xuất bản báo Thanh Niên, tạo nền tảng vững chắc cho sự ra đời của Đảng Cộng sản Việt Nam.",
     "media": {
       "images": [
         {
           "label": " ",
-          "url": "Image.png"
+          "url": "/media/uploads/images/Qu_ng_Ch_u__Trung_Qu_c_..png"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-019b",
-    "slug": "19241201-moskva-tro-lai",
-    "title": "Moskva (Nga) - Tro lai",
-    "country": "Nga",
-    "city": "Moskva",
+    "title": "Mở lớp huấn luyện chính trị. Gửi học viên sang trường Quân sự Hoàng Phố",
     "coords": [
-      37.6173,
-      55.7558
+      113.26667,
+      23.13333
     ],
-    "dateStart": "1924-12-01",
-    "dateEnd": "1924-12-01",
-    "periodLabel": "12/1924",
-    "levelTexts": {
-      "primary": "Tro lai Moskva sau hanh trinh tu Quang Chau."
+    "detailMarkdown": "Trong giai đoạn 1925-1927 tại Quảng Châu, Nguyễn Ái Quốc đã mở các lớp huấn luyện chính trị cho thanh niên yêu nước Việt Nam tại số 13 và 13/1 đường Văn Minh, giảng dạy về cách mạng thế giới và Việt Nam, đồng thời gửi học viên ưu tú sang Trường Quân sự Hoàng Phố (Whampoa) để đào tạo quân sự, nhằm xây dựng lực lượng nòng cốt cho cách mạng Việt Nam, đây là cơ sở hình thành Hội Việt Nam Cách mạng Thanh niên.",
+    "periodLabel": "1925 - 1927",
+    "dateStart": "1925-1",
+    "dateEnd": "1925 - 1927",
+    "country": "Trung Quốc",
+    "city": "Quảng Châu",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/quang_chau.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=HNt9eg-98qE"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-019c",
-    "slug": "19250115-paris-tro-lai",
-    "title": "Paris (Phap) - Tro lai",
-    "country": "Phap",
-    "city": "Paris",
+    "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên",
     "coords": [
-      2.3522,
-      48.8566
+      113.26667,
+      23.13333
     ],
-    "dateStart": "1925-01-15",
-    "dateEnd": "1925-01-15",
-    "periodLabel": "01/1925",
-    "levelTexts": {
-      "primary": "Tro lai Paris sau hanh trinh tu Moskva."
+    "country": "Trung Quốc",
+    "city": "Quảng Châu",
+    "periodLabel": "06/1925",
+    "dateStart": "1925-06",
+    "dateEnd": "",
+    "detailMarkdown": "Vào tháng 6 năm 1925 tại Quảng Châu, Trung Quốc, dưới sự lãnh đạo của Lãnh tụ Nguyễn Ái Quốc, tổ chức Hội Việt Nam Cách mạng Thanh niên chính thức được thành lập, đây là sự kiện lịch sử quan trọng, đánh dấu bước chuyển mình của phong trào giải phóng dân tộc Việt Nam và là tiền thân trực tiếp dẫn đến sự ra đời của Đảng Cộng sản Việt Nam sau này.\nNgày 21-6-1925, Báo Thanh Niên, cơ quan ngôn luận của Hội Việt Nam Cách mạng Thanh niên chính thức ra đời, góp phần chuẩn bị về tư tưởng chính trị và tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/thanhnien.jpg"
+        },
+        {
+          "label": "",
+          "url": "/media/uploads/images/bao_thanh_nien.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=UKQBo-WJy7o"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
+  },
+  {
+    "title": "Đi đường vòng qua Liên Xô (Vladivostok - Moskva - Leningrad) rồi trở lại Paris.",
+    "coords": [
+      0,
+      0
+    ],
+    "city": "Paris",
+    "detailMarkdown": "Tháng 11/1927, Người đi đường vòng qua Liên Xô (Vladivostok - Moskva - Leningrad) rồi trở lại Paris.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/kiniem.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "periodLabel": "11/1927",
+    "dateStart": "1927-11-1"
   },
   {
     "id": "hcm-025",
     "slug": "19271201-brussels-du-hop-lien-doan",
-    "title": "Brussels (Bỉ) - Dự họp Liên đoàn chống đế quốc",
+    "title": "Dự cuộc họp của Đại hội đồng Liên đoàn chống đế quốc tại Brussels",
     "country": "Bỉ",
     "city": "Brussels",
     "coords": [
@@ -1334,53 +1814,22 @@
       "images": [
         {
           "label": " ",
-          "url": "images (1).jpg"
+          "url": "/media/uploads/images/D__cu_c_h_p_c_a___i_h_i___ng_Li_n__o_n_ch_ng____qu_c_t_i_Brussels.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
-    "id": "hcm-025b",
-    "slug": "19271215-berlin-lam-bao",
-    "title": "Berlin (Duc) - Lam bao",
-    "country": "Duc",
-    "city": "Berlin",
-    "coords": [
-      13.405,
-      52.52
-    ],
-    "dateStart": "1927-12-15",
-    "dateEnd": "1927-12-15",
-    "periodLabel": "12/1927",
-    "levelTexts": {
-      "primary": "Den Berlin, lam bao."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
-    ]
-  },
-  {
-    "id": "hcm-025c",
-    "slug": "19280115-milan-chuyen-tiep",
-    "title": "Milan (Y) - Diem trung chuyen",
-    "country": "Y",
-    "city": "Milan",
-    "coords": [
-      9.188076260761704,
-      45.44625042932225
-    ],
-    "dateStart": "1928-01-15",
-    "dateEnd": "1928-01-15",
-    "periodLabel": "01/1928",
-    "levelTexts": {
-      "primary": "Diem trung chuyen tai Milan."
-    }
-  },
-  {
     "id": "hcm-026",
     "slug": "19280601-naples-len-tau-ve-xiem",
-    "title": "Naples (Ý) - Lên tàu về Xiêm",
+    "title": "Từ Đức đi Thụy Sĩ, sang Ý. Lên tàu tại cảng Naples về Xiêm (Thái Lan)",
     "country": "Ý",
     "city": "Naples",
     "coords": [
@@ -1402,38 +1851,13 @@
       "images": [
         {
           "label": " ",
-          "url": "images (2).jpg"
+          "url": "/media/uploads/images/y_2.jpg"
         }
-      ]
-    },
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-027",
-    "slug": "19280701-bangkok-den",
-    "title": "Bangkok (Thái Lan) - Đến Bangkok",
-    "country": "Thái Lan",
-    "city": "Bangkok",
-    "coords": [
-      100.5018,
-      13.7563
-    ],
-    "dateStart": "1928-07-01",
-    "dateEnd": "1928-07-01",
-    "periodLabel": "07/1928",
-    "levelTexts": {
-      "primary": "Đến Bangkok."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Vào tháng 7/1928, Nguyễn Ái Quốc đến Thái Lan (Xiêm), hoạt động tại Bangkok rồi di chuyển đến các địa phương như Phichit, Udon Thani và Sakon Nakhon (Na Khon Phanom) để gây dựng phong trào cách mạng, xây dựng cơ sở, tập hợp kiều bào Việt Nam, dạy tiếng Việt và tiếng Thái, chuẩn bị cho sự nghiệp giải phóng dân tộc, để lại dấu ấn sâu đậm với nhiều khu tưởng niệm tại Thái Lan.",
-    "media": {
-      "images": [
+      ],
+      "videos": [
         {
-          "label": " ",
-          "url": "ho-chi-minh.jpg"
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ]
     },
@@ -1460,332 +1884,429 @@
       "https://baotanghochiminh.vn/tham-noi-thanh-lap-dang-cong-san-viet-nam-nam-1930.htm"
     ],
     "detailMarkdown": "Cuối 1929, Người rời Xiêm đi tàu thủy tới Hồng Kông.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
+    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch.",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
   },
   {
-    "id": "hcm-031b",
-    "slug": "19300115-bangkok-tro-lai",
-    "title": "Bangkok (Thái Lan) - Trở lại",
-    "country": "Thái Lan",
-    "city": "Bangkok",
+    "title": "Bị giam giữ ở Hồng Kông",
     "coords": [
-      100.5018,
-      13.7563
+      0,
+      0
     ],
-    "dateStart": "1930-01-15",
-    "dateEnd": "1930-01-15",
-    "periodLabel": "04/1930",
-    "levelTexts": {
-      "primary": "Trở lại Bangkok."
+    "detailMarkdown": "Trải qua 9 phiên tòa. Được luật sư F.H. Loseby tận tình bào chữa.",
+    "periodLabel": "1931 - 1932",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/bi_bat.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832"
-    ]
+    "dateStart": "1931-06-07"
   },
   {
-    "id": "hcm-031c",
-    "slug": "19300201-malaysia-den",
-    "title": "Malaysia - Điểm đến",
-    "country": "Malaysia",
-    "city": "Malaysia",
+    "title": "Bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát.",
     "coords": [
-      103.02957640781946,
-      5.401839722927646
+      0,
+      0
     ],
-    "dateStart": "1930-02-01",
-    "dateEnd": "1930-02-01",
-    "periodLabel": "Cuối tháng 4/1930",
-    "levelTexts": {
-      "primary": "Điểm đến tại Malaysia."
+    "detailMarkdown": "Bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/Bi_giam_du2.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "periodLabel": "22/01/1933",
+    "dateStart": "1933-01-22"
+  },
+  {
+    "title": "Được thả tự do",
+    "coords": [
+      0,
+      0
+    ],
+    "detailMarkdown": "Được thả tự do. Rời Hồng Kông đi Singapore.",
+    "periodLabel": "28/12/1932",
+    "dateStart": "1932-12-28",
+    "media": {
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031d",
-    "slug": "19300215-singapore-den",
-    "title": "Singapore - Điểm đến",
-    "country": "Singapore",
-    "city": "Singapore",
+    "title": "Chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Cửu Long. Thành lập Đảng Cộng sản Việt Nam.",
     "coords": [
-      103.87722462973758,
-      1.28346518231817
+      0,
+      0
     ],
-    "dateStart": "1930-02-15",
-    "dateEnd": "1930-02-15",
-    "periodLabel": "05/1930",
-    "levelTexts": {
-      "primary": "Điểm đến tại Singapore."
-    }
+    "detailMarkdown": "Ngày 3/2/1930, tại Cửu Long (Hồng Kông), dưới sự chủ trì của Nguyễn Ái Quốc (với vai trò phái viên Quốc tế Cộng sản), Hội nghị hợp nhất các tổ chức cộng sản Đông Dương (Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng, Đông Dương Cộng sản Liên đoàn), thành lập Đảng Cộng sản Việt Nam (nay là ngày chính thức kỷ niệm thành lập Đảng). Đây là sự kiện lịch sử trọng đại, chấm dứt khủng hoảng đường lối cứu nước, xác định con đường độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/thanh_lap_dang.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=6lL5TfVt80M"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "periodLabel": "3/2/1930",
+    "dateStart": "1930-02-03"
   },
   {
-    "id": "hcm-031e",
-    "slug": "19300301-thuong-hai-den",
-    "title": "Thượng Hải (Trung Quốc) - Điểm đến",
-    "country": "Trung Quốc",
+    "title": "Quay trở lại Xiêm và Malaysia để chỉ đạo phong trào.",
+    "coords": [
+      0,
+      0
+    ],
+    "detailMarkdown": "Tháng 4/1930, sau khi Tổ chức thành công Hội nghị thành lập Đảng Cộng sản Việt Nam ở Hương Cảng vào tháng 2/1930, Nguyễn Ái Quốc trở lại Xiêm (Thái Lan) và Malaysia để tiếp tục chỉ đạo phong trào cách mạng, củng cố các tổ chức Cộng sản ở nước ngoài.",
+    "city": "Xiêm",
+    "periodLabel": "4/1930",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/xiem.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "dateStart": "1930-04"
+  },
+  {
+    "title": "Rời Quảng Châu đi Hàng Châu, Thượng Hải để tránh sự truy quét của Tưởng Giới Thạch.",
+    "coords": [
+      0,
+      0
+    ],
+    "city": "Quảng Châu",
+    "periodLabel": "5/1927",
+    "detailMarkdown": "Tháng 5/1927, Nguyễn Ái Quốc rời Quảng Châu đi Hàng Châu, Thượng Hải (Trung Quốc) là để né tránh sự đàn áp của Tưởng Giới Thạch, đánh dấu giai đoạn Người phải di chuyển liên tục để tiếp tục hoạt động cách mạng",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/quang_chau_2.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "dateStart": "1927-05"
+  },
+  {
+    "title": "Đến Thượng Hải dự hội nghị quốc tế.",
+    "coords": [
+      0,
+      0
+    ],
     "city": "Thượng Hải",
-    "coords": [
-      121.32598331110871,
-      30.667856898779714
-    ],
-    "dateStart": "1930-03-01",
-    "dateEnd": "1930-03-01",
-    "periodLabel": "05/1930",
-    "levelTexts": {
-      "primary": "Điểm đến tại Thượng Hải."
-    }
+    "detailMarkdown": "",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/thuong_hai_2.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "periodLabel": "5/1930",
+    "dateStart": "1930-05"
   },
   {
-    "id": "hcm-031f",
-    "slug": "19300315-hong-kong-tro-lai",
-    "title": "Hong Kong - Trở lại",
-    "country": "Trung Quốc",
+    "title": "Trở lại Hồng Kông",
+    "coords": [
+      0,
+      0
+    ],
     "city": "Hồng Kông",
-    "coords": [
-      114.19294355685433,
-      22.304890417497052
-    ],
-    "dateStart": "1930-03-15",
-    "dateEnd": "1930-03-15",
-    "periodLabel": "09/1930",
-    "levelTexts": {
-      "primary": "Trở lại Hồng Kông."
-    }
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/Hong_kong.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    },
+    "periodLabel": "9/1930",
+    "dateStart": "1930-9"
   },
   {
-    "id": "hcm-031g",
-    "slug": "19300401-singapore-tro-lai",
-    "title": "Singapore - Trở lại",
-    "country": "Singapore",
-    "city": "Singapore",
+    "title": "Cải trang, bí mật rời Hồng Kông",
     "coords": [
-      103.89321799241532,
-      1.251486283671488
+      0,
+      0
     ],
-    "dateStart": "1930-04-01",
-    "dateEnd": "1930-04-01",
-    "periodLabel": "06/01/1933",
-    "levelTexts": {
-      "primary": "Trở lại Singapore."
-    }
-  },
-  {
-    "id": "hcm-031h",
-    "slug": "19300415-hong-kong-lan-2",
-    "title": "Hồng Kông - Lần 2",
-    "country": "Trung Quốc",
+    "detailMarkdown": "Cải trang thành thương nhân giàu có, bí mật rời Hồng Kông trên chiếc ca nô nhỏ.",
+    "periodLabel": "22/01/1933",
     "city": "Hồng Kông",
-    "coords": [
-      114.19294355685437,
-      22.319686330093944
-    ],
-    "dateStart": "1930-04-15",
-    "dateEnd": "1930-04-15",
-    "periodLabel": "19/01/1933",
-    "levelTexts": {
-      "primary": "Hồng Kông lần 2."
+    "dateStart": "1933-01-22",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/cai_trang2.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031i",
-    "slug": "19300501-ha-mon",
-    "title": "Hạ Môn (Trung Quốc)",
-    "country": "Trung Quốc",
+    "title": "Đến Hạ Môn (Trung Quốc)",
+    "coords": [
+      0,
+      0
+    ],
+    "detailMarkdown": "Đến Hạ Môn (Trung Quốc) đúng ngày Mùng 1 Tết Âm lịch.",
     "city": "Hạ Môn",
-    "coords": [
-      118.01535723682478,
-      24.28783020876169
-    ],
-    "dateStart": "1930-05-01",
-    "dateEnd": "1930-05-01",
-    "periodLabel": "25/01/1933",
-    "levelTexts": {
-      "primary": "Đến Hạ Môn."
+    "dateStart": "1933-01-25",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/201191141450.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031j",
-    "slug": "19300515-thuong-hai-tro-lai",
-    "title": "Thượng Hải (Trung Quốc) - Trở lại",
-    "country": "Trung Quốc",
-    "city": "Thượng Hải",
+    "title": "Từ Hạ Môn đến Thượng Hải. ",
     "coords": [
-      121.34197667378645,
-      30.68161242721209
+      0,
+      0
     ],
-    "dateStart": "1930-05-15",
-    "dateEnd": "1930-05-15",
-    "periodLabel": "02/1933",
-    "levelTexts": {
-      "primary": "Trở lại Thượng Hải."
+    "detailMarkdown": "Từ Hạ Môn đến Thượng Hải. Liên lạc được với tổ chức Đảng (Paul Vaillant Couturier).",
+    "dateStart": "1933-07",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/thuong_hai_1933.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031k",
-    "slug": "19300601-moskva-den",
-    "title": "Moskva (Nga) - Điểm đến",
-    "country": "Nga",
+    "title": "Đến Moskva (Liên Xô)",
+    "coords": [
+      0,
+      0
+    ],
     "city": "Moskva",
-    "coords": [
-      37.66470314405797,
-      55.747380251285584
-    ],
-    "dateStart": "1930-06-01",
-    "dateEnd": "1930-06-01",
-    "periodLabel": "Đầu 1934",
-    "levelTexts": {
-      "primary": "Đến Moskva."
+    "dateStart": "1934-01-01",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/Moskva.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031l",
-    "slug": "19300615-que-lam",
-    "title": "Quế Lâm (Trung Quốc)",
-    "country": "Trung Quốc",
+    "title": "Học tại Trường Quốc tế Lênin. Làm nghiên cứu sinh tại Viện Nghiên cứu các vấn đề dân tộc và thuộc địa.",
+    "coords": [
+      0,
+      0
+    ],
+    "city": "Moskva",
+    "dateStart": "1934-01-05",
+    "detailMarkdown": "Học tại Trường Quốc tế Lênin. Làm nghiên cứu sinh tại Viện Nghiên cứu các vấn đề dân tộc và thuộc địa.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/thumb_470.33334_5d6cc522-57ae-4bec-bd84-15284786fb93.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Rời Moskva đi Diên An (Trung Quốc). Làm việc tại Bát Lộ Quân ",
+    "coords": [
+      0,
+      0
+    ],
+    "city": "Diên An ",
+    "dateStart": "1938-10",
+    "detailMarkdown": "Rời Moskva đi Diên An (Trung Quốc). Làm việc tại Bát Lộ Quân với bí danh Hồ Quang.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/3698f9f82727be2013bb245737da685fMT-__ng.png"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
+    }
+  },
+  {
+    "title": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm (Trung Quốc)",
+    "coords": [
+      0,
+      0
+    ],
     "city": "Quế Lâm",
-    "coords": [
-      111.17019801076901,
-      25.809130400917144
-    ],
-    "dateStart": "1930-06-15",
-    "dateEnd": "1930-06-15",
-    "periodLabel": "1939",
-    "levelTexts": {
-      "primary": "Đến Quế Lâm."
+    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới.",
+    "dateStart": "1939-01",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/597947563_122250030290167071_7164085305021295426_n.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031m",
-    "slug": "19300701-hoanh-duong",
-    "title": "Hoành Dương (Trung Quóc)",
-    "country": "Trung Quốc",
-    "city": "Hoành Dương",
+    "title": "Đến Tĩnh Tây (Quảng Tây)",
     "coords": [
-      113.37728206029169,
-      26.812665218275185
+      0,
+      0
     ],
-    "dateStart": "1930-07-01",
-    "dateEnd": "1930-07-01",
-    "periodLabel": "1939",
-    "levelTexts": {
-      "primary": "Đến Hoành Dương."
+    "detailMarkdown": "Đến Tĩnh Tây (Quảng Tây). Tổ chức lớp huấn luyện cán bộ đầu tiên cho đội ngũ cốt cán về nước.",
+    "city": "Quảng Tây",
+    "dateStart": "1940-12",
+    "media": {
+      "images": [
+        {
+          "label": "Địa điểm Chủ tịch Hồ Chí Minh mở lớp huấn luyện chính trị cho 40 chiến sĩ hoạt động cách mạng trước khi về nước.",
+          "url": "/media/uploads/images/theo-chan-bac-ho-4-.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   },
   {
-    "id": "hcm-031n",
-    "slug": "19300715-quy-duong",
-    "title": "Quý Dương (Trung Quốc)",
-    "country": "Trung Quóc",
-    "city": "Quý Dương",
+    "title": "Vượt cột mốc 108 trở về Việt Nam. Chọn Pác Bó làm căn cứ chỉ đạo cách mạng",
     "coords": [
-      108.03549892593972,
-      27.012322748695752
+      0,
+      0
     ],
-    "dateStart": "1930-07-15",
-    "dateEnd": "1930-07-15",
-    "periodLabel": "1939",
-    "levelTexts": {
-      "primary": "Đến Quý Dương."
-    }
-  },
-  {
-    "id": "hcm-031o",
-    "slug": "19300801-trung-khanh",
-    "title": "Trùng Khánh (Trung Quốc)",
-    "country": "Trung Quốc",
-    "city": "Trùng Khánh",
-    "coords": [
-      108.13145910200592,
-      29.435832429492507
-    ],
-    "dateStart": "1930-08-01",
-    "dateEnd": "1930-08-01",
-    "periodLabel": "1939",
-    "levelTexts": {
-      "primary": "Đến Trùng Khánh."
-    }
-  },
-  {
-    "id": "hcm-031p",
-    "slug": "19300815-con-minh",
-    "title": "Côn Minh (Trung Quốc)",
-    "country": "Trung Quốc",
-    "city": "Côn Minh",
-    "coords": [
-      103.49338392547281,
-      25.57853866298516
-    ],
-    "dateStart": "1930-08-15",
-    "dateEnd": "1930-08-15",
-    "periodLabel": "1940",
-    "levelTexts": {
-      "primary": "Đến Côn Minh."
-    }
-  },
-  {
-    "id": "hcm-031q",
-    "slug": "19300901-ninh-minh",
-    "title": "Ninh Minh (Trung Quốc)",
-    "country": "Trung Quốc",
-    "city": "Ninh Minh",
-    "coords": [
-      107.65165822167492,
-      22.127217429092983
-    ],
-    "dateStart": "1930-09-01",
-    "dateEnd": "1930-09-01",
-    "periodLabel": "1940",
-    "levelTexts": {
-      "primary": "Đến Ninh Minh."
-    }
-  },
-  {
-    "id": "hcm-031r",
-    "slug": "19300915-que-lam-tro-lai",
-    "title": "Quế Lâm (Trung Quốc) - Trở lại",
-    "country": "Trung Quốc",
-    "city": "Quế Lâm",
-    "coords": [
-      107.0119237145669,
-      23.60083802974046
-    ],
-    "dateStart": "1930-09-15",
-    "dateEnd": "1930-09-15",
-    "periodLabel": "1940",
-    "levelTexts": {
-      "primary": "Trở lại Quế Lâm."
-    }
-  },
-  {
-    "id": "hcm-031s",
-    "slug": "19301001-tinh-tay",
-    "title": "Tỉnh Tây (Trung Quốc)",
-    "country": "Trung Quốc",
-    "city": "Tỉnh Tây",
-    "coords": [
-      107.09189052795477,
-      23.60083802974062
-    ],
-    "dateStart": "1930-10-01",
-    "dateEnd": "1930-10-01",
-    "periodLabel": "1940",
-    "levelTexts": {
-      "primary": "Đến Tỉnh Tây."
-    }
-  },
-  {
-    "id": "hcm-031t",
-    "slug": "19301015-cao-bang",
-    "title": "Cao Bằng (Việt Nam)",
-    "country": "Việt Nam,",
     "city": "Cao Bằng",
-    "coords": [
-      105.81242151373876,
-      22.718580433119143
-    ],
-    "dateStart": "1930-10-15",
-    "dateEnd": "1930-10-15",
-    "periodLabel": "28/01/1941",
-    "levelTexts": {
-      "primary": "Đến Cao Bằng."
+    "detailMarkdown": "Ngày 28-1-1941 (tức mùng 2 Tết Tân Tỵ): Lãnh tụ Nguyễn Ái Quốc vượt qua cột mốc 108 trên biên giới Việt Nam - Trung Quốc, tại làng Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng, trở về Tổ quốc sau 30 năm bôn ba tìm đường cứu nước, cứu dân để trực tiếp lãnh đạo cách mạng Việt Nam. Đây là một sự kiện lịch sử quan trọng, mở ra thời kỳ phát triển mới của cách mạng Việt Nam, từng bước đưa dân tộc Việt Nam đi tới những mùa Xuân thắng lợi.",
+    "media": {
+      "images": [
+        {
+          "label": "",
+          "url": "/media/uploads/images/153226_lanh_tu_nguyen_ai_quoc_va_cac_dong_chi_can_bo_cach_mang_qua_cot_moc_108_tren_bien_gioi_viet_trung_tro_ve_nuoc_tai_xom_pac_bo_xa_truong_ha_tranh_trinh__22204430.jpg"
+        },
+        {
+          "label": "",
+          "url": "/media/uploads/images/Cot-Moc-21.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=OseFtiFjRtk"
+        },
+        {
+          "label": "",
+          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
+        }
+      ]
     }
   }
 ]

@@ -140,6 +140,47 @@ function getEmbedVideoSrc(url: string) {
   return null;
 }
 
+function renderSimpleMarkdown(input: string) {
+  const escapeHtml = (value: string) =>
+    value
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  const safe = escapeHtml(input || "");
+  const withBlocks = safe
+    .replace(/^### (.*)$/gm, '<h4 class="mt-3 text-sm font-semibold text-slate-700">$1</h4>')
+    .replace(/^## (.*)$/gm, '<h3 class="mt-3 text-base font-semibold text-slate-800">$1</h3>')
+    .replace(/^# (.*)$/gm, '<h2 class="mt-3 text-lg font-semibold text-slate-900">$1</h2>')
+    .replace(/^> (.*)$/gm, '<blockquote class="border-l-2 border-slate-300 pl-3 italic text-slate-600">$1</blockquote>');
+  const lines = withBlocks.split(/\n/);
+  const out: string[] = [];
+  let inList = false;
+  lines.forEach((line) => {
+    const match = line.match(/^[-*]\s+(.*)$/);
+    if (match) {
+      if (!inList) {
+        inList = true;
+        out.push('<ul class="list-disc space-y-1 pl-5">');
+      }
+      out.push(`<li>${match[1]}</li>`);
+      return;
+    }
+    if (inList) {
+      out.push("</ul>");
+      inList = false;
+    }
+    if (!line.trim()) {
+      out.push("<br />");
+      return;
+    }
+    const inline = line.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/_(.+?)_/g, "<em>$1</em>");
+    out.push(`<p>${inline}</p>`);
+  });
+  if (inList) out.push("</ul>");
+  return out.join("");
+}
+
 function buildPopupContent(place: Place, onDetail: () => void) {
   const placeAny = place as any;
   const wrapper = document.createElement("div");
@@ -162,7 +203,7 @@ function buildPopupContent(place: Place, onDetail: () => void) {
   wrapper.appendChild(body);
 
   const title = document.createElement("h3");
-  title.className = "text-base font-bold text-slate-900";
+  title.className = "whitespace-pre-line text-base font-bold text-slate-900";
   title.textContent = place.title || "\u0110\u1ecba \u0111i\u1ec3m";
   body.appendChild(title);
 
@@ -369,6 +410,7 @@ export default function MapView({ places }: Props) {
   const moveEndHandlerRef = useRef<((e: mapboxgl.MapboxEvent) => void) | null>(null);
   const popupStyleInjectedRef = useRef<boolean>(false);
   const animHeadMarkerRef = useRef<mapboxgl.Marker | null>(null);
+  const detailAudioRef = useRef<HTMLAudioElement | null>(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
@@ -381,15 +423,17 @@ export default function MapView({ places }: Props) {
   const [hasStarted, setHasStarted] = useState(false);
   const [countryQuery, setCountryQuery] = useState("");
   const [hoveredTab, setHoveredTab] = useState<"places" | "journey" | "quiz" | null>(null);
-  const [quizSet, setQuizSet] = useState<QuizQuestion[]>([]);
-  const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
-  const [quizSubmitted, setQuizSubmitted] = useState(false);
-  const [quizScore, setQuizScore] = useState<number | null>(null);
+  const [quizSets, setQuizSets] = useState<QuizQuestion[][]>([]);
+  const [quizAnswersBySet, setQuizAnswersBySet] = useState<Record<number, Record<string, number>>>({});
+  const [quizSubmittedBySet, setQuizSubmittedBySet] = useState<Record<number, boolean>>({});
+  const [quizScoreBySet, setQuizScoreBySet] = useState<Record<number, number>>({});
+  const [activeQuizIndex, setActiveQuizIndex] = useState(-1);
   const [reachedStepIndex, setReachedStepIndex] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(false);
   const [showAutoOptions, setShowAutoOptions] = useState(false);
   const [autoSpeed, setAutoSpeed] = useState<"auto" | "x2" | "x4" | "custom">("auto");
   const [customSpeedFactor, setCustomSpeedFactor] = useState(1);
+  const [activeStory, setActiveStory] = useState<{ title?: string; body?: string } | null>(null);
   const placeSectionRef = useRef<HTMLDivElement | null>(null);
   const journeySectionRef = useRef<HTMLDivElement | null>(null);
   const autoNextTimeoutRef = useRef<number | null>(null);
@@ -460,11 +504,12 @@ export default function MapView({ places }: Props) {
   }, []);
 
   const generateQuizSet = () => {
-    const nextSet = pickRandomItems(quizBank, 10).map(shuffleQuizOptions);
-    setQuizSet(nextSet);
-    setQuizAnswers({});
-    setQuizSubmitted(false);
-    setQuizScore(null);
+    const nextSets = Array.from({ length: 10 }, () => pickRandomItems(quizBank, 10).map(shuffleQuizOptions));
+    setQuizSets(nextSets);
+    setQuizAnswersBySet({});
+    setQuizSubmittedBySet({});
+    setQuizScoreBySet({});
+    setActiveQuizIndex(-1);
   };
 
   useEffect(() => {
@@ -474,20 +519,30 @@ export default function MapView({ places }: Props) {
   }, [activeTab, quizBank]);
 
   const handleQuizAnswer = (id: string, optionIndex: number) => {
-    if (quizSubmitted) return;
-    setQuizAnswers((prev) => ({ ...prev, [id]: optionIndex }));
+    if (activeQuizIndex < 0) return;
+    if (quizSubmittedBySet[activeQuizIndex]) return;
+    setQuizAnswersBySet((prev) => ({
+      ...prev,
+      [activeQuizIndex]: { ...(prev[activeQuizIndex] ?? {}), [id]: optionIndex },
+    }));
   };
 
   const handleQuizSubmit = () => {
-    if (quizSubmitted) return;
-    const score = quizSet.reduce((sum, question) => {
-      return sum + (quizAnswers[question.id] === question.answerIndex ? 1 : 0);
+    if (activeQuizIndex < 0) return;
+    if (quizSubmittedBySet[activeQuizIndex]) return;
+    const answers = quizAnswersBySet[activeQuizIndex] ?? {};
+    const score = displayQuizQuestions.reduce((sum, question) => {
+      return sum + (answers[question.id] === question.answerIndex ? 1 : 0);
     }, 0);
-    setQuizScore(score);
-    setQuizSubmitted(true);
+    setQuizScoreBySet((prev) => ({ ...prev, [activeQuizIndex]: score }));
+    setQuizSubmittedBySet((prev) => ({ ...prev, [activeQuizIndex]: true }));
   };
 
   const handleQuizNext = () => {
+    if (activeQuizIndex < quizSets.length - 1) {
+      setActiveQuizIndex((prev) => Math.min(prev + 1, quizSets.length - 1));
+      return;
+    }
     generateQuizSet();
   };
 
@@ -523,19 +578,27 @@ export default function MapView({ places }: Props) {
   const sidebarSections = [
     { key: "journey", label: "H\u00e0nh tr\u00ecnh", icon: "Orion_direction.svg", ref: journeySectionRef },
     { key: "places", label: "\u0110\u1ecba \u0111i\u1ec3m", icon: "Orion_geotag-pin.svg", ref: placeSectionRef },
-    { key: "quiz", label: "Tr\u1eafc nghi\u1ec7m", icon: "Orion_favorite-book.svg" },
+    { key: "quiz", label: "Tr\u1eafc nghi\u1ec7m", icon: "/question.svg" },
   ] as const;
 
   const visibleTab = hoveredTab ?? activeTab;
   const activeSection = sidebarSections.find((section) => section.key === visibleTab);
-  const sidebarMeta = visibleTab === "quiz" ? `${quizSet.length} c\u00e2u` : `${sortedPlaces.length} \u0111i\u1ec3m`;
+  const sidebarMeta = visibleTab === "quiz" ? `${quizSets.length} b\u1ed9` : `${sortedPlaces.length} \u0111i\u1ec3m`;
   const sidebarHint =
     visibleTab === "quiz"
       ? "Ch\u1ecdn \u0111\u00e1p \u00e1n r\u1ed3i b\u1ea5m Ch\u1ea5m \u0111i\u1ec3m."
       : visibleTab === "places"
         ? "Danh s\u00e1ch \u0111\u1ecba \u0111i\u1ec3m theo h\u00e0nh tr\u00ecnh."
         : "Theo d\u00f5i h\u00e0nh tr\u00ecnh theo th\u1eddi gian.";
-  const quizAnsweredCount = Object.keys(quizAnswers).length;
+  const activeQuizSet = activeQuizIndex >= 0 ? quizSets[activeQuizIndex] : [];
+  const displayQuizQuestions = activeQuizSet ?? [];
+  const activeQuizAnswers = quizAnswersBySet[activeQuizIndex] ?? {};
+  const quizSubmitted = quizSubmittedBySet[activeQuizIndex] ?? false;
+  const quizScore = quizScoreBySet[activeQuizIndex] ?? null;
+  const quizAnsweredCount = displayQuizQuestions.reduce(
+    (count, question) => (activeQuizAnswers[question.id] !== undefined ? count + 1 : count),
+    0,
+  );
 
   const routeFeatures: RouteFeature[] = useMemo(() => {
     const fc = routes as GeoJSON.FeatureCollection;
@@ -767,6 +830,7 @@ export default function MapView({ places }: Props) {
         );
         popup.setLngLat(place.coords).addTo(mapRef.current);
       }
+      setDetailPlace(place);
     };
 
     let arrivalCallback: (() => void) | null = null;
@@ -1263,6 +1327,28 @@ export default function MapView({ places }: Props) {
   }, [stepIndex]);
 
   useEffect(() => {
+    const audio = detailAudioRef.current;
+    if (!audio) return;
+    const src = (detailPlace as any)?.media?.audio;
+    if (!detailPlace || !src) {
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+      return;
+    }
+    if (audio.src !== src) {
+      audio.src = src;
+    }
+    audio.currentTime = 0;
+    const playPromise = audio.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {
+        // Autoplay can be blocked by the browser; ignore silently.
+      });
+    }
+  }, [detailPlace]);
+
+  useEffect(() => {
     isAutoPlayRef.current = isAutoPlay;
     if (!isAutoPlay && autoNextTimeoutRef.current !== null) {
       window.clearTimeout(autoNextTimeoutRef.current);
@@ -1503,84 +1589,138 @@ export default function MapView({ places }: Props) {
                   <div className="relative z-10 min-h-0 flex-1 overflow-y-auto bg-white/50 backdrop-blur-xl">
                     {visibleTab === "quiz" ? (
                       <div className="space-y-4 px-3 py-4">
-                        {quizSet.length === 0 ? (
+                        {quizSets.length === 0 ? (
                           <p className="rounded-xl border border-white/40 bg-white/70 px-3 py-4 text-sm text-slate-600">{"Ch\u01b0a c\u00f3 c\u00e2u h\u1ecfi tr\u1eafc nghi\u1ec7m. H\u00e3y th\u00eam c\u00e2u h\u1ecfi v\u00e0o src/data/quiz.json."}</p>
                         ) : (
                           <div className="space-y-3">
-                            {quizSet.map((question, index) => {
-                              const selectedIndex = quizAnswers[question.id];
-                              const isCorrect = selectedIndex === question.answerIndex;
-                              return (
-                                <div
-                                  key={question.id}
-                                  className="rounded-xl border border-white/40 bg-white/70 p-3 shadow-sm"
-                                >
-                                  <p className="text-sm font-semibold text-slate-900">{`${index + 1}. ${question.question}`}</p>
-                                  <div className="mt-2 space-y-2">
-                                    {question.options.map((option, optionIndex) => {
-                                      const isSelected = selectedIndex === optionIndex;
-                                      const showCorrect = quizSubmitted && question.answerIndex === optionIndex;
-                                      const showWrong = quizSubmitted && isSelected && question.answerIndex !== optionIndex;
-                                      return (
-                                        <button
-                                          key={`${question.id}-${optionIndex}`}
-                                          type="button"
-                                          onClick={() => handleQuizAnswer(question.id, optionIndex)}
-                                          className={`flex w-full items-start gap-2 rounded-lg border px-3 py-2 text-left text-sm transition ${
-                                            showCorrect
-                                              ? "border-emerald-400 bg-emerald-50 text-emerald-800"
-                                              : showWrong
-                                                ? "border-rose-400 bg-rose-50 text-rose-700"
-                                                : isSelected
-                                                  ? "border-[#991B1B]/50 bg-[#991B1B]/10 text-[#991B1B]"
-                                                  : "border-white/60 bg-white/70 text-slate-700 hover:bg-white"
-                                          }`}
-                                        >
-                                          <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-current text-[11px] font-semibold">
-                                            {String.fromCharCode(65 + optionIndex)}
-                                          </span>
-                                          <span>{option}</span>
-                                        </button>
-                                      );
-                                    })}
-                                  </div>
-                                  {quizSubmitted ? (
-                                    <p
-                                      className={`mt-2 text-xs font-semibold ${
-                                        isCorrect ? "text-emerald-700" : "text-rose-700"
-                                      }`}
-                                    >
-                                      {selectedIndex === undefined ? "Ch\u01b0a ch\u1ecdn \u0111\u00e1p \u00e1n" : isCorrect ? "\u0110\u00fang" : "Sai"}
-                                    </p>
-                                  ) : null}
-                                </div>
-                              );
-                            })}
+                            <div className="rounded-xl border border-white/40 bg-white/70 p-3 shadow-sm">
+                              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                                {"B\u1ed9 c\u00e2u h\u1ecfi"}
+                              </p>
+                              <div className="mt-2 space-y-2">
+                                {quizSets.map((setQuestions, index) => {
+                                  const isActive = index === activeQuizIndex;
+                                  const isDone = quizSubmittedBySet[index] === true;
+                                  return (
+                                    <div key={`quiz-set-${index}`} className="rounded-lg">
+                                      <button
+                                        type="button"
+                                        onClick={() => setActiveQuizIndex(index)}
+                                        className={`w-full rounded-lg border px-3 py-2 text-left text-sm transition ${
+                                          isActive
+                                            ? "border-[#991B1B]/50 bg-[#991B1B]/10 text-[#991B1B]"
+                                            : isDone
+                                              ? "border-emerald-300 bg-emerald-50 text-emerald-800"
+                                              : "border-white/60 bg-white/80 text-slate-700 hover:bg-white"
+                                        }`}
+                                      >
+                                        <div className="flex items-center justify-between gap-2">
+                                          <p className="text-xs font-semibold">{`B\u00e0i ${index + 1}`}</p>
+                                          {isDone ? (
+                                            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-700">
+                                              {"\u0110\u00e3 l\u00e0m"}
+                                            </span>
+                                          ) : null}
+                                        </div>
+                                      </button>
+                                      {isActive ? (
+                                        <div className="mt-2 space-y-3 rounded-lg border border-white/50 bg-white/70 p-3 shadow-sm">
+                                          {setQuestions.map((question, qIndex) => {
+                                            const selectedIndex = activeQuizAnswers[question.id];
+                                            const isCorrect = selectedIndex === question.answerIndex;
+                                            return (
+                                              <div key={question.id} className="rounded-xl border border-white/40 bg-white/70 p-3 shadow-sm">
+                                                <p className="text-sm font-semibold text-slate-900">{`${qIndex + 1}. ${question.question}`}</p>
+                                                <div className="mt-2 space-y-2">
+                                                  {question.options.map((option, optionIndex) => {
+                                                    const isSelected = selectedIndex === optionIndex;
+                                                    const showCorrect = quizSubmitted && question.answerIndex === optionIndex;
+                                                    const showWrong =
+                                                      quizSubmitted && isSelected && question.answerIndex !== optionIndex;
+                                                    return (
+                                                      <button
+                                                        key={`${question.id}-${optionIndex}`}
+                                                        type="button"
+                                                        onClick={() => handleQuizAnswer(question.id, optionIndex)}
+                                                        className={`flex w-full items-start gap-2 rounded-lg border px-3 py-2 text-left text-sm transition ${
+                                                          showCorrect
+                                                            ? "border-emerald-400 bg-emerald-50 text-emerald-800"
+                                                            : showWrong
+                                                              ? "border-rose-400 bg-rose-50 text-rose-700"
+                                                              : isSelected
+                                                                ? "border-[#991B1B]/50 bg-[#991B1B]/10 text-[#991B1B]"
+                                                                : "border-white/60 bg-white/70 text-slate-700 hover:bg-white"
+                                                        }`}
+                                                      >
+                                                        <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-current text-[11px] font-semibold">
+                                                          {String.fromCharCode(65 + optionIndex)}
+                                                        </span>
+                                                        <span>{option}</span>
+                                                      </button>
+                                                    );
+                                                  })}
+                                                </div>
+                                                {quizSubmitted ? (
+                                                  <p
+                                                    className={`mt-2 text-xs font-semibold ${
+                                                      isCorrect ? "text-emerald-700" : "text-rose-700"
+                                                    }`}
+                                                  >
+                                                    {selectedIndex === undefined
+                                                      ? "Ch\u01b0a ch\u1ecdn \u0111\u00e1p \u00e1n"
+                                                      : isCorrect
+                                                        ? "\u0110\u00fang"
+                                                        : "Sai"}
+                                                  </p>
+                                                ) : null}
+                                              </div>
+                                            );
+                                          })}
+                                          <div className="flex flex-wrap items-center justify-between gap-2">
+                                            <p className="text-xs font-semibold text-slate-600">
+                                              {"\u0110\u00e3 ch\u1ecdn "}
+                                              {quizAnsweredCount}/{displayQuizQuestions.length}
+                                              {" c\u00e2u"}
+                                            </p>
+                                            <div className="flex items-center gap-2">
+                                              <button
+                                                type="button"
+                                                onClick={handleQuizSubmit}
+                                                disabled={displayQuizQuestions.length === 0}
+                                                className="rounded-md border border-[#991B1B]/30 bg-[#991B1B] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#7F1D1D] disabled:cursor-not-allowed disabled:opacity-50"
+                                              >
+                                                {"Ch\u1ea5m \u0111i\u1ec3m"}
+                                              </button>
+                                              <button
+                                                type="button"
+                                                onClick={handleQuizNext}
+                                                disabled={displayQuizQuestions.length === 0}
+                                                className="rounded-md border border-white/60 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50"
+                                              >
+                                                {"K\u1ebf ti\u1ebfp"}
+                                              </button>
+                                            </div>
+                                          </div>
+                                          {quizSubmitted ? (
+                                            <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">
+                                              {"K\u1ebft qu\u1ea3: "}
+                                              {quizScore ?? 0}/{displayQuizQuestions.length}
+                                            </div>
+                                          ) : null}
+                                        </div>
+                                      ) : null}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
                           </div>
                         )}
 
-                        <div className="flex flex-wrap items-center justify-between gap-2">
-                          <p className="text-xs font-semibold text-slate-600">{"\u0110\u00e3 ch\u1ecdn "}{quizAnsweredCount}/{quizSet.length}{" c\u00e2u"}</p>
-                          <div className="flex items-center gap-2">
-                            <button
-                              type="button"
-                              onClick={handleQuizSubmit}
-                              className="rounded-md border border-[#991B1B]/30 bg-[#991B1B] px-3 py-2 text-xs font-semibold text-white shadow-sm transition hover:bg-[#7F1D1D] disabled:cursor-not-allowed disabled:opacity-50"
-                            >
-                              {"Ch\u1ea5m \u0111i\u1ec3m"}
-                            </button>
-                            <button
-                              type="button"
-                              onClick={handleQuizNext}
-                              className="rounded-md border border-white/60 bg-white/80 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50"
-                            >
-                              {"K\u1ebf ti\u1ebfp"}
-                            </button>
-                          </div>
-                        </div>
-
-                        {quizSubmitted ? (
-                          <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">{"K\u1ebft qu\u1ea3: "}{quizScore ?? 0}/{quizSet.length}</div>
+                        {activeQuizIndex < 0 ? (
+                          <p className="rounded-xl border border-white/40 bg-white/70 px-3 py-3 text-sm text-slate-600">
+                            {"Ch\u1ecdn m\u1ed9t b\u00e0i \u0111\u1ec3 b\u1eaft \u0111\u1ea7u."}
+                          </p>
                         ) : null}
                       </div>
                     ) : sortedPlaces.length === 0 ? (
@@ -1632,7 +1772,9 @@ export default function MapView({ places }: Props) {
                                       {displayIndex}
                                     </div>
                                     <div className="space-y-1">
-                                      <p className="text-sm font-semibold text-slate-900">{place.title}</p>
+                                      <p className="whitespace-pre-line text-sm font-semibold text-slate-900">
+                                        {place.title}
+                                      </p>
                                       <p className="text-xs text-slate-600">
                                         {[place.city, place.country].filter(Boolean).join(", ") || "\u0110\u1ecba \u0111i\u1ec3m"}
                                       </p>
@@ -1678,7 +1820,9 @@ export default function MapView({ places }: Props) {
                                       {displayIndex}
                                     </div>
                                     <div className="space-y-1">
-                                      <p className="text-sm font-semibold text-slate-900">{place.title}</p>
+                                      <p className="whitespace-pre-line text-sm font-semibold text-slate-900">
+                                        {place.title}
+                                      </p>
                                       <p className="text-xs text-slate-600">
                                         {[place.city, place.country].filter(Boolean).join(", ") || "\u0110\u1ecba \u0111i\u1ec3m"}
                                       </p>
@@ -1774,11 +1918,14 @@ export default function MapView({ places }: Props) {
         {/* Detail sidebar */}
         {detailPlace ? (
           <div className="pointer-events-auto absolute right-3 top-14 z-30 flex h-[83vh] w-[440px] max-w-full flex-col overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
+            <audio ref={detailAudioRef} className="hidden" preload="auto" />
             <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
             <div className="relative z-10 flex items-center justify-between border-b border-white/30 bg-white/45 px-4 py-3 backdrop-blur-xl">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-[#991B1B]">Thông tin</p>
-                <h3 className="text-lg font-semibold text-slate-900 line-clamp-2">{detailPlace.title}</h3>
+                <h3 className="whitespace-pre-line text-lg font-semibold text-slate-900 line-clamp-2">
+                  {detailPlace.title}
+                </h3>
               </div>
               <button
                 type="button"
@@ -1846,9 +1993,12 @@ export default function MapView({ places }: Props) {
               <div className="space-y-2 text-sm text-slate-700">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Nội dung</p>
                 {(detailPlace as any).detailMarkdown ? (
-                  <div className="rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-800 whitespace-pre-line text-justify">
-                    {(detailPlace as any).detailMarkdown}
-                  </div>
+                  <div
+                    className="rounded-md bg-slate-50 px-3 py-2 text-sm text-slate-800 text-justify"
+                    dangerouslySetInnerHTML={{
+                      __html: renderSimpleMarkdown((detailPlace as any).detailMarkdown),
+                    }}
+                  />
                 ) : null}
                 {detailPlace.levelTexts?.secondary ? (
                   <div className="space-y-1 rounded-md bg-slate-50 px-3 py-2">
@@ -1863,6 +2013,26 @@ export default function MapView({ places }: Props) {
                   </div>
                 ) : null}
               </div>
+
+              {(detailPlace as any).stories?.length ? (
+                <div className="space-y-2 text-sm text-slate-700">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    {"C\u00e2u chuy\u1ec7n"}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {(detailPlace as any).stories.map((story: any, idx: number) => (
+                      <button
+                        key={`story-${idx}`}
+                        type="button"
+                        onClick={() => setActiveStory(story)}
+                        className="rounded-full border border-[#991B1B]/30 bg-[#991B1B]/10 px-3 py-1 text-xs font-semibold text-[#991B1B] shadow-sm transition hover:bg-[#991B1B]/20"
+                      >
+                        {story?.title || `C\u00e2u chuy\u1ec7n ${idx + 1}`}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
 
               {(detailPlace as any).media?.videos?.length ? (
                 <div className="space-y-2 text-sm text-slate-700">
@@ -1928,6 +2098,67 @@ export default function MapView({ places }: Props) {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+        ) : null}
+
+        {activeStory ? (
+          <div className="pointer-events-auto absolute inset-0 z-40 flex items-center justify-center px-4 py-6">
+            <button
+              type="button"
+              className="absolute inset-0 bg-slate-900/45 backdrop-blur-sm"
+              onClick={() => setActiveStory(null)}
+              aria-label={"\u0110\u00f3ng c\u00e2u chuy\u1ec7n"}
+            />
+            <div className="relative z-10 w-full max-w-3xl overflow-hidden rounded-3xl border border-white/30 bg-white/90 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
+              <div className="relative flex items-center justify-between border-b border-white/30 bg-[#991B1B]/90 px-5 py-4 text-white">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
+                    {"C\u00e2u chuy\u1ec7n"}
+                  </p>
+                  <h3 className="text-xl font-semibold">{activeStory.title || "\u1ea8n t\u00edch l\u1ecbch s\u1eed"}</h3>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setActiveStory(null)}
+                  className="rounded-full border border-white/40 bg-white/15 px-3 py-1 text-sm font-semibold text-white hover:bg-white/25"
+                >
+                  {"\u0110\u00f3ng"}
+                </button>
+              </div>
+              <div className="max-h-[70vh] overflow-y-auto px-6 py-5">
+                {activeStory.imageUrl ? (
+                  <div className="mb-4 overflow-hidden rounded-2xl border border-white/40 bg-white/80 shadow-sm">
+                    {isImageUrl(activeStory.imageUrl) ? (
+                      <img
+                        src={activeStory.imageUrl}
+                        alt={activeStory.imageLabel || activeStory.title || "\u0110\u1ecba \u0111i\u1ec3m"}
+                        className="h-auto w-full"
+                      />
+                    ) : (
+                      <a
+                        href={activeStory.imageUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-5 py-4 text-sm font-semibold text-[#991B1B] underline underline-offset-2"
+                      >
+                        {activeStory.imageLabel || activeStory.imageUrl}
+                      </a>
+                    )}
+                    {activeStory.imageLabel ? (
+                      <div className="border-t border-white/40 bg-white/80 px-4 py-2 text-xs font-semibold text-slate-600">
+                        {activeStory.imageLabel}
+                      </div>
+                    ) : null}
+                  </div>
+                ) : null}
+                <div
+                  className="rounded-2xl border border-white/40 bg-white/80 px-5 py-4 text-base leading-relaxed text-slate-800 shadow-sm"
+                  dangerouslySetInnerHTML={{
+                    __html: renderSimpleMarkdown(activeStory.body || "\u0110ang c\u1eadp nh\u1eadt c\u00e2u chuy\u1ec7n..."),
+                  }}
+                />
               </div>
             </div>
           </div>

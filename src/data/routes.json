@@ -3611,7 +3611,7 @@
         "fromSlug": "19121225-new-york-brooklyn-den",
         "toSlug": "19130101-boston-lam-phu-bep",
         "order": "29",
-        "mode": "sea"
+        "mode": "land"
       },
       "geometry": {
         "type": "LineString",
@@ -5067,7 +5067,7 @@
         "fromSlug": "19241001-vladivostok-nga",
         "toSlug": "19241111-quang-chau-den",
         "order": 34.5,
-        "mode": "train"
+        "mode": "sea"
       },
       "geometry": {
         "type": "LineString",

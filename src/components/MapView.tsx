@@ -433,7 +433,12 @@ export default function MapView({ places }: Props) {
   const [showAutoOptions, setShowAutoOptions] = useState(false);
   const [autoSpeed, setAutoSpeed] = useState<"auto" | "x2" | "x4" | "custom">("auto");
   const [customSpeedFactor, setCustomSpeedFactor] = useState(1);
-  const [activeStory, setActiveStory] = useState<{ title?: string; body?: string } | null>(null);
+  const [activeStory, setActiveStory] = useState<{
+    title?: string;
+    body?: string;
+    imageUrl?: string;
+    imageLabel?: string;
+  } | null>(null);
   const placeSectionRef = useRef<HTMLDivElement | null>(null);
   const journeySectionRef = useRef<HTMLDivElement | null>(null);
   const autoNextTimeoutRef = useRef<number | null>(null);

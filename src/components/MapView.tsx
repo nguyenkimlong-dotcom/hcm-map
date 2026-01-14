@@ -90,6 +90,12 @@ function normalizeCountryName(value: string) {
 function collectCountryCodes(list: Place[]) {
   const codes = new Set<string>();
   list.forEach((place) => {
+    const placeAny = place as any;
+    const rawCode = typeof placeAny.countryCode === "string" ? placeAny.countryCode.trim() : "";
+    if (rawCode && /^[a-zA-Z]{3}$/.test(rawCode)) {
+      codes.add(rawCode.toUpperCase());
+      return;
+    }
     if (!place.country) return;
     const key = normalizeCountryName(place.country);
     const code = COUNTRY_ISO_MAP[key];
@@ -221,7 +227,10 @@ function buildPopupContent(place: Place, onDetail: () => void) {
     const fallbackRange =
       place.dateStart && place.dateEnd ? `${place.dateStart} -> ${place.dateEnd}` : place.dateStart || place.dateEnd || "\u0110\u1ecba \u0111i\u1ec3m";
     pill.textContent = place.periodLabel || fallbackRange;
-    body.appendChild(pill);
+    const dateWrap = document.createElement("div");
+    dateWrap.className = "mt-1";
+    dateWrap.appendChild(pill);
+    body.appendChild(dateWrap);
   }
 
   const customPopup = typeof placeAny.popup === "string" ? placeAny.popup : undefined;
@@ -255,7 +264,7 @@ function buildPopupContent(place: Place, onDetail: () => void) {
     const detail = document.createElement("button");
     detail.type = "button";
     detail.className =
-      "mt-1 inline-flex items-center gap-2 rounded-md bg-[#991B1B]/90 px-3 py-2 text-sm font-semibold text-white shadow-sm shadow-black/10 backdrop-blur hover:bg-[#7F1D1D]";
+      "mt-2 flex w-full items-center justify-center gap-2 rounded-md bg-[#991B1B]/90 px-3 py-2 text-sm font-semibold text-white shadow-sm shadow-black/10 backdrop-blur hover:bg-[#7F1D1D]";
     detail.textContent = "Xem chi tiết";
     detail.onclick = (e) => {
       e.stopPropagation();
@@ -411,6 +420,7 @@ export default function MapView({ places }: Props) {
   const popupStyleInjectedRef = useRef<boolean>(false);
   const animHeadMarkerRef = useRef<mapboxgl.Marker | null>(null);
   const detailAudioRef = useRef<HTMLAudioElement | null>(null);
+  const activePopupRef = useRef<mapboxgl.Popup | null>(null);
 
   const [mapLoaded, setMapLoaded] = useState(false);
   const [activePlaceId, setActivePlaceId] = useState<string | null>(null);
@@ -812,6 +822,31 @@ export default function MapView({ places }: Props) {
     return routeFeatures.filter((f, idx) => keys.has(segmentKeyForFeature(f, idx)));
   };
 
+  const markProgressUpTo = (targetIndex: number, forceStarted = false) => {
+    if (sortedPlaces.length < 2) return;
+    const maxIndex = Math.max(0, Math.min(targetIndex, sortedPlaces.length - 1));
+    for (let i = 0; i < maxIndex; i += 1) {
+      const from = sortedPlaces[i];
+      const to = sortedPlaces[i + 1];
+      if (!from?.slug || !to?.slug) continue;
+      const segKey = `${from.slug}->${to.slug}`;
+      const segFeature = routeByPairRef.current.get(segKey);
+      if (!segFeature) continue;
+      const featureIndex = routeFeatures.indexOf(segFeature);
+      if (featureIndex < 0) continue;
+      const progressKey = segmentKeyForFeature(segFeature, featureIndex);
+      completedSegmentsRef.current.add(progressKey);
+    }
+    const progressFeatures = buildProgressFeatures(completedSegmentsRef.current);
+    setRoutesProgressData(progressFeatures);
+    const showProgress = hasStarted || forceStarted;
+    const baseFeatures = showProgress ? progressFeatures : routeFeatures;
+    setRoutesBaseData(baseFeatures);
+    if (showProgress) {
+      setReachedStepIndex((prev) => Math.max(prev, maxIndex));
+    }
+  };
+
   const applyStep = (nextIndex: number, prevIndex?: number, options?: { animate?: boolean; forceZoom?: boolean }) => {
     const animate = options?.animate !== false;
     const forceZoom = options?.forceZoom === true;
@@ -825,15 +860,21 @@ export default function MapView({ places }: Props) {
     const map = mapRef.current;
     const showPopup = () => {
       if (!mapRef.current) return;
+      if (activePopupRef.current) {
+        activePopupRef.current.remove();
+        activePopupRef.current = null;
+      }
       const entry = markerMapRef.current[key];
       if (entry) {
         entry.popup.setDOMContent(buildPopupContent(entry.place, () => setDetailPlace(entry.place)));
         entry.popup.setLngLat(entry.place.coords).addTo(mapRef.current);
+        activePopupRef.current = entry.popup;
       } else {
         const popup = new mapboxgl.Popup({ offset: 12, closeButton: true, className: "popup-clean" }).setDOMContent(
           buildPopupContent(place, () => setDetailPlace(place)),
         );
         popup.setLngLat(place.coords).addTo(mapRef.current);
+        activePopupRef.current = popup;
       }
       setDetailPlace(place);
     };
@@ -842,6 +883,10 @@ export default function MapView({ places }: Props) {
 
     if (map) {
       Object.values(markerMapRef.current).forEach(({ popup }) => popup.remove());
+      if (activePopupRef.current) {
+        activePopupRef.current.remove();
+        activePopupRef.current = null;
+      }
 
       if (moveTimeoutRef.current !== null) {
         window.clearTimeout(moveTimeoutRef.current);
@@ -1046,6 +1091,12 @@ export default function MapView({ places }: Props) {
   const setStep = (nextIndex: number) => {
     const clamped = Math.max(0, Math.min(nextIndex, Math.max(0, sortedPlaces.length - 1)));
     const prev = stepIndex;
+    if (!hasStarted) {
+      setHasStarted(true);
+    }
+    if (clamped > prev + 1) {
+      markProgressUpTo(clamped, true);
+    }
     if (clamped !== stepIndex) {
       setStepIndex(clamped);
     }

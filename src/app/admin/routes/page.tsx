@@ -148,6 +148,20 @@ export default function RoutesAdminPage() {
     });
   };
 
+  const handleRemove = () => {
+    if (selectedIndex < 0) return;
+    const target = routes[selectedIndex];
+    const name = target?.properties?.label || target?.properties?.fromSlug || `Route ${selectedIndex + 1}`;
+    if (!window.confirm(`Remove ${name}?`)) return;
+    setRoutes((prev) => {
+      const next = [...prev];
+      next.splice(selectedIndex, 1);
+      const nextIndex = Math.min(selectedIndex, next.length - 1);
+      setSelectedIndex(nextIndex >= 0 ? nextIndex : -1);
+      return next;
+    });
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 px-6 py-8">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
@@ -175,6 +189,14 @@ export default function RoutesAdminPage() {
               className="rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-100"
             >
               Add route
+            </button>
+            <button
+              type="button"
+              onClick={handleRemove}
+              disabled={selectedIndex < 0}
+              className="rounded-md border border-rose-200 bg-white px-3 py-2 text-sm font-semibold text-rose-700 shadow-sm hover:bg-rose-50 disabled:opacity-60"
+            >
+              Remove route
             </button>
             <button
               type="button"

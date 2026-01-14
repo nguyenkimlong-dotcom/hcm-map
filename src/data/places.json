@@ -1,28 +1,9 @@
 [
   {
-    "title": "Đến Singapore nhưng bị cảnh sát bắt giữ, buộc quay trở lại Hồng Kông.",
-    "coords": [
-      0,
-      0
-    ],
-    "periodLabel": "06/01/1933",
-    "detailMarkdown": "",
-    "city": "Hồng Kông",
-    "dateStart": "1933-01-06",
-    "media": {
-      "videos": [
-        {
-          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
-          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
-        }
-      ]
-    }
-  },
-  {
     "title": "Bị cảnh sát Anh bắt tại số nhà 186 phố Tam Kung ",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "periodLabel": "06/06/1931",
     "detailMarkdown": "Ngày 6/6/1931, Người bị cảnh sát Anh bắt tại số nhà 186 phố Tam Kung (Cửu Long) với tên Tống Văn Sơ.",
@@ -38,15 +19,18 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/661931.mp3"
     },
-    "dateStart": "1931-06-06"
+    "dateStart": "1931-06-06",
+    "id": "place-mkcet2xl-w74o",
+    "slug": "bi-canh-sat-anh-bat-tai-so-nha-186-pho-tam-kung"
   },
   {
     "title": "Đến Bangkok. Sau đó đến hoạt động tại Phichit, U Đon, Sakon Nakhon.",
     "coords": [
-      0,
-      0
+      100.47557767407233,
+      13.726981799199024
     ],
     "periodLabel": "07/1928",
     "detailMarkdown": "Vào tháng 7/1928, Nguyễn Ái Quốc đến Thái Lan (Xiêm), hoạt động tại Bangkok rồi di chuyển đến các địa phương như Phichit, Udon Thani và Sakon Nakhon (Na Khon Phanom) để gây dựng phong trào cách mạng, xây dựng cơ sở, tập hợp kiều bào Việt Nam, dạy tiếng Việt và tiếng Thái, chuẩn bị cho sự nghiệp giải phóng dân tộc, để lại dấu ấn sâu đậm với nhiều khu tưởng niệm tại Thái Lan.\nGiai đoạn 1928-1929, Nguyễn Ái Quốc (bí danh Thầu Chín) hoạt động mạnh mẽ tại Xiêm (Thái Lan), đặc biệt ở vùng Đông Bắc, vận động Việt kiều đoàn kết, thành lập tổ chức cách mạng, mở lớp dạy chữ (quốc ngữ, tiếng Thái), viết báo (như \"Thân Ái\", dù \"Le Paria\" nổi tiếng hơn), dịch tài liệu lý luận, và xây dựng cơ sở cách mạng, củng cố phong trào, chuẩn bị lực lượng cho cách mạng Việt Nam.",
@@ -62,9 +46,13 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/71928.mp3"
     },
-    "dateStart": "1928-07-01"
+    "dateStart": "1928-07-01",
+    "id": "place-mkcet2xl-czrt",
+    "slug": "den-bangkok-sau-do-den-hoat-dong-tai-phichit-u-don-sakon-nakhon",
+    "country": "Thái Lan"
   },
   {
     "id": "hcm-001",
@@ -105,7 +93,7 @@
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ],
-      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3"
+      "audio": "/media/uploads/audio/5611.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch.",
     "stories": [
@@ -144,7 +132,7 @@
           "url": "/media/uploads/images/861911.jpg"
         }
       ],
-      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3",
+      "audio": "/media/uploads/audio/8611.mp3",
       "videos": [
         {
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
@@ -189,7 +177,7 @@
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
       ],
-      "audio": "/media/uploads/audio/ngay_05061911_nguoi_thanh_nien_yeu_nuoc_nguyen_685168c2-2178-45a3-a753-d01c389f1472.mp3"
+      "audio": "/media/uploads/audio/14611.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -227,7 +215,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/30611.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -265,7 +254,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/6711.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -303,7 +293,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/15711.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -341,7 +332,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/1912-1913.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -979,7 +971,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/29._Dat_chan_den_my.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1016,7 +1009,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/kh_ch_s_n_Omni_Parker_House.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1116,7 +1110,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/1912-caribe.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1233,7 +1228,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/1913-1917.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1270,15 +1266,16 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/cuoi_1917.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
   {
     "title": "Tham gia Đảng Xã hội Pháp. Lập \"Hội những người Việt Nam yêu nước\". Gửi \"Bản yêu sách của nhân dân An Nam\" tới Hội nghị Versailles (1919)",
     "coords": [
-      48.8566,
-      2.3522
+      2.3522,
+      48.8566
     ],
     "city": "Paris",
     "country": "France",
@@ -1302,14 +1299,17 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/1919.mp3"
+    },
+    "id": "place-mkcet2xm-erwi",
+    "slug": "tham-gia-dang-xa-hoi-phap-lap-hoi-nhung-nguoi-viet-nam-yeu-nuoc-gui-ban-yeu-sach-cua-nhan-dan-an-nam-toi-hoi-nghi-versailles-1919"
   },
   {
     "title": "Dự Đại hội Tours. Bỏ phiếu tán thành Quốc tế III. Tham gia sáng lập Đảng Cộng sản Pháp.",
     "coords": [
-      48.8566,
-      2.3522
+      2.3522,
+      48.8566
     ],
     "city": "Paris",
     "country": "France",
@@ -1331,19 +1331,22 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=S44FeJUMZ3E"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/121920.mp3"
+    },
+    "id": "place-mkcet2xm-4h50",
+    "slug": "du-dai-hoi-tours-bo-phieu-tan-thanh-quoc-te-iii-tham-gia-sang-lap-dang-cong-san-phap"
   },
   {
     "title": "Đọc \"Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin. Tìm thấy con đường cứu nước",
     "coords": [
-      48.8566,
-      2.3522
+      2.3522,
+      48.8566
     ],
     "city": "Paris",
     "country": "France",
     "periodLabel": "1920-7",
-    "dateStart": "1920-7",
+    "dateStart": "1920-07",
     "detailMarkdown": "Tháng 7/1920 tại Paris, khi Nguyễn Ái Quốc đọc \"Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin trên báo L'Humanité, là bước ngoặt lịch sử, soi đường cho Người tìm thấy con đường cách mạng vô sản, giúp giải quyết khủng hoảng bế tắc về đường lối cứu nước, từ đó Người nhận ra con đường độc lập dân tộc gắn liền với cách mạng thế giới và trở thành người Cộng sản Việt Nam đầu tiên.",
     "media": {
       "images": [
@@ -1361,14 +1364,17 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/71920.mp3"
+    },
+    "id": "place-mkcet2xm-vzmy",
+    "slug": "doc-so-thao-lan-thu-nhat-nhung-luan-cuong-ve-van-de-dan-toc-va-van-de-thuoc-dia-cua-lenin-tim-thay-con-duong-cuu-nuoc"
   },
   {
     "title": "Sáng lập báo Le Paria (Người cùng khổ)",
     "coords": [
-      48.8566,
-      2.3522
+      2.3522,
+      48.8566
     ],
     "detailMarkdown": "Vào tháng 4/1922 tại Paris, Nguyễn Ái Quốc đã cùng các đồng chí sáng lập tờ báo Le Paria (Người cùng khổ), cơ quan ngôn luận của Hội Liên hiệp Thuộc địa, nhằm vạch trần chủ nghĩa thực dân, kêu gọi đoàn kết các dân tộc bị áp bức để đấu tranh giải phóng, với số đầu tiên ra ngày 1/4/1922, trở thành tiếng nói quan trọng cho phong trào giải phóng dân tộc.",
     "media": {
@@ -1387,20 +1393,23 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=S44FeJUMZ3E"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/41922.mp3"
     },
     "country": "France",
     "city": "Paris",
     "periodLabel": "4/1922",
-    "dateStart": "1922-4-1"
+    "dateStart": "1922-04-1",
+    "id": "place-mkcet2xm-u21v",
+    "slug": "sang-lap-bao-le-paria-nguoi-cung-kho"
   },
   {
     "title": "Học ngắn hạn tại Đại học Phương Đông. Viết bài cho báo Sự thật (Pravda), Tạp chí Thư tín Quốc tế. Hoàn thành tác phẩm \"Bản án chế độ thực dân Pháp\".",
     "coords": [
-      48.3335559999,
-      19.5636334
+      37.6173,
+      55.7558
     ],
-    "dateStart": "1923-1",
+    "dateStart": "1923-07",
     "dateEnd": "",
     "detailMarkdown": "Giai đoạn 1923-1924 tại Moscow, Nguyễn Ái Quốc (Hồ Chí Minh) đã học tập ngắn hạn, viết nhiều bài báo sắc sảo tố cáo thực dân Pháp cho báo chí quốc tế và hoàn thành tác phẩm \"Bản án chế độ thực dân Pháp\" (xuất bản 1925), tố cáo tội ác của Pháp ở Đông Dương, khẳng định con đường cách mạng giải phóng dân tộc.",
     "city": "Moskva",
@@ -1421,9 +1430,12 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/1923-1924.mp3"
     },
-    "periodLabel": "1923 - 1924"
+    "periodLabel": "1923 - 1924",
+    "id": "place-mkcet2xm-2gdu",
+    "slug": "hoc-ngan-han-tai-dai-hoc-phuong-dong-viet-bai-cho-bao-su-that-pravda-tap-chi-thu-tin-quoc-te-hoan-thanh-tac-pham-ban-an-che-do-thuc-dan-phap"
   },
   {
     "id": "hcm-013",
@@ -1458,46 +1470,10 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/13061923.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
-  },
-  {
-    "id": "hcm-013a",
-    "slug": "19230620-amsterdam-ha-lan",
-    "title": "Amsterdam (Hà Lan) - Ghé cảng",
-    "country": "Hà Lan",
-    "city": "Amsterdam",
-    "coords": [
-      4.9041,
-      52.3676
-    ],
-    "dateStart": "1923-06-20",
-    "dateEnd": "1923-06-20",
-    "periodLabel": "20/06/1923",
-    "levelTexts": {
-      "primary": "Ghé Amsterdam trên hành trình rời Hamburg tiến về Nga."
-    },
-    "sources": [
-      "https://hcmcpv.org.vn/tin-tuc/hanh-trinh-di-tim-hinh-cua-nuoc-1491878832",
-      "https://en.wikipedia.org/wiki/Ho_Chi_Minh"
-    ],
-    "detailMarkdown": "Tàu ghé Amsterdam, Hà Lan trên hành trình rời Hamburg tiến về Liên Xô.",
-    "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch.",
-    "media": {
-      "images": [
-        {
-          "label": "",
-          "url": "/media/uploads/images/T_u_gh__Amsterdam.jpg"
-        }
-      ],
-      "videos": [
-        {
-          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
-          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
-        }
-      ]
-    }
   },
   {
     "id": "hcm-014",
@@ -1536,7 +1512,8 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/3061923.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1577,7 +1554,8 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/101923.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1618,7 +1596,8 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/61924.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1655,7 +1634,8 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=351I2G4Nr10"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/101924.mp3"
     }
   },
   {
@@ -1691,7 +1671,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/111924.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1703,7 +1684,7 @@
     ],
     "detailMarkdown": "Trong giai đoạn 1925-1927 tại Quảng Châu, Nguyễn Ái Quốc đã mở các lớp huấn luyện chính trị cho thanh niên yêu nước Việt Nam tại số 13 và 13/1 đường Văn Minh, giảng dạy về cách mạng thế giới và Việt Nam, đồng thời gửi học viên ưu tú sang Trường Quân sự Hoàng Phố (Whampoa) để đào tạo quân sự, nhằm xây dựng lực lượng nòng cốt cho cách mạng Việt Nam, đây là cơ sở hình thành Hội Việt Nam Cách mạng Thanh niên.",
     "periodLabel": "1925 - 1927",
-    "dateStart": "1925-1",
+    "dateStart": "1925-01",
     "dateEnd": "1925 - 1927",
     "country": "Trung Quốc",
     "city": "Quảng Châu",
@@ -1723,8 +1704,11 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/1925-1927.mp3"
+    },
+    "id": "place-mkcet2xm-axvs",
+    "slug": "mo-lop-huan-luyen-chinh-tri-gui-hoc-vien-sang-truong-quan-su-hoang-pho"
   },
   {
     "title": "Thành lập Hội Việt Nam Cách mạng Thanh niên",
@@ -1762,14 +1746,17 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/61925.mp3"
+    },
+    "id": "place-mkcet2xm-ja8d",
+    "slug": "thanh-lap-hoi-viet-nam-cach-mang-thanh-nien"
   },
   {
     "title": "Đi đường vòng qua Liên Xô (Vladivostok - Moskva - Leningrad) rồi trở lại Paris.",
     "coords": [
-      0,
-      0
+      2.3522,
+      48.8566
     ],
     "city": "Paris",
     "detailMarkdown": "Tháng 11/1927, Người đi đường vòng qua Liên Xô (Vladivostok - Moskva - Leningrad) rồi trở lại Paris.",
@@ -1785,10 +1772,13 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/111927.mp3"
     },
     "periodLabel": "11/1927",
-    "dateStart": "1927-11-1"
+    "dateStart": "1927-11-1",
+    "id": "place-mkcet2xm-j56b",
+    "slug": "di-duong-vong-qua-lien-xo-vladivostok-moskva-leningrad-roi-tro-lai-paris"
   },
   {
     "id": "hcm-025",
@@ -1822,7 +1812,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/121927.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1859,7 +1850,8 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/61928.mp3"
     },
     "accuracyNote": "Một số thông tin có thể khác nhau giữa các tài liệu do thời điểm cập nhật và cách ghi chép không giống nhau. Vì vậy, dữ liệu được ưu tiên lấy từ các nguồn chính thống và được đối chiếu để giảm sai lệch."
   },
@@ -1891,14 +1883,15 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/cuoi_1929.mp3"
     }
   },
   {
     "title": "Bị giam giữ ở Hồng Kông",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "detailMarkdown": "Trải qua 9 phiên tòa. Được luật sư F.H. Loseby tận tình bào chữa.",
     "periodLabel": "1931 - 1932",
@@ -1914,15 +1907,18 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/xe_xu_toa_an.mp3"
     },
-    "dateStart": "1931-06-07"
+    "dateStart": "1931-06-07",
+    "id": "place-mkcet2xm-6lby",
+    "slug": "bi-giam-giu-o-hong-kong"
   },
   {
     "title": "Bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát.",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "detailMarkdown": "Bị giam lỏng tại Hồng Kông lần 2. Luật sư Loseby can thiệp giúp đỡ giải thoát.",
     "media": {
@@ -1937,16 +1933,19 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/22011933.mp3"
     },
     "periodLabel": "22/01/1933",
-    "dateStart": "1933-01-22"
+    "dateStart": "1933-01-22",
+    "id": "place-mkcet2xm-0sqs",
+    "slug": "bi-giam-long-tai-hong-kong-lan-2-luat-su-loseby-can-thiep-giup-do-giai-thoat"
   },
   {
     "title": "Được thả tự do",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "detailMarkdown": "Được thả tự do. Rời Hồng Kông đi Singapore.",
     "periodLabel": "28/12/1932",
@@ -1957,14 +1956,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/28121932.mp3"
+    },
+    "id": "place-mkcet2xm-g8ih",
+    "slug": "duoc-tha-tu-do"
   },
   {
     "title": "Chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Cửu Long. Thành lập Đảng Cộng sản Việt Nam.",
     "coords": [
-      0,
-      0
+      114.1747,
+      22.3186
     ],
     "detailMarkdown": "Ngày 3/2/1930, tại Cửu Long (Hồng Kông), dưới sự chủ trì của Nguyễn Ái Quốc (với vai trò phái viên Quốc tế Cộng sản), Hội nghị hợp nhất các tổ chức cộng sản Đông Dương (Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng, Đông Dương Cộng sản Liên đoàn), thành lập Đảng Cộng sản Việt Nam (nay là ngày chính thức kỷ niệm thành lập Đảng). Đây là sự kiện lịch sử trọng đại, chấm dứt khủng hoảng đường lối cứu nước, xác định con đường độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
     "media": {
@@ -1983,19 +1985,22 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/321930.mp3"
     },
     "periodLabel": "3/2/1930",
-    "dateStart": "1930-02-03"
+    "dateStart": "1930-02-03",
+    "id": "place-mkcet2xm-94sn",
+    "slug": "chu-tri-hoi-nghi-hop-nhat-cac-to-chuc-cong-san-tai-cuu-long-thanh-lap-dang-cong-san-viet-nam"
   },
   {
-    "title": "Quay trở lại Xiêm và Malaysia để chỉ đạo phong trào.",
+    "title": "Quay trở lại Xiêm, Malaysia và Singapore để chỉ đạo phong trào.",
     "coords": [
-      0,
-      0
+      103.87722462973758,
+      1.28346518231817
     ],
-    "detailMarkdown": "Tháng 4/1930, sau khi Tổ chức thành công Hội nghị thành lập Đảng Cộng sản Việt Nam ở Hương Cảng vào tháng 2/1930, Nguyễn Ái Quốc trở lại Xiêm (Thái Lan) và Malaysia để tiếp tục chỉ đạo phong trào cách mạng, củng cố các tổ chức Cộng sản ở nước ngoài.",
-    "city": "Xiêm",
+    "detailMarkdown": "Tháng 4/1930, sau khi Tổ chức thành công Hội nghị thành lập Đảng Cộng sản Việt Nam ở Hương Cảng vào tháng 2/1930, Nguyễn Ái Quốc trở lại Xiêm (Thái Lan), Malaysia và Singapore để tiếp tục chỉ đạo phong trào cách mạng, củng cố các tổ chức Cộng sản ở nước ngoài.",
+    "city": "",
     "periodLabel": "4/1930",
     "media": {
       "images": [
@@ -2009,19 +2014,23 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/41930.mp3"
     },
-    "dateStart": "1930-04"
+    "dateStart": "1930-04",
+    "id": "place-mkcet2xm-79bh",
+    "slug": "quay-tro-lai-xiem-malaysia-va-singapore-de-chi-dao-phong-trao",
+    "country": "Xiêm, Malaysia, Singapore"
   },
   {
-    "title": "Rời Quảng Châu đi Hàng Châu, Thượng Hải để tránh sự truy quét của Tưởng Giới Thạch.",
+    "title": "Rời Quảng Châu để tránh sự truy quét của Tưởng Giới Thạch. Trở lại Moskva",
     "coords": [
-      0,
-      0
+      37.6173,
+      55.7558
     ],
-    "city": "Quảng Châu",
+    "city": "Moskva",
     "periodLabel": "5/1927",
-    "detailMarkdown": "Tháng 5/1927, Nguyễn Ái Quốc rời Quảng Châu đi Hàng Châu, Thượng Hải (Trung Quốc) là để né tránh sự đàn áp của Tưởng Giới Thạch, đánh dấu giai đoạn Người phải di chuyển liên tục để tiếp tục hoạt động cách mạng",
+    "detailMarkdown": "Nguyễn Ái Quốc từ Quảng Châu, Trung Quốc đến Liên Xô. Đồng chí Vôitinxki, Trưởng Ban Phương Đông của Quốc tế Cộng sản đã có công văn gửi đồng chí đồng chí A. Abramốp, Trưởng Ban Liên lạc quốc tế của Quốc tế Cộng sản như sau: Hôm nay (15-6-1927), đồng chí Nguyễn Ái Quốc từ Quảng Châu đến. Đề nghị sắp xếp nơi ở cho đồng chí",
     "media": {
       "images": [
         {
@@ -2034,15 +2043,18 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/51927.mp3"
     },
-    "dateStart": "1927-05"
+    "dateStart": "1927-05",
+    "id": "place-mkcet2xm-2xuy",
+    "slug": "19241201-moskva-tro-lai"
   },
   {
     "title": "Đến Thượng Hải dự hội nghị quốc tế.",
     "coords": [
-      0,
-      0
+      121.32598331110871,
+      30.667856898779714
     ],
     "city": "Thượng Hải",
     "detailMarkdown": "",
@@ -2058,16 +2070,19 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/51930.mp3"
     },
     "periodLabel": "5/1930",
-    "dateStart": "1930-05"
+    "dateStart": "1930-05",
+    "id": "place-mkcet2xm-ojo9",
+    "slug": "den-thuong-hai-du-hoi-nghi-quoc-te"
   },
   {
     "title": "Trở lại Hồng Kông",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "city": "Hồng Kông",
     "media": {
@@ -2082,16 +2097,19 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
+      ],
+      "audio": "/media/uploads/audio/91930.mp3"
     },
     "periodLabel": "9/1930",
-    "dateStart": "1930-9"
+    "dateStart": "1930-9",
+    "id": "place-mkcet2xm-2cqf",
+    "slug": "tro-lai-hong-kong"
   },
   {
     "title": "Cải trang, bí mật rời Hồng Kông",
     "coords": [
-      0,
-      0
+      114.19294355685433,
+      22.304890417497052
     ],
     "detailMarkdown": "Cải trang thành thương nhân giàu có, bí mật rời Hồng Kông trên chiếc ca nô nhỏ.",
     "periodLabel": "22/01/1933",
@@ -2109,14 +2127,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/22011933.mp3"
+    },
+    "id": "place-mkcet2xm-rcgp",
+    "slug": "cai-trang-bi-mat-roi-hong-kong"
   },
   {
     "title": "Đến Hạ Môn (Trung Quốc)",
     "coords": [
-      0,
-      0
+      118.03135059950246,
+      24.244089278035315
     ],
     "detailMarkdown": "Đến Hạ Môn (Trung Quốc) đúng ngày Mùng 1 Tết Âm lịch.",
     "city": "Hạ Môn",
@@ -2133,14 +2154,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/25011933.mp3"
+    },
+    "id": "place-mkcet2xm-0hey",
+    "slug": "den-ha-mon-trung-quoc"
   },
   {
     "title": "Từ Hạ Môn đến Thượng Hải. ",
     "coords": [
-      0,
-      0
+      121.32598331110871,
+      30.667856898779714
     ],
     "detailMarkdown": "Từ Hạ Môn đến Thượng Hải. Liên lạc được với tổ chức Đảng (Paul Vaillant Couturier).",
     "dateStart": "1933-07",
@@ -2156,37 +2180,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
-  },
-  {
-    "title": "Đến Moskva (Liên Xô)",
-    "coords": [
-      0,
-      0
-    ],
-    "city": "Moskva",
-    "dateStart": "1934-01-01",
-    "media": {
-      "images": [
-        {
-          "label": "",
-          "url": "/media/uploads/images/Moskva.jpg"
-        }
       ],
-      "videos": [
-        {
-          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
-          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
-        }
-      ]
-    }
+      "audio": "/media/uploads/audio/71933.mp3"
+    },
+    "id": "place-mkcet2xm-wimf",
+    "slug": "tu-ha-mon-den-thuong-hai"
   },
   {
     "title": "Học tại Trường Quốc tế Lênin. Làm nghiên cứu sinh tại Viện Nghiên cứu các vấn đề dân tộc và thuộc địa.",
     "coords": [
-      0,
-      0
+      37.63271641870411,
+      55.75638096064199
     ],
     "city": "Moskva",
     "dateStart": "1934-01-05",
@@ -2203,14 +2207,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/011934.mp3"
+    },
+    "id": "place-mkcet2xm-7cxp",
+    "slug": "hoc-tai-truong-quoc-te-lenin-lam-nghien-cuu-sinh-tai-vien-nghien-cuu-cac-van-de-dan-toc-va-thuoc-dia"
   },
   {
     "title": "Rời Moskva đi Diên An (Trung Quốc). Làm việc tại Bát Lộ Quân ",
     "coords": [
-      0,
-      0
+      114.27291037024288,
+      37.22827539552241
     ],
     "city": "Diên An ",
     "dateStart": "1938-10",
@@ -2227,17 +2234,20 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/101938.mp3"
+    },
+    "id": "place-mkcet2xm-ivoh",
+    "slug": "roi-moskva-di-dien-an-trung-quoc-lam-viec-tai-bat-lo-quan"
   },
   {
     "title": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm (Trung Quốc)",
     "coords": [
-      0,
-      0
+      107.09189052795477,
+      23.60083802974062
     ],
-    "city": "Quế Lâm",
-    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới.",
+    "city": "Quý Dương, Côn Minh, Quế Lâm, Tĩnh Tây",
+    "detailMarkdown": "Hoạt động tại Quý Dương, Côn Minh, Quế Lâm. Xây dựng cơ sở cách mạng vùng biên giới. Đến Tĩnh Tây (Quảng Tây). Tổ chức lớp huấn luyện cán bộ đầu tiên cho đội ngũ cốt cán về nước.",
     "dateStart": "1939-01",
     "media": {
       "images": [
@@ -2251,38 +2261,17 @@
           "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
-  },
-  {
-    "title": "Đến Tĩnh Tây (Quảng Tây)",
-    "coords": [
-      0,
-      0
-    ],
-    "detailMarkdown": "Đến Tĩnh Tây (Quảng Tây). Tổ chức lớp huấn luyện cán bộ đầu tiên cho đội ngũ cốt cán về nước.",
-    "city": "Quảng Tây",
-    "dateStart": "1940-12",
-    "media": {
-      "images": [
-        {
-          "label": "Địa điểm Chủ tịch Hồ Chí Minh mở lớp huấn luyện chính trị cho 40 chiến sĩ hoạt động cách mạng trước khi về nước.",
-          "url": "/media/uploads/images/theo-chan-bac-ho-4-.jpg"
-        }
       ],
-      "videos": [
-        {
-          "label": "Hành trình tìm đường cứu nước của Chủ tịch Hồ Chí Minh |  Phim Tài liệu và Điện ảnh NDfilm",
-          "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
-        }
-      ]
-    }
+      "audio": "/media/uploads/audio/011939.mp3"
+    },
+    "id": "place-mkcet2xm-6ooy",
+    "slug": "hoat-dong-tai-quy-duong-con-minh-que-lam-trung-quoc"
   },
   {
     "title": "Vượt cột mốc 108 trở về Việt Nam. Chọn Pác Bó làm căn cứ chỉ đạo cách mạng",
     "coords": [
-      0,
-      0
+      105.81242151373876,
+      22.718580433119143
     ],
     "city": "Cao Bằng",
     "detailMarkdown": "Ngày 28-1-1941 (tức mùng 2 Tết Tân Tỵ): Lãnh tụ Nguyễn Ái Quốc vượt qua cột mốc 108 trên biên giới Việt Nam - Trung Quốc, tại làng Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng, trở về Tổ quốc sau 30 năm bôn ba tìm đường cứu nước, cứu dân để trực tiếp lãnh đạo cách mạng Việt Nam. Đây là một sự kiện lịch sử quan trọng, mở ra thời kỳ phát triển mới của cách mạng Việt Nam, từng bước đưa dân tộc Việt Nam đi tới những mùa Xuân thắng lợi.",
@@ -2306,7 +2295,25 @@
           "label": "",
           "url": "https://www.youtube.com/watch?v=58HGVK6j-80"
         }
-      ]
-    }
+      ],
+      "audio": "/media/uploads/audio/cao_bang_viet_nam.mp3"
+    },
+    "id": "place-mkcet2xm-nu3t",
+    "slug": "vuot-cot-moc-108-tro-ve-viet-nam-chon-pac-bo-lam-can-cu-chi-dao-cach-mang",
+    "country": "Việt Nam"
+  },
+  {
+    "title": "Hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo...",
+    "coords": [
+      -17.4677,
+      14.7167
+    ],
+    "country": "Dakar",
+    "city": "Senegal",
+    "dateStart": "1913-01-01",
+    "detailMarkdown": "Giai đoạn 1912-1913, khi làm thuê trên tàu Amiral Latouche-Tréville thuộc hãng Chargeurs Réunis (Hãng Năm Sao), Nguyễn Tất Thành đã thực hiện hành trình vòng quanh châu Phi, dừng chân tại nhiều cảng ở Tây Ban Nha, Bồ Đào Nha, Algeria, Tunisia, Congo..., để vừa làm phụ bếp, vừa quan sát đời sống các dân tộc thuộc địa, mở rộng hiểu biết, chuẩn bị cho hành trình tìm đường cứu nước lâu dài, thể hiện ý chí cách mạng sâu sắc.",
+    "periodLabel": "",
+    "slug": "19130101-dakar-senegal",
+    "id": "place-mkcesycg-8q7d"
   }
 ]

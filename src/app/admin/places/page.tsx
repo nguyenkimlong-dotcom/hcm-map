@@ -18,6 +18,24 @@ const emptyPlace: EditablePlace = {
   coords: [0, 0],
 };
 
+const createId = () => `place-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
+
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const ensurePlaceIdentity = (place: EditablePlace): EditablePlace => {
+  const id = place.id && place.id.trim().length > 0 ? place.id : createId();
+  const slug =
+    place.slug && place.slug.trim().length > 0 ? place.slug : slugify(place.title || "") || id;
+  return { ...place, id, slug };
+};
+
 export default function PlacesAdminPage() {
   const [places, setPlaces] = useState<EditablePlace[]>([]);
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
@@ -27,6 +45,8 @@ export default function PlacesAdminPage() {
   const [savedSnapshot, setSavedSnapshot] = useState<string>("");
   const [notice, setNotice] = useState<{ type: "saved" | "noop"; message: string } | null>(null);
   const markdownRef = useRef<HTMLTextAreaElement | null>(null);
+  const [lngText, setLngText] = useState("");
+  const [latText, setLatText] = useState("");
 
   useEffect(() => {
     let mounted = true;
@@ -76,11 +96,38 @@ export default function PlacesAdminPage() {
   const selectedPlace = selectedIndex >= 0 ? places[selectedIndex] : null;
   const currentSnapshot = useMemo(() => JSON.stringify(places), [places]);
 
+  useEffect(() => {
+    if (!selectedPlace) {
+      setLngText("");
+      setLatText("");
+      return;
+    }
+    const [lng, lat] = selectedPlace.coords ?? [0, 0];
+    setLngText(Number.isFinite(lng) ? String(lng) : "");
+    setLatText(Number.isFinite(lat) ? String(lat) : "");
+  }, [selectedPlace]);
+
   const updatePlace = (patch: Partial<EditablePlace>) => {
     if (selectedIndex < 0) return;
     setPlaces((prev) => {
       const next = [...prev];
-      next[selectedIndex] = { ...next[selectedIndex], ...patch };
+      const current = next[selectedIndex];
+      const updated = { ...current, ...patch };
+      if ("title" in patch) {
+        const currentSlug = current.slug ?? "";
+        const prevTitleSlug = slugify(current.title ?? "");
+        const nextTitleSlug = slugify(updated.title ?? "");
+        if (!currentSlug || currentSlug === prevTitleSlug) {
+          updated.slug = nextTitleSlug || currentSlug || updated.id;
+        }
+      }
+      if (!updated.id || updated.id.trim().length === 0) {
+        updated.id = createId();
+      }
+      if (!updated.slug || updated.slug.trim().length === 0) {
+        updated.slug = slugify(updated.title || "") || updated.id;
+      }
+      next[selectedIndex] = updated;
       return next;
     });
   };
@@ -95,6 +142,18 @@ export default function PlacesAdminPage() {
       next[selectedIndex] = { ...next[selectedIndex], coords };
       return next;
     });
+  };
+
+  const handleCoordChange = (field: "lng" | "lat", value: string) => {
+    const normalized = value.replace(",", ".");
+    if (field === "lng") setLngText(normalized);
+    if (field === "lat") setLatText(normalized);
+    const trimmed = normalized.trim();
+    if (trimmed === "" || trimmed === "-" || trimmed === "." || trimmed === "-.") return;
+    const parsed = Number(trimmed);
+    if (Number.isFinite(parsed)) {
+      updateCoords(field, parsed);
+    }
   };
 
   const applyMarkdown = (prefix: string, suffix = "") => {
@@ -237,21 +296,26 @@ export default function PlacesAdminPage() {
   };
 
   const handleSave = async () => {
-    if (currentSnapshot === savedSnapshot) {
+    const normalized = places.map(ensurePlaceIdentity);
+    const normalizedSnapshot = JSON.stringify(normalized);
+    if (normalizedSnapshot === savedSnapshot) {
       setNotice({ type: "noop", message: "Chua co thay doi." });
       return;
     }
     setStatus("saving");
     setError(null);
     try {
+      if (normalizedSnapshot !== currentSnapshot) {
+        setPlaces(normalized);
+      }
       const res = await fetch("/api/places", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ places }),
+        body: JSON.stringify({ places: normalized }),
       });
       if (!res.ok) throw new Error("Save failed");
       setStatus("saved");
-      setSavedSnapshot(currentSnapshot);
+      setSavedSnapshot(normalizedSnapshot);
       setNotice({ type: "saved", message: "Da luu thanh cong." });
       window.setTimeout(() => setStatus("idle"), 1200);
     } catch (err) {
@@ -262,7 +326,8 @@ export default function PlacesAdminPage() {
 
   const handleAdd = () => {
     setPlaces((prev) => {
-      const next = [...prev, { ...emptyPlace }];
+      const id = createId();
+      const next = [...prev, { ...emptyPlace, id, slug: id }];
       setSelectedIndex(next.length - 1);
       return next;
     });
@@ -382,6 +447,24 @@ export default function PlacesAdminPage() {
                   />
                 </div>
                 <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">Slug</label>
+                  <input
+                    type="text"
+                    value={selectedPlace.slug ?? ""}
+                    onChange={(e) => updatePlace({ slug: e.target.value })}
+                    className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">ID</label>
+                  <input
+                    type="text"
+                    value={selectedPlace.id ?? ""}
+                    onChange={(e) => updatePlace({ id: e.target.value })}
+                    className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700"
+                  />
+                </div>
+                <div>
                   <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">Country</label>
                   <input
                     type="text"
@@ -402,20 +485,22 @@ export default function PlacesAdminPage() {
                 <div>
                   <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">Longitude</label>
                   <input
-                    type="number"
-                    step="0.0001"
-                    value={selectedPlace.coords?.[0] ?? 0}
-                    onChange={(e) => updateCoords("lng", Number(e.target.value))}
+                    type="text"
+                    inputMode="decimal"
+                    value={lngText}
+                    onChange={(e) => handleCoordChange("lng", e.target.value)}
+                    onBlur={(e) => handleCoordChange("lng", e.target.value)}
                     className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700"
                   />
                 </div>
                 <div>
                   <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">Latitude</label>
                   <input
-                    type="number"
-                    step="0.0001"
-                    value={selectedPlace.coords?.[1] ?? 0}
-                    onChange={(e) => updateCoords("lat", Number(e.target.value))}
+                    type="text"
+                    inputMode="decimal"
+                    value={latText}
+                    onChange={(e) => handleCoordChange("lat", e.target.value)}
+                    onBlur={(e) => handleCoordChange("lat", e.target.value)}
                     className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700"
                   />
                 </div>

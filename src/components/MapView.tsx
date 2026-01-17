@@ -443,6 +443,7 @@ export default function MapView({ places }: Props) {
   const [showAutoOptions, setShowAutoOptions] = useState(false);
   const [autoSpeed, setAutoSpeed] = useState<"auto" | "x2" | "x4" | "custom">("auto");
   const [customSpeedFactor, setCustomSpeedFactor] = useState(1);
+  const [viewportWidth, setViewportWidth] = useState<number>(0);
   const [activeStory, setActiveStory] = useState<{
     title?: string;
     body?: string;
@@ -456,6 +457,24 @@ export default function MapView({ places }: Props) {
   const lastAnimDurationRef = useRef(0);
   const stepIndexRef = useRef(0);
   const autoPlayTokenRef = useRef(0);
+
+  useEffect(() => {
+    const updateWidth = () => setViewportWidth(window.innerWidth || 0);
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  const getSidebarWidth = (maxWidth: number) => {
+    if (!viewportWidth) return maxWidth;
+    if (viewportWidth >= 1024) return maxWidth;
+    if (viewportWidth >= 768) return Math.min(viewportWidth * 0.6, maxWidth);
+    if (viewportWidth >= 640) return Math.min(viewportWidth * 0.75, maxWidth);
+    return Math.min(viewportWidth * 0.9, maxWidth);
+  };
+
+  const leftSidebarWidth = showMenu ? getSidebarWidth(360) : 0;
+  const rightSidebarWidth = detailPlace ? getSidebarWidth(360) : 0;
 
   const routeOrderMap = useMemo(() => {
     const m = new Map<string, number>();
@@ -1574,12 +1593,13 @@ export default function MapView({ places }: Props) {
                 Danh mục
               </span>
             </button>
-          </div>
+          </div> 
 
           <div
-            className={`pointer-events-auto absolute left-3 top-14 z-20 h-[83vh] w-[420px] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
+            className={`pointer-events-auto absolute left-3 top-14 z-20 h-[83vh] transform overflow-hidden rounded-2xl border border-white/30 bg-white/55 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl transition-transform duration-300 ${
               showMenu ? "translate-x-0" : "-translate-x-[110%]"
             }`}
+            style={{ width: leftSidebarWidth ? `${leftSidebarWidth}px` : undefined }}
           >
             <div className="relative flex h-full">
               <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
@@ -1910,7 +1930,13 @@ export default function MapView({ places }: Props) {
           </div>
 
           {activeTab === "journey" ? (
-            <div className="pointer-events-auto absolute inset-x-0 bottom-4 flex justify-center px-4">
+            <div
+              className="pointer-events-auto absolute bottom-4 flex justify-center px-4"
+              style={{
+                left: leftSidebarWidth ? leftSidebarWidth + 12 : 12,
+                right: rightSidebarWidth ? rightSidebarWidth + 12 : 12,
+              }}
+            >
               <div className="flex w-full max-w-5xl flex-col gap-2 rounded-2xl border border-white/40 bg-white/70 p-3 shadow-2xl backdrop-blur">
                 <div className="flex flex-wrap items-center gap-3">
                   {hasStarted ? (
@@ -1973,7 +1999,10 @@ export default function MapView({ places }: Props) {
 
         {/* Detail sidebar */}
         {detailPlace ? (
-          <div className="pointer-events-auto absolute right-3 top-14 z-30 flex h-[83vh] w-[440px] max-w-full flex-col overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl">
+          <div
+            className="pointer-events-auto absolute right-3 top-14 z-30 flex h-[83vh] max-w-full flex-col overflow-hidden rounded-2xl border border-white/30 bg-white/95 shadow-2xl ring-1 ring-white/20 backdrop-blur-xl"
+            style={{ width: rightSidebarWidth ? `${rightSidebarWidth}px` : undefined }}
+          >
             <audio ref={detailAudioRef} className="hidden" preload="auto" />
             <div className="glass-noise pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
             <div className="relative z-10 flex items-center justify-between border-b border-white/30 bg-white/45 px-4 py-3 backdrop-blur-xl">
